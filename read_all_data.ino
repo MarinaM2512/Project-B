@@ -31,12 +31,23 @@ Adafruit_BNO055 bno = Adafruit_BNO055(-1, 0x28);
 */
 
 /* Set the delay between fresh samples */
-//uint16_t BNO055_SAMPLERATE_DELAY_MS = 100;
+//uint16_t BNO055_SAMPLERATE_DELAY_MS = 15;
 
 // Check I2C device address and correct line below (by default address is 0x29 or 0x28)
 //                                   id, address
 //Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
 
+
+//////////////////////////////////////////Defining Multiplexer(Mux) Values///////////////////////////////////
+//Bits (arduino outputs):
+const int s0 = 19;
+const int s1 = 18;
+const int s2 = 5;
+//COM (esp3.2 input):
+const int ComPin = 4;
+// 3 bits--> 0-7 reading elements:
+const int AllBits[] = {s0,s1,s2};
+const int BitsNum = 3 ;
 void setup(void)
 {
   Serial.begin(115200);
@@ -49,9 +60,32 @@ void setup(void)
     Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
     while (1);
   }
-
   delay(1000);
+  
+  for (int k=0 ; k < BitsNum ; k++){
+    pinMode(AllBits[k], OUTPUT);
+  }
+  pinMode(ComPin, INPUT); // Mux input
+  //maby atenuation of ADC_2_5db from ADC_0db
+  analogSetPinAttenuation( ComPin , ADC_11db); //sets the com pin attunation to 0, meaning the voltage range is 0-1v 
+ // initializing :LOW to all OUTPUTS except from the first LED mode:
+  for (int k=0 ; k < BitsNum ; k++){
+    digitalWrite(AllBits[k], LOW);
+  }
 }
+
+
+////////////////////////////////////////MuxReadFunc//////////////////////////////////////////////////////
+int MuxReadFunc(int MuxNum){
+
+  for (int k=0 ; k < BitsNum ; k++){
+    digitalWrite(AllBits[k], bitRead(MuxNum,k));
+    delay(3);
+  }
+  
+  return ComPin;
+}
+
 
 void loop(void)
 {
@@ -81,13 +115,13 @@ void loop(void)
  /* Display calibration status for each sensor. */
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);
-  Serial.print("CALIBRATION: Sys=");
+  Serial.print("CALIBRATION: Sys: ");
   Serial.print(system, DEC);
-  Serial.print(" Gyro=");
+  Serial.print(" Gyro: ");
   Serial.print(gyro, DEC);
-  Serial.print(" Accel=");
+  Serial.print(" Accel: ");
   Serial.print(accel, DEC);
-  Serial.print(" Mag=");
+  Serial.print(" Mag: ");
   Serial.println(mag, DEC);
   
   delay(BNO055_SAMPLERATE_DELAY_MS);
@@ -123,11 +157,22 @@ void printEvent(sensors_event_t* event) {
 
   }
 
-  Serial.print(" x: ");
+  Serial.print("x: ");
   Serial.print(x);
   Serial.print(" y: ");
   Serial.print(y);
   Serial.print(" z: ");
   Serial.println(z);
-    //delay(1000);
+      
+  for(int k=0; k<5; k++){
+    int value = analogRead(MuxReadFunc(k));
+    delay(6);
+    String str1 = "FSR";
+    String str2 = str1 + k;
+    Serial.print(str2);
+    Serial.print(": ");
+    Serial.print(value);
+    Serial.print(" ");
+  }
+  Serial.println("");
 }
