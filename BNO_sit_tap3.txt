@@ -1,0 +1,5696 @@
+
+gyro:
+ x: 0.19 y: 0.19 z: -0.31
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: 0.06
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: 0.44
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: -0.13
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.25 z: -0.44
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.06 z: 0.37
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.06 z: -0.37
+qW: -0.0209 qX: -0.1102 qY: -0.7873 qZ: -0.6063		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.06 z: -0.25
+qW: -0.0211 qX: -0.1100 qY: -0.7873 qZ: -0.6064		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.25 z: 0.75
+qW: -0.0208 qX: -0.1104 qY: -0.7871 qZ: -0.6065		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.19 z: -0.25
+qW: -0.0208 qX: -0.1104 qY: -0.7871 qZ: -0.6065		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.00 z: 0.00
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.25 z: 0.19
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.00 z: -0.19
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.00 z: 0.13
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: 0.06
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.06
+qW: -0.0208 qX: -0.1104 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.62
+qW: -0.0205 qX: -0.1107 qY: -0.7873 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.31 z: -0.50
+qW: -0.0205 qX: -0.1107 qY: -0.7873 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: 0.25
+qW: -0.0205 qX: -0.1107 qY: -0.7873 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: 0.69
+qW: -0.0201 qX: -0.1112 qY: -0.7872 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.06 z: -0.25
+qW: -0.0201 qX: -0.1113 qY: -0.7872 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.50 z: 0.56
+qW: -0.0201 qX: -0.1113 qY: -0.7872 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.13 z: -0.06
+qW: -0.0201 qX: -0.1113 qY: -0.7872 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.06 z: -0.56
+qW: -0.0202 qX: -0.1113 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.06
+qW: -0.0202 qX: -0.1112 qY: -0.7874 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.13 z: 0.75
+qW: -0.0200 qX: -0.1116 qY: -0.7873 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.50 z: -0.50
+qW: -0.0199 qX: -0.1115 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: 0.75
+qW: -0.0198 qX: -0.1117 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.06 z: 0.19
+qW: -0.0195 qX: -0.1121 qY: -0.7873 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.25 z: -0.31
+qW: -0.0195 qX: -0.1120 qY: -0.7873 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.56
+qW: -0.0195 qX: -0.1120 qY: -0.7873 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.06 z: -0.62
+qW: -0.0195 qX: -0.1119 qY: -0.7873 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.25 z: -0.19
+qW: -0.0197 qX: -0.1116 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.25 z: 0.25
+qW: -0.0197 qX: -0.1116 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.00 z: 0.13
+qW: -0.0197 qX: -0.1116 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.13
+qW: -0.0197 qX: -0.1116 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.31 z: 0.31
+qW: -0.0197 qX: -0.1116 qY: -0.7874 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.31 z: -0.44
+qW: -0.0197 qX: -0.1116 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.62
+qW: -0.0197 qX: -0.1116 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.13 z: -0.25
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: -0.25
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.06
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: 0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.25 z: 0.06
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: -0.13
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: 0.25
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: -0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.06
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: -0.13
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: -0.06
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: 0.06
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.25 z: -0.19
+qW: -0.0197 qX: -0.1117 qY: -0.7874 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.62 z: -0.19
+qW: -0.0196 qX: -0.1116 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: -0.13
+qW: -0.0196 qX: -0.1116 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.19 z: -0.50
+qW: -0.0195 qX: -0.1116 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.19 z: -0.19
+qW: -0.0195 qX: -0.1116 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.19 z: -0.13
+qW: -0.0195 qX: -0.1116 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.62
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6059		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.31 z: -0.19
+qW: -0.0198 qX: -0.1113 qY: -0.7877 qZ: -0.6057		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.06 z: -0.06
+qW: -0.0198 qX: -0.1113 qY: -0.7876 qZ: -0.6057		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.00
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: -0.19
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.37 z: 0.13
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: 0.00
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: -0.06
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.00
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.25 z: 0.13
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.00
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.19 z: 0.00
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: -0.06
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.13
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: -0.06
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.13 z: 0.25
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.13 z: 0.62
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.37 z: 0.19
+qW: -0.0198 qX: -0.1113 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.06 z: -0.25
+qW: -0.0198 qX: -0.1113 qY: -0.7877 qZ: -0.6056		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.56 z: -0.31
+qW: -0.0198 qX: -0.1113 qY: -0.7877 qZ: -0.6055		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: -0.56 z: -0.88
+qW: -0.0203 qX: -0.1106 qY: -0.7877 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: -0.56 z: 0.75
+qW: -0.0204 qX: -0.1108 qY: -0.7867 qZ: -0.6069		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: 0.75
+qW: -0.0200 qX: -0.1115 qY: -0.7864 qZ: -0.6072		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.00 y: 1.87 z: -2.06
+qW: -0.0198 qX: -0.1107 qY: -0.7872 qZ: -0.6064		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.56 y: 0.06 z: -2.25
+qW: -0.0207 qX: -0.1092 qY: -0.7883 qZ: -0.6052		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.56 z: -1.25
+qW: -0.0217 qX: -0.1078 qY: -0.7887 qZ: -0.6049		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.44 z: 0.81
+qW: -0.0218 qX: -0.1080 qY: -0.7886 qZ: -0.6049		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: -1.06 z: 1.44
+qW: -0.0217 qX: -0.1091 qY: -0.7879 qZ: -0.6057		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.19 z: 0.13
+qW: -0.0214 qX: -0.1099 qY: -0.7876 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.50 z: -0.13
+qW: -0.0214 qX: -0.1099 qY: -0.7877 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.00 z: -0.13
+qW: -0.0213 qX: -0.1100 qY: -0.7879 qZ: -0.6055		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.13 z: 0.50
+qW: -0.0214 qX: -0.1100 qY: -0.7875 qZ: -0.6060		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.50 z: -0.88
+qW: -0.0214 qX: -0.1099 qY: -0.7875 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.19 z: -2.12
+qW: -0.0221 qX: -0.1083 qY: -0.7880 qZ: -0.6057		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.75 y: -0.19 z: -0.19
+qW: -0.0226 qX: -0.1076 qY: -0.7877 qZ: -0.6062		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.19 y: 0.00 z: 1.94
+qW: -0.0225 qX: -0.1085 qY: -0.7861 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.50 y: -0.25 z: 2.81
+qW: -0.0216 qX: -0.1105 qY: -0.7844 qZ: -0.6099		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.81 y: 1.06 z: -0.81
+qW: -0.0201 qX: -0.1111 qY: -0.7850 qZ: -0.6091		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.06 z: -3.31
+qW: -0.0206 qX: -0.1094 qY: -0.7866 qZ: -0.6074		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.12 y: -0.62 z: -0.75
+qW: -0.0221 qX: -0.1082 qY: -0.7866 qZ: -0.6075		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: -0.50 z: 1.25
+qW: -0.0222 qX: -0.1089 qY: -0.7855 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: 0.69 z: -0.13
+qW: -0.0215 qX: -0.1093 qY: -0.7859 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -0.88 z: 0.06
+qW: -0.0214 qX: -0.1094 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.31 z: -0.31
+qW: -0.0214 qX: -0.1096 qY: -0.7859 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.13 z: -0.44
+qW: -0.0213 qX: -0.1097 qY: -0.7861 qZ: -0.6079		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.31
+qW: -0.0211 qX: -0.1097 qY: -0.7861 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.13 z: -0.94
+qW: -0.0211 qX: -0.1097 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.25 z: -0.37
+qW: -0.0215 qX: -0.1092 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.00 z: 0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: -0.31
+qW: -0.0215 qX: -0.1092 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.06 z: -0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: -0.19
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.06 z: 0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.06 z: -0.19
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.19
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.06 z: 0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.13
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.19 z: -0.19
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.25
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: -0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -0.13
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.31 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.31 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.00 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: 0.00
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: -0.06
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.13 z: 0.13
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.25 z: -0.44
+qW: -0.0215 qX: -0.1092 qY: -0.7863 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.19 z: -0.75
+qW: -0.0219 qX: -0.1086 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: 0.37
+qW: -0.0220 qX: -0.1086 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -0.50 z: 1.25
+qW: -0.0216 qX: -0.1091 qY: -0.7861 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: 0.56 z: 0.50
+qW: -0.0210 qX: -0.1096 qY: -0.7859 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.00 z: -2.37
+qW: -0.0215 qX: -0.1082 qY: -0.7864 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.50 z: 0.56
+qW: -0.0223 qX: -0.1072 qY: -0.7864 qZ: -0.6079		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.44 z: 1.94
+qW: -0.0214 qX: -0.1086 qY: -0.7862 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.56 z: -3.37
+qW: -0.0214 qX: -0.1083 qY: -0.7866 qZ: -0.6076		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.94 z: -2.12
+qW: -0.0229 qX: -0.1059 qY: -0.7871 qZ: -0.6072		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 0.13 z: 2.50
+qW: -0.0223 qX: -0.1065 qY: -0.7871 qZ: -0.6071		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -0.44 z: 0.94
+qW: -0.0214 qX: -0.1083 qY: -0.7863 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 0.25 z: -1.69
+qW: -0.0217 qX: -0.1078 qY: -0.7864 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: 0.44
+qW: -0.0221 qX: -0.1072 qY: -0.7867 qZ: -0.6075		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.25 y: 0.50 z: 0.56
+qW: -0.0215 qX: -0.1079 qY: -0.7868 qZ: -0.6073		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: -0.56 z: -1.87
+qW: -0.0219 qX: -0.1072 qY: -0.7874 qZ: -0.6066		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.87 y: 0.44 z: 1.00
+qW: -0.0226 qX: -0.1069 qY: -0.7863 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 1.44 z: 2.06
+qW: -0.0212 qX: -0.1085 qY: -0.7858 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.00 z: -2.00
+qW: -0.0211 qX: -0.1083 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.06 z: -1.37
+qW: -0.0224 qX: -0.1067 qY: -0.7866 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.50 z: 1.75
+qW: -0.0220 qX: -0.1071 qY: -0.7865 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.44 z: 0.50
+qW: -0.0215 qX: -0.1079 qY: -0.7863 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.31 z: -1.06
+qW: -0.0217 qX: -0.1075 qY: -0.7864 qZ: -0.6079		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.19 z: -0.37
+qW: -0.0221 qX: -0.1071 qY: -0.7864 qZ: -0.6079		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.62 z: 0.81
+qW: -0.0221 qX: -0.1072 qY: -0.7862 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.13 z: 0.06
+qW: -0.0219 qX: -0.1077 qY: -0.7862 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.00 z: -1.31
+qW: -0.0223 qX: -0.1070 qY: -0.7866 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.19 z: 0.81
+qW: -0.0225 qX: -0.1068 qY: -0.7866 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.31 z: 1.06
+qW: -0.0219 qX: -0.1077 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: -0.31
+qW: -0.0218 qX: -0.1077 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.37 z: 0.19
+qW: -0.0217 qX: -0.1077 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.31 z: -0.19
+qW: -0.0217 qX: -0.1077 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.19 z: 0.13
+qW: -0.0217 qX: -0.1077 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.13 z: 0.56
+qW: -0.0217 qX: -0.1078 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: 0.06
+qW: -0.0216 qX: -0.1078 qY: -0.7864 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.19 z: -0.69
+qW: -0.0217 qX: -0.1077 qY: -0.7866 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.19 z: 0.44
+qW: -0.0218 qX: -0.1076 qY: -0.7866 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.37
+qW: -0.0216 qX: -0.1079 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.19 z: -0.50
+qW: -0.0216 qX: -0.1079 qY: -0.7865 qZ: -0.6077		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 0.00 z: 0.44
+qW: -0.0216 qX: -0.1079 qY: -0.7863 qZ: -0.6079		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.19 z: 0.13
+qW: -0.0215 qX: -0.1080 qY: -0.7862 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: -0.13
+qW: -0.0215 qX: -0.1080 qY: -0.7862 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.81 y: -0.19 z: 1.25
+qW: -0.0215 qX: -0.1082 qY: -0.7858 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.94 y: 1.62 z: 0.44
+qW: -0.0209 qX: -0.1091 qY: -0.7852 qZ: -0.6093		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.62 y: 0.88 z: -1.56
+qW: -0.0205 qX: -0.1082 qY: -0.7870 qZ: -0.6071		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.62 y: -0.37 z: -1.56
+qW: -0.0214 qX: -0.1072 qY: -0.7871 qZ: -0.6071		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.69 y: -0.06 z: -0.50
+qW: -0.0227 qX: -0.1068 qY: -0.7854 qZ: -0.6093		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.62 y: 0.81 z: 0.56
+qW: -0.0224 qX: -0.1066 qY: -0.7858 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.62 z: 0.44
+qW: -0.0222 qX: -0.1066 qY: -0.7862 qZ: -0.6083		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: 0.00 z: -0.37
+qW: -0.0221 qX: -0.1066 qY: -0.7866 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.44 z: 0.25
+qW: -0.0221 qX: -0.1066 qY: -0.7866 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.31 z: 1.19
+qW: -0.0217 qX: -0.1072 qY: -0.7859 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 0.13 z: -0.62
+qW: -0.0215 qX: -0.1074 qY: -0.7861 qZ: -0.6083		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.06 z: -0.75
+qW: -0.0220 qX: -0.1068 qY: -0.7863 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: 0.25
+qW: -0.0220 qX: -0.1068 qY: -0.7863 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 2.25 z: -0.13
+qW: -0.0208 qX: -0.1058 qY: -0.7865 qZ: -0.6081		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 1.56 z: -0.25
+qW: -0.0203 qX: -0.1055 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.50 z: 0.25
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.44 z: 0.13
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: -0.06
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.13
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.44 z: 0.00
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.19
+qW: -0.0201 qX: -0.1053 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.56 z: 0.06
+qW: -0.0197 qX: -0.1050 qY: -0.7866 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 1.69 z: 0.25
+qW: -0.0187 qX: -0.1042 qY: -0.7866 qZ: -0.6083		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 1.56 z: 0.75
+qW: -0.0177 qX: -0.1043 qY: -0.7865 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 2.00 z: -0.06
+qW: -0.0167 qX: -0.1041 qY: -0.7865 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.19 z: 0.13
+qW: -0.0154 qX: -0.1029 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.31 z: 0.25
+qW: -0.0154 qX: -0.1029 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.44 z: -0.25
+qW: -0.0154 qX: -0.1029 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: 0.13
+qW: -0.0154 qX: -0.1029 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.25 z: 0.19
+qW: -0.0153 qX: -0.1028 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.06
+qW: -0.0153 qX: -0.1028 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.06
+qW: -0.0153 qX: -0.1028 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.25
+qW: -0.0153 qX: -0.1028 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.50 z: -0.06
+qW: -0.0154 qX: -0.1030 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: 0.06
+qW: -0.0154 qX: -0.1030 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.44 z: 0.00
+qW: -0.0154 qX: -0.1030 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -1.12 z: -0.13
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: 0.37
+qW: -0.0157 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: 0.06
+qW: -0.0157 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.25 z: 0.06
+qW: -0.0157 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.37 z: -0.13
+qW: -0.0157 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: -0.19
+qW: -0.0157 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: 0.06
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: -0.06
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.25 z: -0.25
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.44 z: 0.00
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.00
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: -0.06
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.00
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.37 z: -0.13
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.19 z: 0.25
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.25 z: 0.06
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.25 z: -0.19
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.31 z: 0.37
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.06 z: -0.19
+qW: -0.0156 qX: -0.1031 qY: -0.7867 qZ: -0.6084		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.00 z: -0.44
+qW: -0.0156 qX: -0.1031 qY: -0.7869 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.37 z: 0.13
+qW: -0.0157 qX: -0.1032 qY: -0.7866 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.88 z: -0.25
+qW: -0.0156 qX: -0.1031 qY: -0.7866 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.06 z: 0.44
+qW: -0.0156 qX: -0.1031 qY: -0.7866 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.81 z: 0.56
+qW: -0.0157 qX: -0.1033 qY: -0.7865 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -1.56 z: 0.19
+qW: -0.0168 qX: -0.1046 qY: -0.7864 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: -0.13 z: 1.00
+qW: -0.0163 qX: -0.1049 qY: -0.7866 qZ: -0.6083		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.44 z: -1.19
+qW: -0.0164 qX: -0.1049 qY: -0.7867 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.56 z: -2.12
+qW: -0.0184 qX: -0.1042 qY: -0.7869 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.44 z: 0.94
+qW: -0.0187 qX: -0.1041 qY: -0.7865 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: 2.00
+qW: -0.0175 qX: -0.1049 qY: -0.7862 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 1.00 z: -0.06
+qW: -0.0167 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.88 z: -0.75
+qW: -0.0170 qX: -0.1050 qY: -0.7862 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.44 z: 1.31
+qW: -0.0167 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.56 z: -0.06
+qW: -0.0164 qX: -0.1059 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: -0.88
+qW: -0.0169 qX: -0.1054 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.19 z: 0.19
+qW: -0.0170 qX: -0.1053 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: 0.44
+qW: -0.0168 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.37 z: -0.06
+qW: -0.0168 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.00 z: -0.37
+qW: -0.0168 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.44 z: 0.19
+qW: -0.0168 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.31 z: 0.62
+qW: -0.0168 qX: -0.1055 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -1.69 z: 0.13
+qW: -0.0172 qX: -0.1058 qY: -0.7861 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.44 z: -0.44
+qW: -0.0186 qX: -0.1069 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: 0.37
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.37 z: -0.50
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.37 z: 0.00
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: 0.19
+qW: -0.0182 qX: -0.1066 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: -0.13
+qW: -0.0182 qX: -0.1066 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: 0.00
+qW: -0.0182 qX: -0.1066 qY: -0.7859 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: -0.25
+qW: -0.0182 qX: -0.1066 qY: -0.7859 qZ: -0.6088		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.62 z: -0.06
+qW: -0.0183 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: 0.19
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.44 z: -0.25
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.00
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.00
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.31 z: 0.13
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: 0.00
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.00
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.06 z: 0.06
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.13
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: 0.25
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.37 z: 0.13
+qW: -0.0182 qX: -0.1067 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.50 z: -0.69
+qW: -0.0184 qX: -0.1066 qY: -0.7860 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.50 z: 0.00
+qW: -0.0186 qX: -0.1064 qY: -0.7864 qZ: -0.6082		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.37 z: 1.19
+qW: -0.0183 qX: -0.1068 qY: -0.7861 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.31
+qW: -0.0180 qX: -0.1072 qY: -0.7859 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.50 z: -1.62
+qW: -0.0186 qX: -0.1062 qY: -0.7861 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.13 z: 0.37
+qW: -0.0189 qX: -0.1059 qY: -0.7861 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.00 z: -0.06
+qW: -0.0187 qX: -0.1063 qY: -0.7860 qZ: -0.6087		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.19 z: -2.69
+qW: -0.0197 qX: -0.1055 qY: -0.7861 qZ: -0.6086		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.62 z: -1.62
+qW: -0.0209 qX: -0.1035 qY: -0.7865 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.25 z: 1.44
+qW: -0.0205 qX: -0.1038 qY: -0.7866 qZ: -0.6083		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -14.50 y: 16.50 z: -4.06
+qW: -0.0166 qX: -0.0989 qY: -0.7849 qZ: -0.6115		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.31 y: -5.81 z: 8.50
+qW: -0.0090 qX: -0.0902 qY: -0.7817 qZ: -0.6170		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.31 y: -0.56 z: -2.06
+qW: -0.0086 qX: -0.0904 qY: -0.7819 qZ: -0.6168		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.31 y: 5.06 z: -1.06
+qW: -0.0077 qX: -0.0871 qY: -0.7805 qZ: -0.6191		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.25 y: 2.87 z: 1.44
+qW: -0.0063 qX: -0.0866 qY: -0.7805 qZ: -0.6192		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: 1.31 z: -0.13
+qW: -0.0059 qX: -0.0871 qY: -0.7816 qZ: -0.6177		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 5.31 y: -2.75 z: 0.50
+qW: -0.0065 qX: -0.0881 qY: -0.7824 qZ: -0.6165		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -6.87 y: -28.44 z: -4.50
+qW: -0.0163 qX: -0.0939 qY: -0.7890 qZ: -0.6070		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.44 y: -22.56 z: 10.69
+qW: -0.0182 qX: -0.0988 qY: -0.7886 qZ: -0.6067		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -12.00 z: 3.75
+qW: -0.0223 qX: -0.1078 qY: -0.7889 qZ: -0.6046		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -5.12 z: 0.44
+qW: -0.0200 qX: -0.1051 qY: -0.7881 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.06 y: -4.19 z: 1.19
+qW: -0.0208 qX: -0.1060 qY: -0.7894 qZ: -0.6044		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.88 z: 0.19
+qW: -0.0198 qX: -0.1058 qY: -0.7892 qZ: -0.6046		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -1.44 z: -1.50
+qW: -0.0206 qX: -0.1053 qY: -0.7895 qZ: -0.6043		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.69 z: -0.06
+qW: -0.0214 qX: -0.1053 qY: -0.7896 qZ: -0.6041		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.62 y: -1.75 z: 0.31
+qW: -0.0212 qX: -0.1054 qY: -0.7906 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.75 y: 0.37 z: -0.19
+qW: -0.0219 qX: -0.1060 qY: -0.7902 qZ: -0.6032		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: -0.37 z: -0.44
+qW: -0.0218 qX: -0.1060 qY: -0.7905 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.37 y: 0.37 z: 0.37
+qW: -0.0220 qX: -0.1061 qY: -0.7905 qZ: -0.6027		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.06 z: 0.50
+qW: -0.0217 qX: -0.1063 qY: -0.7902 qZ: -0.6031		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.06 z: -0.19
+qW: -0.0216 qX: -0.1063 qY: -0.7905 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: -0.50 z: -0.06
+qW: -0.0215 qX: -0.1063 qY: -0.7906 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.19 z: 0.06
+qW: -0.0216 qX: -0.1064 qY: -0.7910 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.50 z: 0.81
+qW: -0.0214 qX: -0.1067 qY: -0.7906 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.44 z: 0.50
+qW: -0.0214 qX: -0.1070 qY: -0.7906 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: -0.56
+qW: -0.0214 qX: -0.1070 qY: -0.7906 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.25 z: -0.13
+qW: -0.0216 qX: -0.1071 qY: -0.7906 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.44 z: 0.31
+qW: -0.0216 qX: -0.1072 qY: -0.7906 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.25
+qW: -0.0219 qX: -0.1074 qY: -0.7908 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.44 z: 0.13
+qW: -0.0217 qX: -0.1073 qY: -0.7908 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.37 z: 0.06
+qW: -0.0219 qX: -0.1075 qY: -0.7910 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -1.44 z: 0.06
+qW: -0.0222 qX: -0.1077 qY: -0.7906 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 0.88 z: -0.81
+qW: -0.0235 qX: -0.1084 qY: -0.7905 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: -0.69 z: 0.25
+qW: -0.0231 qX: -0.1078 qY: -0.7910 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.56 z: 0.25
+qW: -0.0233 qX: -0.1078 qY: -0.7909 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: -0.06
+qW: -0.0235 qX: -0.1080 qY: -0.7907 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.25
+qW: -0.0235 qX: -0.1080 qY: -0.7907 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.31 z: 0.37
+qW: -0.0236 qX: -0.1081 qY: -0.7907 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.44 z: -0.69
+qW: -0.0237 qX: -0.1078 qY: -0.7911 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.44 z: -0.06
+qW: -0.0238 qX: -0.1077 qY: -0.7910 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.44 z: 0.56
+qW: -0.0238 qX: -0.1077 qY: -0.7910 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.50 z: 0.13
+qW: -0.0238 qX: -0.1078 qY: -0.7910 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.44 z: 0.13
+qW: -0.0240 qX: -0.1079 qY: -0.7910 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.00 z: 0.56
+qW: -0.0244 qX: -0.1086 qY: -0.7903 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.44 y: 0.13 z: -0.62
+qW: -0.0240 qX: -0.1081 qY: -0.7910 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.19
+qW: -0.0237 qX: -0.1080 qY: -0.7917 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.00 y: -0.25 z: 0.00
+qW: -0.0242 qX: -0.1082 qY: -0.7910 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.06 z: -0.62
+qW: -0.0247 qX: -0.1083 qY: -0.7903 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: -0.13 z: 0.06
+qW: -0.0246 qX: -0.1083 qY: -0.7906 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.88 z: -0.13
+qW: -0.0247 qX: -0.1084 qY: -0.7905 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 1.62 z: -0.88
+qW: -0.0255 qX: -0.1085 qY: -0.7902 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.13
+qW: -0.0255 qX: -0.1085 qY: -0.7902 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.56 z: 0.06
+qW: -0.0255 qX: -0.1085 qY: -0.7902 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: 0.06
+qW: -0.0257 qX: -0.1086 qY: -0.7902 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: 0.62
+qW: -0.0259 qX: -0.1088 qY: -0.7902 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.62 z: 0.19
+qW: -0.0258 qX: -0.1095 qY: -0.7902 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -1.06 z: -0.06
+qW: -0.0262 qX: -0.1098 qY: -0.7900 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.50 z: 0.19
+qW: -0.0262 qX: -0.1098 qY: -0.7900 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 1.25 z: -0.25
+qW: -0.0273 qX: -0.1111 qY: -0.7899 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -1.00 z: -0.06
+qW: -0.0275 qX: -0.1113 qY: -0.7899 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.75 z: 0.25
+qW: -0.0276 qX: -0.1114 qY: -0.7899 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.50 z: 0.56
+qW: -0.0276 qX: -0.1116 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.75 z: 0.19
+qW: -0.0278 qX: -0.1117 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.62 z: 0.56
+qW: -0.0278 qX: -0.1116 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.31
+qW: -0.0275 qX: -0.1118 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.44 z: -0.44
+qW: -0.0275 qX: -0.1118 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.37 z: 0.13
+qW: -0.0275 qX: -0.1119 qY: -0.7898 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -1.06 z: 0.31
+qW: -0.0278 qX: -0.1121 qY: -0.7898 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.50 z: 0.00
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: 0.25
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 0.06
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.06
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.00
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: 0.31
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.50 z: 0.19
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: -0.13
+qW: -0.0280 qX: -0.1122 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.25 z: -0.06
+qW: -0.0282 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.62 z: -0.19
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: -0.06
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.06 z: 0.00
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: -0.06
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.50 z: -0.19
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: 0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: 0.00
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.37 z: 0.00
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.31 z: -0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.25 z: 0.19
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.06
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.06 z: 0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.44 z: 0.19
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: 0.25
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: -0.25
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.00
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: -0.13
+qW: -0.0283 qX: -0.1124 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.75 z: -0.37
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.13
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.00
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.19 z: -0.06
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.13 z: -0.06
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: 0.06
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.69
+qW: -0.0285 qX: -0.1130 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.25 z: -0.69
+qW: -0.0285 qX: -0.1129 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.62 z: 0.19
+qW: -0.0286 qX: -0.1127 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.44 z: -0.31
+qW: -0.0286 qX: -0.1128 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.37 z: -0.31
+qW: -0.0287 qX: -0.1126 qY: -0.7897 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.69 z: 0.62
+qW: -0.0287 qX: -0.1127 qY: -0.7897 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.75 z: -0.06
+qW: -0.0286 qX: -0.1128 qY: -0.7899 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.00 z: -1.00
+qW: -0.0288 qX: -0.1125 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.37 z: 0.00
+qW: -0.0291 qX: -0.1121 qY: -0.7897 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.13 z: 0.94
+qW: -0.0286 qX: -0.1125 qY: -0.7899 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.19 z: -0.31
+qW: -0.0286 qX: -0.1127 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.19 z: -1.19
+qW: -0.0292 qX: -0.1118 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 1.12
+qW: -0.0290 qX: -0.1121 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.44 z: -0.06
+qW: -0.0286 qX: -0.1125 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.13 z: -0.94
+qW: -0.0291 qX: -0.1119 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.19 z: 0.50
+qW: -0.0291 qX: -0.1119 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.13 z: 0.06
+qW: -0.0291 qX: -0.1119 qY: -0.7899 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: -1.31
+qW: -0.0295 qX: -0.1114 qY: -0.7900 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.37 z: -1.12
+qW: -0.0303 qX: -0.1104 qY: -0.7902 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.06 z: 0.50
+qW: -0.0305 qX: -0.1104 qY: -0.7902 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.19
+qW: -0.0302 qX: -0.1108 qY: -0.7901 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.31 z: -0.50
+qW: -0.0302 qX: -0.1105 qY: -0.7902 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.94 y: 59.63 z: 25.94
+qW: -0.0148 qX: -0.0987 qY: -0.7834 qZ: -0.6134		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 12.56 z: -6.44
+qW: -0.0219 qX: -0.1060 qY: -0.7844 qZ: -0.6108		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.62 y: 6.19 z: -5.44
+qW: -0.0217 qX: -0.0974 qY: -0.7828 qZ: -0.6143		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.06 y: 1.81 z: 4.94
+qW: -0.0219 qX: -0.0991 qY: -0.7827 qZ: -0.6141		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 23.12 y: -13.88 z: 4.69
+qW: -0.0222 qX: -0.1062 qY: -0.7877 qZ: -0.6065		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -77.44 y: 23.75 z: 18.69
+qW: -0.0228 qX: -0.1057 qY: -0.7899 qZ: -0.6036		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 3.87 z: -1.69
+qW: -0.0292 qX: -0.1136 qY: -0.7903 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 11.56 z: -3.19
+qW: -0.0300 qX: -0.1135 qY: -0.7907 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.81 y: 1.06 z: 0.50
+qW: -0.0309 qX: -0.1155 qY: -0.7908 qZ: -0.6003		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 1.62 z: -0.31
+qW: -0.0305 qX: -0.1166 qY: -0.7908 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: -1.00 z: -0.56
+qW: -0.0301 qX: -0.1157 qY: -0.7915 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.37 y: 0.50 z: 0.75
+qW: -0.0298 qX: -0.1155 qY: -0.7910 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: -0.75 z: 0.50
+qW: -0.0299 qX: -0.1166 qY: -0.7910 qZ: -0.5999		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.44 z: 0.37
+qW: -0.0300 qX: -0.1169 qY: -0.7910 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: 0.13 z: -0.19
+qW: -0.0298 qX: -0.1171 qY: -0.7912 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -1.12
+qW: -0.0302 qX: -0.1169 qY: -0.7913 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 1.69 z: -0.81
+qW: -0.0300 qX: -0.1166 qY: -0.7916 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.31 y: -3.75 z: 0.19
+qW: -0.0307 qX: -0.1170 qY: -0.7913 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.00 y: -1.69 z: -0.06
+qW: -0.0340 qX: -0.1199 qY: -0.7902 qZ: -0.6001		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: -0.88 z: -0.44
+qW: -0.0342 qX: -0.1201 qY: -0.7911 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.50 z: -0.19
+qW: -0.0344 qX: -0.1202 qY: -0.7911 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.56 z: 0.37
+qW: -0.0345 qX: -0.1202 qY: -0.7911 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.50 z: 0.81
+qW: -0.0343 qX: -0.1206 qY: -0.7908 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.44 z: 0.44
+qW: -0.0344 qX: -0.1211 qY: -0.7907 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.69 z: -0.19
+qW: -0.0346 qX: -0.1212 qY: -0.7903 qZ: -0.5996		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.94 y: 0.06 z: 0.50
+qW: -0.0347 qX: -0.1213 qY: -0.7910 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: -0.44
+qW: -0.0345 qX: -0.1213 qY: -0.7913 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.06 z: -0.62
+qW: -0.0350 qX: -0.1206 qY: -0.7913 qZ: -0.5985		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -1.25 z: 1.62
+qW: -0.0350 qX: -0.1209 qY: -0.7912 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: -0.69 z: 0.94
+qW: -0.0342 qX: -0.1223 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.44 z: -0.37
+qW: -0.0337 qX: -0.1219 qY: -0.7917 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: -1.06 z: 0.62
+qW: -0.0340 qX: -0.1221 qY: -0.7912 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.25 z: 1.25
+qW: -0.0334 qX: -0.1231 qY: -0.7910 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.00 z: -0.75
+qW: -0.0334 qX: -0.1234 qY: -0.7909 qZ: -0.5985		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 1.12 z: -1.56
+qW: -0.0341 qX: -0.1223 qY: -0.7910 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.25 z: -0.25
+qW: -0.0341 qX: -0.1216 qY: -0.7914 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: 0.81 z: 0.25
+qW: -0.0342 qX: -0.1216 qY: -0.7911 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.00 y: -0.13 z: 0.75
+qW: -0.0339 qX: -0.1221 qY: -0.7908 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.56 z: -1.25
+qW: -0.0341 qX: -0.1218 qY: -0.7915 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.37 z: -0.13
+qW: -0.0345 qX: -0.1212 qY: -0.7914 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.13 z: 1.25
+qW: -0.0340 qX: -0.1219 qY: -0.7913 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: -0.81
+qW: -0.0340 qX: -0.1219 qY: -0.7913 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: -0.50
+qW: -0.0344 qX: -0.1213 qY: -0.7913 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.06 z: 0.19
+qW: -0.0342 qX: -0.1213 qY: -0.7913 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: -0.19 z: 1.25
+qW: -0.0341 qX: -0.1219 qY: -0.7911 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: -0.88
+qW: -0.0339 qX: -0.1221 qY: -0.7914 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.37 y: 0.06 z: -1.19
+qW: -0.0348 qX: -0.1212 qY: -0.7908 qZ: -0.5990		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.75 y: -0.06 z: -0.13
+qW: -0.0350 qX: -0.1211 qY: -0.7911 qZ: -0.5985		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 0.13 z: 1.12
+qW: -0.0341 qX: -0.1219 qY: -0.7924 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.50 y: -0.88 z: -0.50
+qW: -0.0344 qX: -0.1219 qY: -0.7913 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.00 y: 0.31 z: 0.13
+qW: -0.0347 qX: -0.1217 qY: -0.7906 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.94 y: 0.19 z: 0.75
+qW: -0.0342 qX: -0.1218 qY: -0.7922 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: 0.00 z: 0.50
+qW: -0.0339 qX: -0.1221 qY: -0.7925 qZ: -0.5965		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: 0.69 z: -1.69
+qW: -0.0343 qX: -0.1216 qY: -0.7915 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.81 y: -0.31 z: -1.06
+qW: -0.0352 qX: -0.1205 qY: -0.7919 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.19 z: 1.37
+qW: -0.0345 qX: -0.1207 qY: -0.7928 qZ: -0.5963		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.75 y: -0.75 z: 0.75
+qW: -0.0341 qX: -0.1218 qY: -0.7920 qZ: -0.5973		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.62 y: -0.44 z: -0.31
+qW: -0.0347 qX: -0.1222 qY: -0.7914 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.37 y: -0.44 z: 0.37
+qW: -0.0343 qX: -0.1221 qY: -0.7927 qZ: -0.5963		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.75 y: -0.13 z: 0.19
+qW: -0.0343 qX: -0.1220 qY: -0.7921 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.19 z: -1.31
+qW: -0.0347 qX: -0.1212 qY: -0.7919 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.87 y: 0.62 z: -0.56
+qW: -0.0349 qX: -0.1203 qY: -0.7924 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.25 z: 0.19
+qW: -0.0348 qX: -0.1203 qY: -0.7928 qZ: -0.5964		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: 0.31 z: 0.19
+qW: -0.0349 qX: -0.1203 qY: -0.7921 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.56 y: 0.25 z: -0.88
+qW: -0.0350 qX: -0.1201 qY: -0.7924 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.12 y: -0.37 z: 0.56
+qW: -0.0353 qX: -0.1198 qY: -0.7924 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.69 y: 0.13 z: 1.37
+qW: -0.0352 qX: -0.1210 qY: -0.7910 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.50 y: 0.50 z: -0.75
+qW: -0.0343 qX: -0.1215 qY: -0.7910 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.56 z: -1.00
+qW: -0.0342 qX: -0.1205 qY: -0.7917 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: 0.00 z: -0.25
+qW: -0.0344 qX: -0.1205 qY: -0.7911 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.56 z: -0.94
+qW: -0.0343 qX: -0.1201 qY: -0.7908 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.37 z: -0.06
+qW: -0.0342 qX: -0.1197 qY: -0.7910 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.13 z: 0.56
+qW: -0.0342 qX: -0.1199 qY: -0.7909 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 0.44 z: -0.81
+qW: -0.0339 qX: -0.1201 qY: -0.7908 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.75 z: -0.75
+qW: -0.0343 qX: -0.1196 qY: -0.7908 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: 1.00
+qW: -0.0341 qX: -0.1199 qY: -0.7907 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.88
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.50 z: -0.56
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.19 z: 0.13
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: -0.31
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: 0.06
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: 0.25
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.31 z: -0.06
+qW: -0.0333 qX: -0.1209 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: -0.56
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.19 z: -0.25
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: -0.13
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: 0.25
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.25 z: -0.25
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: -0.25
+qW: -0.0334 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: 0.44
+qW: -0.0334 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.06 z: -0.25
+qW: -0.0334 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.06 z: 0.00
+qW: -0.0334 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.19 z: 0.00
+qW: -0.0334 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 1.19 z: 0.44
+qW: -0.0333 qX: -0.1208 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: -0.62
+qW: -0.0333 qX: -0.1207 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.44 z: 0.31
+qW: -0.0333 qX: -0.1206 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.56
+qW: -0.0333 qX: -0.1206 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.19 z: 0.06
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: 0.25
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.13 z: -0.37
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: -0.19
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.25 z: -0.19
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.13 z: -0.25
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: 0.19
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.25
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.13 z: 0.25
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: -0.06
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.00 z: -0.06
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.13
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.31 z: 0.00
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -0.06
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.19
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.13
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.06 z: -0.19
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: -0.25
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.06
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: 0.00
+qW: -0.0334 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.19
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.13 z: -0.13
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: 0.13
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.00
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.19
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 0.06
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -0.19
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.13 z: 0.31
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.25 z: -0.06
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.37
+qW: -0.0335 qX: -0.1204 qY: -0.7906 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.19 z: 0.94
+qW: -0.0334 qX: -0.1210 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.06
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.19 z: -0.25
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.19 z: 0.19
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.19 z: -0.06
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: 0.00
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.06 z: 0.00
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: 0.13
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.19 z: -0.31
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.00
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.00 z: -0.19
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: 0.00
+qW: -0.0336 qX: -0.1211 qY: -0.7905 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -19.06 y: 28.62 z: -6.31
+qW: -0.0262 qX: -0.1096 qY: -0.7840 qZ: -0.6105		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 22.75 z: -0.44
+qW: -0.0231 qX: -0.1115 qY: -0.7849 qZ: -0.6090		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -7.50 y: 10.81 z: 0.62
+qW: -0.0219 qX: -0.1104 qY: -0.7828 qZ: -0.6120		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 7.37 z: 3.06
+qW: -0.0142 qX: -0.1063 qY: -0.7820 qZ: -0.6139		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.25 y: 0.00 z: 0.31
+qW: -0.0110 qX: -0.1058 qY: -0.7836 qZ: -0.6121		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -10.69 z: -11.06
+qW: -0.0173 qX: -0.1064 qY: -0.7898 qZ: -0.6039		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.25 y: -37.69 z: 6.56
+qW: -0.0213 qX: -0.1093 qY: -0.7914 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -15.63 z: 0.94
+qW: -0.0245 qX: -0.1111 qY: -0.7925 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -5.06 z: 1.06
+qW: -0.0237 qX: -0.1093 qY: -0.7926 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: -1.56 z: 0.94
+qW: -0.0239 qX: -0.1104 qY: -0.7932 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.50 z: -0.25
+qW: -0.0235 qX: -0.1111 qY: -0.7930 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -0.31 z: -0.44
+qW: -0.0241 qX: -0.1113 qY: -0.7928 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.56 z: 0.81
+qW: -0.0240 qX: -0.1118 qY: -0.7923 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.88 z: -0.50
+qW: -0.0237 qX: -0.1121 qY: -0.7925 qZ: -0.5990		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.06 z: -0.25
+qW: -0.0240 qX: -0.1124 qY: -0.7925 qZ: -0.5990		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.50 z: -0.06
+qW: -0.0239 qX: -0.1125 qY: -0.7924 qZ: -0.5990		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.25 z: -0.06
+qW: -0.0240 qX: -0.1129 qY: -0.7924 qZ: -0.5989		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.31 z: -0.13
+qW: -0.0237 qX: -0.1128 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: -0.56
+qW: -0.0237 qX: -0.1130 qY: -0.7923 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.75 z: -0.19
+qW: -0.0237 qX: -0.1129 qY: -0.7923 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.06 z: 0.81
+qW: -0.0242 qX: -0.1134 qY: -0.7922 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: -0.25 z: -0.13
+qW: -0.0241 qX: -0.1135 qY: -0.7922 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -1.19 z: 0.25
+qW: -0.0247 qX: -0.1139 qY: -0.7921 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.75 z: 0.13
+qW: -0.0249 qX: -0.1140 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 1.00 z: -1.00
+qW: -0.0250 qX: -0.1136 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.44 z: -0.37
+qW: -0.0255 qX: -0.1133 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.62 z: 0.19
+qW: -0.0258 qX: -0.1135 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.25 z: -0.37
+qW: -0.0258 qX: -0.1135 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 2.94 z: -1.69
+qW: -0.0256 qX: -0.1128 qY: -0.7915 qZ: -0.6001		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: -4.81 z: 0.37
+qW: -0.0274 qX: -0.1130 qY: -0.7910 qZ: -0.6006		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.06 z: -0.50
+qW: -0.0294 qX: -0.1143 qY: -0.7908 qZ: -0.6005		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -2.06 z: 1.44
+qW: -0.0295 qX: -0.1157 qY: -0.7907 qZ: -0.6004		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -2.00 z: -0.37
+qW: -0.0297 qX: -0.1160 qY: -0.7905 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.31 z: 0.00
+qW: -0.0300 qX: -0.1164 qY: -0.7904 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -0.69 z: 0.94
+qW: -0.0300 qX: -0.1171 qY: -0.7902 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 6.44 z: 0.37
+qW: -0.0276 qX: -0.1161 qY: -0.7899 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: -1.69 z: 0.62
+qW: -0.0266 qX: -0.1162 qY: -0.7900 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -1.31 z: -0.25
+qW: -0.0264 qX: -0.1164 qY: -0.7903 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -1.37 z: -1.94
+qW: -0.0287 qX: -0.1174 qY: -0.7900 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.44 z: -0.62
+qW: -0.0300 qX: -0.1166 qY: -0.7900 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.37 z: 0.44
+qW: -0.0297 qX: -0.1165 qY: -0.7900 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 1.44 z: -0.75
+qW: -0.0298 qX: -0.1168 qY: -0.7900 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.44 z: 0.06
+qW: -0.0300 qX: -0.1168 qY: -0.7903 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.62 z: 1.31
+qW: -0.0296 qX: -0.1177 qY: -0.7899 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.25 z: 0.00
+qW: -0.0294 qX: -0.1183 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.62
+qW: -0.0297 qX: -0.1181 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.56 z: 0.44
+qW: -0.0297 qX: -0.1181 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.37 z: 0.56
+qW: -0.0295 qX: -0.1183 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.94 z: -0.13
+qW: -0.0296 qX: -0.1183 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.25 z: -1.50
+qW: -0.0300 qX: -0.1176 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.69 z: -0.13
+qW: -0.0306 qX: -0.1170 qY: -0.7899 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.19 z: 1.37
+qW: -0.0302 qX: -0.1176 qY: -0.7897 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.56 z: -0.13
+qW: -0.0299 qX: -0.1180 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.31 z: -0.81
+qW: -0.0302 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.25 z: 0.00
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.00
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.00 z: -0.50
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: -0.25
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.06 z: -0.19
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.37 z: -0.06
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.25 z: 0.37
+qW: -0.0303 qX: -0.1177 qY: -0.7896 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.06 z: -0.19
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.19 z: -0.06
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: -0.31
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.25 z: 0.31
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.25 z: -0.13
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: -0.06
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.44 z: 0.19
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.50 z: -0.37
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: -0.19
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: 0.19
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.13 z: -0.37
+qW: -0.0303 qX: -0.1177 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.37
+qW: -0.0304 qX: -0.1175 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.31 z: 0.31
+qW: -0.0304 qX: -0.1175 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.06 z: -0.19
+qW: -0.0304 qX: -0.1175 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.06 z: -0.31
+qW: -0.0304 qX: -0.1174 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.31 z: -0.62
+qW: -0.0305 qX: -0.1174 qY: -0.7898 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.25 z: -2.12
+qW: -0.0310 qX: -0.1160 qY: -0.7904 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.94 y: -1.44 z: 0.56
+qW: -0.0320 qX: -0.1156 qY: -0.7896 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: -0.13 z: 3.62
+qW: -0.0311 qX: -0.1177 qY: -0.7882 qZ: -0.6033		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.62 y: -0.62 z: -0.37
+qW: -0.0291 qX: -0.1195 qY: -0.7889 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.44 z: -2.37
+qW: -0.0295 qX: -0.1181 qY: -0.7897 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.13 z: -0.06
+qW: -0.0299 qX: -0.1174 qY: -0.7895 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.25 z: -0.06
+qW: -0.0297 qX: -0.1176 qY: -0.7892 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: -0.44
+qW: -0.0295 qX: -0.1177 qY: -0.7892 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.31 z: -1.12
+qW: -0.0297 qX: -0.1173 qY: -0.7894 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.37 z: 0.25
+qW: -0.0297 qX: -0.1172 qY: -0.7897 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: 0.37 z: -0.19
+qW: -0.0295 qX: -0.1174 qY: -0.7894 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: -1.00
+qW: -0.0297 qX: -0.1171 qY: -0.7892 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.56 z: -0.19
+qW: -0.0297 qX: -0.1169 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: -0.13 z: 0.31
+qW: -0.0297 qX: -0.1169 qY: -0.7891 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.00 z: -0.94
+qW: -0.0298 qX: -0.1167 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.31 z: -0.19
+qW: -0.0299 qX: -0.1166 qY: -0.7894 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.31 z: -0.50
+qW: -0.0300 qX: -0.1166 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: 0.19
+qW: -0.0300 qX: -0.1166 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.44 z: -0.44
+qW: -0.0300 qX: -0.1166 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: -0.31
+qW: -0.0301 qX: -0.1165 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.13 z: 0.44
+qW: -0.0301 qX: -0.1165 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.37 z: -0.37
+qW: -0.0297 qX: -0.1166 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.19 z: 0.31
+qW: -0.0296 qX: -0.1165 qY: -0.7894 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: 0.75
+qW: -0.0290 qX: -0.1172 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.37 z: -1.00
+qW: -0.0289 qX: -0.1172 qY: -0.7894 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.37 z: -0.19
+qW: -0.0290 qX: -0.1168 qY: -0.7894 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.00
+qW: -0.0288 qX: -0.1169 qY: -0.7895 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: -0.25
+qW: -0.0286 qX: -0.1171 qY: -0.7895 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 0.31 z: 0.13
+qW: -0.0285 qX: -0.1172 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: 0.31 z: -1.00
+qW: -0.0284 qX: -0.1172 qY: -0.7896 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.19 z: -0.25
+qW: -0.0286 qX: -0.1169 qY: -0.7900 qZ: -0.6012		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.37 z: 0.75
+qW: -0.0286 qX: -0.1170 qY: -0.7894 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.37 z: -0.56
+qW: -0.0284 qX: -0.1168 qY: -0.7887 qZ: -0.6029		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: -0.62
+qW: -0.0286 qX: -0.1165 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: 0.19
+qW: -0.0286 qX: -0.1165 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.00 z: -0.62
+qW: -0.0286 qX: -0.1164 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.19 z: -0.19
+qW: -0.0287 qX: -0.1162 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.37 z: 0.19
+qW: -0.0287 qX: -0.1162 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.13 z: -0.62
+qW: -0.0288 qX: -0.1160 qY: -0.7891 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.06
+qW: -0.0289 qX: -0.1158 qY: -0.7891 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: -0.37
+qW: -0.0289 qX: -0.1158 qY: -0.7891 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: -0.31
+qW: -0.0291 qX: -0.1156 qY: -0.7891 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.19 z: 0.37
+qW: -0.0291 qX: -0.1157 qY: -0.7891 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: 1.00
+qW: -0.0287 qX: -0.1162 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.75 z: -0.50
+qW: -0.0283 qX: -0.1163 qY: -0.7890 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.19 z: -0.44
+qW: -0.0283 qX: -0.1166 qY: -0.7891 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.44
+qW: -0.0281 qX: -0.1167 qY: -0.7891 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.06 z: -0.50
+qW: -0.0280 qX: -0.1169 qY: -0.7892 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.31 z: -0.06
+qW: -0.0278 qX: -0.1169 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.56 z: 0.31
+qW: -0.0276 qX: -0.1171 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.37 z: 0.25
+qW: -0.0275 qX: -0.1172 qY: -0.7892 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.19 z: -0.06
+qW: -0.0274 qX: -0.1173 qY: -0.7893 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.81 z: 0.44
+qW: -0.0273 qX: -0.1175 qY: -0.7895 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.13 z: 0.37
+qW: -0.0271 qX: -0.1176 qY: -0.7895 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: 0.00 z: -0.62
+qW: -0.0272 qX: -0.1176 qY: -0.7894 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.19 z: 0.31
+qW: -0.0276 qX: -0.1176 qY: -0.7886 qZ: -0.6030		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 0.62 z: 0.00
+qW: -0.0273 qX: -0.1176 qY: -0.7888 qZ: -0.6027		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.00 z: -0.56
+qW: -0.0273 qX: -0.1174 qY: -0.7891 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.13 z: 0.25
+qW: -0.0274 qX: -0.1176 qY: -0.7891 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: -0.25
+qW: -0.0274 qX: -0.1176 qY: -0.7891 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.69 z: 0.06
+qW: -0.0274 qX: -0.1176 qY: -0.7890 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.44 z: -0.44
+qW: -0.0276 qX: -0.1177 qY: -0.7890 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: 0.50
+qW: -0.0276 qX: -0.1177 qY: -0.7890 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.81
+qW: -0.0272 qX: -0.1183 qY: -0.7889 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 8.69 z: 9.13
+qW: -0.0159 qX: -0.1075 qY: -0.7843 qZ: -0.6108		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -4.69 y: -4.62 z: -2.25
+qW: -0.0160 qX: -0.1089 qY: -0.7816 qZ: -0.6141		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -5.75 y: 0.31 z: -2.81
+qW: -0.0156 qX: -0.1052 qY: -0.7780 qZ: -0.6193		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.50 y: -0.31 z: -3.00
+qW: -0.0199 qX: -0.1059 qY: -0.7760 qZ: -0.6215		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.62 y: 2.75 z: -4.00
+qW: -0.0199 qX: -0.1024 qY: -0.7774 qZ: -0.6204		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 7.69 y: -20.37 z: -10.56
+qW: -0.0296 qX: -0.1033 qY: -0.7846 qZ: -0.6107		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.25 y: -37.44 z: 5.37
+qW: -0.0314 qX: -0.1052 qY: -0.7854 qZ: -0.6091		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -15.56 z: 5.56
+qW: -0.0358 qX: -0.1128 qY: -0.7861 qZ: -0.6067		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: -6.06 z: 3.69
+qW: -0.0334 qX: -0.1132 qY: -0.7861 qZ: -0.6067		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.94 y: 0.37 z: 0.37
+qW: -0.0328 qX: -0.1147 qY: -0.7879 qZ: -0.6041		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 1.06 z: 0.19
+qW: -0.0329 qX: -0.1153 qY: -0.7879 qZ: -0.6040		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.44 z: 0.81
+qW: -0.0328 qX: -0.1154 qY: -0.7878 qZ: -0.6041		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 1.19 z: 1.44
+qW: -0.0325 qX: -0.1172 qY: -0.7878 qZ: -0.6038		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -1.12 z: -0.56
+qW: -0.0323 qX: -0.1179 qY: -0.7880 qZ: -0.6034		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.31 z: 0.69
+qW: -0.0335 qX: -0.1186 qY: -0.7876 qZ: -0.6038		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: -0.81 z: 1.50
+qW: -0.0325 qX: -0.1196 qY: -0.7878 qZ: -0.6034		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.06 z: -0.19
+qW: -0.0327 qX: -0.1205 qY: -0.7881 qZ: -0.6027		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: -0.62
+qW: -0.0326 qX: -0.1196 qY: -0.7881 qZ: -0.6029		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: 0.37 z: 0.88
+qW: -0.0327 qX: -0.1202 qY: -0.7878 qZ: -0.6032		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.75 y: 0.06 z: -0.13
+qW: -0.0323 qX: -0.1204 qY: -0.7879 qZ: -0.6031		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.13 z: -0.44
+qW: -0.0325 qX: -0.1205 qY: -0.7886 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.62 z: 0.62
+qW: -0.0324 qX: -0.1206 qY: -0.7883 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.25 z: 0.00
+qW: -0.0325 qX: -0.1209 qY: -0.7883 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.81 z: 0.13
+qW: -0.0328 qX: -0.1211 qY: -0.7883 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.37 z: 0.13
+qW: -0.0328 qX: -0.1212 qY: -0.7883 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.50 z: -0.13
+qW: -0.0330 qX: -0.1212 qY: -0.7883 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.25 z: 0.06
+qW: -0.0330 qX: -0.1213 qY: -0.7886 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.13 z: 0.31
+qW: -0.0330 qX: -0.1213 qY: -0.7886 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.06 z: -0.06
+qW: -0.0330 qX: -0.1213 qY: -0.7885 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.44 z: 0.00
+qW: -0.0330 qX: -0.1213 qY: -0.7885 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.31 z: -0.19
+qW: -0.0330 qX: -0.1213 qY: -0.7886 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.44 z: 0.19
+qW: -0.0330 qX: -0.1213 qY: -0.7887 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.31 z: 0.13
+qW: -0.0330 qX: -0.1213 qY: -0.7887 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.56 z: -0.19
+qW: -0.0330 qX: -0.1213 qY: -0.7887 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.44 z: -0.19
+qW: -0.0330 qX: -0.1213 qY: -0.7886 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.44 z: 0.44
+qW: -0.0331 qX: -0.1213 qY: -0.7886 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: -0.37 z: 0.00
+qW: -0.0332 qX: -0.1215 qY: -0.7888 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.31 z: 0.75
+qW: -0.0330 qX: -0.1218 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.00 z: -0.44
+qW: -0.0330 qX: -0.1217 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: 0.19
+qW: -0.0330 qX: -0.1217 qY: -0.7888 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.13 z: 0.19
+qW: -0.0330 qX: -0.1218 qY: -0.7888 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.44 z: -0.44
+qW: -0.0330 qX: -0.1218 qY: -0.7888 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.06 z: 0.13
+qW: -0.0330 qX: -0.1218 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: -0.19 z: 0.00
+qW: -0.0330 qX: -0.1218 qY: -0.7890 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.62 z: 0.19
+qW: -0.0330 qX: -0.1218 qY: -0.7891 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.37
+qW: -0.0330 qX: -0.1218 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.25 z: -0.75
+qW: -0.0332 qX: -0.1216 qY: -0.7890 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.44 z: -0.19
+qW: -0.0334 qX: -0.1213 qY: -0.7889 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.56 y: 0.56 z: 0.94
+qW: -0.0333 qX: -0.1220 qY: -0.7889 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 1.44 z: 0.25
+qW: -0.0327 qX: -0.1223 qY: -0.7891 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.94 y: 0.62 z: -1.12
+qW: -0.0330 qX: -0.1220 qY: -0.7878 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.37 y: 3.25 z: -3.75
+qW: -0.0335 qX: -0.1201 qY: -0.7886 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -2.56 z: 1.44
+qW: -0.0350 qX: -0.1193 qY: -0.7892 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: -1.06 z: 3.62
+qW: -0.0342 qX: -0.1213 qY: -0.7883 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 1.37 z: 0.06
+qW: -0.0323 qX: -0.1231 qY: -0.7882 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -1.62 z: -3.56
+qW: -0.0336 qX: -0.1215 qY: -0.7886 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.37 y: -0.50 z: 0.56
+qW: -0.0341 qX: -0.1203 qY: -0.7892 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -1.06 z: 1.62
+qW: -0.0333 qX: -0.1218 qY: -0.7893 qZ: -0.6009		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.31 z: -0.62
+qW: -0.0334 qX: -0.1221 qY: -0.7884 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.81 y: 0.37 z: 0.81
+qW: -0.0334 qX: -0.1220 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.13 z: 1.37
+qW: -0.0325 qX: -0.1230 qY: -0.7891 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: -0.25 z: -2.25
+qW: -0.0329 qX: -0.1226 qY: -0.7884 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: -0.06 z: -0.81
+qW: -0.0339 qX: -0.1213 qY: -0.7888 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.25 z: 1.87
+qW: -0.0333 qX: -0.1219 qY: -0.7889 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.50 z: 0.25
+qW: -0.0327 qX: -0.1228 qY: -0.7885 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.00 z: -0.69
+qW: -0.0330 qX: -0.1224 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.06 z: 0.56
+qW: -0.0330 qX: -0.1224 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: -0.50
+qW: -0.0330 qX: -0.1224 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: 0.25
+qW: -0.0331 qX: -0.1223 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.25 z: 0.31
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.19 z: -0.25
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.13 z: 0.25
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.19 z: -0.06
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.44 z: 0.06
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.13 z: -0.25
+qW: -0.0330 qX: -0.1225 qY: -0.7885 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.31 z: -0.25
+qW: -0.0329 qX: -0.1224 qY: -0.7885 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.94 y: -0.13 z: -0.25
+qW: -0.0328 qX: -0.1226 qY: -0.7892 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 0.19 z: 0.75
+qW: -0.0326 qX: -0.1225 qY: -0.7896 qZ: -0.6004		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.50 y: -0.06 z: -0.13
+qW: -0.0330 qX: -0.1232 qY: -0.7887 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.00 y: 0.75 z: 0.06
+qW: -0.0330 qX: -0.1233 qY: -0.7889 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: 0.69
+qW: -0.0323 qX: -0.1236 qY: -0.7894 qZ: -0.6004		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: -0.62 z: -0.25
+qW: -0.0325 qX: -0.1237 qY: -0.7887 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: 0.00
+qW: -0.0325 qX: -0.1237 qY: -0.7886 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.56 y: -0.25 z: 1.00
+qW: -0.0323 qX: -0.1240 qY: -0.7880 qZ: -0.6022		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.25 z: -0.13
+qW: -0.0322 qX: -0.1243 qY: -0.7876 qZ: -0.6026		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.25 y: -0.19 z: -1.06
+qW: -0.0325 qX: -0.1239 qY: -0.7881 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.13 z: 0.44
+qW: -0.0325 qX: -0.1236 qY: -0.7886 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: -0.06
+qW: -0.0324 qX: -0.1237 qY: -0.7886 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.37 z: -0.19
+qW: -0.0324 qX: -0.1237 qY: -0.7886 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: 0.25
+qW: -0.0325 qX: -0.1237 qY: -0.7886 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.19 z: 0.25
+qW: -0.0324 qX: -0.1237 qY: -0.7886 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.69 z: 0.06
+qW: -0.0323 qX: -0.1236 qY: -0.7888 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.13 z: -0.31
+qW: -0.0323 qX: -0.1237 qY: -0.7888 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.62 z: 0.13
+qW: -0.0323 qX: -0.1237 qY: -0.7889 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.25 z: -0.13
+qW: -0.0323 qX: -0.1237 qY: -0.7888 qZ: -0.6012		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.75 z: 0.06
+qW: -0.0327 qX: -0.1238 qY: -0.7883 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.37 z: 0.00
+qW: -0.0327 qX: -0.1238 qY: -0.7881 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.56 z: -0.75
+qW: -0.0327 qX: -0.1238 qY: -0.7883 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.37 z: 0.06
+qW: -0.0328 qX: -0.1236 qY: -0.7883 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.94 z: 0.88
+qW: -0.0327 qX: -0.1238 qY: -0.7881 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.25 z: 0.37
+qW: -0.0323 qX: -0.1243 qY: -0.7881 qZ: -0.6020		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: -0.56
+qW: -0.0325 qX: -0.1244 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.37 z: 0.13
+qW: -0.0325 qX: -0.1245 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.06 z: -0.31
+qW: -0.0325 qX: -0.1245 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: 0.19
+qW: -0.0325 qX: -0.1245 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: -0.06
+qW: -0.0325 qX: -0.1245 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: 0.62
+qW: -0.0325 qX: -0.1245 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.31 z: 0.37
+qW: -0.0322 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.06 z: -0.44
+qW: -0.0322 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.25 z: -0.56
+qW: -0.0323 qX: -0.1247 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.06 z: -0.13
+qW: -0.0323 qX: -0.1247 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.31 z: -0.25
+qW: -0.0323 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: -0.06
+qW: -0.0323 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: -0.06
+qW: -0.0323 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: -0.13
+qW: -0.0323 qX: -0.1248 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.50 z: -0.25
+qW: -0.0323 qX: -0.1247 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.00 z: -0.06
+qW: -0.0323 qX: -0.1247 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: 0.13
+qW: -0.0323 qX: -0.1247 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.00 z: -0.44
+qW: -0.0322 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.31 z: 0.00
+qW: -0.0322 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: 0.00
+qW: -0.0322 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.50 z: -0.44
+qW: -0.0322 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.50 z: 0.44
+qW: -0.0322 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: 0.88
+qW: -0.0317 qX: -0.1251 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.13 z: -1.56
+qW: -0.0319 qX: -0.1246 qY: -0.7881 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.44 z: -0.13
+qW: -0.0323 qX: -0.1238 qY: -0.7881 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.69 y: 0.44 z: 0.50
+qW: -0.0319 qX: -0.1240 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -0.37 z: -0.06
+qW: -0.0319 qX: -0.1239 qY: -0.7885 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.00 y: 0.25 z: -0.13
+qW: -0.0319 qX: -0.1239 qY: -0.7881 qZ: -0.6021		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.13
+qW: -0.0317 qX: -0.1238 qY: -0.7887 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.62 z: 0.25
+qW: -0.0318 qX: -0.1239 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.06 z: -0.37
+qW: -0.0319 qX: -0.1238 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.31 z: 0.13
+qW: -0.0317 qX: -0.1238 qY: -0.7887 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.00 z: -0.25
+qW: -0.0317 qX: -0.1238 qY: -0.7885 qZ: -0.6017		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.25 z: -0.19
+qW: -0.0317 qX: -0.1238 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: 0.06
+qW: -0.0317 qX: -0.1238 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.75 z: 0.00
+qW: -0.0314 qX: -0.1235 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -1.19 z: 0.31
+qW: -0.0313 qX: -0.1235 qY: -0.7886 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.31 z: 0.19
+qW: -0.0317 qX: -0.1237 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.25 z: -0.25
+qW: -0.0317 qX: -0.1237 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.00 z: 0.37
+qW: -0.0317 qX: -0.1238 qY: -0.7885 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 5.25 y: 23.69 z: -5.69
+qW: -0.0232 qX: -0.1113 qY: -0.7839 qZ: -0.6104		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -7.31 y: 22.19 z: 0.50
+qW: -0.0087 qX: -0.0999 qY: -0.7841 qZ: -0.6125		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -7.12 y: 10.44 z: -3.19
+qW: -0.0078 qX: -0.0947 qY: -0.7821 qZ: -0.6158		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.00 y: -7.06 z: 5.87
+qW: -0.0077 qX: -0.0963 qY: -0.7786 qZ: -0.6201		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.31 y: -2.62 z: 2.56
+qW: -0.0067 qX: -0.1007 qY: -0.7777 qZ: -0.6204		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.25 y: -19.62 z: -17.44
+qW: -0.0124 qX: -0.1021 qY: -0.7850 qZ: -0.6108		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 28.44 y: -35.75 z: -1.00
+qW: -0.0164 qX: -0.1029 qY: -0.7867 qZ: -0.6085		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.00 y: -47.31 z: 7.87
+qW: -0.0254 qX: -0.1100 qY: -0.7875 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -6.75 z: 3.31
+qW: -0.0231 qX: -0.1083 qY: -0.7878 qZ: -0.6058		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.19 y: -1.06 z: 2.44
+qW: -0.0221 qX: -0.1109 qY: -0.7889 qZ: -0.6041		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 1.31 z: 0.69
+qW: -0.0210 qX: -0.1129 qY: -0.7896 qZ: -0.6029		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.69 z: -0.88
+qW: -0.0212 qX: -0.1130 qY: -0.7896 qZ: -0.6027		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.13 z: 0.19
+qW: -0.0215 qX: -0.1129 qY: -0.7895 qZ: -0.6029		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: 0.75 z: -0.06
+qW: -0.0215 qX: -0.1130 qY: -0.7896 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.69 z: 0.13
+qW: -0.0219 qX: -0.1134 qY: -0.7898 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.06 z: 0.00
+qW: -0.0214 qX: -0.1131 qY: -0.7899 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.44 z: 0.37
+qW: -0.0217 qX: -0.1135 qY: -0.7902 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.37 z: -0.44
+qW: -0.0212 qX: -0.1130 qY: -0.7903 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.31 z: 0.00
+qW: -0.0213 qX: -0.1131 qY: -0.7902 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.25 z: -0.44
+qW: -0.0207 qX: -0.1127 qY: -0.7903 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: -0.06
+qW: -0.0211 qX: -0.1130 qY: -0.7907 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: -0.50
+qW: -0.0208 qX: -0.1128 qY: -0.7907 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.62 z: -0.37
+qW: -0.0207 qX: -0.1127 qY: -0.7907 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.31 z: -0.25
+qW: -0.0204 qX: -0.1125 qY: -0.7907 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.56 z: 0.69
+qW: -0.0205 qX: -0.1129 qY: -0.7906 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: -0.19 z: 0.75
+qW: -0.0200 qX: -0.1136 qY: -0.7905 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.62 z: -0.81
+qW: -0.0203 qX: -0.1133 qY: -0.7911 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.19 z: -0.37
+qW: -0.0205 qX: -0.1128 qY: -0.7908 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 1.44 z: -1.31
+qW: -0.0204 qX: -0.1121 qY: -0.7906 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: -0.69
+qW: -0.0209 qX: -0.1112 qY: -0.7907 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.56 z: 0.00
+qW: -0.0212 qX: -0.1114 qY: -0.7908 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: -0.31
+qW: -0.0211 qX: -0.1114 qY: -0.7908 qZ: -0.6015		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.25 y: -0.37 z: -0.44
+qW: -0.0211 qX: -0.1114 qY: -0.7913 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.62 y: -0.50 z: 0.88
+qW: -0.0211 qX: -0.1116 qY: -0.7912 qZ: -0.6009		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.75 z: 0.75
+qW: -0.0208 qX: -0.1125 qY: -0.7900 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.75 y: 0.19 z: -0.56
+qW: -0.0208 qX: -0.1123 qY: -0.7904 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.69 z: 0.44
+qW: -0.0206 qX: -0.1121 qY: -0.7913 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.50 z: -1.62
+qW: -0.0212 qX: -0.1116 qY: -0.7911 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -1.00 z: -0.62
+qW: -0.0222 qX: -0.1107 qY: -0.7910 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -4.44 z: 1.25
+qW: -0.0250 qX: -0.1140 qY: -0.7902 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -2.31 z: 0.75
+qW: -0.0263 qX: -0.1158 qY: -0.7897 qZ: -0.6018		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.69 z: -0.69
+qW: -0.0262 qX: -0.1157 qY: -0.7902 qZ: -0.6012		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -1.69 z: -0.69
+qW: -0.0272 qX: -0.1150 qY: -0.7903 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.94 z: 0.13
+qW: -0.0275 qX: -0.1152 qY: -0.7903 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: 0.31
+qW: -0.0279 qX: -0.1155 qY: -0.7903 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.06 z: -0.50
+qW: -0.0279 qX: -0.1155 qY: -0.7904 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.37 z: -0.75
+qW: -0.0283 qX: -0.1149 qY: -0.7906 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.06 z: 0.13
+qW: -0.0284 qX: -0.1149 qY: -0.7906 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: 0.00
+qW: -0.0284 qX: -0.1149 qY: -0.7906 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.13 z: -1.06
+qW: -0.0286 qX: -0.1141 qY: -0.7907 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.37 z: 1.06
+qW: -0.0286 qX: -0.1144 qY: -0.7905 qZ: -0.6010		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: 0.44 z: 0.62
+qW: -0.0281 qX: -0.1150 qY: -0.7906 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -1.56 z: -0.75
+qW: -0.0284 qX: -0.1151 qY: -0.7910 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.25 z: 0.00
+qW: -0.0290 qX: -0.1153 qY: -0.7909 qZ: -0.6003		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.31 z: 0.62
+qW: -0.0287 qX: -0.1157 qY: -0.7908 qZ: -0.6003		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.37 z: -0.56
+qW: -0.0287 qX: -0.1157 qY: -0.7910 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.13 z: 0.56
+qW: -0.0286 qX: -0.1157 qY: -0.7910 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.31 z: 1.19
+qW: -0.0281 qX: -0.1166 qY: -0.7908 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.25 z: 0.06
+qW: -0.0278 qX: -0.1171 qY: -0.7909 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: -0.69
+qW: -0.0279 qX: -0.1169 qY: -0.7911 qZ: -0.5999		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 0.00 z: 0.25
+qW: -0.0280 qX: -0.1168 qY: -0.7908 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.13 z: -0.31
+qW: -0.0281 qX: -0.1168 qY: -0.7904 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 0.88 z: -0.81
+qW: -0.0283 qX: -0.1163 qY: -0.7908 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.56 z: 0.19
+qW: -0.0281 qX: -0.1160 qY: -0.7909 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: -0.13 z: -0.69
+qW: -0.0281 qX: -0.1158 qY: -0.7910 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: 0.25 z: -0.62
+qW: -0.0284 qX: -0.1151 qY: -0.7905 qZ: -0.6008		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: -0.81 z: 0.25
+qW: -0.0286 qX: -0.1152 qY: -0.7905 qZ: -0.6009		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.44
+qW: -0.0283 qX: -0.1150 qY: -0.7909 qZ: -0.6003		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 0.06 z: 0.31
+qW: -0.0284 qX: -0.1151 qY: -0.7906 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.25 z: 0.94
+qW: -0.0280 qX: -0.1154 qY: -0.7906 qZ: -0.6007		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: 0.00
+qW: -0.0276 qX: -0.1157 qY: -0.7911 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.31 z: -2.31
+qW: -0.0286 qX: -0.1146 qY: -0.7908 qZ: -0.6006		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.50 y: 0.06 z: -0.19
+qW: -0.0292 qX: -0.1137 qY: -0.7913 qZ: -0.6000		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.06 z: 0.94
+qW: -0.0287 qX: -0.1142 qY: -0.7914 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.00 z: 0.62
+qW: -0.0286 qX: -0.1150 qY: -0.7907 qZ: -0.6006		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: -0.31 z: -1.25
+qW: -0.0286 qX: -0.1145 qY: -0.7911 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: -0.69
+qW: -0.0292 qX: -0.1135 qY: -0.7915 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: 0.75
+qW: -0.0291 qX: -0.1137 qY: -0.7915 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: 0.00 z: -0.69
+qW: -0.0290 qX: -0.1137 qY: -0.7917 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.06 z: -0.94
+qW: -0.0297 qX: -0.1129 qY: -0.7919 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.56 z: 0.31
+qW: -0.0297 qX: -0.1128 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.06 z: 0.00
+qW: -0.0297 qX: -0.1128 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.44 z: -0.25
+qW: -0.0297 qX: -0.1127 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: -0.37
+qW: -0.0297 qX: -0.1127 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.31 z: 0.44
+qW: -0.0297 qX: -0.1127 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.06 z: 0.25
+qW: -0.0297 qX: -0.1127 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: -0.31
+qW: -0.0297 qX: -0.1127 qY: -0.7920 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.13 z: 0.00
+qW: -0.0298 qX: -0.1126 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.31 z: 0.00
+qW: -0.0298 qX: -0.1126 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: -0.50
+qW: -0.0299 qX: -0.1125 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: 0.19
+qW: -0.0302 qX: -0.1123 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.37 z: -0.19
+qW: -0.0302 qX: -0.1123 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.37 z: -0.69
+qW: -0.0302 qX: -0.1121 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.19
+qW: -0.0302 qX: -0.1121 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.06 z: -0.56
+qW: -0.0302 qX: -0.1121 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.06 z: -0.31
+qW: -0.0303 qX: -0.1120 qY: -0.7918 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: 0.06
+qW: -0.0304 qX: -0.1121 qY: -0.7918 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: -0.06
+qW: -0.0304 qX: -0.1121 qY: -0.7918 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.13 z: -0.31
+qW: -0.0304 qX: -0.1121 qY: -0.7918 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.50
+qW: -0.0305 qX: -0.1122 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.81 z: 0.19
+qW: -0.0300 qX: -0.1125 qY: -0.7916 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.44 z: -0.75
+qW: -0.0302 qX: -0.1123 qY: -0.7916 qZ: -0.5999		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 0.31 z: 0.25
+qW: -0.0301 qX: -0.1122 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: 0.25
+qW: -0.0299 qX: -0.1125 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.37 z: -0.37
+qW: -0.0299 qX: -0.1125 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.13 z: 0.25
+qW: -0.0299 qX: -0.1125 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: 0.06
+qW: -0.0299 qX: -0.1125 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.13 z: -0.37
+qW: -0.0299 qX: -0.1125 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.00 z: 0.13
+qW: -0.0299 qX: -0.1125 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.06 z: 0.13
+qW: -0.0299 qX: -0.1125 qY: -0.7919 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.31 z: 0.69
+qW: -0.0298 qX: -0.1127 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.25 z: 0.25
+qW: -0.0296 qX: -0.1130 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.06 z: -0.56
+qW: -0.0297 qX: -0.1129 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.25 z: -0.06
+qW: -0.0297 qX: -0.1129 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.31 z: -0.13
+qW: -0.0297 qX: -0.1129 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.06 z: 0.13
+qW: -0.0297 qX: -0.1129 qY: -0.7918 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: 0.06
+qW: -0.0297 qX: -0.1129 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.37
+qW: -0.0298 qX: -0.1130 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.13
+qW: -0.0298 qX: -0.1129 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.31 z: 0.62
+qW: -0.0298 qX: -0.1129 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: 0.19
+qW: -0.0298 qX: -0.1129 qY: -0.7919 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.44 z: -0.81
+qW: -0.0299 qX: -0.1124 qY: -0.7921 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.37 z: -0.19
+qW: -0.0303 qX: -0.1120 qY: -0.7921 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.25 z: 0.44
+qW: -0.0302 qX: -0.1119 qY: -0.7921 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -1.12 z: -0.37
+qW: -0.0301 qX: -0.1118 qY: -0.7920 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.44 y: -2.00 z: 0.00
+qW: -0.0308 qX: -0.1118 qY: -0.7913 qZ: -0.6004		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.75 y: 0.75 z: -0.13
+qW: -0.0306 qX: -0.1118 qY: -0.7917 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 1.25 z: -1.44
+qW: -0.0307 qX: -0.1111 qY: -0.7923 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.69 z: -0.06
+qW: -0.0312 qX: -0.1110 qY: -0.7920 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 0.06 z: 0.25
+qW: -0.0310 qX: -0.1108 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 1.06
+qW: -0.0305 qX: -0.1110 qY: -0.7925 qZ: -0.5989		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.31 z: 0.19
+qW: -0.0302 qX: -0.1115 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: -0.13 z: -0.50
+qW: -0.0302 qX: -0.1115 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.06 z: 0.13
+qW: -0.0302 qX: -0.1114 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.25 z: 0.06
+qW: -0.0302 qX: -0.1114 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.94 z: 0.50
+qW: -0.0301 qX: -0.1113 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.44 z: 0.06
+qW: -0.0302 qX: -0.1114 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.19 z: 0.31
+qW: -0.0302 qX: -0.1114 qY: -0.7924 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.31 z: 0.44
+qW: -0.0300 qX: -0.1117 qY: -0.7922 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.75 z: -0.31
+qW: -0.0298 qX: -0.1116 qY: -0.7922 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -15.38 y: 16.87 z: -5.19
+qW: -0.0255 qX: -0.1046 qY: -0.7888 qZ: -0.6051		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -5.81 y: -21.12 z: 11.13
+qW: -0.0190 qX: -0.1032 qY: -0.7846 qZ: -0.6110		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.25 y: 9.00 z: -3.25
+qW: -0.0157 qX: -0.0989 qY: -0.7846 qZ: -0.6118		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.00 y: -0.62 z: -3.00
+qW: -0.0137 qX: -0.0922 qY: -0.7823 qZ: -0.6159		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.19 y: 5.50 z: 0.94
+qW: -0.0093 qX: -0.0880 qY: -0.7838 qZ: -0.6147		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.44 y: -24.94 z: -4.62
+qW: -0.0135 qX: -0.0933 qY: -0.7925 qZ: -0.6024		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: -12.19 z: 0.44
+qW: -0.0165 qX: -0.0937 qY: -0.7932 qZ: -0.6014		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -31.37 z: 4.06
+qW: -0.0244 qX: -0.1004 qY: -0.7935 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: -6.25 z: 2.19
+qW: -0.0257 qX: -0.1013 qY: -0.7933 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.69 y: 0.44 z: 1.31
+qW: -0.0258 qX: -0.1033 qY: -0.7939 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 2.00 z: 0.19
+qW: -0.0248 qX: -0.1043 qY: -0.7943 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.69 z: -0.37
+qW: -0.0249 qX: -0.1045 qY: -0.7942 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.00 z: 0.50
+qW: -0.0248 qX: -0.1044 qY: -0.7937 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: -0.19 z: 0.37
+qW: -0.0247 qX: -0.1048 qY: -0.7938 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.19 z: 0.19
+qW: -0.0247 qX: -0.1050 qY: -0.7937 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.37 z: 0.00
+qW: -0.0247 qX: -0.1051 qY: -0.7937 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -1.12 z: 0.44
+qW: -0.0255 qX: -0.1059 qY: -0.7936 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -1.25 z: -0.06
+qW: -0.0256 qX: -0.1061 qY: -0.7935 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: -1.56 z: 0.25
+qW: -0.0270 qX: -0.1072 qY: -0.7933 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: -0.50 z: 0.13
+qW: -0.0271 qX: -0.1073 qY: -0.7932 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.00 z: -0.13
+qW: -0.0273 qX: -0.1075 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.50 z: 0.19
+qW: -0.0272 qX: -0.1075 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.62 z: 0.19
+qW: -0.0273 qX: -0.1075 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.62 z: 0.37
+qW: -0.0273 qX: -0.1075 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.19 z: 0.00
+qW: -0.0276 qX: -0.1077 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -0.06 z: -0.13
+qW: -0.0275 qX: -0.1077 qY: -0.7937 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.00 z: -0.06
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.06 z: -0.13
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 0.50 z: -0.06
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.13 z: 0.13
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.50 z: 0.00
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: 0.06
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.56 z: -0.13
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.13 z: 0.31
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.44 z: 0.19
+qW: -0.0275 qX: -0.1077 qY: -0.7939 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: 0.06 z: -0.44
+qW: -0.0275 qX: -0.1077 qY: -0.7940 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: -0.37 z: -0.50
+qW: -0.0274 qX: -0.1076 qY: -0.7945 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.19 z: 0.31
+qW: -0.0274 qX: -0.1076 qY: -0.7947 qZ: -0.5968		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.44 z: 0.19
+qW: -0.0272 qX: -0.1075 qY: -0.7947 qZ: -0.5968		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 0.00 z: -0.44
+qW: -0.0270 qX: -0.1072 qY: -0.7947 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.44 z: -0.50
+qW: -0.0272 qX: -0.1069 qY: -0.7947 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.56 z: -0.31
+qW: -0.0272 qX: -0.1069 qY: -0.7947 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.31 z: -0.50
+qW: -0.0272 qX: -0.1069 qY: -0.7947 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 0.00 z: 0.13
+qW: -0.0272 qX: -0.1069 qY: -0.7947 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.19 z: 0.13
+qW: -0.0272 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.13 z: -0.44
+qW: -0.0272 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.50 z: -0.13
+qW: -0.0272 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.06 z: 0.19
+qW: -0.0272 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.13
+qW: -0.0272 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.19 z: 0.25
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.06 z: 0.25
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.19
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.13 z: 0.37
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: 0.13
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: -0.13
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: 0.13
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.44 z: 0.50
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.13 z: 0.00
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: 0.13
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: -0.13
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.00 z: -0.06
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.44 z: -0.13
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: 0.19
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: -0.25
+qW: -0.0270 qX: -0.1068 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.25 z: 0.37
+qW: -0.0270 qX: -0.1069 qY: -0.7949 qZ: -0.5966		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.69 y: -1.31 z: 1.19
+qW: -0.0270 qX: -0.1075 qY: -0.7944 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.50 z: 0.44
+qW: -0.0268 qX: -0.1082 qY: -0.7939 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.00 z: -2.00
+qW: -0.0270 qX: -0.1074 qY: -0.7944 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.31 z: -0.31
+qW: -0.0279 qX: -0.1063 qY: -0.7949 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: 0.56 z: 1.25
+qW: -0.0274 qX: -0.1069 qY: -0.7945 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.31 z: -0.50
+qW: -0.0274 qX: -0.1073 qY: -0.7943 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.00 z: -0.19
+qW: -0.0276 qX: -0.1069 qY: -0.7946 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.25 z: 0.69
+qW: -0.0275 qX: -0.1071 qY: -0.7945 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -0.75
+qW: -0.0276 qX: -0.1071 qY: -0.7946 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.06 z: 0.37
+qW: -0.0276 qX: -0.1071 qY: -0.7946 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.25 z: -0.25
+qW: -0.0276 qX: -0.1071 qY: -0.7946 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.75 z: -0.81
+qW: -0.0276 qX: -0.1069 qY: -0.7946 qZ: -0.5970		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -1.06 z: -0.06
+qW: -0.0280 qX: -0.1067 qY: -0.7945 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.56 z: -0.62
+qW: -0.0281 qX: -0.1068 qY: -0.7944 qZ: -0.5973		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: 1.69 z: -2.69
+qW: -0.0285 qX: -0.1050 qY: -0.7944 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: 0.13 z: 0.31
+qW: -0.0283 qX: -0.1042 qY: -0.7952 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -1.00 z: -2.25
+qW: -0.0287 qX: -0.1038 qY: -0.7953 qZ: -0.5966		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.75 z: 1.25
+qW: -0.0298 qX: -0.1031 qY: -0.7944 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -1.19 z: 1.94
+qW: -0.0286 qX: -0.1045 qY: -0.7944 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -0.69 z: 0.19
+qW: -0.0281 qX: -0.1050 qY: -0.7943 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.50 y: 0.50 z: 1.06
+qW: -0.0280 qX: -0.1060 qY: -0.7942 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.19 z: 0.13
+qW: -0.0275 qX: -0.1065 qY: -0.7945 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.13 z: 0.13
+qW: -0.0275 qX: -0.1065 qY: -0.7938 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.19 z: 0.06
+qW: -0.0274 qX: -0.1066 qY: -0.7936 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.13 z: 0.25
+qW: -0.0273 qX: -0.1067 qY: -0.7936 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.06 z: 0.00
+qW: -0.0272 qX: -0.1068 qY: -0.7938 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.50 z: -0.44
+qW: -0.0272 qX: -0.1068 qY: -0.7938 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: -0.31
+qW: -0.0271 qX: -0.1068 qY: -0.7938 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.37 z: 0.13
+qW: -0.0271 qX: -0.1068 qY: -0.7937 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.00 z: 0.31
+qW: -0.0272 qX: -0.1067 qY: -0.7936 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 0.06 z: 0.00
+qW: -0.0270 qX: -0.1068 qY: -0.7942 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -0.31 z: 0.00
+qW: -0.0270 qX: -0.1068 qY: -0.7941 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.06 z: -0.56
+qW: -0.0271 qX: -0.1068 qY: -0.7936 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.06 z: 0.06
+qW: -0.0271 qX: -0.1068 qY: -0.7939 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.50 z: 0.56
+qW: -0.0271 qX: -0.1068 qY: -0.7936 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.69 z: 1.06
+qW: -0.0268 qX: -0.1075 qY: -0.7934 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.19 z: 0.69
+qW: -0.0262 qX: -0.1081 qY: -0.7936 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.37 z: -0.44
+qW: -0.0262 qX: -0.1082 qY: -0.7936 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.25 z: -0.25
+qW: -0.0264 qX: -0.1080 qY: -0.7936 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.25 z: 1.31
+qW: -0.0260 qX: -0.1086 qY: -0.7935 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.94 z: 0.19
+qW: -0.0255 qX: -0.1095 qY: -0.7933 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: 0.37 z: -1.56
+qW: -0.0258 qX: -0.1090 qY: -0.7938 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: -0.31 z: 0.19
+qW: -0.0262 qX: -0.1083 qY: -0.7940 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: -1.00 z: 3.62
+qW: -0.0251 qX: -0.1103 qY: -0.7930 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.69 z: -0.88
+qW: -0.0244 qX: -0.1118 qY: -0.7928 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 0.44 z: -2.87
+qW: -0.0252 qX: -0.1099 qY: -0.7938 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.00 y: -0.50 z: 1.50
+qW: -0.0259 qX: -0.1096 qY: -0.7931 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.75 z: 3.12
+qW: -0.0244 qX: -0.1121 qY: -0.7925 qZ: -0.5990		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.81 y: 0.94 z: -1.06
+qW: -0.0235 qX: -0.1133 qY: -0.7929 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 1.00 z: -3.87
+qW: -0.0245 qX: -0.1108 qY: -0.7939 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -0.31 z: 1.50
+qW: -0.0255 qX: -0.1098 qY: -0.7935 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.31 z: 2.50
+qW: -0.0241 qX: -0.1119 qY: -0.7930 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: -1.87
+qW: -0.0239 qX: -0.1120 qY: -0.7930 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.50 z: -0.69
+qW: -0.0247 qX: -0.1110 qY: -0.7932 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.69 z: 0.50
+qW: -0.0245 qX: -0.1110 qY: -0.7932 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.50 z: 0.19
+qW: -0.0246 qX: -0.1111 qY: -0.7930 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.00 z: 1.00
+qW: -0.0245 qX: -0.1118 qY: -0.7924 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.31 y: 0.81 z: -1.62
+qW: -0.0246 qX: -0.1119 qY: -0.7927 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.50 z: -2.56
+qW: -0.0256 qX: -0.1096 qY: -0.7939 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.31 z: 0.88
+qW: -0.0261 qX: -0.1090 qY: -0.7936 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.25 z: 0.81
+qW: -0.0253 qX: -0.1102 qY: -0.7935 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.81 z: -1.19
+qW: -0.0256 qX: -0.1097 qY: -0.7931 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.44 z: 1.19
+qW: -0.0253 qX: -0.1099 qY: -0.7934 qZ: -0.5981		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.44 y: -1.19 z: 0.81
+qW: -0.0251 qX: -0.1109 qY: -0.7926 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.06 z: -0.25
+qW: -0.0254 qX: -0.1110 qY: -0.7920 qZ: -0.5998		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.62 y: 0.44 z: -0.19
+qW: -0.0252 qX: -0.1111 qY: -0.7928 qZ: -0.5987		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.50 z: -0.44
+qW: -0.0251 qX: -0.1110 qY: -0.7930 qZ: -0.5985		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.06 y: -0.88 z: 0.13
+qW: -0.0254 qX: -0.1111 qY: -0.7922 qZ: -0.5995		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.19 y: 0.62 z: 0.06
+qW: -0.0255 qX: -0.1111 qY: -0.7921 qZ: -0.5997		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: 0.88 z: -0.81
+qW: -0.0253 qX: -0.1110 qY: -0.7928 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -0.37 z: -1.12
+qW: -0.0258 qX: -0.1100 qY: -0.7928 qZ: -0.5989		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.56 z: 1.06
+qW: -0.0261 qX: -0.1103 qY: -0.7924 qZ: -0.5994		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.19 y: 0.88 z: 1.50
+qW: -0.0251 qX: -0.1113 qY: -0.7925 qZ: -0.5991		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.13 z: -0.44
+qW: -0.0247 qX: -0.1117 qY: -0.7929 qZ: -0.5985		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.06 y: -0.50 z: 0.44
+qW: -0.0251 qX: -0.1117 qY: -0.7923 qZ: -0.5993		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.00 y: -0.44 z: 0.56
+qW: -0.0250 qX: -0.1121 qY: -0.7924 qZ: -0.5992		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 8.88 y: 2.44 z: 0.94
+qW: -0.0171 qX: -0.1005 qY: -0.7851 qZ: -0.6110		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.00 y: 13.38 z: 0.62
+qW: -0.0182 qX: -0.1093 qY: -0.7846 qZ: -0.6100		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -9.69 y: 6.75 z: -0.13
+qW: -0.0178 qX: -0.1114 qY: -0.7812 qZ: -0.6140		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -4.37 z: 3.19
+qW: -0.0176 qX: -0.1116 qY: -0.7788 qZ: -0.6170		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.69 z: 1.25
+qW: -0.0168 qX: -0.1144 qY: -0.7791 qZ: -0.6162		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.25 y: 0.00 z: -3.00
+qW: -0.0165 qX: -0.1130 qY: -0.7796 qZ: -0.6158		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.37 y: -13.69 z: -13.88
+qW: -0.0306 qX: -0.1165 qY: -0.7870 qZ: -0.6050		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.19 y: -32.69 z: 5.06
+qW: -0.0370 qX: -0.1193 qY: -0.7889 qZ: -0.6016		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -7.87 z: 0.81
+qW: -0.0401 qX: -0.1213 qY: -0.7906 qZ: -0.5989		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: -3.69 z: 3.62
+qW: -0.0370 qX: -0.1198 qY: -0.7904 qZ: -0.5996		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.06 y: -2.44 z: 1.69
+qW: -0.0364 qX: -0.1218 qY: -0.7919 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 2.62 z: 0.37
+qW: -0.0358 qX: -0.1225 qY: -0.7919 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -1.50 z: -0.19
+qW: -0.0358 qX: -0.1222 qY: -0.7919 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.25 y: 1.81 z: 0.06
+qW: -0.0361 qX: -0.1226 qY: -0.7921 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.31 y: -2.19 z: 2.19
+qW: -0.0355 qX: -0.1230 qY: -0.7924 qZ: -0.5964		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: 2.87 z: 1.31
+qW: -0.0341 qX: -0.1246 qY: -0.7922 qZ: -0.5965		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.62 y: -0.75 z: 0.50
+qW: -0.0338 qX: -0.1255 qY: -0.7921 qZ: -0.5964		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: 2.12 z: 1.06
+qW: -0.0338 qX: -0.1271 qY: -0.7924 qZ: -0.5956		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -1.19 z: 0.31
+qW: -0.0332 qX: -0.1271 qY: -0.7918 qZ: -0.5965		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.69 z: 0.19
+qW: -0.0330 qX: -0.1270 qY: -0.7917 qZ: -0.5966		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: -1.19 z: -0.13
+qW: -0.0329 qX: -0.1269 qY: -0.7917 qZ: -0.5967		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.37 z: -0.37
+qW: -0.0331 qX: -0.1270 qY: -0.7924 qZ: -0.5958		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: 0.06 z: 1.19
+qW: -0.0328 qX: -0.1270 qY: -0.7917 qZ: -0.5966		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.56 y: 0.37 z: 0.50
+qW: -0.0325 qX: -0.1281 qY: -0.7917 qZ: -0.5964		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.88 z: -1.19
+qW: -0.0328 qX: -0.1274 qY: -0.7923 qZ: -0.5958		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: 0.75 z: 0.94
+qW: -0.0331 qX: -0.1274 qY: -0.7917 qZ: -0.5966		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.19 y: 0.00 z: -0.06
+qW: -0.0323 qX: -0.1281 qY: -0.7918 qZ: -0.5963		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: -0.62 z: -1.25
+qW: -0.0329 qX: -0.1273 qY: -0.7924 qZ: -0.5957		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.69 z: 0.13
+qW: -0.0329 qX: -0.1272 qY: -0.7922 qZ: -0.5959		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.44 z: -1.50
+qW: -0.0331 qX: -0.1261 qY: -0.7924 qZ: -0.5959		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.75 y: -0.37 z: -1.31
+qW: -0.0341 qX: -0.1254 qY: -0.7914 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: -0.19 z: 1.00
+qW: -0.0342 qX: -0.1255 qY: -0.7913 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -1.25 z: 0.00
+qW: -0.0333 qX: -0.1251 qY: -0.7916 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -1.06 z: 0.19
+qW: -0.0335 qX: -0.1249 qY: -0.7916 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.56 z: 1.19
+qW: -0.0333 qX: -0.1260 qY: -0.7913 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.06 z: -1.19
+qW: -0.0334 qX: -0.1259 qY: -0.7911 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.13 z: -0.69
+qW: -0.0341 qX: -0.1251 qY: -0.7913 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.56 z: 1.06
+qW: -0.0338 qX: -0.1255 qY: -0.7913 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.62 z: -0.56
+qW: -0.0337 qX: -0.1255 qY: -0.7913 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -0.06 z: 0.13
+qW: -0.0336 qX: -0.1249 qY: -0.7912 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.00 z: 0.62
+qW: -0.0335 qX: -0.1252 qY: -0.7908 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.62 y: 0.75 z: -0.88
+qW: -0.0335 qX: -0.1250 qY: -0.7910 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.56 y: -0.62 z: -0.19
+qW: -0.0337 qX: -0.1240 qY: -0.7905 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: -1.25 z: 1.87
+qW: -0.0338 qX: -0.1247 qY: -0.7894 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 2.25 z: -0.88
+qW: -0.0328 qX: -0.1254 qY: -0.7894 qZ: -0.6001		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.75 y: -1.31 z: -1.75
+qW: -0.0339 qX: -0.1235 qY: -0.7882 qZ: -0.6019		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.88 z: 0.13
+qW: -0.0345 qX: -0.1235 qY: -0.7878 qZ: -0.6025		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.88 y: 0.00 z: -0.19
+qW: -0.0346 qX: -0.1236 qY: -0.7879 qZ: -0.6023		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.81 y: -1.69 z: -0.31
+qW: -0.0350 qX: -0.1241 qY: -0.7886 qZ: -0.6013		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: 1.25
+qW: -0.0347 qX: -0.1240 qY: -0.7887 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: -0.44 z: 2.75
+qW: -0.0330 qX: -0.1255 qY: -0.7885 qZ: -0.6011		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.56 z: -1.44
+qW: -0.0327 qX: -0.1260 qY: -0.7892 qZ: -0.6002		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: 0.44 z: -1.87
+qW: -0.0339 qX: -0.1243 qY: -0.7894 qZ: -0.6001		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.56 y: 0.37 z: 2.00
+qW: -0.0336 qX: -0.1249 qY: -0.7894 qZ: -0.6001		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.44 y: 0.25 z: 0.56
+qW: -0.0327 qX: -0.1264 qY: -0.7902 qZ: -0.5988		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.19 z: -2.50
+qW: -0.0332 qX: -0.1262 qY: -0.7905 qZ: -0.5983		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.44 z: -4.62
+qW: -0.0345 qX: -0.1229 qY: -0.7915 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.75 z: 1.19
+qW: -0.0354 qX: -0.1215 qY: -0.7917 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.13 z: 1.62
+qW: -0.0342 qX: -0.1232 qY: -0.7914 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.19 z: -1.25
+qW: -0.0341 qX: -0.1231 qY: -0.7914 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.25 z: -0.25
+qW: -0.0345 qX: -0.1226 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.19 z: 0.56
+qW: -0.0345 qX: -0.1226 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: -0.25
+qW: -0.0344 qX: -0.1227 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.44 z: -0.50
+qW: -0.0343 qX: -0.1227 qY: -0.7915 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.00
+qW: -0.0343 qX: -0.1228 qY: -0.7915 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.44 z: 0.13
+qW: -0.0342 qX: -0.1228 qY: -0.7915 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.06 z: 0.19
+qW: -0.0342 qX: -0.1228 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.06 z: 0.31
+qW: -0.0343 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.44 z: -0.37
+qW: -0.0343 qX: -0.1229 qY: -0.7915 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.50 z: 0.06
+qW: -0.0344 qX: -0.1229 qY: -0.7917 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.44 z: -0.44
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: -0.37
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: 0.37
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.13 z: -0.37
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.25 z: -0.06
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: 0.13
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: -0.19
+qW: -0.0344 qX: -0.1229 qY: -0.7916 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.06 z: 0.19
+qW: -0.0344 qX: -0.1229 qY: -0.7914 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.06 z: 0.06
+qW: -0.0344 qX: -0.1229 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.88
+qW: -0.0342 qX: -0.1233 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: 0.13
+qW: -0.0339 qX: -0.1236 qY: -0.7912 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: -0.56
+qW: -0.0341 qX: -0.1233 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.19 z: -0.06
+qW: -0.0341 qX: -0.1233 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.19 z: 0.13
+qW: -0.0341 qX: -0.1233 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: 0.00
+qW: -0.0341 qX: -0.1233 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: -0.37
+qW: -0.0341 qX: -0.1232 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.56 z: 0.50
+qW: -0.0341 qX: -0.1232 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.06 z: 0.25
+qW: -0.0339 qX: -0.1236 qY: -0.7912 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.25 z: -0.56
+qW: -0.0341 qX: -0.1234 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 0.31
+qW: -0.0341 qX: -0.1234 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.25 z: -0.31
+qW: -0.0341 qX: -0.1234 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.25 z: -0.44
+qW: -0.0341 qX: -0.1234 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: -0.25
+qW: -0.0341 qX: -0.1234 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: -0.94
+qW: -0.0343 qX: -0.1229 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.06 z: -0.06
+qW: -0.0344 qX: -0.1226 qY: -0.7914 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.13 z: 0.88
+qW: -0.0342 qX: -0.1227 qY: -0.7913 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.75 z: 0.62
+qW: -0.0338 qX: -0.1235 qY: -0.7912 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: -0.06 z: -1.12
+qW: -0.0342 qX: -0.1235 qY: -0.7908 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.25 y: 0.62 z: -1.69
+qW: -0.0344 qX: -0.1218 qY: -0.7923 qZ: -0.5968		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.94 y: -1.06 z: 0.25
+qW: -0.0349 qX: -0.1214 qY: -0.7923 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.88
+qW: -0.0352 qX: -0.1220 qY: -0.7917 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: -0.62
+qW: -0.0350 qX: -0.1219 qY: -0.7917 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.37 z: -1.12
+qW: -0.0355 qX: -0.1212 qY: -0.7918 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.19 z: -0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7918 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.00 z: -0.37
+qW: -0.0356 qX: -0.1210 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.00 z: -0.69
+qW: -0.0358 qX: -0.1208 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.50
+qW: -0.0358 qX: -0.1208 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 0.19 z: 0.31
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.25 z: -0.13
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.44 z: 0.31
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: -0.19
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.06 z: -0.37
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: 0.06
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.56 z: -0.31
+qW: -0.0355 qX: -0.1212 qY: -0.7916 qZ: -0.5978		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.37 z: 0.00
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.06 z: -0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.31 z: 0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: -0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: -0.13
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: 0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: 0.00
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: 0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.56 z: -0.06
+qW: -0.0355 qX: -0.1211 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: -0.13
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.19 z: 0.06
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.19 z: -0.06
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.00 z: 0.06
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 0.13
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: 0.13
+qW: -0.0354 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.69 z: 0.19
+qW: -0.0353 qX: -0.1210 qY: -0.7916 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.25 y: 0.06 z: -0.37
+qW: -0.0353 qX: -0.1210 qY: -0.7919 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.31 z: 0.56
+qW: -0.0352 qX: -0.1210 qY: -0.7924 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.06 z: 0.06
+qW: -0.0351 qX: -0.1212 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.31 z: -0.44
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.06 z: 0.44
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.31 z: -0.31
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: 0.00
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.31 z: -0.13
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.13 z: -0.37
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: 0.75 z: 0.06
+qW: -0.0352 qX: -0.1210 qY: -0.7922 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -8.25 y: 29.25 z: -0.69
+qW: -0.0217 qX: -0.1068 qY: -0.7866 qZ: -0.6078		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 3.87 z: -0.75
+qW: -0.0198 qX: -0.1118 qY: -0.7858 qZ: -0.6080		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.31 y: 3.56 z: -1.25
+qW: -0.0152 qX: -0.1051 qY: -0.7842 qZ: -0.6114		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.87 y: 1.69 z: 0.81
+qW: -0.0138 qX: -0.1044 qY: -0.7842 qZ: -0.6115		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 8.13 y: -1.87 z: 0.88
+qW: -0.0142 qX: -0.1062 qY: -0.7854 qZ: -0.6097		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 46.63 y: -47.81 z: 1.37
+qW: -0.0293 qX: -0.1131 qY: -0.7941 qZ: -0.5964		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 6.50 y: -9.38 z: 1.62
+qW: -0.0280 qX: -0.1116 qY: -0.7928 qZ: -0.5986		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.69 y: 6.12 z: -0.06
+qW: -0.0302 qX: -0.1128 qY: -0.7930 qZ: -0.5980		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -3.25 z: 1.25
+qW: -0.0298 qX: -0.1130 qY: -0.7928 qZ: -0.5982		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: -5.44 z: 1.06
+qW: -0.0315 qX: -0.1152 qY: -0.7932 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: -0.25 z: 0.00
+qW: -0.0318 qX: -0.1157 qY: -0.7930 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.31 z: 0.31
+qW: -0.0322 qX: -0.1161 qY: -0.7928 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: -1.56 z: 0.88
+qW: -0.0320 qX: -0.1168 qY: -0.7924 qZ: -0.5979		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.06 y: -0.81 z: 0.00
+qW: -0.0320 qX: -0.1171 qY: -0.7926 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.94 z: -0.19
+qW: -0.0322 qX: -0.1173 qY: -0.7926 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: -0.94 z: 0.19
+qW: -0.0321 qX: -0.1173 qY: -0.7927 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: 0.56 z: 0.19
+qW: -0.0323 qX: -0.1176 qY: -0.7927 qZ: -0.5973		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.62 z: 0.25
+qW: -0.0320 qX: -0.1174 qY: -0.7925 qZ: -0.5976		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 1.06 z: 0.13
+qW: -0.0319 qX: -0.1173 qY: -0.7925 qZ: -0.5977		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.37 y: -2.00 z: 0.56
+qW: -0.0319 qX: -0.1174 qY: -0.7928 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.94 y: 0.69 z: 0.19
+qW: -0.0320 qX: -0.1176 qY: -0.7930 qZ: -0.5969		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.25 z: 0.13
+qW: -0.0319 qX: -0.1174 qY: -0.7928 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -0.25 z: -0.31
+qW: -0.0318 qX: -0.1173 qY: -0.7928 qZ: -0.5972		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: -0.62 z: -0.31
+qW: -0.0319 qX: -0.1174 qY: -0.7928 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 0.75 z: 0.62
+qW: -0.0319 qX: -0.1176 qY: -0.7927 qZ: -0.5973		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 0.00 z: 0.37
+qW: -0.0316 qX: -0.1181 qY: -0.7925 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.06 z: -0.19
+qW: -0.0315 qX: -0.1181 qY: -0.7928 qZ: -0.5971		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: 0.44 z: 0.25
+qW: -0.0316 qX: -0.1181 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.31 z: -0.19
+qW: -0.0316 qX: -0.1181 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.19 z: 0.31
+qW: -0.0316 qX: -0.1181 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.06 z: 0.13
+qW: -0.0316 qX: -0.1181 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.13 z: -0.06
+qW: -0.0315 qX: -0.1180 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: -0.13 z: 0.31
+qW: -0.0315 qX: -0.1180 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.19 z: 0.00
+qW: -0.0315 qX: -0.1180 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.06 z: 0.06
+qW: -0.0315 qX: -0.1180 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.31 z: 0.00
+qW: -0.0315 qX: -0.1180 qY: -0.7926 qZ: -0.5974		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: 2.44 z: -1.94
+qW: -0.0318 qX: -0.1176 qY: -0.7925 qZ: -0.5975		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.94 y: 2.50 z: -1.75
+qW: -0.0330 qX: -0.1165 qY: -0.7919 qZ: -0.5984		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.19 y: -1.00 z: 0.69
+qW: -0.0334 qX: -0.1160 qY: -0.7906 qZ: -0.6004		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.25 y: -1.06 z: -0.62
+qW: -0.0338 qX: -0.1158 qY: -0.7888 qZ: -0.6028		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -6.62 y: -0.37 z: -3.69
+qW: -0.0360 qX: -0.1139 qY: -0.7864 qZ: -0.6061		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -10.00 y: 0.25 z: -1.50
+qW: -0.0391 qX: -0.1122 qY: -0.7817 qZ: -0.6122		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -13.56 y: 0.75 z: 2.25
+qW: -0.0399 qX: -0.1121 qY: -0.7751 qZ: -0.6205		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -11.06 y: 2.25 z: 1.50
+qW: -0.0392 qX: -0.1129 qY: -0.7673 qZ: -0.6301		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -5.19 y: 0.94 z: -2.12
+qW: -0.0391 qX: -0.1109 qY: -0.7629 qZ: -0.6357		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.19 y: 0.37 z: -1.25
+qW: -0.0400 qX: -0.1088 qY: -0.7608 qZ: -0.6385		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.94 y: 0.19 z: 0.50
+qW: -0.0404 qX: -0.1088 qY: -0.7593 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -2.69 y: 1.87 z: 0.13
+qW: -0.0394 qX: -0.1082 qY: -0.7580 qZ: -0.6420		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.00 y: -0.19 z: 1.12
+qW: -0.0396 qX: -0.1091 qY: -0.7560 qZ: -0.6442		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.75 y: -0.44 z: 1.19
+qW: -0.0386 qX: -0.1101 qY: -0.7567 qZ: -0.6432		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.75 y: 0.62 z: -1.06
+qW: -0.0380 qX: -0.1098 qY: -0.7582 qZ: -0.6416		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: 0.37 z: -1.06
+qW: -0.0380 qX: -0.1075 qY: -0.7584 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.69 z: 1.44
+qW: -0.0374 qX: -0.1075 qY: -0.7584 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.69 z: 0.13
+qW: -0.0373 qX: -0.1084 qY: -0.7583 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -1.56 z: 1.62
+qW: -0.0376 qX: -0.1091 qY: -0.7578 qZ: -0.6422		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: -1.50 z: 1.94
+qW: -0.0372 qX: -0.1112 qY: -0.7576 qZ: -0.6420		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 1.56 z: -1.19
+qW: -0.0375 qX: -0.1116 qY: -0.7578 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.50 z: 1.75
+qW: -0.0372 qX: -0.1116 qY: -0.7577 qZ: -0.6419		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.25 z: 0.81
+qW: -0.0365 qX: -0.1127 qY: -0.7577 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.69 y: 1.56 z: -0.69
+qW: -0.0364 qX: -0.1124 qY: -0.7578 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.31 z: -0.75
+qW: -0.0365 qX: -0.1116 qY: -0.7578 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -1.50 z: 0.00
+qW: -0.0369 qX: -0.1113 qY: -0.7579 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: -1.19 z: 0.31
+qW: -0.0372 qX: -0.1116 qY: -0.7579 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: 0.50 z: -0.19
+qW: -0.0374 qX: -0.1118 qY: -0.7578 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: 0.75 z: -0.06
+qW: -0.0373 qX: -0.1117 qY: -0.7578 qZ: -0.6418		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.50 z: 0.62
+qW: -0.0372 qX: -0.1117 qY: -0.7575 qZ: -0.6421		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -1.00 z: 0.69
+qW: -0.0374 qX: -0.1119 qY: -0.7575 qZ: -0.6421		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: -0.25 z: 0.62
+qW: -0.0370 qX: -0.1124 qY: -0.7574 qZ: -0.6421		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.12 y: 0.94 z: -0.31
+qW: -0.0358 qX: -0.1113 qY: -0.7579 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.62 y: 9.00 z: -0.75
+qW: -0.0321 qX: -0.1080 qY: -0.7596 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 1.87 z: 0.37
+qW: -0.0280 qX: -0.1046 qY: -0.7605 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 1.50 z: -1.50
+qW: -0.0278 qX: -0.1038 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 1.06 z: -1.25
+qW: -0.0273 qX: -0.1016 qY: -0.7609 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.31 z: -0.06
+qW: -0.0272 qX: -0.1013 qY: -0.7609 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.62 y: -0.81 z: 0.56
+qW: -0.0268 qX: -0.1010 qY: -0.7609 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.13 z: 0.37
+qW: -0.0270 qX: -0.1016 qY: -0.7609 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.13 z: -0.50
+qW: -0.0284 qX: -0.1028 qY: -0.7606 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -1.31 z: 0.13
+qW: -0.0288 qX: -0.1030 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.13
+qW: -0.0288 qX: -0.1030 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.50 z: -0.25
+qW: -0.0290 qX: -0.1031 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: -0.13
+qW: -0.0288 qX: -0.1030 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.37 z: 0.06
+qW: -0.0288 qX: -0.1030 qY: -0.7606 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: 0.06 z: -0.06
+qW: -0.0289 qX: -0.1031 qY: -0.7606 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: -0.25
+qW: -0.0289 qX: -0.1031 qY: -0.7605 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.06 z: 0.31
+qW: -0.0289 qX: -0.1031 qY: -0.7605 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.31 z: -0.25
+qW: -0.0289 qX: -0.1030 qY: -0.7605 qZ: -0.6404		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.69 y: -0.37 z: -0.06
+qW: -0.0289 qX: -0.1030 qY: -0.7604 qZ: -0.6405		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.62 z: -0.31
+qW: -0.0291 qX: -0.1031 qY: -0.7601 qZ: -0.6410		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.75 y: -3.69 z: 0.31
+qW: -0.0316 qX: -0.1057 qY: -0.7603 qZ: -0.6401		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.19 y: 0.31 z: -0.37
+qW: -0.0311 qX: -0.1053 qY: -0.7603 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.50 y: 1.69 z: -0.81
+qW: -0.0312 qX: -0.1049 qY: -0.7599 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.13 z: -0.19
+qW: -0.0310 qX: -0.1046 qY: -0.7603 qZ: -0.6403		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.81 y: -0.06 z: 0.69
+qW: -0.0309 qX: -0.1047 qY: -0.7601 qZ: -0.6405		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.31 z: -0.19
+qW: -0.0309 qX: -0.1050 qY: -0.7601 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.13 z: -0.06
+qW: -0.0308 qX: -0.1049 qY: -0.7601 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.06 z: 0.00
+qW: -0.0307 qX: -0.1048 qY: -0.7600 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.37 z: 0.06
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.06 z: 0.13
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.44 z: 0.25
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.00 z: -0.25
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.00
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.37 y: -0.13 z: -0.06
+qW: -0.0303 qX: -0.1045 qY: -0.7601 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.75 y: 0.50 z: 0.13
+qW: -0.0304 qX: -0.1045 qY: -0.7599 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.00 z: 0.19
+qW: -0.0304 qX: -0.1045 qY: -0.7598 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.19 y: -0.31 z: -0.19
+qW: -0.0304 qX: -0.1045 qY: -0.7598 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.13 z: 0.13
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: -0.06 z: -0.25
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.37 z: -0.37
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.31 z: -0.31
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.19 z: -0.13
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.00 z: 0.13
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: -0.06
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: -0.13 z: -0.13
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: 0.06
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: -0.06
+qW: -0.0305 qX: -0.1045 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: 0.56 z: -0.06
+qW: -0.0303 qX: -0.1044 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 1.19 z: -0.44
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.19 z: 0.13
+qW: -0.0309 qX: -0.1049 qY: -0.7597 qZ: -0.6410		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.37 z: 0.00
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.00 z: -0.13
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.50 z: -0.13
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: 0.13
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.37 z: 0.19
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.25 z: 0.00
+qW: -0.0307 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: -0.06 z: 0.00
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.19 z: -0.06
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.00 y: 0.25 z: 0.00
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.00 z: 0.00
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.31 z: 0.19
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.00 z: 0.06
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: 0.00 z: 0.06
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: 0.44
+qW: -0.0306 qX: -0.1047 qY: -0.7597 qZ: -0.6411		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.44 y: 1.25 z: -0.62
+qW: -0.0303 qX: -0.1046 qY: -0.7598 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.19 y: 0.19 z: 0.06
+qW: -0.0303 qX: -0.1046 qY: -0.7599 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.19 z: 0.31
+qW: -0.0305 qX: -0.1047 qY: -0.7599 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: -0.25 z: 0.13
+qW: -0.0305 qX: -0.1047 qY: -0.7599 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 0.19 z: 0.06
+qW: -0.0305 qX: -0.1047 qY: -0.7600 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.44 y: -0.13 z: 0.19
+qW: -0.0305 qX: -0.1047 qY: -0.7601 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.13 y: 0.25 z: 0.00
+qW: -0.0305 qX: -0.1047 qY: -0.7601 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.06 y: 3.12 z: -2.31
+qW: -0.0302 qX: -0.1039 qY: -0.7594 qZ: -0.6415		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -47.56 y: 39.81 z: -12.13
+qW: -0.0270 qX: -0.0967 qY: -0.7565 qZ: -0.6462		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 4.75 y: -18.00 z: 5.37
+qW: -0.0126 qX: -0.0895 qY: -0.7532 qZ: -0.6515		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 7.31 z: -5.81
+qW: -0.0129 qX: -0.0881 qY: -0.7545 qZ: -0.6502		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.94 y: 2.94 z: -0.69
+qW: -0.0098 qX: -0.0796 qY: -0.7547 qZ: -0.6512		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 19.44 y: -8.31 z: 3.25
+qW: -0.0121 qX: -0.0842 qY: -0.7607 qZ: -0.6436		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 37.75 y: -52.00 z: 6.62
+qW: -0.0284 qX: -0.0919 qY: -0.7642 qZ: -0.6378		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 10.25 y: -29.37 z: 2.06
+qW: -0.0280 qX: -0.0937 qY: -0.7604 qZ: -0.6420		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -4.69 y: 11.56 z: -3.31
+qW: -0.0294 qX: -0.0926 qY: -0.7600 qZ: -0.6426		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.19 y: -5.50 z: 2.69
+qW: -0.0264 qX: -0.0899 qY: -0.7600 qZ: -0.6431		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.25 y: 0.69 z: 1.25
+qW: -0.0261 qX: -0.0919 qY: -0.7616 qZ: -0.6410		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.62 z: -1.50
+qW: -0.0255 qX: -0.0910 qY: -0.7611 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.94 y: -0.94 z: -1.44
+qW: -0.0276 qX: -0.0911 qY: -0.7620 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.56 y: 1.06 z: 0.94
+qW: -0.0267 qX: -0.0897 qY: -0.7613 qZ: -0.6416		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.19 y: -3.94 z: 2.31
+qW: -0.0270 qX: -0.0923 qY: -0.7612 qZ: -0.6413		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.88 y: 1.75 z: -0.88
+qW: -0.0267 qX: -0.0925 qY: -0.7609 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.50 y: -2.25 z: 0.31
+qW: -0.0273 qX: -0.0928 qY: -0.7615 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.50 y: 0.75 z: 0.75
+qW: -0.0270 qX: -0.0936 qY: -0.7614 qZ: -0.6409		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.56 y: -0.37 z: 0.13
+qW: -0.0268 qX: -0.0936 qY: -0.7611 qZ: -0.6413		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.75 y: 2.56 z: -1.00
+qW: -0.0269 qX: -0.0936 qY: -0.7612 qZ: -0.6412		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 2.12 y: 0.44 z: -2.50
+qW: -0.0275 qX: -0.0922 qY: -0.7619 qZ: -0.6405		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.69 y: 1.06 z: 1.25
+qW: -0.0280 qX: -0.0920 qY: -0.7626 qZ: -0.6398		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -3.00 y: -3.00 z: 4.75
+qW: -0.0271 qX: -0.0950 qY: -0.7607 qZ: -0.6416		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.56 y: -0.50 z: 3.81
+qW: -0.0264 qX: -0.1003 qY: -0.7590 qZ: -0.6428		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 3.06 y: -0.50 z: -0.75
+qW: -0.0252 qX: -0.1008 qY: -0.7598 qZ: -0.6417		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.31 y: 1.25 z: -2.94
+qW: -0.0260 qX: -0.0983 qY: -0.7610 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.06 y: -0.94 z: 1.00
+qW: -0.0264 qX: -0.0980 qY: -0.7604 qZ: -0.6414		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 1.19 y: -1.31 z: 1.69
+qW: -0.0261 qX: -0.0998 qY: -0.7610 qZ: -0.6405		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -1.12 y: -1.75 z: 0.25
+qW: -0.0259 qX: -0.1002 qY: -0.7609 qZ: -0.6406		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.37 z: -0.19
+qW: -0.0265 qX: -0.1006 qY: -0.7607 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.25 y: 0.56 z: -0.44
+qW: -0.0263 qX: -0.1005 qY: -0.7607 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.37 y: -0.13 z: -0.44
+qW: -0.0264 qX: -0.1004 qY: -0.7607 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: -0.06 z: -0.37
+qW: -0.0262 qX: -0.0999 qY: -0.7607 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.25 y: 0.00 z: -0.50
+qW: -0.0264 qX: -0.0998 qY: -0.7608 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.13 y: 0.13 z: 0.00
+qW: -0.0260 qX: -0.0995 qY: -0.7608 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.50 y: -0.62 z: 0.56
+qW: -0.0261 qX: -0.0996 qY: -0.7608 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.13 z: 0.06
+qW: -0.0262 qX: -0.0996 qY: -0.7608 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: 0.13 z: -0.31
+qW: -0.0262 qX: -0.0996 qY: -0.7608 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: -0.06 y: 0.19 z: 0.13
+qW: -0.0262 qX: -0.0996 qY: -0.7608 qZ: -0.6407		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
+
+gyro:
+ x: 0.31 y: -0.50 z: 0.13
+qW: -0.0261 qX: -0.0995 qY: -0.7608 qZ: -0.6408		CALIBRATION: Sys=3 Gyro=3 Accel=3 Mag=1
