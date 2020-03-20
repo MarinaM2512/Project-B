@@ -29,7 +29,7 @@ int MuxReadFunc(int MuxNum){
 
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], bitRead(MuxNum,k));
-    delay(100);
+    delay(3);
   }
   
   return ComPin;
@@ -38,10 +38,14 @@ int MuxReadFunc(int MuxNum){
 void loop (){
   for(int k=0; k<5; k++){
     int value = analogRead(MuxReadFunc(k));
-    delay(500);
+    delay(6);
+    String str1 = "FSR";
+    String str2 = str1 + k;
+    Serial.print(str2);
+    Serial.print(": ");
     Serial.print(value);
-    Serial.print(" , ");
+    Serial.print(" ");
+    //delay(500);
   }
   Serial.println("");
-  delay(500);
 }
