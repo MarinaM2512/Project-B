@@ -7,7 +7,7 @@ title_3=["x" "y" "z"];
 title_q=["qW" "qX" "qY" "qZ"];
 title_fsr=["FSR0" "FSR1" "FSR2" "FSR3" "FSr4"];
 field_names = ["accel_x" "accel_y" "accel_z" "gyro_x" "gyro_y" "gyro_z" "quat_w" "quat_x" "quat_y" ...
-    "quat_z" "Cal_sys" "Cal_accel" "Cal_gyro" "Cal_mag" "quat_z" "fsr0" "fsr1" "fsr2" "fsr3" "fsr4"];
+    "quat_z" "Cal_sys" "Cal_accel" "Cal_gyro" "Cal_mag" "fsr0" "fsr1" "fsr2" "fsr3" "fsr4"];
 motion_names=["side_ancle" "swipe_L" "swipe_R" "tap"];
 for motion =1:4
     mat1=load(strcat("Data_extraction_sit_",motion_names(motion),"1"));
@@ -16,9 +16,9 @@ for motion =1:4
 
     for meas=1:19 
         if(meas<=10 || meas>=15)
-        y_1=getfield(mat1,field_names(meas));
-        y_2=getfield(mat2,field_names(meas));
-        y_3=getfield(mat3,field_names(meas));
+        y_1=double(getfield(mat1,field_names(meas)));
+        y_2=double(getfield(mat2,field_names(meas)));
+        y_3=double(getfield(mat3,field_names(meas)));
         len1_vec=1:length(y_1);
         len2_vec=1:length(y_2);
         len3_vec=1:length(y_3);
