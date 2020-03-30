@@ -80,7 +80,7 @@ int MuxReadFunc(int MuxNum){
 
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], bitRead(MuxNum,k));
-    delay(3);
+    delay(2);
   }
   
   return ComPin;
@@ -100,11 +100,12 @@ void loop(void)
     double x = (linearAccelData.acceleration).x;
     double y = (linearAccelData.acceleration).y;
     double z = (linearAccelData.acceleration).z;
-    Serial.print("accel_x: ");
     Serial.print(x);
-    Serial.print(" accel_y: ");
+    //Serial.print(" accel_y: ");
+    Serial.print(" ");
     Serial.print(y);
-    Serial.print(" accel_z: ");
+    //Serial.print(" accel_z: ");
+    Serial.print(" ");
     Serial.print(z);
 
     //Angular acceleration
@@ -113,46 +114,57 @@ void loop(void)
     y = angVelocityData.gyro.y;
     z = angVelocityData.gyro.z;
 
-    Serial.print(" gyro_x: ");
+    //Serial.print(" gyro_x: ");
+    Serial.print(" ");
     Serial.print(x);
-    Serial.print(" gyro_y: ");
+    //Serial.print(" gyro_y: ");
+    Serial.print(" ");
     Serial.print(y);
-    Serial.print(" gyro_z: ");
+    //Serial.print(" gyro_z: ");
+    Serial.print(" ");
     Serial.print(z);
 
   //Get quaternions
   imu::Quaternion quat = bno.getQuat();
-  Serial.print(" qW: ");
+  //Serial.print(" qW: ");
+  Serial.print(" ");
   Serial.print(quat.w(), 4);
-  Serial.print(" qX: ");
+  //Serial.print(" qX: ");
+  Serial.print(" ");
   Serial.print(quat.x(), 4);
-  Serial.print(" qY: ");
+  //Serial.print(" qY: ");
+  Serial.print(" ");
   Serial.print(quat.y(), 4);
-  Serial.print(" qZ: ");
+  //Serial.print(" qZ: ");
+  Serial.print(" ");
   Serial.print(quat.z(), 4);
-  Serial.print("\t\t");
-
+ 
  /* Display calibration status for each sensor. */
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);
-  Serial.print(" CALIBRATION: Sys: ");
+  //Serial.print(" CALIBRATION: Sys: ");
+  Serial.print(" ");
   Serial.print(system, DEC);
-  Serial.print(" Gyro: ");
+  //Serial.print(" Gyro: ");
+  Serial.print(" ");
   Serial.print(gyro, DEC);
-  Serial.print(" Accel: ");
+  //Serial.print(" Accel: ");
+  Serial.print(" ");
   Serial.print(accel, DEC);
-  Serial.print(" Mag: ");
+  //Serial.print(" Mag: ");
+  Serial.print(" ");
   Serial.print(mag, DEC);
   
   //delay(BNO055_SAMPLERATE_DELAY_MS);
   //////////////////////////////needs to be in the loop but what to do with delay??////////////////////////////////
     for(int k=0; k<5; k++){
     int value = analogRead(MuxReadFunc(k));
-    delay(6); //change back to 6
-    String str1 = "FSR";
-    String str2 = str1 + k;
-    Serial.print(str2);
-    Serial.print(": ");
+    delay(4); 
+    //String str1 = "FSR";
+    //String str2 = str1 + k;
+    //Serial.print(str2);
+    //Serial.print(": ");
+    Serial.print(" ");
     Serial.print(value);
     Serial.print(" ");
   }
