@@ -254,5 +254,6 @@ hold all;
 plot(x_L2,gZ_L2);
 plot(x_L3,gZ_L3);
 legend("gZ1","gZ2","gZ3");
+%% FSR
 
 

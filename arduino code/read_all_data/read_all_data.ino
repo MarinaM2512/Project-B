@@ -4,7 +4,9 @@
 #include <utility/imumaths.h>
 
 #define BNO055_SAMPLERATE_DELAY_MS (100)
+unsigned long curr_time = 0;
 Adafruit_BNO055 bno = Adafruit_BNO055(-1, 0x28);
+char start_measurments =0;
 
 /* This driver uses the Adafruit unified sensor library (Adafruit_Sensor),
    which provides a common 'type' for sensor data and some helper functions.
@@ -72,6 +74,28 @@ void setup(void)
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], LOW);
   }
+  
+  uint8_t system, gyro, accel, mag = 0;
+  while( system<3 || gyro<3 || accel<3 || mag<3 ){
+    bno.getCalibration(&system, &gyro, &accel, &mag);
+    Serial.print("CALIBRATION: Sys: ");
+    Serial.print(system, DEC);
+    Serial.print(" Gyro: ");
+    Serial.print(gyro, DEC);
+    Serial.print(" Accel: ");
+    Serial.print(accel, DEC);
+    Serial.print(" Mag: ");
+    Serial.println(mag, DEC);
+    delay(500);
+  }
+  Serial.println("BNO fully Calibrated");
+  while(start_measurments!='s'){
+    Serial.println("press s key to start");
+    if(Serial.available()>0)
+      start_measurments=Serial.read();
+    delay(1000);
+  }
+    Serial.println("Starting measurments");
 }
 
 
@@ -80,10 +104,14 @@ int MuxReadFunc(int MuxNum){
 
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], bitRead(MuxNum,k));
-    delay(2);
+    //delay(3);
+     curr_time=millis();
+    while(millis()<curr_time+2){
+    //delay 3 sec 
   }
   
   return ComPin;
+}
 }
 
 
@@ -142,69 +170,24 @@ void loop(void)
  /* Display calibration status for each sensor. */
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);
-  //Serial.print(" CALIBRATION: Sys: ");
   Serial.print(" ");
   Serial.print(system, DEC);
-  //Serial.print(" Gyro: ");
   Serial.print(" ");
   Serial.print(gyro, DEC);
-  //Serial.print(" Accel: ");
   Serial.print(" ");
   Serial.print(accel, DEC);
-  //Serial.print(" Mag: ");
   Serial.print(" ");
-  Serial.print(mag, DEC);
+  Serial.print(mag, DEC); 
   
-  //delay(BNO055_SAMPLERATE_DELAY_MS);
-  //////////////////////////////needs to be in the loop but what to do with delay??////////////////////////////////
     for(int k=0; k<5; k++){
     int value = analogRead(MuxReadFunc(k));
-    delay(4); 
-    //String str1 = "FSR";
-    //String str2 = str1 + k;
-    //Serial.print(str2);
-    //Serial.print(": ");
+    curr_time=millis();
+    while(millis()<curr_time+6){
+      //delay of 6 ms
+    }
     Serial.print(" ");
     Serial.print(value);
     Serial.print(" ");
   }
   Serial.println("");
 }
-
-/*void printEvent(sensors_event_t* event) {
-  Serial.println();
-  Serial.print(event->type);
-  double x = -1000000, y = -1000000 , z = -1000000; //dumb values, easy to spot problem
-  if (event->type == SENSOR_TYPE_ACCELEROMETER) {
-    x = (event->acceleration).x;
-    y = (event->acceleration).y;
-    z = (event->acceleration).z;
-    Serial.println("acceleration:");
-  }
-  else if (event->type == SENSOR_TYPE_ORIENTATION) {
-    x = (event->orientation).x;
-    y = (event->orientation).y;
-    z = (event->orientation).z;
-    Serial.println("orientation:");
-  }
-  else if (event->type == SENSOR_TYPE_MAGNETIC_FIELD) {
-    x = event->magnetic.x;
-    y = event->magnetic.y;
-    z = event->magnetic.z;
-    Serial.println("magnetic:");
-  }
-  else if ((event->type == SENSOR_TYPE_GYROSCOPE) || (event->type == SENSOR_TYPE_ROTATION_VECTOR)) {
-    x = event->gyro.x;
-    y = event->gyro.y;
-    z = event->gyro.z;
-    Serial.println("gyro:");
-
-  }
-
-  Serial.print("x: ");
-  Serial.print(x);
-  Serial.print(" y: ");
-  Serial.print(y);
-  Serial.print(" z: ");
-  Serial.println(z);
-}*/      
