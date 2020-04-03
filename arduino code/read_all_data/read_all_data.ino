@@ -42,9 +42,9 @@ char start_measurments =0;
 
 //////////////////////////////////////////Defining Multiplexer(Mux) Values///////////////////////////////////
 //Bits (arduino outputs):
-const int s0 = 19;
-const int s1 = 18;
-const int s2 = 5;
+const int s0 = 14;
+const int s1 = 27;
+const int s2 = 26;
 //COM (esp3.2 input):
 const int ComPin = 4;
 // 3 bits--> 0-7 reading elements:
@@ -106,12 +106,10 @@ int MuxReadFunc(int MuxNum){
     digitalWrite(AllBits[k], bitRead(MuxNum,k));
     //delay(3);
      curr_time=millis();
-    while(millis()<curr_time+2){
+    while(millis()<curr_time+2);
     //delay 3 sec 
-  }
-  
-  return ComPin;
 }
+return ComPin;
 }
 
 
@@ -181,13 +179,11 @@ void loop(void)
   
     for(int k=0; k<5; k++){
     int value = analogRead(MuxReadFunc(k));
-    curr_time=millis();
-    while(millis()<curr_time+6){
-      //delay of 6 ms
-    }
     Serial.print(" ");
     Serial.print(value);
-    Serial.print(" ");
+    curr_time=millis();
+    while(millis()<curr_time+4);
+      //delay of 6 ms
   }
   Serial.println("");
 }
