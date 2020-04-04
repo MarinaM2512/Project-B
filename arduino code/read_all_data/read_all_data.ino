@@ -93,9 +93,10 @@ void setup(void)
     Serial.println("press s key to start");
     if(Serial.available()>0)
       start_measurments=Serial.read();
-    delay(1000);
+    delay(300);
   }
     Serial.println("Starting measurments");
+    curr_time=0;
 }
 
 
@@ -104,11 +105,10 @@ int MuxReadFunc(int MuxNum){
 
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], bitRead(MuxNum,k));
-    //delay(3);
-     curr_time=millis();
-    while(millis()<curr_time+2);
-    //delay 3 sec 
 }
+curr_time=millis();
+while(millis()<curr_time+5);
+//delay(5);
 return ComPin;
 }
 
@@ -181,9 +181,12 @@ void loop(void)
     int value = analogRead(MuxReadFunc(k));
     Serial.print(" ");
     Serial.print(value);
-    curr_time=millis();
-    while(millis()<curr_time+4);
-      //delay of 6 ms
+    //
+      //delay of 5 ms
+      //delay(5);
   }
   Serial.println("");
+  //delay(5);
+  curr_time=millis();
+  while(millis()<curr_time+5);
 }

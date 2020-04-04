@@ -1,4 +1,4 @@
-function window_size=find_window_size(all_data)
+function window_size=find_window_size(filtered_)
 [num_meas,num_features,num_movements] =size(all_data);
 frame_len = 10;
 % avg_size_accel_gyro_quat=zeros(40);
