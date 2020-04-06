@@ -10,8 +10,7 @@ function read_data_to_mat(date)
     for i= 1:length(listOfFiles)
         fileName=strcat("..\measurements\",date,"\",listOfFiles{i});
         s=fileread(fileName);
-        begining_idx=1;
-        %begining_idx=regexp(s,'measurments')+length('measurments')+1;%use for measurments after 30_03 
+        begining_idx=regexp(s,'measurments')+length('measurments')+1;%use for measurments after 30_03 
         %begining_idx=regexp(s,'Test')+length('Test')+1;
         s=s(begining_idx:end);
         newStr = splitlines(s);

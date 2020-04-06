@@ -7,7 +7,7 @@ for i= 1:length(listOfFiles)
     if(~contains(mat_name,"FILTERED"))
         M=load(mat_name);
         mat=M.final;
-        filtered_mat=median_data_filt(mat,n);
+        filtered_mat=median_data_filt(mat(:,1:end-1),n);
         name=split(listOfFiles{i},".");
         filt_mat_name=strcat("..\measurements\",date,"\",name{1},"_FILTERED",".mat");
         save(filt_mat_name,'filtered_mat');
