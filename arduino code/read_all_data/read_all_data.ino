@@ -8,12 +8,13 @@
 #define BNO_DT (20)
 unsigned long BNO_time = 0;
 unsigned long FSR_time = 0;
-unsigned long FSR_done_time=0;
 unsigned long t = 0;
 bool bno_done=0;
 bool read_flag=0;
+bool restart=0;
 Adafruit_BNO055 bno = Adafruit_BNO055(-1, 0x28);
 char start_measurments =0;
+char recieved = 0;
 
 
 
@@ -34,6 +35,36 @@ const int ComPin = 4;
 const int AllBits[] = {s0,s1,s2};
 const int BitsNum = 3 ;
 int k=0;
+
+/*Calibration Func*/
+void calibrate(void){
+  uint8_t system, gyro, accel, mag = 0;
+  while( system<3 || gyro<3 || accel<3 || mag<3 ){
+    bno.getCalibration(&system, &gyro, &accel, &mag);
+    Serial.print("CALIBRATION: Sys: ");
+    Serial.print(system, DEC);
+    Serial.print(" Gyro: ");
+    Serial.print(gyro, DEC);
+    Serial.print(" Accel: ");
+    Serial.print(accel, DEC);
+    Serial.print(" Mag: ");
+    Serial.println(mag, DEC);
+    delay(500);
+  }
+  Serial.println("BNO fully Calibrated");
+}
+void press_s_to_start(void){
+    while(start_measurments!='s'){
+    Serial.println("press s key to start");
+    if(Serial.available()>0)
+      start_measurments=Serial.read();
+    delay(300);
+  }
+    Serial.println("\nStarting measurments");
+    BNO_time=0;
+    FSR_time=0;
+}
+
 void setup(void)
 {
   Serial.begin(115200);
@@ -58,8 +89,9 @@ void setup(void)
   for (int k=0 ; k < BitsNum ; k++){
     digitalWrite(AllBits[k], LOW);
   }
-  //Calibrate before g=beginningof measurments
-  uint8_t system, gyro, accel, mag = 0;
+  //Calibrate before beginningof measurments
+  calibrate();
+ /* uint8_t system, gyro, accel, mag = 0;
   while( system<3 || gyro<3 || accel<3 || mag<3 ){
     bno.getCalibration(&system, &gyro, &accel, &mag);
     Serial.print("CALIBRATION: Sys: ");
@@ -72,8 +104,9 @@ void setup(void)
     Serial.println(mag, DEC);
     delay(500);
   }
-  Serial.println("BNO fully Calibrated");
-  while(start_measurments!='s'){
+  Serial.println("BNO fully Calibrated");*/
+ press_s_to_start();
+  /*while(start_measurments!='s'){
     Serial.println("press s key to start");
     if(Serial.available()>0)
       start_measurments=Serial.read();
@@ -82,13 +115,24 @@ void setup(void)
     Serial.println("Starting measurments");
     BNO_time=0;
     FSR_time=0;
-    FSR_done_time =0;
+    FSR_done_time =0;*/
 }
 
 void loop(void)
 {
   // Every BNO_DT period get a new data sample of BNO and FSR
-  if (millis() - BNO_time>= BNO_DT){
+  if(Serial.available()>0){
+    recieved = Serial.read();
+    if(recieved == 'c' || recieved == 's' ){
+      if(recieved == 'c')
+        calibrate();
+    press_s_to_start();
+    restart = 1;
+    k=0;    
+    }
+  }
+  if (millis() - BNO_time>= BNO_DT || restart){
+    restart=0;
     BNO_time = millis();
     sensors_event_t orientationData , angVelocityData , linearAccelData;
     bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
