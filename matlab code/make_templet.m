@@ -1,35 +1,36 @@
 %templet - vec
-%movments - matrix dims: 2 X movment_length (or duration_time) X num_of_movments
-%           movments(1,:,:)-data of move in cols
-%           movments(2,:,:)-times in cols  
+%movments - matrix dims: movment_length (or duration_time) X num_of_movments
+%                                                   X 2
+%           movments(:,:,1)-data of move in cols
+%           movments(:,:,2)-times in cols  
 %note to marina: function to pad with zeros :padarray
 function templet = make_templet(movments)
 templet=zeros(size(movments));
 % avreging
-movment_length=size(movments,2);
+movment_length=size(movments,1);
 left_border = floor(movment_length)/3;
 right_border = movment_length-left_border;
 aligned_movments = align_peaks(movments,left_border,right_border);
 % mean along rows
-templet(1,:,:) = mean(aligned_movments(1,:,:),2); %data
-templet(2,:,:) = mean(aligned_movments(2,:,:),2); %duration
+templet(:,:,1) = mean(aligned_movments(:,:,1),2); %data
+templet(:,:,2) = mean(aligned_movments(:,:,2),2); %duration
 end
 
 function aligned_movments = align_peaks(movments,left_border,right_border)
-num_of_movments=size(movments,3);
-movment_length=size(movments,2);
+num_of_movments = size(movments,2);
+movment_length = size(movments,1);
 
 % assume first move is aligned and align in relation to it
 aligned_movments = zeros(size(movments));
-aligned_movments(1,:,1) = movments(1,:,1); 
+aligned_movments(:,1,1) = movments(:,1,1); 
 % to align the durationtime as well
-relative_times=relative_times_in_seg(movments(2,:,:),num_of_movments);
+relative_times=relative_times_in_seg(movments(:,:,2),num_of_movments);
 
 % init starting indx
-[~,locs1] = findpeaks(movments(1,:,1),'SortStr','descend','NPeaks',1);
+[~,locs1] = findpeaks(movments(:,1,1),'SortStr','descend','NPeaks',1);
 % find index within borders and align in relation to it
 for i=2:num_of_movments %run along rows -->
-    [~,locs] = findpeaks(movments(1,:,i),'SortStr','descend','NPeaks',1);
+    [~,locs] = findpeaks(movments(:,i,1),'SortStr','descend','NPeaks',1);
     if locs1<=left_border %locs1 is out of borders
         locs1=max(locs1,locs);
     elseif locs1>=right_border
@@ -40,7 +41,7 @@ for i=2:num_of_movments %run along rows -->
 end
 %align
 for i=1:num_of_movments %run along rows -->
-    [~,locs] = findpeaks(movments(1,:,i),'SortStr','descend','NPeaks',1);
+    [~,locs] = findpeaks(movments(:,i,1),'SortStr','descend','NPeaks',1);
     z=zeros(movment_length,1);
     t=zeros(movment_length,1);
     shift=locs1-locs;
@@ -51,8 +52,8 @@ for i=1:num_of_movments %run along rows -->
         z(1:end-shift) = movments(shift+1:end,i);
         t(1:end-shift) = relative_times(shift+1:end,i);
     end
-    aligned_movments(1,:,i)=z;
-    aligned_movments(2,:,i)=t;
+    aligned_movments(:,i,1)=z;
+    aligned_movments(:,i,2)=t;
 end
 end
 function relative_times=relative_times_in_seg(times,num_of_movments)
