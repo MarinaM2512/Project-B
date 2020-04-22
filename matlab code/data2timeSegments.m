@@ -4,7 +4,8 @@
 % S     - cell of data segmented by time
 % T     - cell of timestemp with corelation to S
 function [S,T]=data2timeSegments(data,times,delay)
-dim1=floor(times(end)/delay);
+% dim1=floor(times(end)/delay);
+dim1=ceil(times(end)/delay);
 S=cell(dim1,1);
 T=cell(dim1,1);
 end_of_frame=[];

@@ -8,7 +8,7 @@ function plot_raw_data(movement_name,date)
 title_3=["x" "y" "z"];
 title_q=["qW" "qX" "qY" "qZ"];
 title_fsr=["FSR0" "FSR1" "FSR2" "FSR3" "FSR4"];
-textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","_FILTERED.mat");
+textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","_INIT.mat");
 DirList = dir(fullfile(textFileName));
 listOfFiles = {DirList.name};
 num_meas=length(listOfFiles);
@@ -16,7 +16,7 @@ all_measurments=cell(num_meas,1);
 for motion= 1:num_meas
     fileName=strcat("..\measurements\",date,"\",listOfFiles{motion});
     mat=load(fileName);
-    all_measurments(motion,1)={mat.filtered_mat};
+    all_measurments(motion,1)={mat.initialised};
 end
 [~,num_features]=size(all_measurments{1,1});
     for meas = 1:num_features
