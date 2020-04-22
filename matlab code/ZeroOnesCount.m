@@ -21,3 +21,6 @@ function [start, len, k1] = ZeroOnesCount(v)
          len(k1) = len(k1)+1;
      end
  end
+ len =len(len~=0);
+ start = start(len~=0);
+end

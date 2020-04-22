@@ -27,9 +27,9 @@ end
             subplot(3,1,meas)
             for ind = 1:num_meas
                 meas_mat = all_measurments{ind,1};
-                [len_data ,~]=size(meas_mat);
-                len=1:len_data;
-                plot(len,meas_mat(:,meas));
+                %[len_data ,~]=size(meas_mat);
+                t=meas_mat(:,end);
+                plot(t,meas_mat(:,meas));
                 hold on;
                 if(ind==num_meas)
                     title(title_3(meas));
@@ -45,9 +45,9 @@ end
                 subplot(3,1,meas-3)
             for ind = 1:num_meas
                 meas_mat = all_measurments{ind,1};
-                [len_data ,~]=size(meas_mat);
-                len=1:len_data;
-                plot(len,meas_mat(:,meas));
+                %[len_data ,~]=size(meas_mat);
+                t=meas_mat(:,end);
+                plot(t,meas_mat(:,meas));
                 hold on;
                 if(ind==num_meas)
                     title(title_3(meas-3));
@@ -63,9 +63,9 @@ end
                 subplot(2,2,meas-6)
             for ind = 1:num_meas
                 meas_mat = all_measurments{ind,1};
-                [len_data ,~]=size(meas_mat);
-                len=1:len_data;
-                plot(len,meas_mat(:,meas));
+                %[len_data ,~]=size(meas_mat);
+                t=meas_mat(:,end);
+                plot(t,meas_mat(:,meas));
                 hold on;
                 if(ind==num_meas)
                     title(title_q(meas-6));
@@ -74,16 +74,16 @@ end
                   sgtitle("quaternion");
                 end
             end
-        elseif(meas>=15)
+        elseif(meas>=15 && meas<num_features)
                 if(meas==15 )
                     figure;
                 end
                 subplot(2,3,meas-14)
             for ind = 1:num_meas
                 meas_mat = all_measurments{ind,1};
-                [len_data ,~]=size(meas_mat);
-                len=1:len_data;
-                plot(len,meas_mat(:,meas));
+                %[len_data ,~]=size(meas_mat);
+                t=meas_mat(:,end);
+                plot(t,meas_mat(:,meas));
                 hold on;
                 if(ind==num_meas)
                     title(title_fsr(meas-14));
