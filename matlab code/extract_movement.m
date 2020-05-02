@@ -1,4 +1,4 @@
-function [move_vals , move_times] = extract_movement(segD,segT ,thresh_val,thresh_time)
+function [move_vals , move_times] = extract_movement(segD,segT ,thresh_val,thresh_time, sum_window)
 %%Goal: extract movement vector inside segment
 
 %%Input Arguments:
@@ -17,7 +17,7 @@ function [move_vals , move_times] = extract_movement(segD,segT ,thresh_val,thres
 
 move_vals = [];
 move_times = [];
-is_move = movsum(abs(segD),7)>thresh_val;
+is_move = movsum(abs(segD),sum_window)>thresh_val;
 [start, len, num] = ZeroOnesCount(is_move);
 if (num > 0)
     times = segT(start+len-1)-segT(start);

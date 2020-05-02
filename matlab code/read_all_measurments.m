@@ -46,8 +46,8 @@ for date = ["11_04" "17_04"]
 end
 %% join measurments of movements
 date = "17_04";
-movement_name = "sit_N_swipe_L1";
-[to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10);
+movement_name = "sit_N_swipe_L2";
+[to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10,7);
 
 %% check movement finding
 textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","INIT.mat");

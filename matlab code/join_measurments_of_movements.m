@@ -1,4 +1,4 @@
-function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,delay,thresh_time,thresh)
+function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,delay,thresh_time,thresh,sum_window)
 %%Goal: create 3 [nXmX2] matrixes of movments detected in all measurments of
 % a movment on the given date for gyroX, gyroY, gyroZ for template
 % matching.
@@ -36,9 +36,9 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
         CyT = cell(length(Sx),1);
         CzT = cell(length(Sx),1);
         for j = 1:length(Sx)
-            [moveX_t , timeX_t] = extract_movement(Sx{j},Tx{j},thresh,thresh_time);
-            [moveY_t , timeY_t] = extract_movement(Sy{j},Ty{j},thresh,thresh_time);
-            [moveZ_t , timeZ_t] = extract_movement(Sz{j},Tz{j},thresh,thresh_time);
+            [moveX_t , timeX_t] = extract_movement(Sx{j},Tx{j},thresh,thresh_time,sum_window);
+            [moveY_t , timeY_t] = extract_movement(Sy{j},Ty{j},thresh,thresh_time,sum_window);
+            [moveZ_t , timeZ_t] = extract_movement(Sz{j},Tz{j},thresh,thresh_time,sum_window);
             if (~isempty(moveX_t))
                 CxD{j,1} = moveX_t;
                 CxT{j,1} = timeX_t;
