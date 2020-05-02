@@ -1,4 +1,4 @@
-function [diff_out] = numeric_diff(mat,Fs,diff_type,window_width,diff_order)
+function [diff_out] = numeric_diff_shunit(mat,Fs,diff_type,window_width,diff_order)
 
 % mat = time x data
 % Fs = sample rate in [hz]
