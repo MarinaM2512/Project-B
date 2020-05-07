@@ -46,5 +46,3 @@ for i=1:size(t,2)
     grid on;
 end
 end
-
-    

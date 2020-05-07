@@ -79,6 +79,3 @@ plot(t,mat(:,6));
 hold on;
 plot(t,moveZ);
 title('z');
-
-
-

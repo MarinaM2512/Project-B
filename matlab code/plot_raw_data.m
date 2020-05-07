@@ -1,4 +1,3 @@
-  
 %% Plot every measurment type on different figure
 %recive name of movement and plot all the filtered raw data measurments of
 %that movement on the same plot

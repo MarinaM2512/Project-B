@@ -34,6 +34,7 @@ function read_data_to_mat(date)
         final=readmatrix('tmp.txt');
         final=final(1:end-1,:);
         name=split(listOfFiles{i},".");
+        %save to sample folder
         mat_name=strcat("..\measurements\",date,"\","Data_extraction_",name{1},".mat");
         save(mat_name,'final'); 
     end

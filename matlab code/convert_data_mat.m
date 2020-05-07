@@ -1,6 +1,6 @@
 function all_data= convert_data_mat(extracted_mat)
 features=["accel_x", "accel_y","accel_z" ,"gyro_x", "gyro_y","gyro_z", "quat_w", "quat_x" ...
-    "quat_y", "quat_z","accel_x", "accel_x" , "accel_x" , "accel_x", "fsr0", "fsr1" ,"fsr2" ,"fsr3","fsr4"];
+    "quat_y", "quat_z","cal_s", "cal_acc" , "cal_gyro" , "cal_mag", "fsr0", "fsr1" ,"fsr2" ,"fsr3","fsr4"];
 meas_len=length(extracted_mat.accel_x);
 all_data=zeros(meas_len,19);
 for feture=1:19
