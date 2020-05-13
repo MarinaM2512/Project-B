@@ -1,3 +1,4 @@
+
 %% read data from dates 11_04 17_04
 %read_data_to_mat("11_04")
 med_filter_all_data("11_04",5)

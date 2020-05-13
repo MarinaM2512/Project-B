@@ -4,6 +4,7 @@ function read_and_resample_data_INIT_to_mat(date)
 %Measurments arangement in the mat: 
 % accel_x accel_y accel_z gyro_x gyro_y gyro_z qW qX qY qZ 
 % Cal_sys Cal_gyro Cal_accel Cal_mag FSR0 FSR1 FSR2 FSR3 FSR4
+
     textFileName= strcat("..\measurements\",date,"\","*","INIT.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};
