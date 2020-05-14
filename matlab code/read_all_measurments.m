@@ -47,14 +47,28 @@ for date = ["11_04" "17_04"]
 end
 %% join measurments of movements
 date = "17_04";
-movement_name = "sit_N_swipe_L2";
-[to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10,7);
+movement_name = "sit_N_swipe_L1";
+[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,10000,500,10,7);
+[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,10000,500,10,6);
+[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10,9);
 
-%% check movement finding
-textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","INIT.mat");
+[gyroX_template , tx_template] = make_template(to_avgX,0.1);
+[gyroY_template , ty_template] = make_template(to_avgY,0.1);
+[gyroZ_template , tz_template] = make_template(to_avgZ,0.1);
+% plot template
+% figure();
+% subplot(3,1,1);
+% plot(tx_template,gyroX_template);
+% subplot(3,1,2);
+% plot(ty_template,gyroY_template);
+% subplot(3,1,3);
+% plot(tz_template,gyroZ_template);
+
+% check movement finding
+textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
 DirList = dir(fullfile(textFileName));
 listOfFiles = {DirList.name};
-mat_name=strcat("..\measurements\",date,"\",listOfFiles{1});
+mat_name=strcat("..\measurements\resample\",date,"\",listOfFiles{1});
 M=load(mat_name);
 mat=M.initialised;
 t = mat(:,20);
@@ -67,16 +81,20 @@ moveZ = ismember(t,moveZ_t)*200;
 figure();
 subplot(3,1,1)
 plot(t,mat(:,4));
-hold on;
+hold all;
 plot(t,moveX);
-title('x');
+plot(tx_template,gyroX_template);%
+title(movement_name);
+ylabel('x');
 subplot(3,1,2)
 plot(t,mat(:,5));
-hold on;
+hold all;
 plot(t,moveY);
-title('y');
+plot(ty_template,gyroY_template);%
+ylabel('y');
 subplot(3,1,3)
 plot(t,mat(:,6));
-hold on;
+hold all;
 plot(t,moveZ);
-title('z');
+plot(tz_template,gyroZ_template);
+ylabel('z');

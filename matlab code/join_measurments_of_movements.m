@@ -1,5 +1,5 @@
 function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name,delay,thresh_time,thresh,sum_window)
-%%Goal: create 3 [nXmX2] matrixes of movments detected in all measurments of
+% Goal: create 3 [nXmX2] matrixes of movments detected in all measurments of
 % a movment on the given date for gyroX, gyroY, gyroZ for template
 % matching.
 % n = length of each movment (movements are zero padded to the longest one) 
@@ -13,7 +13,7 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
 
-    textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","INIT.mat");
+    textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};
     Cx_tot = {};
@@ -23,7 +23,7 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
     CyT_tot = {};
     CzT_tot = {};
     for i= 1:length(listOfFiles)
-        mat_name=strcat("..\measurements\",date,"\",listOfFiles{i});
+        mat_name=strcat("..\measurements\resample\",date,"\",listOfFiles{i});
         M=load(mat_name);
         mat=M.initialised;
         [Sx , Tx] = data2timeSegments(mat(:,4),mat(:,20),delay);
