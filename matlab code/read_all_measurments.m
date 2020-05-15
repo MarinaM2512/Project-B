@@ -47,24 +47,17 @@ for date = ["11_04" "17_04"]
 end
 %% join measurments of movements
 date = "17_04";
-movement_name = "sit_N_swipe_L1";
-[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,10000,500,10,7);
-[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,10000,500,10,6);
-[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10,9);
+movement_names = ["sit_N_swipe_L1", "sit_N_swipe_L2", "sit_N_swipe_L3"];
+% template for only one mes - "sit_N_swipe_L1"
+[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_names(1),10000,500,10,7);
+[~, to_avgY, ~] = join_measurments_of_movements(date,movement_names(1),10000,500,10,6);
+[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_names(1),10000,500,10,9);
 
 [gyroX_template , tx_template] = make_template(to_avgX,0.1);
 [gyroY_template , ty_template] = make_template(to_avgY,0.1);
 [gyroZ_template , tz_template] = make_template(to_avgZ,0.1);
-% plot template
-% figure();
-% subplot(3,1,1);
-% plot(tx_template,gyroX_template);
-% subplot(3,1,2);
-% plot(ty_template,gyroY_template);
-% subplot(3,1,3);
-% plot(tz_template,gyroZ_template);
 
-% check movement finding
+%% check movement finding and make_template
 textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
 DirList = dir(fullfile(textFileName));
 listOfFiles = {DirList.name};
@@ -79,12 +72,11 @@ moveY = ismember(t,moveY_t)*200;
 moveZ_t = to_avgZ(:,:,2);
 moveZ = ismember(t,moveZ_t)*200;
 figure();
-subplot(3,1,1)
+subplot(3,1,1);
 plot(t,mat(:,4));
 hold all;
 plot(t,moveX);
 plot(tx_template,gyroX_template);%
-title(movement_name);
 ylabel('x');
 subplot(3,1,2)
 plot(t,mat(:,5));
@@ -98,3 +90,29 @@ hold all;
 plot(t,moveZ);
 plot(tz_template,gyroZ_template);
 ylabel('z');
+%% template for all mes in movement_names
+[data_template_x, time_template_x] = make_tamplate_all_movments_x(date,movement_names,10000,500,10,7,0.1);
+[data_template_y, time_template_y] = make_tamplate_all_movments_y(date,movement_names,10000,500,10,6,0.1);
+[data_template_z, time_template_z] = make_tamplate_all_movments_z(date,movement_names,10000,500,10,9,0.1);
+% compare templates
+
+figure();
+subplot(3,1,1);
+plot(time_template_x,data_template_x);
+hold on;
+plot(tx_template,gyroX_template);
+title("template by one mesuements in comparison to all for swipe L");
+ylabel("gyro X");
+legend("all swipeL","swipeL1");
+subplot(3,1,2);
+plot(time_template_y,data_template_y);
+hold on;
+plot(ty_template,gyroY_template);
+ylabel("gyro Y");
+legend("all swipeL","swipeL1");
+subplot(3,1,3);
+plot(time_template_z,data_template_z);
+hold on;
+plot(tz_template,gyroZ_template);
+ylabel("gyro Z");
+legend("all swipeL","swipeL1");
