@@ -1,5 +1,6 @@
 
-%% read data from dates 11_04 17_04
+
+%% read data from dates 11_04 17_04 and median filter them
 %read_data_to_mat("11_04")
 med_filter_all_data("11_04",5)
 %read_data_to_mat("17_04")
