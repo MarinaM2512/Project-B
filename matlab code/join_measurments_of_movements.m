@@ -6,7 +6,7 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
 % m = number of movments detected
 % the second dimention are the corresponding times.
 
-%%Input Arguments:
+% Input Arguments:
 % 1.date: required date of measurments
 % 2.movement_name: the movement to detect.
 % 3.thresh: thereshold applied to Data for movment detection
