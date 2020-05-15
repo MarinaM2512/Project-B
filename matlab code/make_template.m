@@ -12,6 +12,7 @@ function [data_template , time_template] = make_template(movments,border_factor)
 %                                                   X 2
 %       movments(:,:,1)-segmented data of move in cols
 %       movments(:,:,2)-times in cols  
+%       *border_factor - to select relative peak 
 
 % avreging
 movment_length=size(movments,1);
@@ -21,7 +22,7 @@ aligned_movments = align_peaks(movments,left_border,right_border);
 % mean along rows
 data_tmp = mean(aligned_movments(:,:,1),2); %data
 t_tmp    = mean(aligned_movments(:,:,2),2); %duration
-time_template = linspace(min(t_tmp), max(t_tmp), length(t_tmp)); % Uniformly-Sampled Time Vector
+time_template = linspace(min(t_tmp), max(t_tmp), length(t_tmp))'; % Uniformly-Sampled Time Vector
 data_template = resample(data_tmp, time_template); 
 end
 
