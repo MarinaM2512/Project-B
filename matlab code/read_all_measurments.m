@@ -2,11 +2,11 @@
 
 %% read data from dates 11_04 17_04 and median filter them
 %read_data_to_mat("11_04")
-med_filter_all_data("11_04",5)
+%med_filter_all_data("11_04",5)
 %read_data_to_mat("17_04")
 med_filter_all_data("17_04",5)
 %% Normalise all data and plot 
-for date = ["11_04" "17_04"]
+    date =  "17_04";
     textFileName= strcat("..\measurements\",date,"\","*","FILTERED.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};
@@ -45,7 +45,7 @@ for date = ["11_04" "17_04"]
         mat_name=strcat(mat_name(1),"_INIT",".mat");
         save(mat_name,'initialised'); 
     end
-end
+
 %% join measurments of movements
 date = "17_04";
 movement_names = ["sit_N_swipe_L1", "sit_N_swipe_L2", "sit_N_swipe_L3"];

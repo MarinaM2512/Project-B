@@ -1,7 +1,4 @@
 function LPF_filter_raw_data(date , Fpass)
-% textFileName= strcat("..\measurements\",date,"\","Data_extraction_","*","_INIT.mat");
-% DirList = dir(fullfile(textFileName));
-% listOfFiles = {DirList.name};
 listOfFiles = get_list_of_files(date,"INIT" ,0);
 for i= 1:length(listOfFiles)
     mat_name=strcat("..\measurements\",date,"\",listOfFiles{i});
