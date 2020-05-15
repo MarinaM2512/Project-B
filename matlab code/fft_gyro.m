@@ -1,8 +1,9 @@
 close all; clc;
 %%
 date = "17_04";
-movement_name = ["sit_N_swipe_L2"    "sit_N_swipe_R2"] ...
-                 "sit_N_sit_tap1"    "sit_N_sit_side_ancle2"];
+movement_name = ["sit_N_swipe_L2"    "sit_N_swipe_R2" ...
+                 "sit_N_tap1"    "sit_N_side_ancle2"];
+
              
 for i = 1:length(movement_name)
     [to_avgX, to_avgY, to_avgZ] = ...
@@ -13,6 +14,7 @@ for i = 1:length(movement_name)
     plot_fft(to_avgY);
     plot_fft(to_avgZ);
     legend('x','y','z');
+    sgtitle(movement_name(i));
 end
 
 %% functions
