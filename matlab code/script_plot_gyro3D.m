@@ -1,6 +1,6 @@
 %% Plot gyro 3D
 date = "17_04";
-movement_name = ["sit_N_tap" , "sit_N_side_ancle1", "sit_N_swipe_R1", "sit_N_swipe_L1"];
+movement_name = ["sit_N_tap1" , "sit_N_side_ancle1", "sit_N_swipe_R1", "sit_N_swipe_L1"];
 move_gyro = cell(4,1);
 move_gyro_T= cell(4,1);
 detected = cell(4,1);
@@ -73,16 +73,20 @@ SR = repmat( "swipe R" ,1, length(Gyro_SR));
 Tap = repmat( "Tap" ,1, length(Gyro_tap));
 Acncle = repmat( "Side Ancle" ,1, length(Gyro_side));
 moves=cat(1,Acncle',SL' , SR' ,Tap');
-PlotPCA(move_combined,"PCA for all data",moves,2);
+PlotPCA(move_combined,"PCA for all data",moves,3);
 %% PCA of side and tap
 st = cat(1,Gyro_side,Gyro_tap);
 moves=cat(1,Acncle',Tap');
 PlotPCA(st,"PCA side ancle and tap",moves,2);
 %% PCA of each movement 
-PlotPCA(Gyro_side,"PCA side ancle",Acncle,2);
-PlotPCA(Gyro_SL , "PCA swipe left",SL,2);
-PlotPCA(Gyro_SR,"PCA swipe right",SR,2);
-PlotPCA(Gyro_tap,"PCA tap",Tap,2);
+[vecsAnc , ~]=PlotPCA(Gyro_side,"PCA side ancle",Acncle,2);
+[vecsSL , ~]=PlotPCA(Gyro_SL , "PCA swipe left",SL,2);
+[vecsSR , ~]=PlotPCA(Gyro_SR,"PCA swipe right",SR,2);
+[vecsTap , ~]=PlotPCA(Gyro_tap,"PCA tap",Tap,2);
+figure;
+plot3(vecsAnc(1,1),vecsAnc(2,1),vecsAnc(3,1),vecsAnc(1,1),vecsAnc(2,1),vecsAnc(3,1),...
+    vecsSL(1,1),vecsSL(2,1),vecsSL(3,1),vecsSR(1,1),vecsSR(2,1),vecsSR(3,1),...
+    vecsTap(1,1),vecsTap(2,1),vecsTap(3,1))
 %% Try a single mevement
 date = "17_04";
 movement_name = ["sit_N_sit_tap1" , "sit_N_sit_side_ancle1", "sit_N_swipe_R1", "sit_N_swipe_L1"];
@@ -196,7 +200,7 @@ SR = repmat( "swipe R" ,1, length(Gyro_SRT));
 Tap = repmat( "Tap" ,1, length(Gyro_tapT));
 Anckle = repmat( "Side Ancle" ,1, length(Gyro_sideT));
 moves=cat(1,Anckle',SL' , SR' ,Tap');
-PlotPCA(move_combined,"PCA for all data",moves,2);
+PlotPCA(move_combined,"PCA for all data",moves,3);
 %% fit a 3D curve for each movement 
 date = "17_04";
 list_moves = get_all_meas_names(date,"FILTERED_INIT" ,1);
@@ -205,24 +209,27 @@ figure;
 for i = 1:length(list_moves)
     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
     if(contains(list_moves{i},"tap") || contains(list_moves{i},"ancle") )
-       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name(i),10000,500,7,7);
+       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7);
     else
-       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,movement_name(i),10000,500,7,7); 
+       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7); 
     end
    move_gyro(i,1:3) = [{to_avgX} {to_avgY} {to_avgZ}] ; 
-   [move_gyro(i,1:3),times(i,1)] = detect_movement(move_gyro(i,1:3));
+   [move,time] = detect_movement(move_gyro(i,1:3));
+   times(i,1) = {time};
+   move_gyro(i,1) = {move};
    if(contains(list_moves{i},"tap"))
-       plot3(move_gyro{i,1},move_gyro{i,2}, move_gyro{i,3}, 'o','Color','b');
+       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','b');
    elseif(contains(list_moves{i},"ancle"))
-       plot3(move_gyro{i,1},move_gyro{i,2}, move_gyro{i,3}, 'o','Color','r');
-   elseif(contains(list_moves{i},"swipeL"))
-       plot3(move_gyro{i,1},move_gyro{i,2}, move_gyro{i,3}, 'o','Color','g');
-   elseif(contains(list_moves{i},"swipeR"))
-       plot3(move_gyro{i,1},move_gyro{i,2}, move_gyro{i,3}, 'o','Color','k');
+       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','r');
+   elseif(contains(list_moves{i},"swipe_L"))
+       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','g');
+   elseif(contains(list_moves{i},"swipe_R"))
+       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','k');
    else
-       plot3(move_gyro{i,1},move_gyro{i,2}, move_gyro{i,3}, 'o','Color','o');
+       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','m');
    end
    hold on;
+   %legend("tap","ancle","swipeL","swipeR");
 end
 %  [tap, tTap] = detect_movement(move_gyro(1,1:3));
 %  [ancle,tAnc] = detect_movement(move_gyro(2,1:3));
@@ -249,13 +256,15 @@ end
 function [move_mat times]  = detect_movement(movement_cell)
     gyroX = movement_cell{1};
     gyroY = movement_cell{2};
-    gyroZ = movement_cell{3};    
+    gyroZ = movement_cell{3}; 
+    num_meas = min([size(gyroY,2),size(gyroX,2),size(gyroZ,2)]);
+    cols = 1: num_meas;
     ColNumsX = repmat(cols,size(gyroX,1),1);
     ColNumsY = repmat(cols,size(gyroY,1),1);
     ColNumsZ = repmat(cols,size(gyroZ,1),1);
-    gyroX_N = cat(3,gyroX,ColNumsX);
-    gyroY_N = cat(3,gyroY,ColNumsY);
-    gyroZ_N = cat(3,gyroZ,ColNumsZ);
+    gyroX_N = cat(3,gyroX(:,1:num_meas,1),gyroX(:,1:num_meas,2),ColNumsX);
+    gyroY_N = cat(3,gyroY(:,1:num_meas,1),gyroY(:,1:num_meas,2),ColNumsY);
+    gyroZ_N = cat(3,gyroZ(:,1:num_meas,1),gyroZ(:,1:num_meas,2),ColNumsZ);
     movements = [{gyroX_N} {gyroY_N} {gyroZ_N}] ;  
     col_stacked = cellfun(@(x) reshape(x,size(x(:,:,1),1)*size(x(:,:,1),2),3),movements,'UniformOutput',false);
     reduce_redundant_points = cellfun(@(x) x(find(x(:,1)),:),col_stacked,'UniformOutput',false);
@@ -288,20 +297,20 @@ function [move_mat times]  = detect_movement(movement_cell)
 end
 
 function new_times = relative_times(orig_times)
-    new_times =zeros(size(orig_times));
-    for i = 1:size(orig_times,2)
-        new_times(:,i) = orig_times(:,i)-orig_times(1,i);
+    new_times =zeros(length(orig_times),1);
+    for i = 1:length(orig_times)
+        new_times(i) = orig_times(i)-orig_times(1);
     end
 end
 %% PCA helper func
-function []= PlotPCA(mat,title,names,dim)
+function [coefs , score]= PlotPCA(mat,title,names,dim)
     [coefs , score] = pca(mat);
     % coeffs are the principle vectors dim_vector x dim_vector
     % score is the coordinates of the samples corresponding each vector
     % n x dim_vector
     vbls = {'X','Y','Z','T'}; % Labels for the variables
     figure;
-    h = biplot(coefs(:,1:dim),'Scores',score(:,1:dim),'VarLabels',vbls, 'ObsLabels',names);
+    h = biplot(coefs(:,1:dim),'Scores',score(:,1:dim),'VarLabels',vbls(1:size(coefs,1)), 'ObsLabels',names);
     % Identify each handle
     hID = get(h, 'tag'); 
     % Isolate handles to scatter points
