@@ -84,9 +84,11 @@ PlotPCA(st,"PCA side ancle and tap",moves,2);
 [vecsSR , ~]=PlotPCA(Gyro_SR,"PCA swipe right",SR,2);
 [vecsTap , ~]=PlotPCA(Gyro_tap,"PCA tap",Tap,2);
 figure;
-plot3(vecsAnc(1,1),vecsAnc(2,1),vecsAnc(3,1),vecsAnc(1,1),vecsAnc(2,1),vecsAnc(3,1),...
-    vecsSL(1,1),vecsSL(2,1),vecsSL(3,1),vecsSR(1,1),vecsSR(2,1),vecsSR(3,1),...
-    vecsTap(1,1),vecsTap(2,1),vecsTap(3,1))
+ plot3([0 0 0 0;vecsAnc(1,1),vecsSL(1,1),vecsSR(1,1) ,vecsTap(1,1)],...
+     [0 0 0 0;vecsAnc(2,1),vecsSL(2,1),vecsSR(2,1) ,vecsTap(2,1)],...
+     [0 0 0 0;vecsAnc(3,1),vecsSL(3,1),vecsSR(3,1) ,vecsTap(3,1)]);
+ legend('ancle','swipe left','swipe right','tap');
+
 %% Try a single mevement
 date = "17_04";
 movement_name = ["sit_N_sit_tap1" , "sit_N_sit_side_ancle1", "sit_N_swipe_R1", "sit_N_swipe_L1"];
@@ -187,7 +189,11 @@ plot3(Gyro_SR(:,1),Gyro_SR(:,2), Gyro_SR(:,3), 'o');
  hold on;
  plot3(Gyro_SL(:,1),Gyro_SL(:,2), Gyro_SL(:,3), 'o');
  hold on;
- legend('tap', 'side ancle', 'swipe right', 'swipe left');
+%  legend('tap', 'side ancle', 'swipe right', 'swipe left');
+ plot3(500*[-vecsAnc(1,1) -vecsSL(1,1) -vecsSR(1,1) -vecsTap(1,1);vecsAnc(1,1),vecsSL(1,1),vecsSR(1,1) ,vecsTap(1,1)],...
+     500*[-vecsAnc(2,1) -vecsSL(2,1) -vecsSR(2,1) -vecsTap(2,1);vecsAnc(2,1),vecsSL(2,1),vecsSR(2,1) ,vecsTap(2,1)],...
+     500*[-vecsAnc(3,1) -vecsSL(3,1) -vecsSR(3,1) -vecsTap(3,1);vecsAnc(3,1),vecsSL(3,1),vecsSR(3,1) ,vecsTap(3,1)]);
+%  legend('ancle','swipe left','swipe right','tap');
  
 %% PCA with times 
 Gyro_tapT = cat(2,tap,tTap);
@@ -229,8 +235,10 @@ for i = 1:length(list_moves)
        plot3(move(:,1),move(:,2), move(:,3), 'o','Color','m');
    end
    hold on;
-   %legend("tap","ancle","swipeL","swipeR");
 end
+ plot3(500*[-vecsAnc(1,1) -vecsSL(1,1) -vecsSR(1,1) -vecsTap(1,1);vecsAnc(1,1),vecsSL(1,1),vecsSR(1,1) ,vecsTap(1,1)],...
+     500*[-vecsAnc(2,1) -vecsSL(2,1) -vecsSR(2,1) -vecsTap(2,1);vecsAnc(2,1),vecsSL(2,1),vecsSR(2,1) ,vecsTap(2,1)],...
+     500*[-vecsAnc(3,1) -vecsSL(3,1) -vecsSR(3,1) -vecsTap(3,1);vecsAnc(3,1),vecsSL(3,1),vecsSR(3,1) ,vecsTap(3,1)]);
 %  [tap, tTap] = detect_movement(move_gyro(1,1:3));
 %  [ancle,tAnc] = detect_movement(move_gyro(2,1:3));
 %  [swipeL,tSL] = detect_movement(move_gyro(3,1:3));
