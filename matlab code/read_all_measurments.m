@@ -117,3 +117,15 @@ hold on;
 plot(tz_template,gyroZ_template);
 ylabel("gyro Z");
 legend("all swipeL","swipeL1");
+%% test is swipe L
+swL = zeros(size(to_avgX,2),1);
+for i=1:size(to_avgX,2)
+    sx = to_avgX(:,i,1);
+    tx = to_avgX(:,i,2);
+    sy = to_avgY(:,i,1);
+    ty = to_avgY(:,i,2);
+    sz = to_avgZ(:,i,1);
+    tz = to_avgZ(:,i,2);
+    swL(i) = isswipeL(sx,tx,sy,ty,sz,tz);
+end
+    
