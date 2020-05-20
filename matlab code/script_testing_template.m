@@ -1,10 +1,10 @@
 %% listof manes to all movments
 date = "17_04";
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
-    swl_names = list_moves( cell2mat( strfind( list_moves, "swipe_L"   )));
-    swr_names = list_moves( cell2mat( strfind( list_moves, "swipe_R"   )));
-    tap_names = list_moves( cell2mat( strfind( list_moves, "tap"       )));
-    anc_names = list_moves( cell2mat( strfind( list_moves, "side_ancle")));
+    swl_names = names_of_move( list_moves, "swipe_L");
+    swr_names = names_of_move(list_moves, "swipe_R");
+    tap_names = names_of_move( list_moves, "tap");
+    anc_names =names_of_move(list_moves, "side_ancle");
 
 %% templates to all moveents:
 
@@ -37,13 +37,14 @@ tmplt_anc_gyro = pad_data_to_same_size(...
                     tmplt_anc_gyrox, tmplt_anc_gyroy, tmplt_anc_gyroz);
 % put all templates in matrix
 % dims: template_len X num_of_params(3- x,y,z) X num_of_movments(4)
-template_mat = cat(3, ...
-    tmplt_swl_gyro, tmplt_swl_gyro, tmplt_tap_gyro, tmplt_anc_gyro);
+template_mat = cell(...
+    [{tmplt_swl_gyro} {tmplt_swr_gyro} {tmplt_tap_gyro} {tmplt_anc_gyro}]);
 %%
 txt = ["x","y","z"];
 shift = 5 ; %index shift to corr
 num_of_params = 3 ; % x,y,z
-l = size(template_mat,1);
+l = cellfun(@(x) size(x,1) ,template_mat , 'UniformOutput',false);
+l = cell2mat(l);
 corr = cell(length(list_moves),1);
 for i = 1:length(list_moves) % run on mes
     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
@@ -58,9 +59,11 @@ for i = 1:length(list_moves) % run on mes
 %     h= figure;
 %     axis tight manual
 %     filename = 'testAnimated.gif';
-    for k = 1: shift: length(time_vec) %run on gyro mat
-       [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
-                        = gyro_corr(template_mat,gyro_mat(k:k-1+l,:));
+    for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
+%        [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
+%                         = gyro_corr(template_mat,gyro_mat(k:k-1+l,:));
+         [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
+                          = gyro_corr(template_mat,gyro_mat,k,l);
         ind = ind+1;
 %         for s=1:3
 %             subplot(3,1,s);
@@ -88,6 +91,47 @@ for i = 1:length(list_moves) % run on mes
     corr{i} = corr1;
 end
 %%
+for i = 1:length(list_moves)
+   data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
+   curr_meas = corr{i};
+   corrSL = curr_meas(:,3,1);
+   corrSR = curr_meas(:,3,2);
+   corrTap = curr_meas(:,1,3);
+   corrAnc = curr_meas(:,2,4);
+   t = data_mat(:,20);
+   t_new = t(1:length(corrSL));
+   figure(i);
+   subplot(2,2,1);
+   plot(t_new,corrSL);
+   title("Swipe Left");
+   subplot(2,2,2);
+   plot(t_new,corrSR);
+   title("Swipe Right");
+   subplot(2,2,3);
+   plot(t_new,corrTap);
+   title("Tap");
+   subplot(2,2,4);
+   plot(t_new,corrAnc);
+   title("Ancle");
+   newStr = strrep(list_moves(i),'_',' ');
+   sgtitle(newStr);
+end
+%% Not finished yet
+%For each measurment find the peaks of the corelation with template at the 
+%prime axis. corelation responces order : SL -Z , SR - Z, Tap - X ,Ancle -
+%Y
+corr_peaks = cell(length(list_moves),1);
+for i = 1:length(list_moves)
+   curr_meas = corr{i};
+   [peaksSL,locsSL] = findpeaks(curr_meas(:,3,1));
+   [peaksSR,locsSR] = findpeaks(curr_meas(:,3,2));
+   [peaksTap,locsTap] = findpeaks(curr_meas(:,1,3));
+   [peaksAnc,locsAnc] = findpeaks(curr_meas(:,2,4));
+   peaks = cat(2,peaksSL,peaksSR,peaksTap,peaksAnc);
+   locs = cat(2,locsSL,locsSR,locsTap,locsAnc);
+   corr_peaks{i} = cat(3,peaks,locs);
+end
+%%
 function paded = pad_data_to_same_size(x,y,z)
 % function make all parames be in same length
 len_x = length(x);
@@ -102,7 +146,7 @@ paded = [x1 y1 z1];
 end
 %%
 function [corr_swl, corr_swr, corr_tap, corr_anc] = ...
-                                gyro_corr(template_mat,gyro_mat)
+                                gyro_corr(template_mat,gyro_mat,start,lengths)
 % function get 1 X 3 corr vector for each template and data
 num_of_params = 3 ; % x,y,z
 corr_swl = zeros(1,num_of_params);
@@ -112,9 +156,20 @@ corr_anc = zeros(1,num_of_params);
 
 % corr 2 vectors get scalar
 for i=1:num_of_params %for each x,y,z
-corr_swl(i) = corr( template_mat(:,i,1), gyro_mat(:, i));
-corr_swr(i) = corr( template_mat(:,i,2), gyro_mat(:, i));
-corr_tap(i) = corr( template_mat(:,i,3), gyro_mat(:, i));
-corr_anc(i) = corr( template_mat(:,i,4), gyro_mat(:, i));
+    tempSL = template_mat{1};
+    tempSR = template_mat{2};
+    tempTap = template_mat{3};
+    tempAnc = template_mat{4};
+    corr_swl(i) = corr( tempSL(:,i), gyro_mat(start:start-1+lengths(1),i));
+    corr_swr(i) = corr( tempSR(:,i), gyro_mat(start:start-1+lengths(2),i));
+    corr_tap(i) = corr( tempTap(:,i), gyro_mat(start:start-1+lengths(3),i));
+    corr_anc(i) = corr( tempAnc(:,i), gyro_mat(start:start-1+lengths(4),i));
 end
+end
+
+function list = names_of_move(list_moves,move)
+    pos_move = strfind( list_moves, move);
+    idx = cellfun(@(x) length(x)>0,pos_move,'UniformOutput',false);
+    idx = cell2mat(idx);
+    list = list_moves(find(idx));
 end
