@@ -1,5 +1,4 @@
 
-
 %% read data from dates 11_04 17_04 and median filter them
 %read_data_to_mat("11_04")
 %med_filter_all_data("11_04",5)
@@ -59,7 +58,8 @@ movement_names = ["sit_N_side_ancle1", "sit_N_side_ancle2", "sit_N_side_ancle3"]
 [gyroZ_template , tz_template] = make_template(to_avgZ,0.1);
 
 %% check movement finding and make_template
-textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
+movement_name = "sit_N_swipe_L1";
+textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","FILTERED_INIT.mat");
 DirList = dir(fullfile(textFileName));
 listOfFiles = {DirList.name};
 mat_name=strcat("..\measurements\resample\",date,"\",listOfFiles{1});
