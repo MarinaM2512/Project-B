@@ -48,7 +48,7 @@ med_filter_all_data("17_04",5)
 
 %% join measurments of movements
 date = "17_04";
-movement_names = ["sit_N_swipe_L1", "sit_N_swipe_L2", "sit_N_swipe_L3"];
+movement_names = ["sit_N_side_ancle1", "sit_N_side_ancle2", "sit_N_side_ancle3"];
 % template for only one mes - "sit_N_swipe_L1"
 [to_avgX, ~, ~] = join_measurments_of_movements(date,movement_names(1),10000,500,10,7);
 [~, to_avgY, ~] = join_measurments_of_movements(date,movement_names(1),10000,500,10,6);
