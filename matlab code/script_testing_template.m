@@ -23,7 +23,7 @@ tmplt_swr_gyro = pad_data_to_same_size(...
                    tmplt_swr_gyrox, tmplt_swr_gyroy, tmplt_swr_gyroz);
 
 % tap templates
-[tmplt_tap_gyrox, tmplt_tap_tx] = make_tamplate_all_movments_x(date,tap_names,10000,500,10,7,0.1);
+[tmplt_tap_gyrox, tmplt_tap_tx] = make_tamplate_all_movments_x(date,tap_names,10000,200,10,6,0.1);
 [tmplt_tap_gyroy, tmplt_tap_ty] = make_tamplate_all_movments_y(date,tap_names,10000,500,10,6,0.1);
 [tmplt_tap_gyroz, tmplt_tap_tz] = make_tamplate_all_movments_z(date,tap_names,10000,500,10,9,0.1);
 tmplt_tap_gyro = pad_data_to_same_size(...
@@ -39,6 +39,15 @@ tmplt_anc_gyro = pad_data_to_same_size(...
 % dims: template_len X num_of_params(3- x,y,z) X num_of_movments(4)
 template_mat = cell(...
     [{tmplt_swl_gyro} {tmplt_swr_gyro} {tmplt_tap_gyro} {tmplt_anc_gyro}]);
+%%
+t_tap = [{tmplt_tap_tx} {tmplt_tap_ty} {tmplt_tap_tz}];
+t_anc = [{tmplt_sancl_tx} {tmplt_sancl_ty} {tmplt_sancl_tz}];
+t_sl = [{tmplt_swl_tx} {tmplt_swl_ty} {tmplt_swl_tz}];
+t_sr = [{tmplt_swr_tx} {tmplt_swr_ty} {tmplt_swr_tz}];
+print_templates(tmplt_anc_gyrox,tmplt_anc_gyroy,tmplt_anc_gyroz,t_anc,"ancle");
+print_templates(tmplt_tap_gyrox,tmplt_tap_gyroy,tmplt_tap_gyroz,t_tap,"tap");
+print_templates(tmplt_swl_gyrox,tmplt_swl_gyroy,tmplt_swl_gyroz,t_sl,"swipe left");
+print_templates(tmplt_swr_gyrox,tmplt_swr_gyroy,tmplt_swr_gyroz,t_sr,"swipe right");
 %%
 txt = ["x","y","z"];
 shift = 5 ; %index shift to corr
@@ -168,8 +177,24 @@ end
 end
 
 function list = names_of_move(list_moves,move)
-    pos_move = strfind( list_moves, move);
+    sit_moves_idx = cellfun(@(x) ~contains(x,"stand"),list_moves,'UniformOutput',false);
+    moves = list_moves(cell2mat(sit_moves_idx));
+    pos_move = strfind( moves, move);
     idx = cellfun(@(x) length(x)>0,pos_move,'UniformOutput',false);
     idx = cell2mat(idx);
-    list = list_moves(find(idx));
+    list = moves(find(idx));
+end
+
+function print_templates(x,y,z,t,move_name)
+    figure;
+    subplot(3,1,1);
+    plot(t{1},x);
+    title("X");
+    subplot(3,1,2);
+    plot(t{2},y);
+    title("Y");
+    subplot(3,1,3);
+    plot(t{3},z);
+    title("Z");
+    sgtitle(move_name);
 end
