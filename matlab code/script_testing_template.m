@@ -48,7 +48,58 @@ print_templates(tmplt_anc_gyrox,tmplt_anc_gyroy,tmplt_anc_gyroz,t_anc,"ancle");
 print_templates(tmplt_tap_gyrox,tmplt_tap_gyroy,tmplt_tap_gyroz,t_tap,"tap");
 print_templates(tmplt_swl_gyrox,tmplt_swl_gyroy,tmplt_swl_gyroz,t_sl,"swipe left");
 print_templates(tmplt_swr_gyrox,tmplt_swr_gyroy,tmplt_swr_gyroz,t_sr,"swipe right");
-%%
+% %% cal corr
+% txt = ["x","y","z"];
+% shift = 5 ; %index shift to corr
+% num_of_params = 3 ; % x,y,z
+% l = cellfun(@(x) size(x,1) ,template_mat , 'UniformOutput',false);
+% l = cell2mat(l);
+% corr = cell(length(list_moves),1);
+% for i = 1:length(list_moves) % run on mes
+%     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
+%     time_vec = data_mat(:, end);
+%     gyro_mat = data_mat(:, 4:6);
+%     k = 1: shift: length(time_vec);
+%     ind = 1;
+%     corr_swl = zeros( length(k), num_of_params);
+%     corr_swr = zeros( length(k), num_of_params);
+%     corr_tap = zeros( length(k), num_of_params);
+%     corr_anc = zeros( length(k), num_of_params);
+% %     h= figure;
+% %     axis tight manual
+% %     filename = 'testAnimated.gif';
+%     for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
+% %        [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
+% %                         = gyro_corr(template_mat,gyro_mat(k:k-1+l,:));
+%          [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
+%                           = gyro_corr(template_mat,gyro_mat,k,l);
+%         ind = ind+1;
+% %         for s=1:3
+% %             subplot(3,1,s);
+% %             plot(time_vec(k:k-1+l),template_mat(:,s,1),'r');
+% %             hold on;
+% %             plot(time_vec(k:k-1+l),gyro_mat(k:k-1+l,s));
+% %             title(['swipe L for gyro ',txt(s)]);
+% %         end
+% %         drawnow
+% %               % Capture the plot as an image 
+% %       frame = getframe(h); 
+% %       im = frame2im(frame); 
+% %       [imind,cm] = rgb2ind(im,256); 
+% % 
+% %       % Write to the GIF File 
+% %       if k == 1 
+% %           imwrite(imind,cm,filename,'gif', 'Loopcount',inf); 
+% %       else 
+% %           imwrite(imind,cm,filename,'gif','WriteMode','append'); 
+% %       end 
+%     end
+%     % corr1 is corr for one mes
+%     % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)
+%     corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
+%     corr{i} = corr1;
+% end
+%% cal corr new
 txt = ["x","y","z"];
 shift = 5 ; %index shift to corr
 num_of_params = 3 ; % x,y,z
@@ -59,57 +110,59 @@ for i = 1:length(list_moves) % run on mes
     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
     time_vec = data_mat(:, end);
     gyro_mat = data_mat(:, 4:6);
-    k = 1: shift: length(time_vec);
+%     k = 1: shift: length(time_vec);
     ind = 1;
-    corr_swl = zeros( length(k), num_of_params);
-    corr_swr = zeros( length(k), num_of_params);
-    corr_tap = zeros( length(k), num_of_params);
-    corr_anc = zeros( length(k), num_of_params);
-%     h= figure;
-%     axis tight manual
-%     filename = 'testAnimated.gif';
+    % NEW: final length as gyro, same scale in time
+    corr_swl = zeros( length(time_vec), num_of_params);
+    corr_swr = zeros( length(time_vec), num_of_params);
+    corr_tap = zeros( length(time_vec), num_of_params);
+    corr_anc = zeros( length(time_vec), num_of_params);
+    
     for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
-%        [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
-%                         = gyro_corr(template_mat,gyro_mat(k:k-1+l,:));
-         [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
+
+         [corr_swl(k,:), corr_swr(k,:), corr_tap(k,:), corr_anc(k,:)]...
                           = gyro_corr(template_mat,gyro_mat,k,l);
-        ind = ind+1;
-%         for s=1:3
-%             subplot(3,1,s);
-%             plot(time_vec(k:k-1+l),template_mat(:,s,1),'r');
-%             hold on;
-%             plot(time_vec(k:k-1+l),gyro_mat(k:k-1+l,s));
-%             title(['swipe L for gyro ',txt(s)]);
-%         end
-%         drawnow
-%               % Capture the plot as an image 
-%       frame = getframe(h); 
-%       im = frame2im(frame); 
-%       [imind,cm] = rgb2ind(im,256); 
-% 
-%       % Write to the GIF File 
-%       if k == 1 
-%           imwrite(imind,cm,filename,'gif', 'Loopcount',inf); 
-%       else 
-%           imwrite(imind,cm,filename,'gif','WriteMode','append'); 
-%       end 
     end
     % corr1 is corr for one mes
     % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)
     corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
     corr{i} = corr1;
 end
-%% plor correlation results for all meas
+%% plot correlation with data to check when they correspond
+i=1;
+data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
+curr_meas = corr{i};
+corrSL = curr_meas(:,3,1);  %z
+corrSR = curr_meas(:,3,2);  %z
+corrTap = curr_meas(:,1,3); %x
+corrAnc = curr_meas(:,2,4); %y
+t = data_mat(:,20);
+t_new = t(1:length(corrSL));
+   % plot gyro with corr to check when is the maximun correlation
+    gyro_mat = data_mat(:, 4:6);
+    max1=max(gyro_mat(:,3));
+    %
+figure(1);
+plot(t_new,corrSL);
+    % plot normlized gyro
+    hold on;
+    plot(t_new,gyro_mat(:,3)/max1);
+legend("corr","gyro");
+xlim([5e4 8e4]);
+xlabel("t");
+ylabel("normlized amp");
+%% plot correlation results for all meas
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
    curr_meas = corr{i};
-   corrSL = curr_meas(:,3,1);
-   corrSR = curr_meas(:,3,2);
-   corrTap = curr_meas(:,1,3);
-   corrAnc = curr_meas(:,2,4);
+   corrSL = curr_meas(:,3,1);  %z
+   corrSR = curr_meas(:,3,2);  %z
+   corrTap = curr_meas(:,1,3); %x
+   corrAnc = curr_meas(:,2,4); %y
    t = data_mat(:,20);
    t_new = t(1:length(corrSL));
-   figure(i);
+   % plot all corr
+   figure(i+1);
    subplot(2,2,1);
    plot(t_new,corrSL);
    title("Swipe Left");
