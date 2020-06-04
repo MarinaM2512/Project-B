@@ -1,4 +1,4 @@
-%% listof manes to all movments
+%% list of names for all movments
 date = "17_04";
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
     swl_names = names_of_move( list_moves, "swipe_L");
@@ -6,7 +6,7 @@ list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
     tap_names = names_of_move( list_moves, "tap");
     anc_names =names_of_move(list_moves, "side_ancle");
 
-%% templates to all moveents:
+%% templates for all moveents:
 
 % swipe L templates
 [tmplt_swl_gyrox, tmplt_swl_tx] = make_tamplate_all_movments_x(date,swl_names,10000,500,10,7,0.1);
@@ -99,7 +99,7 @@ for i = 1:length(list_moves) % run on mes
     corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
     corr{i} = corr1;
 end
-%%
+%% plor correlation results for all meas
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
    curr_meas = corr{i};
