@@ -12,7 +12,7 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
 % 3.thresh: thereshold applied to Data for movment detection
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
-
+% 5.sum_window: window length that we sum all element in it
     textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};
