@@ -12,93 +12,61 @@ list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
 [tmplt_swl_gyrox, tmplt_swl_tx] = make_tamplate_all_movments_x(date,swl_names,10000,500,10,7,0.1);
 [tmplt_swl_gyroy, tmplt_swl_ty] = make_tamplate_all_movments_y(date,swl_names,10000,500,10,6,0.1);
 [tmplt_swl_gyroz, tmplt_swl_tz] = make_tamplate_all_movments_z(date,swl_names,10000,500,10,9,0.1);
-tmplt_swl_gyro = pad_data_to_same_size(...
-                   tmplt_swl_gyrox, tmplt_swl_gyroy, tmplt_swl_gyroz);
+[tmplt_swl_gyro,tmplt_swl_t] = pad_data_to_same_size(...
+                   tmplt_swl_gyrox, tmplt_swl_gyroy, tmplt_swl_gyroz,...
+                   tmplt_swl_tx,tmplt_swl_ty,tmplt_swl_tz,0.6,2/3);
+
 
 % swipe R templates
 [tmplt_swr_gyrox, tmplt_swr_tx] = make_tamplate_all_movments_x(date,swr_names,10000,500,10,7,0.1);
 [tmplt_swr_gyroy, tmplt_swr_ty] = make_tamplate_all_movments_y(date,swr_names,10000,500,10,6,0.1);
 [tmplt_swr_gyroz, tmplt_swr_tz] = make_tamplate_all_movments_z(date,swr_names,10000,500,10,9,0.1);
-tmplt_swr_gyro = pad_data_to_same_size(...
-                   tmplt_swr_gyrox, tmplt_swr_gyroy, tmplt_swr_gyroz);
+[tmplt_swr_gyro ,tmplt_swr_t]  = pad_data_to_same_size(...
+                   tmplt_swr_gyrox, tmplt_swr_gyroy, tmplt_swr_gyroz,...
+                   tmplt_swr_tx,tmplt_swr_ty,tmplt_swr_tz,0.6,2/3);
 
 % tap templates
-[tmplt_tap_gyrox, tmplt_tap_tx] = make_tamplate_all_movments_x(date,tap_names,10000,200,10,6,0.1);
+[tmplt_tap_gyrox, tmplt_tap_tx] = make_tamplate_all_movments_x(date,tap_names,10000,500,10,5,0.02);
 [tmplt_tap_gyroy, tmplt_tap_ty] = make_tamplate_all_movments_y(date,tap_names,10000,500,10,6,0.1);
 [tmplt_tap_gyroz, tmplt_tap_tz] = make_tamplate_all_movments_z(date,tap_names,10000,500,10,9,0.1);
-tmplt_tap_gyro = pad_data_to_same_size(...
-                   tmplt_tap_gyrox, tmplt_tap_gyroy, tmplt_tap_gyroz);
+[tmplt_tap_gyro,tmplt_tap_t] = pad_data_to_same_size(...
+                   tmplt_tap_gyrox, tmplt_tap_gyroy, tmplt_tap_gyroz,...
+                   tmplt_tap_tx,tmplt_tap_ty,tmplt_tap_tz,0.3,4/5);
+
+
 
 % side anckle templates
 [tmplt_anc_gyrox, tmplt_sancl_tx] = make_tamplate_all_movments_x(date,anc_names,10000,500,10,7,0.1);
 [tmplt_anc_gyroy, tmplt_sancl_ty] = make_tamplate_all_movments_y(date,anc_names,10000,500,10,6,0.1);
 [tmplt_anc_gyroz, tmplt_sancl_tz] = make_tamplate_all_movments_z(date,anc_names,10000,500,10,9,0.1);
-tmplt_anc_gyro = pad_data_to_same_size(...
-                    tmplt_anc_gyrox, tmplt_anc_gyroy, tmplt_anc_gyroz);
+[tmplt_anc_gyro,tmplt_anc_t] = pad_data_to_same_size(...
+                    tmplt_anc_gyrox, tmplt_anc_gyroy, tmplt_anc_gyroz,...
+                    tmplt_sancl_tx,tmplt_sancl_ty,tmplt_sancl_tz,0.7,2/3);
+
+
 % put all templates in matrix
 % dims: template_len X num_of_params(3- x,y,z) X num_of_movments(4)
 template_mat = cell(...
     [{tmplt_swl_gyro} {tmplt_swr_gyro} {tmplt_tap_gyro} {tmplt_anc_gyro}]);
-%%
-t_tap = [{tmplt_tap_tx} {tmplt_tap_ty} {tmplt_tap_tz}];
-t_anc = [{tmplt_sancl_tx} {tmplt_sancl_ty} {tmplt_sancl_tz}];
-t_sl = [{tmplt_swl_tx} {tmplt_swl_ty} {tmplt_swl_tz}];
-t_sr = [{tmplt_swr_tx} {tmplt_swr_ty} {tmplt_swr_tz}];
-print_templates(tmplt_anc_gyrox,tmplt_anc_gyroy,tmplt_anc_gyroz,t_anc,"ancle");
-print_templates(tmplt_tap_gyrox,tmplt_tap_gyroy,tmplt_tap_gyroz,t_tap,"tap");
-print_templates(tmplt_swl_gyrox,tmplt_swl_gyroy,tmplt_swl_gyroz,t_sl,"swipe left");
-print_templates(tmplt_swr_gyrox,tmplt_swr_gyroy,tmplt_swr_gyroz,t_sr,"swipe right");
-% %% cal corr
-% txt = ["x","y","z"];
-% shift = 5 ; %index shift to corr
-% num_of_params = 3 ; % x,y,z
-% l = cellfun(@(x) size(x,1) ,template_mat , 'UniformOutput',false);
-% l = cell2mat(l);
-% corr = cell(length(list_moves),1);
-% for i = 1:length(list_moves) % run on mes
-%     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
-%     time_vec = data_mat(:, end);
-%     gyro_mat = data_mat(:, 4:6);
-%     k = 1: shift: length(time_vec);
-%     ind = 1;
-%     corr_swl = zeros( length(k), num_of_params);
-%     corr_swr = zeros( length(k), num_of_params);
-%     corr_tap = zeros( length(k), num_of_params);
-%     corr_anc = zeros( length(k), num_of_params);
-% %     h= figure;
-% %     axis tight manual
-% %     filename = 'testAnimated.gif';
-%     for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
-% %        [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
-% %                         = gyro_corr(template_mat,gyro_mat(k:k-1+l,:));
-%          [corr_swl(ind,:), corr_swr(ind,:), corr_tap(ind,:), corr_anc(ind,:)]...
-%                           = gyro_corr(template_mat,gyro_mat,k,l);
-%         ind = ind+1;
-% %         for s=1:3
-% %             subplot(3,1,s);
-% %             plot(time_vec(k:k-1+l),template_mat(:,s,1),'r');
-% %             hold on;
-% %             plot(time_vec(k:k-1+l),gyro_mat(k:k-1+l,s));
-% %             title(['swipe L for gyro ',txt(s)]);
-% %         end
-% %         drawnow
-% %               % Capture the plot as an image 
-% %       frame = getframe(h); 
-% %       im = frame2im(frame); 
-% %       [imind,cm] = rgb2ind(im,256); 
-% % 
-% %       % Write to the GIF File 
-% %       if k == 1 
-% %           imwrite(imind,cm,filename,'gif', 'Loopcount',inf); 
-% %       else 
-% %           imwrite(imind,cm,filename,'gif','WriteMode','append'); 
-% %       end 
-%     end
-%     % corr1 is corr for one mes
-%     % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)
-%     corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
-%     corr{i} = corr1;
-% end
+%% Print and save templates
+t_tap = [{tmplt_tap_t(:,1)} {tmplt_tap_t(:,2)} {tmplt_tap_t(:,3)}];
+t_anc = [{tmplt_anc_t(:,1)} {tmplt_anc_t(:,2)} {tmplt_anc_t(:,3)}];
+t_sl = [{tmplt_swl_t(:,1)} {tmplt_swl_t(:,2)} {tmplt_swl_t(:,3)}];
+t_sr = [{tmplt_swr_t(:,1)} {tmplt_swr_t(:,2)} {tmplt_swr_t(:,3)}];
+print_templates(tmplt_anc_gyro(:,1),tmplt_anc_gyro(:,2),tmplt_anc_gyro(:,3),t_anc,"ancle");
+print_templates(tmplt_tap_gyro(:,1),tmplt_tap_gyro(:,2),tmplt_tap_gyro(:,3),t_tap,"tap");
+print_templates(tmplt_swl_gyro(:,1),tmplt_swl_gyro(:,2),tmplt_swl_gyro(:,3),t_sl,"swipe left");
+print_templates(tmplt_swr_gyro(:,1),tmplt_swr_gyro(:,2),tmplt_swr_gyro(:,3),t_sr,"swipe right");
+swl = cat(3,tmplt_swl_gyro,tmplt_swl_t);
+swr = cat(3,tmplt_swr_gyro,tmplt_swr_t);
+tap = cat(3,tmplt_tap_gyro,tmplt_tap_t);
+ank = cat(3,tmplt_anc_gyro,tmplt_anc_t);
+name = ["swl" "swr" "tap" "ank"];
+for i = 1:4
+    mat_name=strcat(".\templates\",name(i),"_template",".mat");
+    save(mat_name,name(i));
+end
+
 %% cal corr new
 txt = ["x","y","z"];
 shift = 5 ; %index shift to corr
@@ -128,7 +96,28 @@ for i = 1:length(list_moves) % run on mes
     corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
     corr{i} = corr1;
 end
-%% plot correlation with data to check when they correspond
+%% Calculate corelation with weighted template - To be contionued
+tmp = load("./templates/tap_template");
+temp_tap = tmp.tap(:,:,1);
+tmp = load("./templates/ank_template");
+temp_ank = tmp.ank(:,:,1);
+tmp = load("./templates/swl_template");
+temp_swl = tmp.swl(:,:,1);
+tmp = load("./templates/swr_template");
+temp_swr = tmp.swr(:,:,1);
+tmp = load("./templates/tap_principle_vec");
+vec_tap = tmp.tap;
+tmp = load("./templates/ank_principle_vec");
+vec_ank = tmp.ank;
+tmp = load("./templates/swl_principle_vec");
+vec_swl = tmp.swl;
+tmp = load("./templates/swr_principle_vec");
+vec_swr = tmp.swr;
+
+weightTap = temp_tap(:,1)*vec_tap;
+
+
+%% plot correlation with data to check when they correspond 
 i=1;
 data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
 curr_meas = corr{i};
@@ -151,6 +140,7 @@ legend("corr","gyro");
 xlim([5e4 8e4]);
 xlabel("t");
 ylabel("normlized amp");
+%% Calculate weighed corelation foe each movement
 %% plot correlation results for all meas
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
@@ -194,16 +184,40 @@ for i = 1:length(list_moves)
    corr_peaks{i} = cat(3,peaks,locs);
 end
 %%
-function paded = pad_data_to_same_size(x,y,z)
+function [padedX,padedT]  = pad_data_to_same_size(x,y,z,tx,ty,tz,thresh,fraction_last)
 % function make all parames be in same length
-len_x = length(x);
-len_y = length(y);
-len_z = length(z);
+% thresh is the thereshold on the diff so that the last insignificant part
+%        of the template would be reduced
+%fraction_last - how much of the  the signal to cosider significant
+trunckG = [{x} {y} {z}];
+trunckT = [{tx} {ty} {tz}];
+for i =1:3
+    curr = trunckG{i};
+    tmp = curr(floor(length(curr)*fraction_last):end);
+    curr = curr(1:(length(curr)-length(tmp)));
+    ind = find(diff(tmp)<thresh);
+    tmp = tmp(1:ind(1)+1);
+    curr(length(curr)+1:length(curr)+length(tmp)) = tmp;
+    trunckG{i} = curr;
+    t = trunckT{i};
+    t=t(1:length(curr));
+    trunckT{i} = t;
+end
+[x1 ,y1, z1] = trunckG{1:3};
+[tx1,ty1,tz1] = trunckT{1:3};
+len_x = length( x1);
+len_y = length( y1);
+len_z = length( z1);
 max_len= max([len_x,len_y,len_z]);
-x1 = padarray(x,max_len-len_x,0,'post');
-y1 = padarray(y,max_len-len_y,0,'post');
-z1 = padarray(z,max_len-len_z,0,'post');
-paded = [x1 y1 z1];
+x2 = padarray(x1,max_len-len_x,x1(end),'post');
+y2 = padarray(y1,max_len-len_y,y1(end),'post');
+z2 = padarray(z1,max_len-len_z,z1(end),'post');
+tx2 = padarray(tx1, max_len-len_x,tx1(end),'post');
+ty2 = padarray(ty1,max_len-len_y,ty1(end),'post');
+tz2=  padarray(tz1,max_len-len_z,tz1(end),'post');
+
+padedX = [x2 y2 z2];
+padedT = [tx2 ty2 tz2];
 
 end
 %%

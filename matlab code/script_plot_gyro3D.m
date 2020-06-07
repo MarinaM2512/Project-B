@@ -79,6 +79,10 @@ st = cat(1,Gyro_side,Gyro_tap);
 moves=cat(1,Acncle',Tap');
 PlotPCA(st,"PCA side ancle and tap",moves,2);
 %% PCA of each movement 
+SL = repmat( "swipe L" ,1, length(Gyro_SL));
+SR = repmat( "swipe R" ,1, length(Gyro_SR));
+Tap = repmat( "Tap" ,1, length(Gyro_tap));
+Acncle = repmat( "Side Ancle" ,1, length(Gyro_side));
 [vecsAnc , ~]=PlotPCA(Gyro_side,"PCA side ancle",Acncle,2);
 [vecsSL , ~]=PlotPCA(Gyro_SL , "PCA swipe left",SL,2);
 [vecsSR , ~]=PlotPCA(Gyro_SR,"PCA swipe right",SR,2);
@@ -197,38 +201,7 @@ plot3(Gyro_SR(:,1),Gyro_SR(:,2), Gyro_SR(:,3), 'o');
  
 
 
-%% fit a 3D curve for each movement  without diff
-date = "17_04";
-list_moves = get_all_meas_names(date,"FILTERED_INIT" ,1);
-times = cell(length(list_moves),1);
-figure;
-for i = 1:length(list_moves)
-    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
-    if(contains(list_moves{i},"tap") || contains(list_moves{i},"ancle") )
-       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7);
-    else
-       [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7); 
-    end
-   move_gyro(i,1:3) = [{to_avgX} {to_avgY} {to_avgZ}] ; 
-   [move,~,time] = detect_movement(move_gyro(i,1:3));
-   times(i,1) = {time};
-   move_gyro(i,1) = {move};
-   if(contains(list_moves{i},"tap"))
-       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','b');
-   elseif(contains(list_moves{i},"ancle"))
-       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','r');
-   elseif(contains(list_moves{i},"swipe_L"))
-       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','g');
-   elseif(contains(list_moves{i},"swipe_R"))
-       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','k');
-   else
-       plot3(move(:,1),move(:,2), move(:,3), 'o','Color','m');
-   end
-   hold on;
-end
- plot3(500*[-vecsAnc(1,1) -vecsSL(1,1) -vecsSR(1,1) -vecsTap(1,1);vecsAnc(1,1),vecsSL(1,1),vecsSR(1,1) ,vecsTap(1,1)],...
-     500*[-vecsAnc(2,1) -vecsSL(2,1) -vecsSR(2,1) -vecsTap(2,1);vecsAnc(2,1),vecsSL(2,1),vecsSR(2,1) ,vecsTap(2,1)],...
-     500*[-vecsAnc(3,1) -vecsSL(3,1) -vecsSR(3,1) -vecsTap(3,1);vecsAnc(3,1),vecsSL(3,1),vecsSR(3,1) ,vecsTap(3,1)]);
+
 %% Try plot with diff and join points to mat
 date = "17_04";
 list_moves = get_all_meas_names(date,"FILTERED_INIT" ,1);

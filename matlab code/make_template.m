@@ -23,7 +23,10 @@ aligned_movments = align_peaks(movments,left_border,right_border);
 data_tmp = mean(aligned_movments(:,:,1),2); %data
 t_tmp    = mean(aligned_movments(:,:,2),2); %duration
 time_template = linspace(min(t_tmp), max(t_tmp), length(t_tmp))'; % Uniformly-Sampled Time Vector
-data_template = resample(data_tmp, time_template); 
+data_template = resample(data_tmp, time_template);
+idxNonZero = find (data_template);
+data_template = data_template(idxNonZero);
+time_template = time_template(idxNonZero);
 end
 
 function aligned_movments = align_peaks(movments,left_border,right_border)
@@ -39,10 +42,12 @@ aligned_movments(:,1,1) = movments(:,1,1);
 relative_times=relative_times_in_seg(movments(:,:,2),num_of_segments);
 
 % init starting indx
-[~,locs1] = findpeaks(movments(:,1,1),'SortStr','descend','NPeaks',1);
+[~,locs1] = findpeaks(abs(movments(:,1,1)),'SortStr','descend','NPeaks',2);
+locs1 = min(locs1);
 % find index within borders and align in relation to it
 for i=2:num_of_segments %run along rows -->
-    [~,locs] = findpeaks(movments(:,i,1),'SortStr','descend','NPeaks',1);
+    [~,locs] = findpeaks(abs(movments(:,i,1)),'SortStr','descend','NPeaks',2);
+    locs = min(locs);
     if locs1<=left_border %locs1 is out of borders
         locs1=max(locs1,locs);
     elseif locs1>=right_border
@@ -53,12 +58,13 @@ for i=2:num_of_segments %run along rows -->
 end
 %align
 for i=1:num_of_segments %run along rows -->
-    [~,locs] = findpeaks(movments(:,i,1),'SortStr','descend','NPeaks',1);
+    [~,locs] = findpeaks(abs(movments(:,i,1)),'SortStr','descend','NPeaks',2);
+    locs = min(locs);
     z=zeros(movment_length,1);
     t=zeros(movment_length,1);
     shift=locs1-locs;
     if shift>=0
-        z(shift+1:end) = movments(1:end-shift,i,1);
+        z(shift+1:end) = movments(1:end-shift,i,1); 
         t(shift+1:end) = relative_times(1:end-shift,i);
     else
         shift=abs(shift);
