@@ -70,32 +70,8 @@ end
 %% cal corr new
 txt = ["x","y","z"];
 shift = 5 ; %index shift to corr
-num_of_params = 3 ; % x,y,z
-l = cellfun(@(x) size(x,1) ,template_mat , 'UniformOutput',false);
-l = cell2mat(l);
-corr = cell(length(list_moves),1);
-for i = 1:length(list_moves) % run on mes
-    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
-    time_vec = data_mat(:, end);
-    gyro_mat = data_mat(:, 4:6);
-%     k = 1: shift: length(time_vec);
-    ind = 1;
-    % NEW: final length as gyro, same scale in time
-    corr_swl = zeros( length(time_vec), num_of_params);
-    corr_swr = zeros( length(time_vec), num_of_params);
-    corr_tap = zeros( length(time_vec), num_of_params);
-    corr_anc = zeros( length(time_vec), num_of_params);
-    
-    for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
+corr = gyro_corr_all_data(date,template_mat,list_moves,shift);
 
-         [corr_swl(k,:), corr_swr(k,:), corr_tap(k,:), corr_anc(k,:)]...
-                          = gyro_corr(template_mat,gyro_mat,k,l);
-    end
-    % corr1 is corr for one mes
-    % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)
-    corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
-    corr{i} = corr1;
-end
 %% Calculate corelation with weighted template - To be contionued
 tmp = load("./templates/tap_template");
 temp_tap = tmp.tap(:,:,1);
@@ -221,27 +197,6 @@ padedT = [tx2 ty2 tz2];
 
 end
 %%
-function [corr_swl, corr_swr, corr_tap, corr_anc] = ...
-                                gyro_corr(template_mat,gyro_mat,start,lengths)
-% function get 1 X 3 corr vector for each template and data
-num_of_params = 3 ; % x,y,z
-corr_swl = zeros(1,num_of_params);
-corr_swr = zeros(1,num_of_params);
-corr_tap = zeros(1,num_of_params);
-corr_anc = zeros(1,num_of_params);
-
-% corr 2 vectors get scalar
-for i=1:num_of_params %for each x,y,z
-    tempSL = template_mat{1};
-    tempSR = template_mat{2};
-    tempTap = template_mat{3};
-    tempAnc = template_mat{4};
-    corr_swl(i) = corr( tempSL(:,i), gyro_mat(start:start-1+lengths(1),i));
-    corr_swr(i) = corr( tempSR(:,i), gyro_mat(start:start-1+lengths(2),i));
-    corr_tap(i) = corr( tempTap(:,i), gyro_mat(start:start-1+lengths(3),i));
-    corr_anc(i) = corr( tempAnc(:,i), gyro_mat(start:start-1+lengths(4),i));
-end
-end
 
 function list = names_of_move(list_moves,move)
     sit_moves_idx = cellfun(@(x) ~contains(x,"stand"),list_moves,'UniformOutput',false);
