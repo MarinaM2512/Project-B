@@ -80,7 +80,7 @@ tmp = load("./templates/swr_template");
 temp_swr = tmp.swr(:,:,1);
 temp_swr_t = tmp.swr(:,:,2);
 template_mat = cell(...
-    [{temp_tap} {temp_ank} {temp_swl} {temp_swr}]);
+    [{temp_swl} {temp_swr} {temp_tap} {temp_ank}]);
 %% Calculate corelation with weighted template - To be contionued
 tmp = load("./templates/tap_principle_vec");
 vec_tap = tmp.tap;
@@ -100,7 +100,7 @@ Swl = repmat(weightSwl,1,4);
 weightSwr = temp_swr*vec_swr;
 Swr = repmat(weightSwr,1,4);
 template_mat = cell(...
-    [{Tap} {Ank} {Swl} {Swr}]);
+    [{Swl} {Swr} {Tap} {Ank} ]);
 % calculate correlation om weighted_data
 date = "17_04";
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
@@ -113,7 +113,7 @@ for i = 1:length(list_moves) % run on mes
     data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
     time_vec = data_mat(:, end);
     gyro_mat = data_mat(:, 4:6);
-    weigthted_gyro = cat(2,gyro_mat*vec_tap,gyro_mat*vec_ank,gyro_mat*vec_swl,gyro_mat*vec_swr);
+    weigthted_gyro = cat(2,gyro_mat*vec_swl,gyro_mat*vec_swr,gyro_mat*vec_tap,gyro_mat*vec_ank);
 %     k = 1: shift: length(time_vec);
     ind = 1;
     % NEW: final length as gyro, same scale in time
@@ -129,7 +129,7 @@ for i = 1:length(list_moves) % run on mes
     end
     % corr1 is corr for one mes
     % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)
-    corr1 = cat( 3,corr_tap,corr_anc, corr_swl, corr_swr);
+    corr1 = cat( 3, corr_swl, corr_swr,corr_tap,corr_anc);
     corr{i} = corr1;
 end
 %% plot weighted templates
@@ -146,13 +146,27 @@ title("swipe left template with swipe left weights");
 subplot(2,2,4);
 plot(1:length(weightSwr),weightSwr);
 title("swipe right template with swipe right weights");
+figure;
+subplot(2,2,1);
+plot(1:length(weightTap),temp_swl*vec_tap);
+title("swl template with tap weights");
+subplot(2,2,2);
+plot(1:length(weightTap),temp_swl*vec_swl);
+title("swl template with swl weights");
+subplot(2,2,3);
+plot(1:length(weightTap),temp_swl*vec_swr);
+title("swl template template with swipe left weights");
+subplot(2,2,4);
+plot(1:length(weightTap),temp_swl*vec_ank);
+title("swl template template with ankle weights");
+
 
 %% Plot test corelations 
 sideCorr = corr{3};
-dataTap = sideCorr(:,1,:);
-dataAnk = sideCorr(:,2,:);
-dataSwl = sideCorr(:,3,:);
-dataSwr = sideCorr(:,4,:);
+dataSwl = sideCorr(:,1,:);
+dataSwr = sideCorr(:,2,:);
+dataTap = sideCorr(:,3,:);
+dataAnk = sideCorr(:,4,:);
 figure;
 subplot(2,2,1);
 plot(1:length(dataTap),dataTap(:,:,1));
@@ -281,6 +295,7 @@ xlim([5e4 8e4]);
 xlabel("t");
 ylabel("normlized amp");
 %% Calculate weighed corelation for each movement
+list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
 tmp = load("./templates/tap_principle_vec");
 vec_tap = tmp.tap;
 vec_tap = vec_tap.*(vec_tap>0);
@@ -319,61 +334,61 @@ dataSwr = sideCorr(:,:,4);
 figure;
 subplot(2,2,1);
 plot(1:length(dataTap),dataTap(:,1));
-title("Tap template");
+title("swl template");
 subplot(2,2,2);
 plot(1:length(dataTap),dataTap(:,2));
-title("Ankle template");
+title("swr template");
 subplot(2,2,3);
 plot(1:length(dataTap),dataTap(:,3));
-title("Swipe left template");
+title("tap template");
 subplot(2,2,4);
 plot(1:length(dataTap),dataTap(:,4));
-title("Swipe right template");
+title("ank template");
 sgtitle("Correlation of ancle data weighted with tap weights");
 
 figure;
 subplot(2,2,1);
 plot(1:length(dataAnk),dataAnk(:,1));
-title("Tap template");
+title("swl template");
 subplot(2,2,2);
 plot(1:length(dataAnk),dataAnk(:,2));
-title("Ankle template");
+title("swr template");
 subplot(2,2,3);
 plot(1:length(dataAnk),dataAnk(:,3));
-title("Swipe left template");
+title("tap template");
 subplot(2,2,4);
 plot(1:length(dataAnk),dataAnk(:,4));
-title("Swipe right template");
+title("ank template");
 sgtitle("Correlation of ancle data weighted with ancle weights");
 
 figure;
 subplot(2,2,1);
 plot(1:length(dataSwl),dataSwl(:,1));
-title("Tap template");
+title("swl template");
 subplot(2,2,2);
 plot(1:length(dataSwl),dataSwl(:,2));
-title("Ankle template");
+title("swr template");
 subplot(2,2,3);
 plot(1:length(dataSwl),dataSwl(:,3));
-title("Swipe left template");
+title("tap template");
 subplot(2,2,4);
 plot(1:length(dataSwl),dataSwl(:,4));
-title("Swipe right template");
+title("ank template");
 sgtitle("Correlation of ancle data weighted with swipe left weights");
 
 figure;
 subplot(2,2,1);
 plot(1:length(dataSwr),dataSwr(:,1));
-title("Tap template");
+title("swl template");
 subplot(2,2,2);
 plot(1:length(dataSwr),dataSwr(:,2));
-title("Ankle template");
+title("swr template");
 subplot(2,2,3);
 plot(1:length(dataSwr),dataSwr(:,3));
-title("Swipe left template");
+title("tap template");
 subplot(2,2,4);
 plot(1:length(dataSwr),dataSwr(:,4));
-title("Swipe right template");
+title("ank template");
 sgtitle("Correlation of ancle data weighted with swipe right weights");
 %% plot correlation results for all meas
 for i = 1:length(list_moves)

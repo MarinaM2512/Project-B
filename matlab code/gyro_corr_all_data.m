@@ -17,7 +17,7 @@ for i = 1:length(list_moves) % run on mes
     for k = 1: shift: (length(time_vec)-max(l)) %run on gyro mat
 
          [corr_swl(k,:), corr_swr(k,:), corr_tap(k,:), corr_anc(k,:)]...
-                          = gyro_corr(template_mat,gyro_mat,k,l);
+                          = gyro_corr(template_mat,gyro_mat,k,l,num_of_params);
     end
     % corr1 is corr for one mes
     % dims: length(k) X num_of_params(3- x,y,z) X num_of_movments(4)

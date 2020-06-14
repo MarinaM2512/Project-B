@@ -1,9 +1,9 @@
 function [corr_swl, corr_swr, corr_tap, corr_anc] = ...
-                                gyro_corr(template_mat,gyro_mat,start,lengths)
+                                gyro_corr(template_mat,gyro_mat,start,lengths,num_of_params)
 % function get 1 X 3 corr vector for each template and data
 % scalar to each axis.
 % lengths- tenplates len
-num_of_params = 3 ; % x,y,z
+%num_of_params = 3 ; % x,y,z
 corr_swl = zeros(1,num_of_params);
 corr_swr = zeros(1,num_of_params);
 corr_tap = zeros(1,num_of_params);
