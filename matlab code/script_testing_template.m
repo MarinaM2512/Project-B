@@ -148,6 +148,7 @@ plot(1:length(weightSwr),weightSwr);
 title("swipe right template with swipe right weights");
 figure;
 subplot(2,2,1);
+% <<<<<<< Updated upstream
 plot(1:length(weightSwl),temp_swl*vec_tap);
 title("swl template with tap weights");
 subplot(2,2,2);
@@ -159,7 +160,34 @@ title("swl template template with swipe right weights");
 subplot(2,2,4);
 plot(1:length(weightSwl),temp_swl*vec_ank);
 title("swl template template with ankle weights");
-
+% =======
+figure();
+subplot(2,2,1);
+plot(1:length(weightSwr),temp_swr*vec_tap);
+title("swr template with tap weights");
+subplot(2,2,2);
+plot(1:length(weightSwr),temp_swr*vec_swl);
+title("swr template with swl weights");
+subplot(2,2,3);
+plot(1:length(weightSwr),temp_swr*vec_swr);
+title("swr template template with swipe left weights");
+subplot(2,2,4);
+plot(1:length(weightSwr),temp_swr*vec_ank);
+title("swr template template with ankle weights");
+%% >>>>>>> Stashed changes
+figure();
+subplot(2,2,1);
+plot(1:length(weightTap),temp_tap*vec_tap,'Linewidth',2);
+title("tap template with tap weights");
+subplot(2,2,2);
+plot(1:length(weightTap),temp_tap*vec_swl,'Linewidth',2);
+title("tap template with swipe left weights");
+subplot(2,2,3);
+plot(1:length(weightTap),temp_tap*vec_swr,'Linewidth',2);
+title("tap template template with swipe right weights");
+subplot(2,2,4);
+plot(1:length(weightTap),temp_tap*vec_ank,'Linewidth',2);
+title("tap template template with ankle weights");
 
 %% Plot test corelations 
 name = ["anckle" , "swipe left", "swipe right", "tap"];
@@ -253,7 +281,6 @@ plot(t,weighted_mat(:,4));
 title(strcat(name(i),"data weighted with swipe right"));
 end
 
-
 %% cal corr new
 date = "17_04";
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
@@ -310,7 +337,7 @@ vec_swr = tmp.swr;
 vec_swr = vec_swr.*(vec_swr>0);
 vec_swr = vec_swr / sqrt(vec_swr' * vec_swr);  
 weighted_corr = cell(length(list_moves),1);
-
+% length X wighted templtes X movements wights
 for i = 1:length(list_moves)
    curr_meas = corr{i};
    weightTap = cat(2,curr_meas(:,:,1)*vec_tap,curr_meas(:,:,2)*vec_tap,...
@@ -321,17 +348,18 @@ for i = 1:length(list_moves)
        curr_meas(:,:,3)*vec_swl,curr_meas(:,:,4)*vec_swl);
    weightSwr = cat(2,curr_meas(:,:,1)*vec_swr,curr_meas(:,:,2)*vec_swr,...
        curr_meas(:,:,3)*vec_swr,curr_meas(:,:,4)*vec_swr);
-   weighted_corr(i) = {cat(3,weightTap,weightAnk,weightSwl,weightSwr)};
+   weighted_corr(i) = {cat(3,weightSwl,weightSwr,weightTap,weightAnk)};
 end
 %% Plot test corelations 
 name = ["anckle" , "swipe left", "swipe right", "tap"];
 idx = [3 6 9 12];
-for i=1:4
+for i=1%:4
 sideCorr = weighted_corr{idx(i)};
-dataTap = sideCorr(:,:,1);
-dataAnk = sideCorr(:,:,2);
-dataSwl = sideCorr(:,:,3);
-dataSwr = sideCorr(:,:,4);
+dataSwl = sideCorr(:,:,1);
+dataSwr = sideCorr(:,:,2);
+dataTap = sideCorr(:,:,3);
+dataAnk = sideCorr(:,:,4);
+
 figure;
 subplot(2,2,1);
 plot(1:length(dataTap),dataTap(:,1));
@@ -392,6 +420,45 @@ plot(1:length(dataSwr),dataSwr(:,4));
 title("ank template");
 sgtitle(strcat("Correlation of " , name(i) , " data weighted with swipe right weights"));
 end
+%% 
+i=1;
+sideCorr = weighted_corr{idx(i)};
+
+%%
+name = ["swipe left", "swipe right", "tap","ankel"];
+color = [ 'r','b','g','m'];
+op = 'MinPeakHeight';
+th = 0.75;
+% for d = [ dataSwl dataSwr dataTap dataAnk]
+for k = 1:4
+   d = sideCorr(:,:,k);
+   figure();
+   hold on;
+   for i = 1:4
+        [corr_out,diff1,p] = tresholding_and_normlise_corr(d(:,i),th,op);
+        plot(1:length(d),corr_out,color(i));
+   end 
+    title([name(k)," weight"]);
+    legend(name);
+end
+%%
+name = ["swipe left", "swipe right", "tap","ankel"];
+color = [ 'r','b','g','m'];
+op = 'MinPeakHeight';
+th = 0.75;
+figure();
+for k = 1:4
+   d = sideCorr(:,:,k);
+   for i = 1:4
+        [corr_out,diff1,p] = tresholding_and_normlise_corr(d(:,i),th,op);
+        subplot(2,2,i);
+        plot(1:length(d),corr_out,color(k));
+        hold on;
+        title([name(i)," template"]);
+   end 
+   
+end
+legend(name);
 %% plot correlation results for all meas
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
