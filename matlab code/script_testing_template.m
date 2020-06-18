@@ -148,7 +148,7 @@ plot(1:length(weightSwr),weightSwr);
 title("swipe right template with swipe right weights");
 figure;
 subplot(2,2,1);
-% <<<<<<< Updated upstream
+
 plot(1:length(weightSwl),temp_swl*vec_tap);
 title("swl template with tap weights");
 subplot(2,2,2);
@@ -160,7 +160,7 @@ title("swl template template with swipe right weights");
 subplot(2,2,4);
 plot(1:length(weightSwl),temp_swl*vec_ank);
 title("swl template template with ankle weights");
-% =======
+
 figure();
 subplot(2,2,1);
 plot(1:length(weightSwr),temp_swr*vec_tap);
@@ -174,7 +174,7 @@ title("swr template template with swipe left weights");
 subplot(2,2,4);
 plot(1:length(weightSwr),temp_swr*vec_ank);
 title("swr template template with ankle weights");
-%% >>>>>>> Stashed changes
+%% 
 figure();
 subplot(2,2,1);
 plot(1:length(weightTap),temp_tap*vec_tap,'Linewidth',2);
@@ -420,9 +420,7 @@ plot(1:length(dataSwr),dataSwr(:,4));
 title("ank template");
 sgtitle(strcat("Correlation of " , name(i) , " data weighted with swipe right weights"));
 end
-%% 
-i=1;
-sideCorr = weighted_corr{idx(i)};
+
 
 %%
 name = ["swipe left", "swipe right", "tap","ankel"];
@@ -501,7 +499,7 @@ for i = 1:length(list_moves)
    locs = cat(2,locsSL,locsSR,locsTap,locsAnc);
    corr_peaks{i} = cat(3,peaks,locs);
 end
-%%
+
 function [padedX,padedT]  = pad_data_to_same_size(x,y,z,tx,ty,tz,thresh,fraction_last)
 % function make all parames be in same length
 % thresh is the thereshold on the diff so that the last insignificant part
@@ -554,11 +552,17 @@ function print_templates(x,y,z,t,move_name)
     subplot(3,1,1);
     plot(t{1},x);
     title("X");
+    xlabel("time [msec]");
+    ylabel("\omega [rad/sec]");
     subplot(3,1,2);
     plot(t{2},y);
     title("Y");
+    xlabel("time [msec]");
+    ylabel("\omega [rad/sec]");
     subplot(3,1,3);
     plot(t{3},z);
     title("Z");
+    xlabel("time [msec]");
+    ylabel("\omega [rad/sec]");
     sgtitle(move_name);
 end

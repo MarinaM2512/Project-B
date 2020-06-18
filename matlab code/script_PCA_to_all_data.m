@@ -36,13 +36,13 @@ end
 [vecsSR , ~]=pca(Gyro_SR);
 [vecsTap , ~]=pca(Gyro_tap);
 figure;
-plot3(Gyro_tap(:,1),Gyro_tap(:,2), Gyro_tap(:,3),'o');
+plot3(Gyro_tap(:,1),Gyro_tap(:,2), Gyro_tap(:,3),'bo');
 hold on;
-plot3(Gyro_side(:,1),Gyro_side(:,2), Gyro_side(:,3),'o');
+plot3(Gyro_side(:,1),Gyro_side(:,2), Gyro_side(:,3),'ro');
 hold on;
-plot3(Gyro_SR(:,1),Gyro_SR(:,2), Gyro_SR(:,3),'o');
+plot3(Gyro_SR(:,1),Gyro_SR(:,2), Gyro_SR(:,3),'go');
 hold on;
-plot3(Gyro_SL(:,1),Gyro_SL(:,2), Gyro_SL(:,3), 'o');
+plot3(Gyro_SL(:,1),Gyro_SL(:,2), Gyro_SL(:,3), 'mo');
 hold on;
 plot3(Gyro_other(:,1),Gyro_other(:,2), Gyro_other(:,3), 'o');
 hold on;
