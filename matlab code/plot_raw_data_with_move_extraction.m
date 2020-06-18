@@ -57,11 +57,12 @@ windows = {moveX moveY moveZ};
                 figure;
             end
             subplot(3,1,meas-3)
-            plot(t,data_mat(:,meas));
+            plot(t,data_mat(:,meas),'Linewidth',2);
             hold on;
             extraction(:,meas) = windows{meas-3}*max(data_mat(:,meas));
-            plot(t,extraction(:,meas));
+            plot(t,extraction(:,meas),'Linewidth',2);
             title(title_3(meas-3));
+            xlim([3,6]*10^4)
             if(meas==6)
               sgtitle(titleStr);
             end
