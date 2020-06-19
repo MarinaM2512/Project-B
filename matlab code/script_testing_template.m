@@ -81,7 +81,99 @@ temp_swr = tmp.swr(:,:,1);
 temp_swr_t = tmp.swr(:,:,2);
 template_mat = cell(...
     [{temp_swl} {temp_swr} {temp_tap} {temp_ank}]);
-%% Calculate corelation with weighted template - To be contionued
+%% Check and plot cross correlation 
+template_names = ["swipe left" , "swipe right" ,"tap", "side ankle"];
+for i=1:length(list_moves)
+    data_mat = loadMeasurmentMat("17_04",list_moves{i},1,"INIT"); %load one data mes
+    time_vec = data_mat(:, end);
+    gyro_mat = data_mat(:, 4:6);
+    [corr_swl, corr_swr, corr_tap, corr_anc] = ...
+                                    gyro_cross_corr(template_mat,gyro_mat,3);
+    corr_mat = cat(4,corr_swl,corr_swr,corr_tap,corr_anc);
+    figure;
+    for j = 1:4
+        curr_temp = template_mat{j};
+        subplot(3,1,1);
+        start_time = find(corr_mat(:,1,2,j)==-length(curr_temp));
+        t_new = corr_mat(start_time:end,1,2,j);
+        plot(t_new,corr_mat(start_time:end,1,1,j));
+        title("X");
+        hold on;
+        subplot(3,1,2);
+        start_time = find(corr_mat(:,2,2,j)==-length(curr_temp));
+        t_new = corr_mat(start_time:end,2,2,j);
+        plot(t_new,corr_mat(start_time:end,2,1,j));
+        title("Y");
+        hold on;
+        subplot(3,1,3);
+        start_time = find(corr_mat(:,3,2,j)==-length(curr_temp));
+        t_new = corr_mat(start_time:end,3,2,j);
+        plot(t_new,corr_mat(start_time:end,3,1,j));
+        title("Z");
+        hold on;
+    end
+    legend("swipe left template","swipe right template","tap template","ankle template");
+    newStr = strrep(list_moves{i},'_',' ');
+    sgtitle(["correlation of " newStr " data" ]);
+end
+% % plot cross corr
+% figure(1);
+% subplot(3,1,1);
+% t_new = corr_swl(:,1,2);
+% plot(t_new,corr_swl(:,1,1));
+% title("X");
+% subplot(3,1,2);
+% t_new = corr_swl(:,2,2);
+% plot(t_new,corr_swl(:,2,1));
+% title("Y");
+% subplot(3,1,3);
+% t_new = corr_swl(:,3,2);
+% plot(t_new,corr_swl(:,3,1));
+% title("Z");
+% sgtitle("Swipe Left");
+% figure(2);
+% subplot(3,1,1);
+% t_new = corr_swr(:,1,2);
+% plot(t_new,corr_swr(:,1,1));
+% title("X");
+% subplot(3,1,2);
+% t_new = corr_swr(:,2,2);
+% plot(t_new,corr_swr(:,2,1));
+% title("Y");
+% subplot(3,1,3);
+% t_new = corr_swr(:,3,2);
+% plot(t_new,corr_swr(:,3,1));
+% title("Z");
+% sgtitle("Swipe right");
+% figure(3);
+% subplot(3,1,1);
+% t_new = corr_tap(:,1,2);
+% plot(t_new,corr_tap(:,1,1));
+% title("X");
+% subplot(3,1,2);
+% t_new = corr_tap(:,2,2);
+% plot(t_new,corr_tap(:,2,1));
+% title("Y");
+% subplot(3,1,3);
+% t_new = corr_tap(:,3,2);
+% plot(t_new,corr_tap(:,3,1));
+% title("Z");
+% sgtitle("tap");
+% figure(4);
+% subplot(3,1,1);
+% t_new = corr_anc(:,1,2);
+% plot(t_new,corr_anc(:,1,1));
+% title("X");
+% subplot(3,1,2);
+% t_new = corr_anc(:,2,2);
+% plot(t_new,corr_anc(:,2,1));
+% title("Y");
+% subplot(3,1,3);
+% t_new = corr_anc(:,3,2);
+% plot(t_new,corr_anc(:,3,1));
+% title("Z");
+% sgtitle("side ankle");
+%% Calculate corelation with weighted template 
 tmp = load("./templates/tap_principle_vec");
 vec_tap = tmp.tap;
 tmp = load("./templates/ank_principle_vec");
@@ -174,7 +266,7 @@ title("swr template template with swipe left weights");
 subplot(2,2,4);
 plot(1:length(weightSwr),temp_swr*vec_ank);
 title("swr template template with ankle weights");
-%% 
+%% Tap template weighted with different weights
 figure();
 subplot(2,2,1);
 plot(1:length(weightTap),temp_tap*vec_tap,'Linewidth',2);
