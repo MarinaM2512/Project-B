@@ -1,7 +1,8 @@
+%% NEEd to change to xcorr insedof corr
 %% NEED TO CHECK
 function corr1 = effective_corr_calculation(data,win_s_len,win_s_shift,factor)
 % GOAL: calculate correlation only on windows in which we suspect that a
-% movement occured. we do this in order to impruve time complexity.
+% movement occured. we do this in order to improve time complexity.
 % the idea is to flag a window if the avrage of the new samples is bigger
 % then the previus avg by a factor. we flag with an helper func below.
 % INPUT:
@@ -18,14 +19,15 @@ function corr1 = effective_corr_calculation(data,win_s_len,win_s_shift,factor)
 % corr1(:,:,4) = corr_anc - corr result with side anckle template
 
 
-
-% win paarams in sec
-% need to convert to index
+% convert win params drom sec to index
+Fs = 50 ; %[Hz]
+win_len   = Fs *win_s_len;
+win_shift = Fs *win_s_shift;
 num_of_params = 3;
-corr_swl = zeros( win_len, num_of_params);
-corr_swr = zeros( win_len, num_of_params);
-corr_tap = zeros( win_len, num_of_params);
-corr_anc = zeros( win_len, num_of_params);
+xcorr_swl = zeros( win_len, num_of_params);
+xcorr_swr = zeros( win_len, num_of_params);
+xcorr_tap = zeros( win_len, num_of_params);
+xcorr_anc = zeros( win_len, num_of_params);
 template_mat = loadTemplateMat;
 lengths = zeros(size(template_mat));
 for l=1:length(lengths)
@@ -35,12 +37,12 @@ prev_gmat = data(1:1+win_len,:);% data inside previus window (memory)
 for i = 1:win_shift: length(data) % run on data vec with widows
     current_gmat = data(i+1,i+1+win_len,:); % data inside current window
     if (do_correlation(current_gmat,prev_gmat,win_shift,factor)) 
-      [corr_swl(i,:), corr_swr(i,:), corr_tap(i,:), corr_anc(i,:)] = ...
-                      gyro_corr(template_mat,current_gmat,i,lengths);
+      [xcorr_swl(i,:), xcorr_swr(i,:), xcorr_tap(i,:), xcorr_anc(i,:)] = ...
+                      gyro_xcorr(template_mat,current_gmat,i,lengths);
     end
     prev_gmat = current_gmat;
 end
-    corr1 = cat( 3, corr_swl, corr_swr, corr_tap, corr_anc);
+    corr1 = cat( 3, xcorr_swl, xcorr_swr, xcorr_tap, xcorr_anc);
 
 end
 %% helper func
