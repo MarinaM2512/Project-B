@@ -31,8 +31,8 @@ for i=1:num_of_params %for each x,y,z
     [corr_tap(:,i),lags_tap(:,i)] = xcorr( gyro_mat(:,i),tempTap(:,i));
     [corr_anc(:,i),lags_anc(:,i)] = xcorr( gyro_mat(:,i),tempAnc(:,i));
 end
-swl = cat(3,corr_swl(length_window-max_tempalte_length:end,:,:),lags_swl(length_window-max_tempalte_length:end,:,:));
-swr = cat(3,corr_swr(length_window-max_tempalte_length:end,:,:),lags_swl(length_window-max_tempalte_length:end,:,:));
-tap = cat(3,corr_tap(length_window-max_tempalte_length:end,:,:),lags_swl(length_window-max_tempalte_length:end,:,:));
-anc = cat(3,corr_anc(length_window-max_tempalte_length:end,:,:),lags_swl(length_window-max_tempalte_length:end,:,:));
+swl = cat(3,corr_swl(length_window-max_tempalte_length:end,:),lags_swl(length_window-max_tempalte_length:end,:,:));
+swr = cat(3,corr_swr(length_window-max_tempalte_length:end,:),lags_swr(length_window-max_tempalte_length:end,:,:));
+tap = cat(3,corr_tap(length_window-max_tempalte_length:end,:),lags_tap(length_window-max_tempalte_length:end,:,:));
+anc = cat(3,corr_anc(length_window-max_tempalte_length:end,:),lags_anc(length_window-max_tempalte_length:end,:,:));
 end
