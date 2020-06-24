@@ -4,14 +4,15 @@ function [labels,xcorr_out,diff,p] = tresholding_xcorr(xcorr,times,th1,op1,th2,o
 % condition 1: select peaks above th1
 % condition 2: select peaks if they last t2 sec above th2
 % input:
-% xcorr - cross corelation of length observation_window_size + larges
-%         correlation length and 3 channels.
+% xcorr -a cell array with 4 cells each containing - cross corelation of length:
+% observation_window_size + largest correlation length and 3 channels, with
+% one of the templates - "swipe left" , "swipe right" , "tap" & "ankle"
 % th - thresh hold value selected based on op
 % op - str inserted to "findpeaks" and select the opration we wand to preform:
 %     'Threshold' - select peaks that exceed their immediate neighboring 
 %                   values by at least the value of th.
 %     'MinPeakHeight' - select those peaks higher than th.
-% times - the times of the observed 
+% times - the times of the observed window.
 % output:
 % diff - error in %
 % corr_out - only peaks vector corresponds with corr times
@@ -25,17 +26,38 @@ function [labels,xcorr_out,diff,p] = tresholding_xcorr(xcorr,times,th1,op1,th2,o
 % inisilize
 num_of_movements = 4; % swl, swr, tap, ank
 labels = -1*ones(1,num_of_movements); %inisilised to -1 for self check
-xcorr_out = zeros(size(xcorr));
-% confition 1:
+xcorr_out = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false);
+diff = cell(size(xcorr_out));
+p = zeros(size(xcorr_out));
 
-    %[peak1,ind1] = findpeaks(xcorr,op1,th1);
-
-diff = zeros(size(peak));
+for i = 1:num_of_movements
+    [labels(i),xcorr_out{i},diff{i},p(i)]= thresholding_xcorr_single_temp(xcorr{i},times{i},th1,op1,th2,op2,t2);
+end
+end
+function [label,xcorr_out,diff,p] = thresholding_xcorr_single_temp(xcorr,times,th1,op1,th2,op2,t2)
+neg_times = sort(-times);
+times_corr = cat(neg_times,times);
+label =0;
+% condition 1:
+[peak,ind1] = findpeaks(xcorr,op1,th1);
 p = length(peak);
-xcorr_out(ind)= peak;
-if strcmp(op,"Threshold")
-    diff = 100*th/peak;
-elseif strcmp(op,"MinPeakHeight")
-    diff = 100*((peak-th)./peak);
+if( ~isempty(peak))
+    peakT = times_corr(ind1);
+    % condiotion 2:
+    [move_vals , move_times] = extract_movement_from_corr(xcorr,times_corr ,th2,t2);
+    % In the functiom "extract_movement_from_corr" check if its better to
+    % select the largest sequence of ones and then check if the peak lies
+    % within this sequence, or mabe pick the sequence that the peak lies within
+    % and check if its length is above threshold.
+    if (~isempty(move_vals) && peakT>move_times(1) && peakT<move_times(end))
+        label = 1;
+        xcorr_out = move_vals;
+        if strcmp(op1,"Threshold")
+            diff = 100*th/peak;
+        elseif strcmp(op1,"MinPeakHeight")
+            diff = 100*((peak-th)./peak);
+        end
+    end
+        
 end
 end

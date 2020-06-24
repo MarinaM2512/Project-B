@@ -1,7 +1,7 @@
-function template_mat = loadTemplateMat
+function template_mat = loadTemplateMat 
 %%Goal: get templates from file same length templates
 % and load as matrix from mat file 
-%%Return:
+%%Return parameters:
 % template_mat: cell of templates for all movments
 %  template_mat{1} - swipe left template
 %  template_mat{2} - swipe right template
