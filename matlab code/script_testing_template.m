@@ -81,8 +81,11 @@ temp_swr = tmp.swr(:,:,1);
 temp_swr_t = tmp.swr(:,:,2);
 template_mat = cell(...
     [{temp_swl} {temp_swr} {temp_tap} {temp_ank}]);
-%% Check and plot cross correlation 
+%% Check and plot cross correlation
+date = "17_04";
+list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
 template_names = ["swipe left" , "swipe right" ,"tap", "side ankle"];
+colors = ["r", "g","b","m"];
 for i=1:length(list_moves)
     data_mat = loadMeasurmentMat("17_04",list_moves{i},1,"INIT"); %load one data mes
     time_vec = data_mat(:, end);
@@ -96,19 +99,19 @@ for i=1:length(list_moves)
         subplot(3,1,1);
         start_time = find(corr_mat(:,1,2,j)==-length(curr_temp));
         t_new = corr_mat(start_time:end,1,2,j);
-        plot(t_new,corr_mat(start_time:end,1,1,j));
+        plot(t_new,corr_mat(start_time:end,1,1,j),colors(j));
         title("X");
         hold on;
         subplot(3,1,2);
         start_time = find(corr_mat(:,2,2,j)==-length(curr_temp));
         t_new = corr_mat(start_time:end,2,2,j);
-        plot(t_new,corr_mat(start_time:end,2,1,j));
+        plot(t_new,corr_mat(start_time:end,2,1,j),colors(j));
         title("Y");
         hold on;
         subplot(3,1,3);
         start_time = find(corr_mat(:,3,2,j)==-length(curr_temp));
         t_new = corr_mat(start_time:end,3,2,j);
-        plot(t_new,corr_mat(start_time:end,3,1,j));
+        plot(t_new,corr_mat(start_time:end,3,1,j),colors(j));
         title("Z");
         hold on;
     end
