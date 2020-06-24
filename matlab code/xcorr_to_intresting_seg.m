@@ -1,6 +1,6 @@
 %% NEEd to change to xcorr insted of corr
 %% NEED TO CHECK
-function corr1 = effective_corr_calculation(data,win_s_len,win_s_shift,factor)
+function corr1 = xcorr_to_intresting_seg(Sd,St,factor)
 % GOAL: calculate correlation only on windows in which we suspect that a
 % movement occured. we do this in order to improve time complexity.
 % the idea is to flag a window if the avrage of the new samples is bigger
@@ -20,9 +20,9 @@ function corr1 = effective_corr_calculation(data,win_s_len,win_s_shift,factor)
 
 
 % convert win params from sec to index
-Fs = 50 ; %[Hz]
-win_len   = Fs *win_s_len;
-win_shift = Fs *win_s_shift;
+% Fs = 50 ; %[Hz]
+% win_len   = Fs *win_s_len;
+% win_shift = Fs *win_s_shift;
 num_of_params = 3;
 xcorr_swl = zeros( win_len, num_of_params);
 xcorr_swr = zeros( win_len, num_of_params);
