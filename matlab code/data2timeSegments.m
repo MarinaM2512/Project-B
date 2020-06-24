@@ -5,19 +5,19 @@
 % T     - cell of timestemp with corelation to S
 function [S,T]=data2timeSegments(data,times,delay)
 % dim1=floor(times(end)/delay);
-dim1=ceil(times(end)/delay);
+dim1=ceil(times(end)/delay); %num of seg
 S=cell(dim1,1);
 T=cell(dim1,1);
 end_of_frame=[];
 i=0;
 re_ind=1;
-d_ind=20;
+d_ind=20; 
 remain=times;
 for k=1:dim1
         if(~isempty(remain(re_ind:end)))
-            remain=remain(re_ind:end);
-            diff=remain-remain(1)-delay;
-            end_of_frame = find(diff<=d_ind);
+            remain=remain(re_ind:end); % smaller time vec
+            diff=remain-remain(1)-delay; 
+            end_of_frame = find(diff<=d_ind); %end of frame at delay with error of d_ind
             ind=i+end_of_frame;
             if( ind(end) <= length(data))
                 data_tmp=data(ind);
