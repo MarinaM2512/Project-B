@@ -14,6 +14,4 @@ template_mat{1} = load("./same length templates/swl_template").paded1;
 template_mat{2} = load("./same length templates/swr_template").paded2;
 template_mat{3} = load("./same length templates/tap_template").paded3;
 template_mat{4} = load("./same length templates/ank_template").paded4;
-
-
 end
