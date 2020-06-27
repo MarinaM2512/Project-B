@@ -4,7 +4,7 @@ function segmented_data=data2timeSegmentsOverlapping(data,times,delay,overlap)
 % delay - of system - aka window width in #samples
 % overlap - overlap between neighbouring segmants in #samples
 % segmented_data - a cell array with #segments cells. each cell is a matrix
-% of shape -  Num measured fetures + 1 x delay. 
+% of shape -  Num measured fetures + 1 x delay. {x,y,z,T}
 Ts = times(2)-times(1);
 delayT = delay*Ts;
 overlapT = overlap*Ts;
