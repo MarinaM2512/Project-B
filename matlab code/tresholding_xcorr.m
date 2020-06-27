@@ -7,7 +7,7 @@ function [labels,xcorr_out,diff,p] = tresholding_xcorr(xcorr,times,th1,op1,th2,o
 % xcorr -a cell array with 4 cells each containing - cross corelation of length:
 % observation_window_size + largest correlation length and 3 channels, with
 % one of the templates - "swipe left" , "swipe right" , "tap" & "ankle"
-% th - thresh hold value selected based on op
+% th - threshold value selected based on op
 % op - str inserted to "findpeaks" and select the opration we wand to preform:
 %     'Threshold' - select peaks that exceed their immediate neighboring 
 %                   values by at least the value of th.
