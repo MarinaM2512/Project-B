@@ -1,68 +1,56 @@
-%% NEEd to change to xcorr insted of corr
-%% NEED TO CHECK
-function corr1 = xcorr_to_intresting_seg(Sd,St,factor)
-% GOAL: calculate correlation only on windows in which we suspect that a
-% movement occured. we do this in order to improve time complexity.
+function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_seg(template_mat,currentSeg,prevSeg,factor)
+% GOAL: check if movement occured in seg calculate *normlized* correlation. 
+% we do this in order to improve time complexity.
 % the idea is to flag a window if the avrage of the new samples is bigger
 % then the previus avg by a factor. we flag with an helper func below.
 % INPUT:
-% data - gyro mat + time_vec
-% win_s_len -  window length in sec
-% win_s_shift - windows scan in sec
-% factor - err factor above wich we sespect movement occurence
+% 1. template_mat - cell of templates for all movments
+%           template_mat{1} - swipe left template
+%           template_mat{2} - swipe right template
+%           template_mat{3} - tap template
+%           template_mat{4} - side anckle template
+% 2. correntSd - current data segment for x,y,z
+% (we check if the current seg is intresting to us)
+% 3. prevSd - previous data segment for x,y,z
+% (the previous segments are the system's memory)
+% 4. factor - err factor above which we suspect movement occurence
 % OUTPUT:
-% corr1 - cor result with all movements templates 
-%       dims : window length X num_of_param(x,y,z) X num_of_movements (4)
-% corr1(:,:,1) = corr_swl - corr result with swipe L template
-% corr1(:,:,2) = corr_swr - corr result with swipe R template
-% corr1(:,:,3) = corr_tap - corr result with tap template
-% corr1(:,:,4) = corr_anc - corr result with side anckle template
+%       dims : 2*seg length-1 X num_of_param(x,y,z) X 2 (xcorr data,lags)
+% xcorr_swl - normlized cross corr result with swipe L template
+% xcorr_swr - normlized cross corr result with swipe R template
+% xcorr_tap - normlized cross corr result with tap template
+% xcorr_anc - normlized cross corr result with side anckle template
 
-
-% convert win params from sec to index
-% Fs = 50 ; %[Hz]
-% win_len   = Fs *win_s_len;
-% win_shift = Fs *win_s_shift;
+len = length(currentSeg);
 num_of_params = 3;
-xcorr_swl = zeros( win_len, num_of_params);
-xcorr_swr = zeros( win_len, num_of_params);
-xcorr_tap = zeros( win_len, num_of_params);
-xcorr_anc = zeros( win_len, num_of_params);
-template_mat = loadTemplateMat; %pedded
-lengths = zeros(size(template_mat));
-for l=1:length(lengths)
-    lengths(l) = size(template_mat{l},1);
-end
-prev_gmat = data(1:1+win_len,:);% data inside previus window (memory)
-for i = 1:win_shift: length(data) % run on data vec with widows
-    current_gmat = data(i+1,i+1+win_len,:); % data inside current window
-    if (do_correlation(current_gmat,prev_gmat,win_shift,factor)) 
-      [xcorr_swl(i,:), xcorr_swr(i,:), xcorr_tap(i,:), xcorr_anc(i,:)] = ...
-                      gyro_cross_corr(template_mat,current_gmat,i,lengths);
-    end
-    prev_gmat = current_gmat;
-end
-    corr1 = cat( 3, xcorr_swl, xcorr_swr, xcorr_tap, xcorr_anc);
+xcorr_swl = zeros(2*len-1, num_of_params,2);
+xcorr_swr = zeros(2*len-1, num_of_params,2);
+xcorr_tap = zeros(2*len-1, num_of_params,2);
+xcorr_anc = zeros(2*len-1, num_of_params,2);
 
+flag = do_correlation(currentSeg,prevSeg,factor);
+    
+     if flag 
+      [xcorr_swl, xcorr_swr, xcorr_tap, xcorr_anc] = ...
+                      gyro_cross_corr_normlized(template_mat,currentSeg,num_of_params);
+     end
 end
 %% helper func
-function flag = do_correlation(current_data_window,prev_data_window,shift,factor)
+function flag = do_correlation(currentSeg,prevSeg,factor)
 % boolian function
 % the idiea:
 % err = (abs(prev_avg - curr_avg)/prev_avg);
 % if err<factor return 1
 % INPUT:
-% current_data_window - data in selected window
-% prev_data_window  - memory of old data
-% shift - change between prev and current
+% currentSeg - data in selected seg
+% prevSeg  - memory of old data
 % factor - when the error is above the factor return 1
 % OUTPUT:
-% flag - eq 1 if we sespect the is a movemwnt in curr window.
-new_mes_vec = current_data_window(end-shift:end);
-prev_avg = mean (prev_data_window);
-l= length(new_mes_vec);
-new_window = [prev_data_window(l:end) ; new_mes_vec];
-new_avg = mean (new_window); 
+% flag - eq 1 if we sespect the is a movemwnt in curr window
+
+new_avg = mean (currentSeg); 
+prev_avg = mean (prevSeg);
+
 err = (abs(prev_avg - new_avg)/prev_avg);
     if  err< factor
         flag = 0;
