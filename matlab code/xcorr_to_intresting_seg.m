@@ -14,6 +14,8 @@ function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_seg(tem
 % 3. prevSd - previous data segment for x,y,z
 % (the previous segments are the system's memory)
 % 4. factor - err factor above which we suspect movement occurence
+% 5. op - optionof xcorr matlab func
+% 'normalized' / 'none'
 % OUTPUT:
 %       dims : 2*seg length-1 X num_of_param(x,y,z) X 2 (xcorr data,lags)
 % xcorr_swl - normlized cross corr result with swipe L template

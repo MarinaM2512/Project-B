@@ -3,7 +3,7 @@ template_mat = loadTemplateMat;
 data = loadMeasurmentMat("17_04","sit_N_tap1",1,"INIT"); %load one data mes
 S=data2timeSegmentsOverlapping(data(:,4:6),data(:,20),63,60);
 %% 
-op = 'none';
+op = 'none'; % 'normalized'
 t = cellfun(@(x) x(:,4),S,'UniformOutput',false);
 t = cell2mat(t);
 factor = 0.3;
