@@ -1,5 +1,5 @@
-function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_seg(template_mat,currentSeg,prevSeg,factor)
-% GOAL: check if movement occured in seg calculate *normlized* correlation. 
+function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_seg(template_mat,currentSeg,prevSeg,factor,op)
+% GOAL: check if movement occured in seg calculate correlation. 
 % we do this in order to improve time complexity.
 % the idea is to flag a window if the avrage of the new samples is bigger
 % then the previus avg by a factor. we flag with an helper func below.
@@ -30,9 +30,9 @@ xcorr_anc = zeros(2*len-1, num_of_params,2);
 
 flag = do_correlation(currentSeg,prevSeg,factor);
     
-     if flag 
+     if (flag)
       [xcorr_swl, xcorr_swr, xcorr_tap, xcorr_anc] = ...
-                      gyro_cross_corr_normlized(template_mat,currentSeg,num_of_params);
+                      gyro_cross_corr_normlized(template_mat,currentSeg,num_of_params,op);
      end
 end
 %% helper func
