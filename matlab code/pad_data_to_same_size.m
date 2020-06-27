@@ -10,12 +10,14 @@ for i =1:3
     tmp = curr(floor(length(curr)*fraction_last):end);
     curr = curr(1:(length(curr)-length(tmp)));
     ind = find(diff(tmp)<thresh);
-    tmp = tmp(1:ind(1)+1);
-    curr(length(curr)+1:length(curr)+length(tmp)) = tmp;
-    trunckG{i} = curr;
-    t = trunckT{i};
-    t=t(1:length(curr));
-    trunckT{i} = t;
+    if(~isempty(ind))
+        tmp = tmp(1:ind(1)+1);
+        curr(length(curr)+1:length(curr)+length(tmp)) = tmp;
+        trunckG{i} = curr;
+        t = trunckT{i};
+        t=t(1:length(curr));
+        trunckT{i} = t;
+    end
 end
 [x1 ,y1, z1] = trunckG{1:3};
 [tx1,ty1,tz1] = trunckT{1:3};
