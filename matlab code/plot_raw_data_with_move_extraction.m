@@ -8,7 +8,12 @@
 % output:
 % t- original time vec
 % extraction - clean movement of movement_name in data
-function [t,extraction] = plot_raw_data_with_move_extraction(movement_name,date,param)
+% thresholds - thresholds to mark the movements . thresholds[1:3] = 
+%   thresh time (minimum moove time , thresh for detecting movement, 
+%   num sum window - number of cosecutive elements to sum over for
+%   thresholding
+
+function [t,extraction] = plot_raw_data_with_move_extraction(movement_name,date,param,thresholds)
 title_3=["x" "y" "z"];
 title_q=["qW" "qX" "qY" "qZ"];
 title_fsr=["FSR0" "FSR1" "FSR2" "FSR3" "FSR4"];
@@ -16,9 +21,12 @@ newStr = strrep(movement_name,'_',' ');
 data_mat = loadMeasurmentMat(date,movement_name,1,"INIT");
 t = data_mat(:,20);
 extraction = zeros(size(data_mat(:,1:end-1)));
-[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,10000,500,10,7);
-[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,10000,300,15,7);
-[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,500,10,9);
+[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,10000,...
+    thresholds(1),thresholds(2),thresholds(3));
+[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,10000,...
+        thresholds(1),thresholds(2),thresholds(3));
+[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,...
+    thresholds(1),thresholds(2),thresholds(3));
 move_cell = [{to_avgX} {to_avgY} {to_avgZ}] ; 
 [~,time,~] = detect_movement(move_cell);
 moveCombined = ismember(t,time);
@@ -62,7 +70,7 @@ windows = {moveX moveY moveZ};
             extraction(:,meas) = windows{meas-3}*max(data_mat(:,meas));
             plot(t,extraction(:,meas),'Linewidth',2);
             title(title_3(meas-3));
-            xlim([3,6]*10^4)
+            %xlim([3,6]*10^4)
             if(meas==6)
               sgtitle(titleStr);
             end
