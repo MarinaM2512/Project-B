@@ -1,9 +1,10 @@
 %function label_mat = xcorr_segments_and_classify(data,times
 template_mat = loadTemplateMat;
-data = loadMeasurmentMat("17_04","sit_N_tap1",1,"INIT"); %load one data mes
+move_name = "sit_N_tap";
+data = loadMeasurmentMat("17_04",move_name,1,"INIT"); %load one data mes
 S=data2timeSegmentsOverlapping(data(:,4:6),data(:,20),63,60);
 %% 
-op = 'none'; % 'normalized'
+op = 'none';%'normalized'%;
 t = cellfun(@(x) x(:,4),S,'UniformOutput',false);
 t = cell2mat(t);
 factor = 0.3;
@@ -18,6 +19,7 @@ xcorr_anc = xcorr_mat(:,:,:,4);
 colors = ["r", "g","b","m"];
 % t_new = linspace(0,t(end),length(xcorr_swl));
 t_new = linspace(0,length(xcorr_swl),length(xcorr_swl));
+op = ["","normalized"];
 
 figure;
 
@@ -40,5 +42,5 @@ figure;
         hold on;
     end
     legend("swipe left template","swipe right template","tap template","ankle template");
-    %newStr = strrep(list_moves{i},'_',' ');
-    sgtitle("normlized cross correlation of sit N tap1 data" );
+    newStr = strrep(move_name,'_',' ');
+    sgtitle([op(1)," cross correlation of " ,newStr]);

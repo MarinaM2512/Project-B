@@ -1,4 +1,4 @@
-function template_mat = loadTemplateMat
+function template_mat = loadTemplateMatAndPad
 %%Goal: get templates from file same length templates
 % and load as matrix from mat file 
 %%Return:
@@ -10,10 +10,10 @@ function template_mat = loadTemplateMat
 % all template at same size
 num_of_movements = 4;
 template_mat = cell(1,num_of_movements);
-template_mat{1} = load("./same length templates/swl_template").swl;
-template_mat{2} = load("./same length templates/swr_template").swr;
-template_mat{3} = load("./same length templates/tap_template").tap;
-template_mat{4} = load("./same length templates/ank_template").ank;
+template_mat{1} = load("./same length templates/swl_template").paded1;
+template_mat{2} = load("./same length templates/swr_template").paded2;
+template_mat{3} = load("./same length templates/tap_template").paded3;
+template_mat{4} = load("./same length templates/ank_template").paded4;
 
 
 end

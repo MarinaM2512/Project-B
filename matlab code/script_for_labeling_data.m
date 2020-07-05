@@ -51,8 +51,11 @@ for i=1:length(list_moves)
     sgtitle(newStr);
 end
 %% 
+clear all;
+close all;
+clc;
 list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
-lengths = zeros(18,1);
+lengths = zeros(18,2);
 thresholds = zeros(3,length(list_moves)-1);
 for i=1:length(list_moves)-1
     data_mat = loadMeasurmentMat("17_04",list_moves{i},1,"INIT"); %load one data mes
@@ -93,10 +96,10 @@ for i=1:length(list_moves)-1
     end
     [to_avgX,to_avgY,to_avgz] = gyros{1:3};
     len_move = max([size(to_avgX,1),size(to_avgY,1),size(to_avgZ,1)]);
-    lengths(i,1) = len_move;
+    lengths(i,:) = [len_move,i];
 end
-lengths = sort(lengths,'descend');
-min_window_size = lengths(2,1);
+% lengths = sort(lengths,'descend');
+% min_window_size = lengths(2,1);
 
         
     
