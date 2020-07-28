@@ -50,13 +50,15 @@ for i=1:length(list_moves)
     newStr = strrep(list_moves{i},'_',' ');
     sgtitle(newStr);
 end
-%% 
+%% Get movments times
 clear all;
 close all;
 clc;
 list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
-lengths = zeros(18,2);
+lengths = zeros(length(list_moves)-1,2);
 thresholds = zeros(3,length(list_moves)-1);
+move_start_times = cell(length(list_moves)-1,1);
+delay_start = zeros(length(list_moves)-1,1);
 for i=1:length(list_moves)-1
     data_mat = loadMeasurmentMat("17_04",list_moves{i},1,"INIT"); %load one data mes
     if(contains(list_moves{i},"tap"))
@@ -74,7 +76,9 @@ for i=1:length(list_moves)-1
     end
     plot_raw_data_with_move_extraction(list_moves{i},"17_04","gyro",thresholds(:,i));
     [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements("17_04",list_moves{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
-    [num_moves,ind_max] = max([size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)]);
+    sizes = [size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)];
+    [num_moves,~] = max(sizes);
+    ind_max = find(sizes == num_moves);
     gyros = {to_avgX,to_avgY,to_avgZ};
     for j=1:num_moves
         if (j> min([size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)]) || ...
@@ -88,18 +92,31 @@ for i=1:length(list_moves)-1
         xz = intersect(tx,tz);
         yz = intersect(ty,tz);
         if (isempty(xy) || isempty(xz) || isempty(yz))
-            mat_del = gyros{ind_max};
-            mat_del(:,j,:) = [];
-            gyros{ind_max} = mat_del;
-            [num_moves,ind_max] = max([size(gyros{1},2),size(gyros{2},2),size(gyros{3},2)]);
+            if (size(ind_max,2)>1)
+                [mat_del1,mat_del2]=gyros{ind_max};
+                mat_del1(:,j,:) = [];
+                mat_del2(:,j,:) = [];
+                gyros{ind_max(1)} = mat_del1;
+                gyros{ind_max(2)} = mat_del2;
+            else
+                mat_del = gyros{ind_max};
+                mat_del(:,j,:) = [];
+                gyros{ind_max} = mat_del;
+            end
+            sizes = [size(gyros{1},2),size(gyros{2},2),size(gyros{3},2)];
+            [num_moves,~] = max(sizes);
+            ind_max = find(sizes == num_moves);
         end
     end
-    [to_avgX,to_avgY,to_avgz] = gyros{1:3};
+    [to_avgX,to_avgY,to_avgZ] = gyros{1:3};
     len_move = max([size(to_avgX,1),size(to_avgY,1),size(to_avgZ,1)]);
     lengths(i,:) = [len_move,i];
+    delay_start(i) = max([abs(to_avgX(1,:,2)-to_avgY(1,:,2)),abs(to_avgY(1,:,2)-to_avgZ(1,:,2)),...
+        abs(to_avgX(1,:,2)-to_avgZ(1,:,2))]);
+    start_times = cat(1,to_avgX(1,:,2),to_avgY(1,:,2),to_avgZ(1,:,2));
+    move_start_times{i} = min(start_times);
 end
-% lengths = sort(lengths,'descend');
-% min_window_size = lengths(2,1);
+
 
         
     
