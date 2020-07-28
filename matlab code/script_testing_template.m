@@ -348,6 +348,31 @@ legend("corr","gyro");
 xlim([5e4 8e4]);
 xlabel("t");
 ylabel("normlized amp");
+%% plot CROSS correlation with data to check when they correspond 
+i=1;
+data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
+%curr_meas = corr{i};
+[dtcorrSL,dtcorrSR,dtcorrTap,dtcorrAnc] = gyro_cross_corr(template_mat,data_mat(:,4:6),3);
+corrSL = dtcorrSL(:,3,1);  %z
+corrSR = dtcorrSR(:,3,1);  %z
+corrTap = dtcorrTap(:,1,1); %x
+corrAnc = dtcorrAnc(:,2,1); %y
+t = data_mat(:,20);
+t_new = (t(4)-t(3))*dtcorrSL(:,3,2);
+   % plot gyro with corr to check when is the maximun correlation
+    gyro_mat = data_mat(:, 4:6);
+    max1=max(gyro_mat(:,3));
+    max2=max(corrSL);
+    %
+figure(1);
+plot(t_new,corrSL/max2);
+    % plot normlized gyro
+    hold on;
+    plot(t,gyro_mat(:,3)/max1);
+legend("corr","gyro");
+xlim([5e4 8e4]);
+xlabel("t");
+ylabel("normlized amp");
 %% Calculate weighed corelation for each movement
 tmp = load("./templates/tap_template");
 temp_tap = tmp.tap(:,:,1);
