@@ -3,18 +3,19 @@ function xcorr = xcorr_all_intresting_seg(S,factor,op)
 % run on all segs and do xcorr only for "intresting" segs
 % "intresting" means seg we suspect movement happened 
 % INPUT
-% 1. Sd - cell array of all data segments 
+% 1. S - cell array of all data segments 
 %   in each cel :{x,y,z,T}
 % 2. factor - err factor above which we suspect movement occurence
 % OUTPUT:
 % xcorr - cell array same size as Sd in each cell:
-% xcorr{i}(:,:,:,1) - normlized cross corr result of seg{i} with swipe L template
-% xcorr{i}(:,:,:,2) - normlized cross corr result of seg{i} with swipe R template
-% xcorr{i}(:,:,:,3) - normlized cross corr result of seg{i} with tap template
-% xcorr{i}(:,:,:,4) - normlized cross corr result of seg{i} with side anckle template
+% xcorr{i}(:,:,:,1) - cross corr result of seg{i} with swipe L template
+% xcorr{i}(:,:,:,2) - cross corr result of seg{i} with swipe R template
+% xcorr{i}(:,:,:,3) - cross corr result of seg{i} with tap template
+% xcorr{i}(:,:,:,4) - cross corr result of seg{i} with side anckle template
+% all resultes normlized according to 'op'
 template_mat = loadTemplateMat; %pedded to same size
 num_of_params = 3;
-Sd = cellfun(@(x) x(:,1:num_of_params),S,'UniformOutput',false);
+Sd = cellfun(@(x) x(:,1:num_of_params),S,'UniformOutput',false); % extract data from S
 num_of_seg = length(Sd);
 xcorr = cell(num_of_seg,1);
     % always cal for first seg

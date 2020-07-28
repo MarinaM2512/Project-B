@@ -1,3 +1,4 @@
+%% More generic func then "gyro_cross_corr" due to 'op'
 function [swl, swr, tap, anc] = ...
                                 gyro_cross_corr_normlized(template_mat,gyro_seg,num_of_params,op)
 %%%Function computes cross 3D cross correlation with 4 different templates - 

@@ -13,6 +13,7 @@ function [labels,xcorr_out,diff,p] = tresholding_xcorr(xcorr,times,th1,op1,th2,o
 %                   values by at least the value of th.
 %     'MinPeakHeight' - select those peaks higher than th.
 % times - the times of the observed window.
+% t2 - min duration time that movement cross corr value is above th2.
 % output:
 % diff - error in %
 % corr_out - only peaks vector corresponds with corr times
@@ -34,6 +35,7 @@ for i = 1:num_of_movements
     [labels(i),xcorr_out{i},diff{i},p(i)]= thresholding_xcorr_single_temp(xcorr{i},times{i},th1,op1,th2,op2,t2);
 end
 end
+%%
 function [label,xcorr_out,diff,p] = thresholding_xcorr_single_temp(xcorr,times,th1,op1,th2,op2,t2)
 neg_times = sort(-times);
 times_corr = cat(neg_times,times);
