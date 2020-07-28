@@ -1,7 +1,13 @@
 %% NEED TO ADD not_a_movement_class
 function confusion_matrix  = stats ( algo_labels, real_labels)
+% Calculates confution matrix for preformance evaluation
+% INPUT:
+% 1. algo_labels - labels that our algorithem found
+% 2. real_labels - accual labels based on prior info
+% OUTPUT:
 % confusion_matrix(i,j)- the real label is  j and i was detected
 % in present
+
 % is_eq = cellfun(@isequal,algo_labels,real_labels);
 z = cell(size(real_labels)); 
 swl_labels = cellfun(@(x) [ 1 0 0 0 ],z,'UniformOutput',false);
