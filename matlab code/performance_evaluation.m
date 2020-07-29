@@ -1,35 +1,54 @@
-function [TP ,FP, TN, FN] = performance_evaluation(algo_labels, real_labels)
-% func calculates TP ,FP, TN, FN  in % by defnition to evaluate performance
+function [tp ,fp, tn, fn] = performance_evaluation(algo_t_vec, real_t_vec,template_len,n)
+% func calculates TP ,FP, TN, FN  in sampels by defnition to evaluate performance
+% assume times diffrences in real_t_vec larger then dt
+% assume times diffrences in algo_t_vec larger then dt
+%  
 % INPUT:
-% 1. algo_labels - labels that our algorithem found
-% 2. real_labels - accual labels based on prior info
-% OUTPUT: in %
-% 1. TP - both algo labels   & real labels is '1'
-% 2. FP - algo labels == '1' & real labels == '0'
-% 3. TN - both algo labels   & real labels is '0'
-% 4. FN - algo labels == '0' & real labels == '1'
-n1 = length(find(algo_labels)); %num of '1' in labels
-n2 = length(find(real_labels));
+% 1. algo_t_vec - times when labels that our algorithem found is '1'
+% 2. real_t_vec - times that we taged there is movement- prior
+% 3. template_len - in sampels
+% 4. n- len of full labeled vector- we assume same lngth to algo and real
+% labels
+% OUTPUT: in samples
+% 1. tp - TP: both algo labels   & real labels is '1'
+% 2. fp - FP: algo labels == '1' & real labels == '0'
+% 3. tn - TN: both algo labels   & real labels is '0'
+% 4. fn - FN: algo labels == '0' & real labels == '1'
+% n_algo = length(find(algo_t_vec)); %num of '1' in labels
+% n_real = length(find(real_t_vec));
 tp = 0;
-fp = 0;
-tn = 0;
-fn = 0;
-
-for i = 1:length(algo_labels)
-    if (algo_labels(i) == 1) && (real_labels(i) == 1)
-        tp = tp+1;
-    elseif (algo_labels(i) == 1) && (real_labels(i) == 0)
-        fp = fp+1;
-    elseif (algo_labels(i) == 0) && (real_labels(i) == 0)
-        tn = tn+1;
-    elseif (algo_labels(i) == 0) && (real_labels(i) == 1)
-        fn = fn+1;
+Ts = 20; %[ms]
+dt = template_len*Ts;
+algo_flag = 0;
+fp_flag_array = zeros(size(algo_t_vec));
+tp_flag_array = zeros(size(real_t_vec));
+fn_flag_array = ones(size(real_t_vec));
+for i = 1:length(algo_t_vec)     
+    for k = 1:length(real_t_vec)
+        t_tmp = algo_t_vec(i)- real_t_vec(k);
+        
+        if abs(t_tmp)<dt 
+            algo_flag = 0;
+            if tp_flag_array(k) ==1
+                continue
+            else
+                tp_flag_array(k) = 1;
+                fn_flag_array(k)=0;
+                break
+            end
+        else
+           algo_flag =1;
+        end
+    end
+    if algo_flag == 1
+        fp_flag_array(i) = 1;
+        algo_flag=0;
     end
 end
-%convert to %
-TP = 100*tp/n1;
-FP = 100*fp/n1;
-TN = 100*tn/n2;
-FN = 100*fn/n2;
+tp = sum(tp_flag_array);
+fp = sum(fp_flag_array);
+fn = sum(fn_flag_array);
+tn = n-fp-fn-tp;
+
 
 end 
