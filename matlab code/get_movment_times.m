@@ -1,23 +1,25 @@
-function move_start_times = get_movment_start_times
-list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
-lengths = zeros(length(list_moves)-1,2);
-thresholds = zeros(3,length(list_moves)-1);
-move_start_times = cell(length(list_moves)-1,1);
-for i=1:length(list_moves)-1
-    if(contains(list_moves{i},"tap"))
+function move_times = get_movment_times(endOrStart,moves_names)
+%returns start or end time for each movement
+% endOrStart - specifies which time to return - 'start' \ 'end'
+% moves_names - a cell array containing the names of the moves to get 
+% times
+thresholds = zeros(3,length(moves_names)-1);
+move_times = cell(length(moves_names)-1,1);
+for i=1:length(moves_names)
+    if(contains(moves_names{i},"tap"))
         thresholds(1:3,i) = [500,12,10];
-        if(contains(list_moves{i},"stand"))
+        if(contains(moves_names{i},"stand"))
             thresholds(1:3,i) = [500,18,9]; 
         end
-    elseif(contains(list_moves{i},"stand"))
+    elseif(contains(moves_names{i},"stand"))
         thresholds(1:3,i) = [500,15,7];
-        if(contains(list_moves{i},"side"))
+        if(contains(moves_names{i},"side"))
             thresholds(1:3,i) = [500,10,7]; 
         end
     else
         thresholds(1:3,i) = [500,10,7];
     end
-    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements("17_04",list_moves{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
+    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements("17_04",moves_names{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
     sizes = [size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)];
     [num_moves,~] = max(sizes);
     ind_max = find(sizes == num_moves);
@@ -51,8 +53,12 @@ for i=1:length(list_moves)-1
         end
     end
     [to_avgX,to_avgY,to_avgZ] = gyros{1:3};
-    len_move = max([size(to_avgX,1),size(to_avgY,1),size(to_avgZ,1)]);
-    lengths(i,:) = [len_move,i];
+    end_times = cat(1,to_avgX(end,:,2),to_avgY(end,:,2),to_avgZ(end,:,2));
     start_times = cat(1,to_avgX(1,:,2),to_avgY(1,:,2),to_avgZ(1,:,2));
-    move_start_times{i} = min(start_times);
+    if(endOrStart == "start")
+        move_times{i} = min(start_times);
+    else
+        move_times{i} = median(end_times);
+    end
+end
 end

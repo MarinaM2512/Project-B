@@ -91,7 +91,7 @@ for i=1:length(list_moves)
     time_vec = data_mat(:, end);
     gyro_mat = data_mat(:, 4:6);
     [corr_swl, corr_swr, corr_tap, corr_anc] = ...
-                                    gyro_cross_corr(template_mat,gyro_mat,3);
+                                    gyro_cross_corr_normlized(template_mat,gyro_mat,3,'none');
     corr_mat = cat(4,corr_swl,corr_swr,corr_tap,corr_anc);
     figure;
     for j = 1:4

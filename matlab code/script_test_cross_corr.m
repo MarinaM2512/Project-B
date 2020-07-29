@@ -2,7 +2,7 @@
 template_mat = loadTemplateMat;
 move_name = "sit_N_tap";
 data = loadMeasurmentMat("17_04",move_name,1,"INIT"); %load one data mes
-S=data2timeSegmentsOverlapping(data(:,4:6),data(:,20),63,60);
+S=data2timeSegmentsOverlapping(data(:,4:6),data(:,20),63,62);
 %%  un normlized
 op = 'none';%'normalized'%;
 t = cellfun(@(x) x(:,4),S,'UniformOutput',false);
@@ -136,3 +136,4 @@ i=1;
     legend("swipe left template","swipe right template","tap template","ankle template");
     newStr = strrep(move_name,'_',' ');
     sgtitle([op(1)," cross correlation of " ,newStr,"normlized with wighted ryy"]);
+  

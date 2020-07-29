@@ -60,4 +60,3 @@ err = (abs(prev_avg - new_avg)/prev_avg);
         flag = 1;
     end
 end
-

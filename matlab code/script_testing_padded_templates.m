@@ -6,7 +6,7 @@ list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
     tap_names = names_of_move( list_moves, "tap");
     anc_names =names_of_move(list_moves, "side_ancle");
 
-%% templates for all moveents:
+%% templates for all movments:
 % swipe L templates
 [tmplt_swl_gyrox, tmplt_swl_tx] = make_tamplate_all_movments_x(date,swl_names,10000,500,10,7,0.1);
 [tmplt_swl_gyroy, tmplt_swl_ty] = make_tamplate_all_movments_y(date,swl_names,10000,500,10,6,0.1);
