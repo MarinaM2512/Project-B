@@ -51,6 +51,8 @@ else
 end
 times(1,1) = Ts*(tempLength-1)*(endOrStart == "end");
 for i=2:num_of_seg
+    sig_power = sum(data_seg{i}.^2);
+    sig_power = repmat(sig_power',1,4);
     [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = ...
                 xcorr_to_intresting_data(template_mat,data_seg{i},data_seg{i-1},factor,op);
     tmp = cat(2,xcorr_swl',xcorr_swr',xcorr_tap',xcorr_anc');
