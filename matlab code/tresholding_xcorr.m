@@ -32,13 +32,14 @@ diff = cell(size(xcorr_out));
 p = zeros(size(xcorr_out));
 
 for i = 1:num_of_movements
-    [labels(i),xcorr_out{i},diff{i},p(i)]= thresholding_xcorr_single_temp(xcorr{i},times{i},th1,op1,th2,op2,t2);
+    [labels(i),xcorr_out{i},diff{i},p(i)]= thresholding_xcorr_single_temp(xcorr{i},times,th1,op1,th2,op2,t2);
 end
 end
 %%
 function [label,xcorr_out,diff,p] = thresholding_xcorr_single_temp(xcorr,times,th1,op1,th2,op2,t2)
-neg_times = sort(-times);
-times_corr = cat(neg_times,times);
+% neg_times = sort(-times);
+% times_corr = cat(neg_times,times);
+times_corr = times;
 label =0;
 % condition 1:
 [peak,ind1] = findpeaks(xcorr,op1,th1);
