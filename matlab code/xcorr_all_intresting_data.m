@@ -13,7 +13,7 @@ function [xcorr,times] = xcorr_all_intresting_data(data,factor,norm,endOrStart)
 % 4. endOrStart - "start" - to take the start time of the movement as the correlation time
 % "end" - to take the end time of the movement as the correlation time
 % OUTPUT:
-% xcorr - array of size Nx3x4 in which the first and second dimentions contains a Nx3 matrix of
+% xcorr - cell array of size 1X4 each cell size Nx3 in which the first and second dimentions contains a Nx3 matrix of
 % cross correlation N is maximum lags fit in data vector, 3 is x,y,z.
 % xcorr(:,:,1) - cross corr result with swipe L template
 % xcorr(:,:,2) - cross corr result with swipe R template
@@ -70,4 +70,6 @@ for i=2:num_of_seg
         xcorr(i,1:3,1:4) = zeros(3,4);
     end
 end
+xcorr = num2cell(xcorr,[1 2]);
+xcorr = reshape(xcorr_data , [1 4]);
 end
