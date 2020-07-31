@@ -11,7 +11,7 @@ function [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out ] = grid_search(real_t_ve
 % 4. times - the times of the observed window.
 % 5-6. th range - range to select th from 
 % 7. t2_range - range to select duration th from in milisec
-% 8. FPR_max - the limit for FPR in the demand
+% 8. FPR_max - the limit in % for FPR in the demand 
 % OUTPUT:
 % 1. TPR - sensitivity : Probability of positive prediction given positive action.
 % 2. FPR - Probability of positive prediction given negative action.
