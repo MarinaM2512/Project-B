@@ -1,9 +1,9 @@
-function [move_vals , move_times] = extract_movement_from_corr(xcorr,segT ,thresh_val,thresh_time)
-%%Goal: extract movement vector inside segment
+function [move_vals , move_times] = extract_movement_from_corr(xcorr,times,thresh_val,thresh_time)
+%%Goal: find all sequences above thresh val for longer than thresh time
 
 %%Input Arguments:
-% 1.xcorr - data vector of cross corr
-% 2.SegT - a single segment of times corresponding to xcorr
+% 1.xcorr - data vector of cross corr single channel
+% 2.times - times corresponding to xcorr
 % 3.thresh_val - thereshold applied to Data 
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
@@ -16,18 +16,18 @@ function [move_vals , move_times] = extract_movement_from_corr(xcorr,segT ,thres
 
 move_vals = [];
 move_times = [];
-is_move = corr>thresh_val;
+is_move = xcorr>thresh_val;
 [start, len, num] = ZeroOnesCount(is_move);
 
 if (num > 0)
-    times = segT(start+len-1)-segT(start);
-    [longest_time,start_time_idx] = max(times);
-    if (longest_time > thresh_time)
-        start_move = start(start_time_idx);
-        end_move = start_move + len(start_time_idx) -1;
-        move_vals = xcorr(start_move:end_move);
-        move_times = segT(start_move:end_move);
-    end 
+    move_duration = times(start+len-1)-times(start);
+    idx_seq = find(move_duration>thresh_time);
+    start_move = start(idx_seq);
+    end_move = start_move + len(idx_seq) -1;
+    for i=1:length(idx_seq)
+        move_vals{i} = xcorr(start_move(i):end_move(i));
+        move_times{i} = times(start_move(i):end_move(i));
+    end
 end
 end
         
