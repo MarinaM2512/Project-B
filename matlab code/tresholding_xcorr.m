@@ -27,7 +27,7 @@ function [labels,xcorr_out] = tresholding_xcorr(xcorr,times,th1,op1,th2,t2)
 num_of_movements = 4; % swl, swr, tap, ank
 labels = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false); %inisilised to -1 for self check
 xcorr_out = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false);
-% diff = cell(size(xcorr_out));
+
 
 
 for i = 1:num_of_movements
@@ -44,24 +44,38 @@ xcorr_out = zeros(size(xcorr));
 [peakY,indY] = findpeaks(xcorr(:,2),op1,th1);
 [peakZ,indZ] = findpeaks(xcorr(:,3),op1,th1);
 % condiotion 2:
-[~ , move_times] = extract_movement_from_corr(xcorr,times_corr ,th2,t2); %problem here because need to pass each channel separetly
-if( ~isempty(move_times))
+[~ , move_timesX] = extract_movement_from_corr(xcorr(:,1),times_corr ,th2,t2);
+[~ , move_timesY] = extract_movement_from_corr(xcorr(:,2),times_corr ,th2,t2);
+[~ , move_timesZ] = extract_movement_from_corr(xcorr(:,3),times_corr ,th2,t2);%problem here because need to pass each channel separetly
+if( ~isempty(move_timesX) || ~isempty(move_timesY) || ~isempty(move_timesZ))
     if( ~isempty(peakX) || ~isempty(peakY) ||~isempty(peakZ) )
         for i = 1:length(xcorr)
-            checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_times,...
-               'UniformOutput',false);
-            checkTh2 = sum(cell2mat(checkTh2))>0;
             if (ismember(i,indX))
-                labels(i,1) = checkTh2;
-                xcorr_out(i,1) = checkTh2*xcorr(i,1);
+                if( ~isempty(move_timesX))
+                    checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesX,...
+                    'UniformOutput',false);
+                    checkTh2 = sum(cell2mat(checkTh2))>0;
+                    labels(i,1) = checkTh2;
+                    xcorr_out(i,1) = checkTh2*xcorr(i,1);
+                end
             end
             if (ismember(i,indY))
-                labels(i,2) = checkTh2;
-                xcorr_out(i,2) = checkTh2*xcorr(i,2);
+                if( ~isempty(move_timesY))
+                    checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesY,...
+                    'UniformOutput',false);
+                    checkTh2 = sum(cell2mat(checkTh2))>0;
+                    labels(i,2) = checkTh2;
+                    xcorr_out(i,2) = checkTh2*xcorr(i,2);
+                end
             end
             if (ismember(i,indZ))
-                labels(i,3) = checkTh2;
-                xcorr_out(i,3) = checkTh2*xcorr(i,3);
+                if( ~isempty(move_timesZ))
+                    checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesZ,...
+                    'UniformOutput',false);
+                    checkTh2 = sum(cell2mat(checkTh2))>0;
+                    labels(i,3) = checkTh2;
+                    xcorr_out(i,3) = checkTh2*xcorr(i,3);
+                end
             end
         end
     end
