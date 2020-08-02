@@ -1,4 +1,5 @@
-function [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out ] = grid_search(real_t_vec,n,xcorr_data,times,th1_range,th2_range,t2_range,FPR_max)
+function [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out ] = grid_search(...
+            real_t_vec,n,xcorr_data,times,th1_range,th2_range,t2_range,FPR_max)
 % func finds optimal params by the following demand:
 % we limit FPR by FPR_max and find maximum for TPR under this demand.
 % INPUT:
