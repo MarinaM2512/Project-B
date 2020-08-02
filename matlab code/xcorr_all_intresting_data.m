@@ -71,5 +71,5 @@ for i=2:num_of_seg
     end
 end
 xcorr = num2cell(xcorr,[1 2]);
-xcorr = reshape(xcorr_data , [1 4]);
+xcorr = reshape(xcorr , [1 4]);
 end
