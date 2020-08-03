@@ -92,7 +92,7 @@ for i = 1:length(xcorr_out)
                    ind_other = find(xcorr_out(i:i+num_ahead,ind2(k),j));
                    if( ~isempty(ind_other))
                        vec_new(ind2(k)) = xcorr_out(i+ind_other(1)-1,ind2(k),j);
-                       xcorr_out(ind_other(1),ind2(k),j) = 0;
+                       xcorr_out(i+ind_other(1)-1,ind2(k),j) = 0;
                    end
                end
            end
@@ -359,7 +359,7 @@ for a=1:length(list_moves)
                        ind_other = find(xcorr_out(i:i+num_ahead,ind2(k),j));
                        if( ~isempty(ind_other))
                            vec_new(ind2(k)) = xcorr_out(i+ind_other(1)-1,ind2(k),j);
-                           xcorr_out(ind_other(1),ind2(k),j) = 0;
+                           xcorr_out(i+ind_other(1)-1,ind2(k),j) = 0;
                        end
                    end
                end
