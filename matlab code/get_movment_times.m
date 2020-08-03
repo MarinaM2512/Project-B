@@ -16,6 +16,8 @@ for i=1:length(moves_names)
         if(contains(moves_names{i},"side"))
             thresholds(1:3,i) = [500,10,7]; 
         end
+    elseif(contains(moves_names{i},"walking"))
+        thresholds(1:3,i) = [1000,30,30];
     else
         thresholds(1:3,i) = [500,10,7];
     end
