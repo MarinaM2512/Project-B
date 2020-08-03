@@ -28,8 +28,6 @@ num_of_movements = 4; % swl, swr, tap, ank
 labels = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false); %inisilised to -1 for self check
 xcorr_out = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false);
 
-
-
 for i = 1:num_of_movements
     [labels{i},xcorr_out{i}]= thresholding_xcorr_single_temp(xcorr{i},times,th1,op1,th2,t2);
 end

@@ -43,7 +43,50 @@ end
     legend("swipe left template","original times","swipe right template","tap template","ankle template");
     newStr = strrep(move_name,'_',' ');
     sgtitle(["raw cross correlation of " ,newStr]);
-
+%% Test thresholding xcorr
+for i=1:4
+    xcorr_padded_c{i} =  xcorr_padded(:,:,i);
+end
+[~,xcorr_out] = tresholding_xcorr(xcorr_padded_c,times,0.7,'MinPeakHeight',0.3,250);
+Ts = times(2)-times(1);
+hold_time =floor(1/(Ts*1e-3));
+labels = labeling_xcorr(xcorr_out,0.8,hold_time);
+xcorr_out = reshape(cell2mat(xcorr_out),[length(xcorr_out{1}),3,4]);
+xcorr_weighted = zeros(length(xcorr_out),4);
+for i = 1:length(xcorr_out)
+    for j =1:4
+        ind1 = find(xcorr_out(i,:,j));
+        ind2 = find(xcorr_out(i,:,j) == 0);
+        vec_new = zeros(3,1);
+        if(~isempty(ind1))
+           vec_new(ind1) = xcorr_out(i,ind1,j);
+           for k = 1:length(ind2)
+               if( i<=length(xcorr_out)-1)
+                   num_ahead= min(length(xcorr_out)-i,5);
+                   ind_other = find(xcorr_out(i:i+num_ahead,ind2(k),j));
+                   if( ~isempty(ind_other))
+                       vec_new(ind2(k)) = xcorr_out(i+ind_other(1)-1,ind2(k),j);
+                       xcorr_out(i+ind_other(1)-1,ind2(k),j) = 0;
+                   end
+               end
+           end
+        end    
+        xcorr_weighted(i,j) = sum(vec_new.* wight_vec(:,j));
+    end
+end
+xcorr_padded = padarray(xcorr_weighted,[(length(data_mat)-length(xcorr_weighted)),0,0],0,'post');
+figure;
+for j = 1:4
+    plot(times,xcorr_padded(:,j),colors(j));
+    hold on;
+    if(j==1)
+        stem(times,orig_times);
+        hold on;
+    end
+end
+    legend("swipe left template","original times","swipe right template","tap template","ankle template");
+    newStr = strrep(move_name,'_',' ');
+    title(["normalized thresholded and weighted cross correlation of " ,newStr]);
 %% Load PCA weights
 tmp = load("./templates/tap_principle_vec");
 vec_tap = tmp.tap;
