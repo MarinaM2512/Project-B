@@ -2,9 +2,9 @@ function [united_xcorr,united_xcorr_times,united_orig_times,...
             united_algo_labels,united_real_labels] = unite(...
                                 xcorr_data,xcorr_times,orig_times,algo_labels,real_labels,...
                                 template_length)
-% func unite al input cells to one united output
-% all inputs type cell num_of_measX1, each meas in different cell
-% we united the times to be continius
+% func unite all input cells to one united output
+% all inputs type cell num_of_measx1, each meas in different cell
+% we united the times to be continuous
 % INPUT: 
 % 1. xcorr_data - xcorr result
 % 2. xcorr_times - times compatible with xcorr result
@@ -14,7 +14,7 @@ function [united_xcorr,united_xcorr_times,united_orig_times,...
 % 6. template_length - is samples
 % OUTPUT: 
 % in general, the input cell is converted to one long vec
-% while maintaining a continius time sequence
+% while maintaining a continuous time sequence
 % 1. united_xcorr - xcorr results in one united vetor
 % 2. united_xcorr_times - times compatible with xcorr result in one united
 % vec

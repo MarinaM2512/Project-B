@@ -14,7 +14,7 @@ function [TPR , FPR, TNR , PPV ]= evaluation_rates(algo_t_vec, real_t_vec,templa
 % 4. PPV - presition: Probability of positive prediction to be correct.
 [tp ,fp, tn, fn] = performance_evaluation(algo_t_vec, real_t_vec,template_len,n);
 TPR = tp/(tp+fn);
-FPR = FP/(tn+fp);
+FPR = fp/(tn+fp);
 TNR = tn/(tn+fp);
 PPV = tp/(tp+fp);
 

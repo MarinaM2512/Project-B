@@ -44,7 +44,7 @@ xcorr_out = zeros(size(xcorr));
 % condiotion 2:
 [~ , move_timesX] = extract_movement_from_corr(xcorr(:,1),times_corr ,th2,t2);
 [~ , move_timesY] = extract_movement_from_corr(xcorr(:,2),times_corr ,th2,t2);
-[~ , move_timesZ] = extract_movement_from_corr(xcorr(:,3),times_corr ,th2,t2);%problem here because need to pass each channel separetly
+[~ , move_timesZ] = extract_movement_from_corr(xcorr(:,3),times_corr ,th2,t2);
 if( ~isempty(move_timesX) || ~isempty(move_timesY) || ~isempty(move_timesZ))
     if( ~isempty(peakX) || ~isempty(peakY) ||~isempty(peakZ) )
         for i = 1:length(xcorr)

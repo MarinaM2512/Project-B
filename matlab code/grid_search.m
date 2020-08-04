@@ -49,13 +49,14 @@ template_len = 63;
                     t2 = t2_range(k);
                     algo_labels = cell(length(xcorr_data),1);
                     real_labels_final = cell(length(xcorr_data),1);
-                    %move_types = zeros(length(xcorr_data),1);
                     for j = 1:length(xcorr_data)
                         move_type = xcorr_data{j}.type;
                         curr_times = times{j};
                         Ts = curr_times(2)- curr_times(1);
-                        hold_samp =  hold_time/Ts;
+                        hold_samp =  floor(hold_time/Ts);
                         [~,xcorr_out] = tresholding_xcorr(xcorr_data{j}.corr,curr_times,th1,op1,th2,t2);
+                        xcorr_out =cellfun(@(x) padarray(x,[(length(curr_times)-length(xcorr_out{1})),0],...
+                            0,'post'),xcorr_out,'UniformOutput',false);
                         algo_labels_tmp = labeling_xcorr(xcorr_out,th3,hold_samp);
                         algo_labels{j} = algo_labels_tmp(:,move_type);
                         real_labels_tmp = real_labels{j};
