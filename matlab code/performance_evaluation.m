@@ -1,13 +1,12 @@
 function [tp ,fp, tn, fn] = performance_evaluation(algo_t_vec, real_t_vec,template_len,n)
 % func calculates TP ,FP, TN, FN  in sampels by defnition to evaluate performance
 % assume times diffrences in real_t_vec larger then dt
-% assume times diffrences in algo_t_vec larger then dt
-%  
+% assume times diffrences in algo_t_vec larger then dt 
 % INPUT:
 % 1. algo_t_vec - times when labels that our algorithem found is '1'
 % 2. real_t_vec - times that we taged there is movement- prior
 % 3. template_len - in sampels
-% 4. n- len of full labeled vector- we assume same lngth to algo and real
+% 4. n- len of full real labeled vector
 % labels
 % OUTPUT: in samples
 % 1. tp - TP: both algo labels   & real labels is '1'
