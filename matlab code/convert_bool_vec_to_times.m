@@ -12,7 +12,7 @@ num_of_movements = 4;
 real_times = cell(1,num_of_movements);
 algo_times = cell(1,num_of_movements);
 for i=1:num_of_movements
-    real_times{i} = times(real_labels(:,i));
-    algo_times{i} = times(algo_labels(:,i));
+    real_times{i} = times(find(real_labels(:,i)));
+    algo_times{i} = times(find(algo_labels(:,i)));
 end
 end
