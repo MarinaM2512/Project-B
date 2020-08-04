@@ -48,16 +48,22 @@ template_len = 63;
                 for k = 1: length(t2_range)
                     t2 = t2_range(k);
                     algo_labels = cell(length(xcorr_data),1);
+                    real_labels_final = cell(length(xcorr_data),1);
+                    %move_types = zeros(length(xcorr_data),1);
                     for j = 1:length(xcorr_data)
+                        move_type = xcorr_data{j}.type;
                         curr_times = times{j};
                         Ts = curr_times(2)- curr_times(1);
                         hold_samp =  hold_time/Ts;
                         [~,xcorr_out] = tresholding_xcorr(xcorr_data{j}.corr,curr_times,th1,op1,th2,t2);
-                        algo_labels{j} = labeling_xcorr(xcorr_out,th3,hold_samp);
+                        algo_labels_tmp = labeling_xcorr(xcorr_out,th3,hold_samp);
+                        algo_labels{j} = algo_labels_tmp(:,move_type);
+                        real_labels_tmp = real_labels{j};
+                        real_labels_final{j} = real_labels_tmp(:,move_type);
                     end
                     [~,~,united_times,united_algo_labels,...
                         united_real_labels] = unite(xcorr_data,times,times,algo_labels,...
-                        real_labels,template_len);
+                        real_labels_final,template_len);
                     [real_times,algo_times] = convert_bool_vec_to_times(united_real_labels,united_algo_labels,united_times);
     % t_vec is relevant times (no zeros)
                         [TPR_vec(k) , FPR_vec(k), TNR_vec(k) , PPV_vec(k) ]= evaluation_rates(algo_times, real_times,template_len,n);
