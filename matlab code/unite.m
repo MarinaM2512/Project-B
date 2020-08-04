@@ -2,8 +2,10 @@ function [united_xcorr,united_xcorr_times,united_orig_times,...
             united_algo_labels,united_real_labels] = unite(...
                                 xcorr_data,xcorr_times,orig_times,algo_labels,real_labels,...
                                 template_length)
-% func
-% INPUT: all inputs type cell 1Xnum_of_meas, each meas in different cell
+% func unite al input cells to one united output
+% all inputs type cell num_of_measX1, each meas in different cell
+% we united the times to be continius
+% INPUT: 
 % 1. xcorr_data - xcorr result
 % 2. xcorr_times - times compatible with xcorr result
 % 3. orig_times - times resampled in the raw data
