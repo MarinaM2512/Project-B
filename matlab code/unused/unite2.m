@@ -1,5 +1,5 @@
 function [united_xcorr, united_xcorr_times, united_real_t_vec,n] = unite2(move_name)%,wight_vec) 
-%% NEED TO ADD COMENTS 
+%% NEED TO ADD COMENTS -NOT relevent
 prev_xcorr=[]; 
 prev_xcorr_times=[]; 
 prev_real_t_vec=[]; 

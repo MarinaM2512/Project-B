@@ -1,4 +1,4 @@
-function movement_labels = get_all_movement_labels(endOrStart)
+function real_labels = get_all_real_labels(endOrStart)
 % Function returns a cell array containing lables for each measurment,
 % indicationg the - real start or end time of the movements inside the
 % mesurment vector.
@@ -9,7 +9,7 @@ function movement_labels = get_all_movement_labels(endOrStart)
 %%% of the measurment - 'swipeL' , 'swipeR','tap' or 'ancle'.
 list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
 move_times = get_movment_times(endOrStart,list_moves);
-movement_labels = cell(length(list_moves),1);
+real_labels = cell(length(list_moves),1);
 for i = 1:length(list_moves)
     move_name = list_moves{i};
     data_mat = loadMeasurmentMat("17_04",move_name,1,"INIT");
@@ -26,7 +26,7 @@ for i = 1:length(list_moves)
     elseif(contains(list_moves{i},"ancle"))
         curr_labels(:,4) = orig_times;
     end
-    movement_labels{i} = curr_labels; 
+    real_labels{i} = curr_labels; 
 end
 
 end
