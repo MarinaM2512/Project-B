@@ -12,8 +12,29 @@ wight_vec = [vec_swl vec_swr vec_tap vec_ank];
 %% 
 date = "17_04";
 move_name = get_all_meas_names(date, "FILTERED_INIT", 1); % all names
-[united_xcorr, united_xcorr_times, united_real_t_vec] = unite(move_name);
-% demands params to all moves
+%% use unite2
+[united_xcorr, united_xcorr_times, united_real_t_vec] = unite2(move_name);
+%% use unite
+% save all xcorr data to cell
+data_xcorr = cell(size(move_name'));
+times_xcorr = cell(size(move_name'));
+for i=1:length(move_name) 
+        %load data 
+        data_mat = loadMeasurmentMat(date,move_name{i},1,"INIT");  
+        %gyro_data = data_mat(:,4:6); 
+        times{i} = data_mat(:,20); 
+        gyro = cat(2,data_mat(:,4:6),data_mat(:,20)); 
+        % cal xcorr 
+        [data_xcorr{i},times_xcorr{i}] = xcorr_all_intresting_data(gyro,-1000,'normalized',"start");%? need another normlize? 
+        % only times of start movment - length as num of movements in vec 
+        tmp_orig_times = cell2mat(get_movment_times("start",{move_name{i}}));  
+%         % length as times 
+%         orig_times{i} = ismember(times,tmp_orig_times);
+end 
+
+    
+
+%% demands params to all moves
 th1_range = [0.7 1]; 
 th2_range = [0.6 1];
 t2_range  = [500 2000]; %[mili-sec]

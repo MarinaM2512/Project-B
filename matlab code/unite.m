@@ -1,66 +1,62 @@
-function [united_xcorr, united_xcorr_times, united_real_t_vec,n] = unite(move_name)%,wight_vec)
-%% NEED TO ADD COMENTS
-prev_xcorr=[];
-prev_xcorr_times=[];
-prev_real_t_vec=[];
-prev_times = [];
-prev_n=0;
-    for i=1:length(move_name)
-        %load data
-        data_mat = loadMeasurmentMat(date,move_name{i},1,"INIT"); 
-        %gyro_data = data_mat(:,4:6);
-        curr_times = data_mat(:,20);
-        gyro = cat(2,data_mat(:,4:6),data_mat(:,20));
-        % cal xcorr
-        [curr_xcorr,curr_xcorr_times] = xcorr_all_intresting_data(gyro,-1000,'normalized',"start");%? need another normlize?
-        % only times of start movment - length as num of movements in vec
-        orig_times = cell2mat(get_movment_times("start",{move_name{i}})); 
-        curr_real_t_vec = orig_times;
-        % length as times
-        %orig_times = ismember(times,orig_times).*times; 
-        curr_n = length(times);
-        
-        [new_xcorr, new_xcorr_times, new_real_t_vec,new_times,n] = unite_two2one(...
-            prev_xcorr ,curr_xcorr, prev_xcorr_times,curr_xcorr_times,...
-            prev_real_t_vec,curr_real_t_vec, prev_times,curr_times,prev_n,curr_n);
-        prev_xcorr = new_xcorr;
-        prev_xcorr_times = new_xcorr_times;
-        prev_real_t_vec = new_real_t_vec;
-        prev_times = new_times;
-        prev_n = n;
-    end
-   united_xcorr = new_xcorr;
-   united_xcorr_times = new_xcorr_times;
-   united_real_t_vec =  new_real_t_vec;
-    
+function [united_xcorr,united_xcorr_times,united_orig_times,...
+            united_algo_labels,united_real_labels] = unite(...
+                                xcorr_data,xcorr_times,orig_times,algo_labels,real_labels,...
+                                template_length)
+% func
+% INPUT: all inputs type cell 1Xnum_of_meas, each meas in different cell
+% 1. xcorr_data - xcorr result
+% 2. xcorr_times - times compatible with xcorr result
+% 3. orig_times - times resampled in the raw data
+% 4. algo_labels - bool array NXnum_of_movments(4)
+% 5. real_labels - bool array NXnum_of_movments(4)
+% 6. template_length - is samples
+% OUTPUT: 
+% in general, the input cell is converted to one long vec
+% while maintaining a continius time sequence
+% 1. united_xcorr - xcorr results in one united vetor
+% 2. united_xcorr_times - times compatible with xcorr result in one united
+% vec
+% 3. united_orig_times - times resampled in the raw data united in one vec
+% 4. united_algo_labels -  bool array length of all meas X num_of_movments(4)
+% 5. united_real_labels -  bool array length of all meas X num_of_movments(4)
+
+prev_xcorr_times = []; 
+prev_orig_times = [];
+% unite xcorr data
+united_xcorr = cell2mat(xcorr_data);
+united_algo_labels = cell2mat(algo_labels);
+united_real_labels = cell2mat(real_labels);
+    for i=1:length(xcorr_data) 
+        curr_xcorr_times = xcorr_times{i};
+        curr_orig_times = orig_times{i};
+        prev_xcorr_times = aux_unite_time(prev_xcorr_times,curr_xcorr_times,template_length);
+        prev_orig_times = aux_unite_time(prev_orig_times,curr_orig_times,template_length);
+         
+    end 
+   united_xcorr_times= prev_xcorr_times;
+   united_orig_times = prev_orig_times;
 end
 %% help func
-function [new_xcorr, new_xcorr_times, new_real_t_vec,new_times,n] = unite_two2one(...
-            prev_xcorr ,curr_xcorr, prev_xcorr_times,curr_xcorr_times,...
-            prev_real_t_vec,curr_real_t_vec, prev_times,curr_times,prev_n,curr_n)
-if (~isempty(prev_xcorr)) 
-    n = prev_n+curr_n;
-    % unite xcorr data
-    new_xcorr = cat(1,prev_xcorr,curr_xcorr);
-    tf_xcorr = prev_xcorr_times(end)*ones(size(curr_xcorr_times));
-    n_curr_xcorr_times = tf_xcorr + curr_xcorr_times;
-    new_xcorr_times = cat(1,prev_xcorr_times,n_curr_xcorr_times);
-    % unite xcorr times
-    tf_orig = prev_times(end)*ones(size(curr_real_t_vec));
-    n_curr_real_t_vec = tf_orig +curr_real_t_vec;
-    new_real_t_vec = cat(1,prev_real_t_vec,n_curr_real_t_vec);
-    % unite original times
-    tf = prev_times(end)*ones(size(curr_times));
-    n_curr_times = tf+curr_times;
-    new_times = cat(1,prev_times,n_curr_times);
-else 
-    % init all to first loop
-    new_xcorr=curr_xcorr;
-    new_xcorr_times=curr_xcorr_times;
-    new_real_t_vec=curr_real_t_vec;
-    new_times = curr_times;
-    n=curr_n;
+function new_times = aux_unite_time(prev_times,curr_times,template_length)
+% func unite two time vectors and maintain a time sequence as if the
+% curr_times started when prev_times ended.
+% INPUT:
+% 1. prev_times - first vec to unite
+% 2. curr_times -second vec to unite
+% 3. template_length - is samples
+% OUTPUT:
+% new_times - new united and continuous time vector
+if (~isempty(prev_times))  
+    % unite times and maintain a time sequence
+    prev_tf = prev_times(end);                          %[msec]
+    Ts = curr_times(2)-curr_times(1);                   % time between two sampels [msec]
+    dt = template_length*Ts;
+    t0 = prev_tf + dt;                                  % the curr times need to start from t0
+    t0_vec = t0 * ones(size(curr_times));               % convert to vec
+    n_curr_times = t0_vec + curr_times;                 % add to curr_times t0
+    new_times = cat(1,prev_times,n_curr_times);         % unite 
+else  
+    % init all to first loop 
+    new_times = curr_times; 
+end 
 end
-
-end
-
