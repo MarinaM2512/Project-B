@@ -1,14 +1,5 @@
 clear all; close all; clc;
-%% Load PCA weights
-tmp = load("./templates/tap_principle_vec");
-vec_tap = tmp.tap;
-tmp = load("./templates/ank_principle_vec");
-vec_ank = tmp.ank;
-tmp = load("./templates/swl_principle_vec");
-vec_swl = tmp.swl;
-tmp = load("./templates/swr_principle_vec");
-vec_swr = tmp.swr; 
-wight_vec = [vec_swl vec_swr vec_tap vec_ank];
+
 %%
 % get data to insert grid_serch
 date = "17_04";
@@ -28,7 +19,7 @@ for i=1:length(move_name)
         % cal xcorr and insert to corr fild
         [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,-1000,'normalized',"start");
         % create and update type fild in data_xcorr
-        % swipe L - 1, swipe R - 2, tap - 3, ankle - 4, else - 0
+        % swipe L - 1, swipe R - 2, tap - 3, ankle - 4, else - 1
         if(contains(move_name{i},"swipe_L"))
             xcorr_data{i}.type = 1;
         elseif(contains(move_name{i},"swipe_R"))
@@ -38,7 +29,7 @@ for i=1:length(move_name)
         elseif(contains(move_name{i},"side_ancle"))
             xcorr_data{i}.type = 4;
         else
-            xcorr_data{i}.type = 0; %e.x walking
+            xcorr_data{i}.type = 1; %e.x walking
         end
             
 end   
