@@ -1,4 +1,4 @@
-function [labels,xcorr_out] = tresholding_xcorr(xcorr,times,th1,op1,th2,t2)
+function xcorr_out = tresholding_xcorr(xcorr,times,th1,op1,th2,t2)
 % function select peacks based on op - we want only dominant peaks of normlised xcorr
 % based on 2 conditions:
 % condition 1: select peaks above th1
@@ -25,17 +25,18 @@ function [labels,xcorr_out] = tresholding_xcorr(xcorr,times,th1,op1,th2,t2)
 
 % inisilize
 num_of_movements = 4; % swl, swr, tap, ank
-labels = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false); %inisilised to -1 for self check
+%labels = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false); %inisilised to -1 for self check
 xcorr_out = cellfun(@(x) zeros(size(x)),xcorr,'UniformOutput',false);
 
 for i = 1:num_of_movements
-    [labels{i},xcorr_out{i}]= thresholding_xcorr_single_temp(xcorr{i},times,th1,op1,th2,t2);
+    xcorr_out{i}= thresholding_xcorr_single_temp(xcorr{i},times,th1,op1,th2,t2);
 end
+xcorr_out =cellfun(@(x) padarray(x,[(length(times)-length(xcorr_out{1})),0],...
+            0,'post'),xcorr_out,'UniformOutput',false);
 end
 %%
-function [labels,xcorr_out] = thresholding_xcorr_single_temp(xcorr,times,th1,op1,th2,t2)
+function xcorr_out = thresholding_xcorr_single_temp(xcorr,times,th1,op1,th2,t2)
 times_corr = times;
-labels = zeros(size(xcorr));
 xcorr_out = zeros(size(xcorr));
 % condition 1:
 [peakX,indX] = findpeaks(xcorr(:,1),op1,th1);
@@ -53,7 +54,6 @@ if( ~isempty(move_timesX) || ~isempty(move_timesY) || ~isempty(move_timesZ))
                     checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesX,...
                     'UniformOutput',false);
                     checkTh2 = sum(cell2mat(checkTh2))>0;
-                    labels(i,1) = checkTh2;
                     xcorr_out(i,1) = checkTh2*xcorr(i,1);
                 end
             end
@@ -62,7 +62,6 @@ if( ~isempty(move_timesX) || ~isempty(move_timesY) || ~isempty(move_timesZ))
                     checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesY,...
                     'UniformOutput',false);
                     checkTh2 = sum(cell2mat(checkTh2))>0;
-                    labels(i,2) = checkTh2;
                     xcorr_out(i,2) = checkTh2*xcorr(i,2);
                 end
             end
@@ -71,7 +70,6 @@ if( ~isempty(move_timesX) || ~isempty(move_timesY) || ~isempty(move_timesZ))
                     checkTh2 = cellfun(@(x) ismember(times_corr(i),x),move_timesZ,...
                     'UniformOutput',false);
                     checkTh2 = sum(cell2mat(checkTh2))>0;
-                    labels(i,3) = checkTh2;
                     xcorr_out(i,3) = checkTh2*xcorr(i,3);
                 end
             end

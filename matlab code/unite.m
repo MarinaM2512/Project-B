@@ -1,7 +1,5 @@
-function [united_xcorr,united_xcorr_times,united_orig_times,...
-            united_algo_labels,united_real_labels] = unite(...
-                                xcorr_data,xcorr_times,orig_times,algo_labels,real_labels,...
-                                template_length)
+function [united_orig_times,united_algo_labels,united_real_labels] = unite(...
+                  orig_times,algo_labels,real_labels,template_length)
 % func unite all input cells to one united output
 % all inputs type cell num_of_measx1, each meas in different cell
 % we united the times to be continuous
@@ -22,20 +20,15 @@ function [united_xcorr,united_xcorr_times,united_orig_times,...
 % 4. united_algo_labels -  bool array length of all meas X num_of_movments(4)
 % 5. united_real_labels -  bool array length of all meas X num_of_movments(4)
 
-prev_xcorr_times = []; 
 prev_orig_times = [];
 % unite xcorr data
-united_xcorr = cell2mat(xcorr_data);
 united_algo_labels = cell2mat(algo_labels);
 united_real_labels = cell2mat(real_labels);
-    for i=1:length(xcorr_data) 
-        curr_xcorr_times = xcorr_times{i};
+    for i=1:length(orig_times) 
         curr_orig_times = orig_times{i};
-        prev_xcorr_times = aux_unite_time(prev_xcorr_times,curr_xcorr_times,template_length);
         prev_orig_times = aux_unite_time(prev_orig_times,curr_orig_times,template_length);
          
     end 
-   united_xcorr_times= prev_xcorr_times;
    united_orig_times = prev_orig_times;
 end
 %% help func
