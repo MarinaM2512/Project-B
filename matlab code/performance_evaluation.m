@@ -26,7 +26,7 @@ for i = 1:length(algo_t_vec)
     for k = 1:length(real_t_vec)
         t_tmp = algo_t_vec(i)- real_t_vec(k);
         
-        if abs(t_tmp)<dt 
+        if abs(t_tmp)<0.5*dt 
             algo_flag = 0;
             if tp_flag_array(k) ==1
                 continue
