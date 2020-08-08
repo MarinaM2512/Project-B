@@ -1,4 +1,4 @@
-function labels = labeling_xcorr(xcorr_thresholded,thresh_val,hold_time)
+function [labels,label_values] = labeling_xcorr(xcorr_thresholded,thresh_val,hold_time)
 %%% Goal: produce final binary labeling by preforming the following steps:
 % 1. recieve xcorr after initial thresholding , use weights to combine 3
 %axis xcorr to one dimetion. after weighting with each template weigth, we get matrix
@@ -75,9 +75,15 @@ if (~isempty(xcorr_thresholded))
                 hold = min(hold_time,i-1);
                 for j = 1:4
                     is_larger = is_larger || ~isempty(find(label_values(i-hold:i-1,j)>curr_max,1));
+                    if(~is_larger)
+                        label_values(i-hold:i-1,j) = 0;
+                        labels(i-hold:i-1,j) = 0;
+                    end
                 end
             end
             labels(i,max_ind) = (~is_larger);
+            ind_other = find(1:4 ~= max_ind);
+            labels(i,ind_other) = 0;
             label_values(i,max_ind) = (~is_larger)*curr_max;
         end
     end

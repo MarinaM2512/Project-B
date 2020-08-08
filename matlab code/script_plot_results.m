@@ -17,10 +17,6 @@ n = load("./to grid search/n.mat").val;
 real_labels_relevant_move  = cell(length(xcorr_data),1);
 algo_labels_relevant_move  = cell(length(xcorr_data),1);
 algo_labels  = cell(length(xcorr_data),1);
-% swl = cell(length(xcorr_data),1);
-% swr =cell(length(xcorr_data),1);
-% tap = cell(length(xcorr_data),1);
-% ank = cell(length(xcorr_data),1);
 list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
 for j = 1:length(xcorr_data)
     move_type = xcorr_data{j}.type;
@@ -28,29 +24,18 @@ for j = 1:length(xcorr_data)
     Ts = curr_times(2)- curr_times(1);
     hold_samp =  floor(hold_time/Ts);
     xcorr_out = tresholding_xcorr(xcorr_data{j}.corr,curr_times,th1,op1,th2,t2);
-    algo_labels_tmp = labeling_xcorr(xcorr_out,th3,hold_samp);
+    [~,algo_labels_tmp] = labeling_xcorr(xcorr_out,th3,hold_samp);
     algo_labels{j}  = algo_labels_tmp;
     algo_labels_relevant_move{j} = algo_labels_tmp(:,move_type);
     real_labels_tmp = real_labels{j};
     real_labels_relevant_move{j} = real_labels_tmp(:,move_type);
-%     if(move_type ==1 && j~= 19)
-%         swl{j} = algo_labels_tmp;
-%     elseif(j== 19)
-%         walking = algo_labels_tmp;
-%     elseif (move_type ==2)
-%         swr{j} = algo_labels_tmp;
-%     elseif (move_type ==3)
-%         tap{j} = algo_labels_tmp;
-%     else 
-%         ank{j} = algo_labels_tmp;
-%     end
 end
 
 
 for i = 1:length(list_moves)
     move_name = list_moves{i};
     data_mat = loadMeasurmentMat("17_04",move_name,1,"INIT");
-    times = data_mat(:,20);
+    time = data_mat(:,20);
     curr_algo_labels =  algo_labels{i};
     if(contains(move_name,"tap"))
         gyro_data = data_mat(:,4);
@@ -60,15 +45,15 @@ for i = 1:length(list_moves)
         gyro_data = data_mat(:,6);
     end
     figure;
-    plot(times,gyro_data);
+    plot(time,gyro_data);
     hold on;
-    stem(times,curr_algo_labels(:,1)*max(gyro_data),'o');
+    stem(time,curr_algo_labels(:,1)*max(gyro_data),'o');
     hold on;
-    stem(times,curr_algo_labels(:,2)*max(gyro_data),'o');
+    stem(time,curr_algo_labels(:,2)*max(gyro_data),'o');
     hold on;
-    stem(times,curr_algo_labels(:,3)*max(gyro_data),'o');
+    stem(time,curr_algo_labels(:,3)*max(gyro_data),'o');
     hold on;
-    stem(times,curr_algo_labels(:,4)*max(gyro_data),'o');
+    stem(time,curr_algo_labels(:,4)*max(gyro_data),'o');
     legend("raw data", "detected swipe left" , "detected swipe right",...
         "detected tap", "detected side ankle");
     newStr = strrep(move_name,'_',' ');
@@ -81,6 +66,7 @@ end
                         real_labels,template_len);
 
 %% Confusion matrix 
-real_labels_out = add_class(united_real_labels);
-algo_labels_out = add_class(united_algo_labels);
-plotconfusion(real_labels_out',algo_labels_out');
+% real_labels_out = add_class(united_real_labels);
+% algo_labels_out = add_class(united_algo_labels);
+% plotconfusion(real_labels_out',algo_labels_out');
+plot_confusion_matrix(united_real_labels,united_algo_labels,united_times,n,dt)

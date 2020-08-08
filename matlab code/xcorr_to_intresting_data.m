@@ -27,10 +27,10 @@ function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_data(te
 len = length(currentSeg);
 num_of_params = 3;
 flag = do_correlation(currentSeg,prevSeg,factor);
-xcorr_swl =[];
-xcorr_swr = [];
-xcorr_tap = [];
-xcorr_anc =[];
+xcorr_swl =zeros(1,3);
+xcorr_swr = zeros(1,3);
+xcorr_tap = zeros(1,3);
+xcorr_anc =zeros(1,3);
      if (flag)
       [swl, swr, tap, anc] = ...
                       gyro_cross_corr_normlized(template_mat,currentSeg,num_of_params,op);
@@ -60,7 +60,7 @@ function flag = do_correlation(currentSeg,prevSeg,factor)
 new_avg = mean (currentSeg); 
 prev_avg = mean (prevSeg);
 
-err = (abs(prev_avg - new_avg)/prev_avg);
+err = (abs(prev_avg - new_avg)/abs(prev_avg));
     if  err< factor
         flag = 0;
     else
