@@ -66,7 +66,5 @@ end
                         real_labels,template_len);
 
 %% Confusion matrix 
-% real_labels_out = add_class(united_real_labels);
-% algo_labels_out = add_class(united_algo_labels);
-% plotconfusion(real_labels_out',algo_labels_out');
-plot_confusion_matrix(united_real_labels,united_algo_labels,united_times,n,dt)
+dt = 1500; %[msec]
+plot_confusion_matrix(united_real_labels,united_algo_labels,united_times,n,dt);
