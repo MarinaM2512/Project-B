@@ -27,9 +27,8 @@ hold_time = 1500; %[mili-sec]
 algo_labels = get_algo_labels(th1_out, th2_out, t2_out,th3_out,hold_time);
 plot_results_stem(algo_labels);
 %% Confusion matrix 
-[united_times,united_algo_labels,...
-                        united_real_labels] = unite(times,algo_labels,...
-                        real_labels,template_len);
+[united_times,united_algo_labels,united_real_labels] =...
+            unite(times,algo_labels,real_labels,template_len);
 
 plot_confusion_matrix(united_real_labels,united_algo_labels,united_times,n,dt);
   
