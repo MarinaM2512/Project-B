@@ -1,7 +1,4 @@
-%%
-clear all;
-close all;
-clc;
+clear all; close all; clc;
 %% Plot classification results
 th1 = 0.7; 
 th2 = 0.1;
