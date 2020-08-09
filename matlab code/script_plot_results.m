@@ -1,7 +1,7 @@
 clear all; close all; clc;
 %% Plot classification results
 th1 = 0.7; 
-th2 = 0.1;
+th2 = 0.2;
 t2  = 200; %[mili-sec]
 th3= 0.7;
 hold_time = 1500;
