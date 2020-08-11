@@ -17,7 +17,7 @@ th1_range = 0.5:0.05:0.9;
 th2_range = 0.1:0.05:0.5;
 t2_range  = 200:20:400; %[mili-sec]
 th3_range = 0.6:0.05:0.9;
-FPR_max   = 20; % [%]
+FPR_max   = 2e-4; % [%]
 hold_time = 1500; %[mili-sec]
 %% RUN GRID SEARCH
 [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out,th3_out] = ...
