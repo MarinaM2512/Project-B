@@ -20,10 +20,11 @@ function plot_confusion_matrix(united_real_labels,united_algo_labels,united_time
 %       (or no movement occurence). the time window defined by [t-0.5dt t+0.5dt]
 %       where t is the occurence time of the real movement.
 % OUTPUT: non, the function plots the matrix.
-
 new_real_labels = zeros(size(united_real_labels));
-[move_ind,~] = is_movement(united_real_labels); % in each labels check if movement accured
-for i1=1:length(move_ind)                                          % run on length of labels 
+[move_ind,~] = is_movement(united_real_labels);  % in each labels check if movement accured
+ind0_vec = zeros(size(move_ind));
+indf_vec = zeros(size(move_ind)); 
+for i1=1:length(move_ind)                        % run on num of movments occured
     i=move_ind(i1);  
     move_type = find(united_real_labels(i,:));   % which movement accured
     % Extreme Cases
@@ -38,7 +39,7 @@ for i1=1:length(move_ind)                                          % run on leng
     if i<=samples                                % if t-0.5dt<0
         ind0=1;                                  % then t0=0
     elseif i>=n-samples                          % if t+0.5dt>t(end)
-        indf=n;                                  % then tf=t(end)
+            indf=n;                              % then tf=t(end)
     end
     window = ind0:indf;                          % we look at [t-0.5dt t+0.5dt] time window
     [k_vec,~] = is_movement(united_algo_labels(window,:)); % find where algo detected move
@@ -49,11 +50,20 @@ for i1=1:length(move_ind)                                          % run on leng
         new_real_labels(k,move_type) = 1;        % in the places that algo detected movements-
                                                  % insted of the algo label detected,                                    % put the real label
     end
+    ind0_vec(i1) = ind0;
+    indf_vec(i1) = indf;
 end
 % most of the labels are 4d zeros- we ignor them - this is not good need to
 % fix delete zeros.
-real_labels_out = delete_zeros(new_real_labels);
-algo_labels_out = delete_zeros(united_algo_labels);
+real_labels_win = cut_by_win(new_real_labels,ind0_vec,indf_vec);
+algo_labels_win = cut_by_win(united_algo_labels,ind0_vec,indf_vec);
+
+real_labels_out = add_class(real_labels_win);
+algo_labels_out = add_class(algo_labels_win);
+%
+% real_labels_out = delete_zeros(new_real_labels);
+% algo_labels_out = delete_zeros(united_algo_labels);
+
 % plot confusion matrix- comparing new and algo
 plotconfusion(real_labels_out',algo_labels_out');
 end
@@ -73,6 +83,14 @@ end
 function labels_out = delete_zeros(labels_in)
 [~,flags] = is_movement(labels_in);
 labels_out = labels_in(flags,:);
+end
+%% 
+function labels_out = cut_by_win(labels_in,ind0,indf)
+labels_out_cell = cell(size(ind0));
+for i=1:length(ind0)
+    labels_out_cell{i} = labels_in(ind0(i):indf(i),:);
+end
+labels_out=cell2mat(labels_out_cell);
 end
 
 

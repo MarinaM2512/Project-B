@@ -34,13 +34,9 @@ t2_out = load("./results after grid search/thresholds.mat").t2;
 th3_out = load("./results after grid search/thresholds.mat").th3;
 %% plot optimal results
 [algo_labels,algo_vals] = get_algo_labels(th1_out, th2_out, t2_out,th3_out,hold_time);
-plot_results_stem(algo_vals);
+%plot_results_stem(algo_vals);
 %% Confusion matrix 
 [united_times,united_algo_labels,united_real_labels] =...
             unite(times,algo_labels,real_labels,template_len);
-
+dt = 1000;
 plot_confusion_matrix(united_real_labels,united_algo_labels,united_times,n,dt);
-  
-    
-    
- 
