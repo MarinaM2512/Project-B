@@ -43,15 +43,15 @@ for i1=1:length(move_ind)                                          % run on leng
     window = ind0:indf;                          % we look at [t-0.5dt t+0.5dt] time window
     [k_vec,~] = is_movement(united_algo_labels(window,:)); % find where algo detected move
     if (isempty(k_vec))                          % if no movement was detected in algo
-        new_real_labels(i,:)= united_real_labels(i,:); % use original real label
+        new_real_labels(i,:)= united_real_labels(i,:)>0; % use original real label
     else
-        k = closest_to_i(i,ind0+k_vec);          % in algo choose the closest to real movement 
+        k = closest_to_i(i,ind0+k_vec-1);          % in algo choose the closest to real movement 
         new_real_labels(k,move_type) = 1;        % in the places that algo detected movements-
-                                                 % insted of the algo label detected,
-                                                 % put the real label
+                                                 % insted of the algo label detected,                                    % put the real label
     end
 end
-% most of the labels are 4d zeros- we ignor them
+% most of the labels are 4d zeros- we ignor them - this is not good need to
+% fix delete zeros.
 real_labels_out = delete_zeros(new_real_labels);
 algo_labels_out = delete_zeros(united_algo_labels);
 % plot confusion matrix- comparing new and algo
