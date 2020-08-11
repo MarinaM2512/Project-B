@@ -50,6 +50,7 @@ end
                 hold on;
                 if(ind==num_meas)
                     title(title_3(meas-3));
+                    xlabel("time [sec]");
                 end
                 if(meas==6 && ind==num_meas)
                   sgtitle("gyro");

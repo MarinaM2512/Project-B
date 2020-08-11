@@ -53,19 +53,26 @@ for i1=1:length(move_ind)                        % run on num of movments occure
     ind0_vec(i1) = ind0;
     indf_vec(i1) = indf;
 end
-% most of the labels are 4d zeros- we ignor them - this is not good need to
-% fix delete zeros.
-real_labels_win = cut_by_win(new_real_labels,ind0_vec,indf_vec);
-algo_labels_win = cut_by_win(united_algo_labels,ind0_vec,indf_vec);
+% most of the labels are 4d zeros- we ignor them 
+% real_labels_win = cut_by_win(new_real_labels,ind0_vec,indf_vec);
+% algo_labels_win = cut_by_win(united_algo_labels,ind0_vec,indf_vec);
 
-real_labels_out = add_class(real_labels_win);
-algo_labels_out = add_class(algo_labels_win);
+
+real_labels_out = add_class(new_real_labels);
+algo_labels_out = add_class(united_algo_labels);
+
 %
 % real_labels_out = delete_zeros(new_real_labels);
 % algo_labels_out = delete_zeros(united_algo_labels);
 
 % plot confusion matrix- comparing new and algo
-plotconfusion(real_labels_out',algo_labels_out');
+%plotconfusion(real_labels_out',algo_labels_out');
+algo = binary_labels_to_text(algo_labels_out);
+real = binary_labels_to_text(real_labels_out);
+cm = confusionchart(real,algo);
+cm.Title = "Movement classification confusion matrix";
+cm.RowSummary = 'row-normalized';
+cm.ColumnSummary = 'column-normalized';
 end
 %% 
 function [ind,flags] = is_movement(labels)
@@ -91,6 +98,20 @@ for i=1:length(ind0)
     labels_out_cell{i} = labels_in(ind0(i):indf(i),:);
 end
 labels_out=cell2mat(labels_out_cell);
+end
+%% 
+function labels_out = binary_labels_to_text(labels_in)
+labels_out = strings(size(labels_in,1),1);
+ind_swl = find(labels_in(:,1));
+ind_swr =find(labels_in(:,2));
+ind_tap = find(labels_in(:,3));
+ind_ank = find(labels_in(:,4));
+ind_none =find(labels_in(:,5)); 
+labels_out(ind_swl) = "swipe left";
+labels_out(ind_swr) = "swipe right";
+labels_out(ind_tap) = "tap";
+labels_out(ind_ank) = "side ankle";
+labels_out(ind_none) = "no movement";
 end
 
 
