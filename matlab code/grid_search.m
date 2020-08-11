@@ -31,10 +31,14 @@ function [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out,th3_out] = grid_search(..
 
 op ='MinPeakHeight';
 op1 = op;
-op2 = op;
+%op2 = op;
 TPR = 0 ;
 template_len = 63;
-
+warning_msg = 'signal:findpeaks:largeMinPeakHeight';
+num_itr = length(th1_range)+length(th2_range)+length(th3_range)+...
+    length(t2_range);
+itr = 1;
+f = waitbar(0,'starting grid search');
     for i1 = 1:length(th1_range)
         th1 = th1_range(i1);
         for i2 = 1:length(th2_range)
@@ -49,13 +53,21 @@ template_len = 63;
                     t2 = t2_range(k);
                     algo_labels = cell(length(xcorr_data),4);
                     real_labels_final = cell(length(xcorr_data),4);
+                     waitbar(itr/num_itr,f,"Iteration: " + num2str(itr) + "out of: " + ...  
+                        num2str(num_itr));
+                    itr = itr+1;
                     for j = 1:length(xcorr_data)
-                        move_type = xcorr_data{j}.type;
+                        %move_type = xcorr_data{j}.type;
                         curr_times = times{j};
                         Ts = curr_times(2)- curr_times(1);
                         hold_samp =  floor(hold_time/Ts);
                         xcorr_out = tresholding_xcorr(xcorr_data{j}.corr,curr_times,th1,op1,th2,t2);
                         [algo_labels_tmp,~] = labeling_xcorr(xcorr_out,th3,hold_samp);
+                        [~, msgid] = lastwarn;
+                        if(strcmp(msgid,warning_msg))
+                            lastwarn('');
+                            continue;
+                        end
                         real_labels_tmp = real_labels{j};
                         for a=1:4
                             algo_labels{j,a} = algo_labels_tmp(:,a);
@@ -90,7 +102,7 @@ template_len = 63;
             end
         end
     end
-
+close(f);
 
 end
 
