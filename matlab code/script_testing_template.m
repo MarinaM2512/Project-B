@@ -53,6 +53,7 @@ t_tap = [{tmplt_tap_t(:,1)} {tmplt_tap_t(:,2)} {tmplt_tap_t(:,3)}];
 t_anc = [{tmplt_anc_t(:,1)} {tmplt_anc_t(:,2)} {tmplt_anc_t(:,3)}];
 t_sl = [{tmplt_swl_t(:,1)} {tmplt_swl_t(:,2)} {tmplt_swl_t(:,3)}];
 t_sr = [{tmplt_swr_t(:,1)} {tmplt_swr_t(:,2)} {tmplt_swr_t(:,3)}];
+figure();
 print_templates(tmplt_anc_gyro(:,1),tmplt_anc_gyro(:,2),tmplt_anc_gyro(:,3),t_anc,"ancle");
 print_templates(tmplt_tap_gyro(:,1),tmplt_tap_gyro(:,2),tmplt_tap_gyro(:,3),t_tap,"tap");
 print_templates(tmplt_swl_gyro(:,1),tmplt_swl_gyro(:,2),tmplt_swl_gyro(:,3),t_sl,"swipe left");
@@ -611,22 +612,3 @@ function list = names_of_move(list_moves,move)
     list = moves(find(idx));
 end
 
-function print_templates(x,y,z,t,move_name)
-    figure;
-    subplot(3,1,1);
-    plot(t{1},x);
-    title("X");
-    xlabel("time [msec]");
-    ylabel("\omega [rad/sec]");
-    subplot(3,1,2);
-    plot(t{2},y);
-    title("Y");
-    xlabel("time [msec]");
-    ylabel("\omega [rad/sec]");
-    subplot(3,1,3);
-    plot(t{3},z);
-    title("Z");
-    xlabel("time [msec]");
-    ylabel("\omega [rad/sec]");
-    sgtitle(move_name);
-end
