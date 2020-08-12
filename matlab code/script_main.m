@@ -36,12 +36,12 @@ save("./results after grid search/results2.mat",'-struct',"results2");
 %% Load optimal results
 n = load("./to grid search/n.mat").val;
 template_len = 63;
-dt = 1500; %[msec]
 hold_time = 1500; %[mili-sec]
 th1_out  = load("./results after grid search/thresholds2.mat").th1;
 th2_out = load("./results after grid search/thresholds2.mat").th2;
 t2_out = load("./results after grid search/thresholds2.mat").t2;
 th3_out = load("./results after grid search/thresholds2.mat").th3;
+
 %% plot optimal results
 [algo_labels,algo_vals] = get_algo_labels(th1_out, th2_out, t2_out,th3_out,hold_time);
 plot_results_stem(algo_vals);

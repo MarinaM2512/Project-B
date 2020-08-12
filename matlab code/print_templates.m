@@ -1,4 +1,5 @@
 function print_templates(x,y,z,t,move_name)
+figure;
     subplot(3,1,1);
     plot(t{1},x);
     title("X");
