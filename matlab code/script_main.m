@@ -27,12 +27,12 @@ thresholds2.th1 = th1_out;
 thresholds2.th2 = th2_out;
 thresholds2.t2 = t2_out;
 thresholds2.th3 = th3_out;
-save("./results after grid search/thresholds2.mat","thresholds2");
+save("./results after grid search/thresholds2.mat",'-struct',"thresholds2");
 results2.tpr = TPR;
 results2.fpr = FPR;
 results2.tnr = TNR;
 results2.ppv = PPV;
-save("./results after grid search/results2.mat","results2");
+save("./results after grid search/results2.mat",'-struct',"results2");
 %% Load optimal results
 n = load("./to grid search/n.mat").val;
 template_len = 63;
