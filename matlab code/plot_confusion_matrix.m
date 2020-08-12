@@ -54,21 +54,12 @@ for i1=1:length(move_ind)                        % run on num of movments occure
     indf_vec(i1) = indf;
 end
 % most of the labels are 4d zeros- we ignor them 
-% real_labels_win = cut_by_win(new_real_labels,ind0_vec,indf_vec);
-% algo_labels_win = cut_by_win(united_algo_labels,ind0_vec,indf_vec);
-
-
 real_labels_out = add_class(new_real_labels);
 algo_labels_out = add_class(united_algo_labels);
 
-%
-% real_labels_out = delete_zeros(new_real_labels);
-% algo_labels_out = delete_zeros(united_algo_labels);
-
-% plot confusion matrix- comparing new and algo
-%plotconfusion(real_labels_out',algo_labels_out');
 algo = binary_labels_to_text(algo_labels_out);
 real = binary_labels_to_text(real_labels_out);
+figure;
 cm = confusionchart(real,algo);
 cm.Title = "Movement classification confusion matrix";
 cm.RowSummary = 'row-normalized';
