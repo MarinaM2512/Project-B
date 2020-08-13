@@ -92,25 +92,7 @@ th3_out_vec = zeros(num_itr,1);
                         th1_out_vec(itr) = th1;
                         th2_out_vec(itr) = th2;
                         th3_out_vec(itr) = th3;
-%                         TPR_vec_tmp(k)=TPR_vec(itr);
-%                         FPR_vec_tmp(k) =FPR_vec(itr);
-%                         TNR_vec_tmp(k) =TNR_vec(itr);
-%                         PPV_vec_tmp(k) = PPV_vec(itr);
                 end
-%                 ind = FPR_vec_tmp<=FPR_max; % damand
-%                 %tpr_tmp = zeros(size(t2_range));
-%                 tpr_tmp = TPR_vec_tmp(ind);
-%                 [TPR_tmp_max,ind_max] = max(tpr_tmp);
-%                 if TPR_tmp_max>TPR
-%                     TPR = TPR_tmp_max;
-%                     FPR = FPR_vec(ind_max);
-%                     TNR = TNR_vec(ind_max);
-%                     PPV = PPV_vec(ind_max);
-%                     t2_out = t2_range(ind_max);
-%                     th1_out = th1;
-%                     th2_out = th2;
-%                     th3_out = th3;
-%                 end
             end
         end  
     end
