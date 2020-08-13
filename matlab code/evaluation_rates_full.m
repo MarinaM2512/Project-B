@@ -31,8 +31,8 @@ for i=1:length(algo_t_vec)
            TP_tot(i) = TP_tot(i)+ tp;
            FP_tot(i) = FP_tot(i) +fp;
            FN_tot(i) = FN_tot(i) +fn;
-        else
-           FP_tot(i) = FP_tot(i) +tp; 
+%         else
+%            FP_tot(i) = FP_tot(i) +tp; 
         end
     end
     TN_tot(i) = n - (TP_tot(i)+FP_tot(i)+FN_tot(i));
