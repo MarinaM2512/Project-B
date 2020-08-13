@@ -9,15 +9,11 @@ template_len = 63;
 dt = 1500; %[msec]
 
 %% demands params to all moves
-th1_range = 0.6 ; 
-th2_range = 0.15;
-t2_range  = 280; %[mili-sec]
-th3_range = 0.7;
-% th1_range = 0.5:0.05:0.9; 
-% th2_range = 0.4:0.05:0.8;
-% t2_range  = 60:20:300; %[mili-sec]
-% th3_range = 0.6:0.05:0.9;
-FPR_max   = 0.6; % [%]
+th1_range = 0.5:0.05:0.9; 
+th2_range = 0.4:0.05:0.8;
+t2_range  = 60:20:300; %[mili-sec]
+th3_range = 0.6:0.05:0.9;
+FPR_max   = 0.3; % [%]
 hold_time = 1500; %[mili-sec]
 %% RUN GRID SEARCH
 [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out,th3_out] = ...
