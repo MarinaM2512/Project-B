@@ -38,7 +38,7 @@ PPV = -1;
 
 template_len = 63;
 warning_msg = 'signal:findpeaks:largeMinPeakHeight';
-num_itr = length(th1_range)*length(th2_range)*length(th3_range)*...
+num_itr = length(th1_range)*length(th3_range)*...
     length(t2_range);
 itr = 1;
 f = waitbar(0,'starting grid search');
@@ -52,8 +52,7 @@ th2_out_vec = zeros(num_itr,1);
 th3_out_vec = zeros(num_itr,1);
     for i1 = 1:length(th1_range)
         th1 = th1_range(i1);
-        for i2 = 1:length(th2_range)
-            th2 = th2_range(i2);
+        th2 = th1;
             for i3 = 1:length(th3_range)
                 th3 = th3_range(i3);
                 for k = 1: length(t2_range)
@@ -94,7 +93,6 @@ th3_out_vec = zeros(num_itr,1);
                         th3_out_vec(itr) = th3;
                 end
             end
-        end  
     end
 close(f);
 ind_FPR_demand = find(FPR_vec<=FPR_max);

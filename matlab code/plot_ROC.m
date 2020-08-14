@@ -10,3 +10,5 @@ s.DataTipTemplate.DataTipRows(6) = dataTipTextRow('th3',th3_vec);
 s.DataTipTemplate.DataTipRows(7) = dataTipTextRow('TNR',TNR_vec);
 s.DataTipTemplate.DataTipRows(8) = dataTipTextRow('PPV',PPV_vec);
 title("ROC scatter");
+xlabel("FPR");
+ylabel("TPR");
