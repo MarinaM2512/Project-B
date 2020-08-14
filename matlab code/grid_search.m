@@ -38,20 +38,23 @@ PPV = -1;
 
 template_len = 63;
 warning_msg = 'signal:findpeaks:largeMinPeakHeight';
-num_itr = length(th1_range)*length(th2_range)*length(th3_range)*...
+num_itr = length(th1_range)*length(th3_range)*...
     length(t2_range);
 itr = 1;
 f = waitbar(0,'starting grid search');
+TPR_vec = zeros(num_itr,1);
+FPR_vec = 2*ones(num_itr,1);
+TNR_vec = zeros(num_itr,1);
+PPV_vec = zeros(num_itr,1);
+t2_out_vec = zeros(num_itr,1);
+th1_out_vec = zeros(num_itr,1);
+th2_out_vec = zeros(num_itr,1);
+th3_out_vec = zeros(num_itr,1);
     for i1 = 1:length(th1_range)
         th1 = th1_range(i1);
-        for i2 = 1:length(th2_range)
-            th2 = th2_range(i2);
+        th2 = th1;
             for i3 = 1:length(th3_range)
                 th3 = th3_range(i3);
-                TPR_vec = zeros(size(t2_range));
-                FPR_vec = zeros(size(t2_range));
-                TNR_vec = zeros(size(t2_range));
-                PPV_vec = zeros(size(t2_range));
                 for k = 1: length(t2_range)
                     t2 = t2_range(k);
                     algo_labels = cell(length(xcorr_data),4);
@@ -83,26 +86,60 @@ f = waitbar(0,'starting grid search');
                         [real_times{a},algo_times{a}] = convert_bool_vec_to_times(...
                             united_real_labels,united_algo_labels,united_times);
                     end                    
-                        [TPR_vec(k) , FPR_vec(k), TNR_vec(k) , PPV_vec(k) ]= evaluation_rates_full(algo_times, real_times,template_len,n);
-                end
-                ind = FPR_vec<=FPR_max; % damand
-                tpr_tmp = zeros(size(t2_range));
-                tpr_tmp(ind) = TPR_vec(ind);
-                [TPR_tmp_max,ind_max] = max(tpr_tmp);
-                if TPR_tmp_max>TPR
-                    TPR = TPR_tmp_max;
-                    FPR = FPR_vec(ind_max);
-                    TNR = TNR_vec(ind_max);
-                    PPV = PPV_vec(ind_max);
-                    t2_out = t2_range(ind_max);
-                    th1_out = th1;
-                    th2_out = th2;
-                    th3_out = th3;
+                        [TPR_vec(itr) , FPR_vec(itr), TNR_vec(itr) , PPV_vec(itr) ]= evaluation_rates_modified_FP(algo_times, real_times,template_len,n);
+                        t2_out_vec(itr) = t2;
+                        th1_out_vec(itr) = th1;
+                        th2_out_vec(itr) = th2;
+                        th3_out_vec(itr) = th3;
                 end
             end
-        end
     end
 close(f);
-
+ind_FPR_demand = find(FPR_vec<=FPR_max);
+if(~isempty(ind_FPR_demand))
+    TPR_under_FPR_demand = TPR_vec(ind_FPR_demand);
+    [TPR,ind_opt_tmp] = max(TPR_under_FPR_demand);
+    ind_opt= ind_FPR_demand(ind_opt_tmp);
+    FPR = FPR_vec(ind_opt);
+    TNR = TNR_vec(ind_opt);
+    PPV = PPV_vec(ind_opt);
+    t2_out = t2_out_vec(ind_opt);
+    th1_out = th1_out_vec(ind_opt);
+    th2_out = th2_out_vec(ind_opt);
+    th3_out = th3_out_vec(ind_opt);
+    plot_ROC (TPR_vec, FPR_vec, TNR_vec, PPV_vec, t2_out_vec,th1_out_vec,th2_out_vec,th3_out_vec);
+    stats = [TPR,FPR,TNR,PPV];
+    stats_vec = cat(2,TPR_vec,FPR_vec,TNR_vec,PPV_vec);
+    thresholds = [t2_out,th1_out,th2_out,th3_out];
+    save_outputs(stats,stats_vec,thresholds)
+else
+    fprintf(" No results under FPR_max found");
 end
+end
+%% Save all grid search outputs
+function save_outputs(stats,stats_vec,thresholds)
+s.tpr = stats(1);
+s.fpr = stats(2);
+s.tnr = stats(3);
+s.ppv = stats(4);
 
+s_vec.tpr_vec = stats_vec(:,1);
+s_vec.fpr_vec = stats_vec(:,2);
+s_vec.tnr_vec = stats_vec(:,3);
+s_vec.ppv_vec = stats_vec(:,4);
+
+res.t2 = thresholds(1);
+res.th1 = thresholds(2);
+res.th2 = thresholds(3);
+res.th3 = thresholds(4);
+destdirectory = strcat("./results after grid search/",date);
+if ~exist(destdirectory, 'dir')
+    mkdir(destdirectory);
+end
+param_names = ["stats.mat","stats_vec.mat","thresholds.mat"];
+struct_names = ["s","s_vec","res"];
+for i =1:3
+    fulldestination = fullfile(destdirectory, param_names(i));
+    save(fulldestination,'-struct',struct_names(i));
+end
+end

@@ -1,4 +1,4 @@
-function [TPR , FPR, TNR , PPV ] =  evaluation_rates_full(algo_t_vec, real_t_vec,template_len,n)
+function [TPR , FPR, TNR , PPV ] =  evaluation_rates_modified_FP(algo_t_vec, real_t_vec,template_len,n)
 % function calculates rates in % using known evaluation rates
 % this function takes into consideration the false recognition of movements
 % of the wrong type.
@@ -37,13 +37,12 @@ for i=1:length(algo_t_vec)
     end
     TN_tot(i) = n - (TP_tot(i)+FP_tot(i)+FN_tot(i));
     TPR_tot(i) = TP_tot(i)/(TP_tot(i)+FN_tot(i));
-    FPR_tot(i) = FP_tot(i)/(TN_tot(i)+FP_tot(i));
     TNR_tot(i) = TN_tot(i)/(TN_tot(i)+FP_tot(i));
     PPV_tot(i) = TP_tot(i)/(TP_tot(i)+FP_tot(i));
+    FPR_tot(i) = 1-PPV_tot(i);
 end
 TPR = mean(TPR_tot);
 FPR = mean(FPR_tot);
 TNR = mean(TNR_tot); 
 PPV = mean(PPV_tot);
 end
-
