@@ -4,7 +4,8 @@
 % input:
 % movement_name - name of movment to extraxct
 % date - date to load data from
-% param - mave of parameter to plot
+% param - mave of parameter to plot on of the following: "accel" "gyro"
+% "quat" "fsr"
 % output:
 % t- original time vec
 % extraction - clean movement of movement_name in data

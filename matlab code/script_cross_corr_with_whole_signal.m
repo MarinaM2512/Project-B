@@ -385,9 +385,9 @@ for a=1:length(list_moves)
         legend("swipe left template","original times","swipe right template","tap template","ankle template");
         newStr = strrep(move_name,'_',' ');
         sgtitle(["raw cross correlation of " ,newStr]);
-    [labels,xcorr_out] = tresholding_xcorr(xcorr,corr_times,0.7,'MinPeakHeight',0.3,250);
+    xcorr_out = tresholding_xcorr(xcorr,corr_times,0.7,'MinPeakHeight',0.3,250);
     xcorr_out = reshape(cell2mat(xcorr_out),[length(xcorr_out{1}),3,4]);
-    labels = reshape(cell2mat(labels),[length(labels{1}),3,4]);
+    %labels = reshape(cell2mat(labels),[length(labels{1}),3,4]);
     xcorr_weighted = zeros(length(xcorr_out),4);
     for i = 1:length(xcorr_out)
         for j =1:4
