@@ -1,6 +1,4 @@
-clear all;
-close all;
-clc;
+clear all;close all;clc;
 %% Test xcorr normalized
 move_name = "sit_N_tap1";
 data_mat = loadMeasurmentMat("17_04",move_name,1,"INIT"); 
