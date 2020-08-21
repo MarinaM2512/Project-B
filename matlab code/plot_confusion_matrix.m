@@ -64,6 +64,7 @@ cm = confusionchart(real,algo);
 cm.Title = "Movement classification confusion matrix";
 cm.RowSummary = 'row-normalized';
 cm.ColumnSummary = 'column-normalized';
+cm.FontSize = 20;
 end
 %% 
 function [ind,flags] = is_movement(labels)
