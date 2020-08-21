@@ -396,7 +396,7 @@ for a=1:length(list_moves)
                vec_new(ind1) = xcorr_out(i,ind1,j);
                for k = 1:length(ind2)
                    if( i<=length(xcorr_out)-1)
-                       num_ahead= min(length(xcorr_out)-i,5);
+                       num_ahead= min(length(xcorr_out)-i,10);
                        ind_other = find(xcorr_out(i:i+num_ahead,ind2(k),j));
                        if( ~isempty(ind_other))
                            vec_new(ind2(k)) = xcorr_out(i+ind_other(1)-1,ind2(k),j);
