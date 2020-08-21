@@ -46,9 +46,10 @@ for i1=1:length(move_ind)                        % run on num of movments occure
     if (isempty(k_vec))                          % if no movement was detected in algo
         new_real_labels(i,:)= united_real_labels(i,:)>0; % use original real label
     else
-        k = closest_to_i(i,ind0+k_vec-1);          % in algo choose the closest to real movement 
+        k = closest_to_i(i,ind0+k_vec-1);        % in algo choose the closest to real movement 
         new_real_labels(k,move_type) = 1;        % in the places that algo detected movements-
-                                                 % insted of the algo label detected,                                    % put the real label
+                                                 % insted of the algo label detected put the 
+                                                 % real label
     end
     ind0_vec(i1) = ind0;
     indf_vec(i1) = indf;
