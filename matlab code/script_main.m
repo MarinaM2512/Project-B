@@ -20,8 +20,8 @@ hold_time = 1500; %[mili-sec]
 %% Load optimal results 
 th1_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th1;
 th2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th2;
-t2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").t2;
 th3_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th3;
+t2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").t2;
 %% plot optimal results
 hold_time = 1500; %[mili-sec]
 [algo_labels,algo_vals] = get_algo_labels(th1_out, th2_out, t2_out,th3_out,hold_time);
