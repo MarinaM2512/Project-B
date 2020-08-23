@@ -14,7 +14,7 @@ move_name = get_all_meas_names(date, "FILTERED_INIT", 1);   % all names
 % init
 xcorr_data = cell(size(move_name')); 
 times = cell(size(move_name'));
-n1=0;
+n1=0; % length of times from all measurments
 % each meas in cell
 for i=1:length(move_name) 
         data_mat = loadMeasurmentMat(date,move_name{i},1,"INIT");%load all data of meas i
@@ -22,10 +22,22 @@ for i=1:length(move_name)
         times{i} = data_mat(:,20);                               %save time sampels of meas i
         n1=n1+length(times{i});                                    %update length of total time vec
         % cal xcorr and insert to corr fild
-        [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,'normalized',"start");
-
-         
+        [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,'normalized',"start");     
 end   
-%% labels 
-real_labels = load("./to grid search/real_labels.mat").val; 
-[algo_labels,algo_vals] = get_algo_labels_new(xcorr_data,times,th1_out, th2_out, t2_out,th3_out,hold_time); 
+%% save xcorr, times , n in directory "to grid search"
+clear n
+n.val=n1;
+xcorrData.val = xcorr_data;
+Times.val = times;
+
+xcorr_data_name=strcat(".\to grid search\xcorr_data.mat");
+save(xcorr_data_name,'-struct','xcorrData');
+
+times_name=strcat(".\to grid search\times.mat");
+save(times_name,'-struct','Times');
+
+n_name=strcat(".\to grid search\n.mat");
+save(n_name,'-struct','n');
+%% output labels 
+[algo_labels,algo_vals] = get_algo_labels_new(...
+    xcorr_data,times,th1_out, th2_out, t2_out,th3_out,hold_time);
