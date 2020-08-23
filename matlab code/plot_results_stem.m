@@ -1,12 +1,12 @@
-function plot_results_stem(algo_labels)
+function plot_results_stem(algo_labels,date)
 % function plots raw data and stem of algo_labels in same figure
 % total of 4 figures one for each movement
 % INPUT: the optimal results we got from grid_search
 
-list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
+list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
 for i = 1:length(list_moves)
     move_name = list_moves{i};
-    data_mat = loadMeasurmentMat("17_04",move_name,1,"INIT");
+    data_mat = loadMeasurmentMat(date,move_name,1,"INIT");
     time = data_mat(:,20);
     curr_algo_labels =  algo_labels{i};
     if(contains(move_name,"tap"))

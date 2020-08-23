@@ -6,7 +6,7 @@ clc;close all;clear all;
 date = "17_04";
 endOrStart = 'start';
 move_name = get_all_meas_names(date, "FILTERED_INIT", 1);   % all names
-real_labels = get_all_real_labels(endOrStart);              % cell of labels from all meas
+real_labels = get_all_real_labels(endOrStart,date);              % cell of labels from all meas
 % init
 xcorr_data = cell(size(move_name')); 
 xcorr_data_intresting = cell(size(move_name')); 
@@ -49,15 +49,15 @@ Times.val = times;
 realLabels.val = real_labels;
 xcorrInrestingData.val = xcorr_data_intresting;
 
-xcorr_data_name=strcat(".\to grid search\xcorr_data.mat");
+xcorr_data_name=strcat(".\to grid search\",date,"\xcorr_data.mat");
 save(xcorr_data_name,'-struct','xcorrData');
 
-xcorr_data_intresting_name=strcat(".\to grid search\xcorr_data_intresting.mat");
+xcorr_data_intresting_name=strcat(".\to grid search\",date,"\xcorr_data_intresting.mat");
 save(xcorr_data_intresting_name,'-struct','xcorrInrestingData');
 
-times_name=strcat(".\to grid search\times.mat");
+times_name=strcat(".\to grid search\",date,"\times.mat");
 save(times_name,'-struct','Times');
-real_labels_name=strcat(".\to grid search\real_labels.mat");
+real_labels_name=strcat(".\to grid search\",date,"\real_labels.mat");
 save(real_labels_name,'-struct','realLabels');
-n_name=strcat(".\to grid search\n.mat");
+n_name=strcat(".\to grid search\",date,"\n.mat");
 save(n_name,'-struct','n');

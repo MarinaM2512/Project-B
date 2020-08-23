@@ -1,4 +1,4 @@
-function move_times = get_movment_times(endOrStart,moves_names)
+function move_times = get_movment_times(endOrStart,moves_names,date)
 %returns start or end time for each movement
 % endOrStart - specifies which time to return - 'start' \ 'end'
 % moves_names - a cell array containing the names of the moves to get 
@@ -21,7 +21,7 @@ for i=1:length(moves_names)
     else
         thresholds(1:3,i) = [500,10,7];
     end
-    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements("17_04",moves_names{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
+    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moves_names{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
     sizes = [size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)];
     [num_moves,~] = max(sizes);
     ind_max = find(sizes == num_moves);

@@ -54,13 +54,14 @@ end
 clear all;
 close all;
 clc;
-list_moves  = get_all_meas_names("17_04", "FILTERED_INIT", 1);
+date = "11_04";
+list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
 lengths = zeros(length(list_moves)-1,2);
 thresholds = zeros(3,length(list_moves)-1);
 move_start_times = cell(length(list_moves)-1,1);
 delay_start = zeros(length(list_moves)-1,1);
 for i=1:length(list_moves)-1
-    data_mat = loadMeasurmentMat("17_04",list_moves{i},1,"INIT"); %load one data mes
+    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT"); %load one data mes
     if(contains(list_moves{i},"tap"))
         thresholds(1:3,i) = [500,12,10];
         if(contains(list_moves{i},"stand"))
@@ -74,8 +75,8 @@ for i=1:length(list_moves)-1
     else
         thresholds(1:3,i) = [500,10,7];
     end
-    plot_raw_data_with_move_extraction(list_moves{i},"17_04","gyro",thresholds(:,i));
-    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements("17_04",list_moves{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
+    plot_raw_data_with_move_extraction(list_moves{i},date,"gyro",thresholds(:,i));
+    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
     sizes = [size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)];
     [num_moves,~] = max(sizes);
     ind_max = find(sizes == num_moves);
