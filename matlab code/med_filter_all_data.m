@@ -1,4 +1,6 @@
 function med_filter_all_data(date,n)
+%
+% n- length of median filter
 textFileName= strcat("..\measurements\",date,"\","Data_extraction_","*",".mat");
 DirList = dir(fullfile(textFileName));
 listOfFiles = {DirList.name};
