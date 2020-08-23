@@ -6,17 +6,17 @@ times = load("./to grid search/times.mat").val;
 real_labels = load("./to grid search/real_labels.mat").val;
 n = load("./to grid search/n.mat").val;
 template_len = 63;
-%% demands params to all moves
-th1_range = 0.5:0.05:0.9; 
-th2_range = [];
-t2_range  = 60:20:300; %[mili-sec]
-th3_range = 0.6:0.05:0.9;
-FPR_max   = 0.15; % [%]
-hold_time = 1500; %[mili-sec]
-%% RUN GRID SEARCH
-[TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out,th3_out] = ...
-    grid_search(...
-    real_labels,n,xcorr_data,times,th1_range,th2_range,t2_range,th3_range,FPR_max,hold_time);
+ %% demands params to all moves
+% th1_range = 0.5:0.05:0.9; 
+% th2_range = [];
+% t2_range  = 60:20:300; %[mili-sec]
+% th3_range = 0.6:0.05:0.9;
+% FPR_max   = 0.15; % [%]
+% hold_time = 1500; %[mili-sec]
+% %% RUN GRID SEARCH
+% [TPR, FPR, TNR, PPV, th1_out, th2_out, t2_out,th3_out] = ...
+%     grid_search(...
+%     real_labels,n,xcorr_data,times,th1_range,th2_range,t2_range,th3_range,FPR_max,hold_time);
 %% Load optimal results 
 th1_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th1;
 th2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th2;
