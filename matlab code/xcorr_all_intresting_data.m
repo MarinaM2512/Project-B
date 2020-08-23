@@ -1,16 +1,15 @@
-function [xcorr,times] = xcorr_all_intresting_data(data,factor,norm,endOrStart)
+function [xcorr,times] = xcorr_all_intresting_data(data,norm,endOrStart)
 % casing func for xcorr_to_intresting_seg
 % run on all segs and do xcorr only for "intresting" segs
 % "intresting" means seg we suspect movement happened 
 % INPUT
 % 1. the whole data vector of one mesurment organized as  :{x,y,z,T}
 %   
-% 2. factor - err factor above which we suspect movement occurence
-% 3. norm - 'none' - raw xcorr
+% 2. norm - 'none' - raw xcorr
 %       - 'normalized' - normelized by template and signal autocorr
 %       - 'sig' - normalized by signal power
 %        - 'temp' - normalized by template power
-% 4. endOrStart - "start" - to take the start time of the movement as the correlation time
+% 3. endOrStart - "start" - to take the start time of the movement as the correlation time
 % "end" - to take the end time of the movement as the correlation time
 % OUTPUT:
 % xcorr - cell array of size 1X4 each cell size Nx3 in which the first and second dimentions contains a Nx3 matrix of
@@ -41,7 +40,7 @@ times = zeros(num_of_seg,1);
 sig_power = sum(data_seg{1}.^2);
 sig_power = repmat(sig_power',1,4);
 [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = ...
-xcorr_to_intresting_data(template_mat,data_seg{1},data_seg{1},-1,op);
+xcorr_to_intresting_data(template_mat,data_seg{1},op);
 if ( norm == "temp")
     xcorr(1,1:3,1:4) = cat(2,xcorr_swl',xcorr_swr',xcorr_tap',xcorr_anc')./temp_power;
 elseif( norm == "sig")
@@ -54,7 +53,7 @@ for i=2:num_of_seg
     sig_power = sum(data_seg{i}.^2);
     sig_power = repmat(sig_power',1,4);
     [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = ...
-                xcorr_to_intresting_data(template_mat,data_seg{i},data_seg{i-1},factor,op);
+                xcorr_to_intresting_data(template_mat,data_seg{i},op);
     tmp = cat(2,xcorr_swl',xcorr_swr',xcorr_tap',xcorr_anc');
     if(~isempty(tmp))
         if ( norm == "temp")

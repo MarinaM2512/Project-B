@@ -1,4 +1,5 @@
-function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_data(template_mat,currentSeg,prevSeg,factor,op)
+function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = ...
+    xcorr_to_intresting_data(template_mat,currentSeg,op)
 % GOAL: check if movement occured in seg calculate correlation. 
 % we do this in order to improve time complexity.
 % the idea is to flag a window if the avrage of the new samples is bigger
@@ -11,10 +12,7 @@ function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_data(te
 %           template_mat{4} - side anckle template
 % 2. correntSd - current data segment for x,y,z
 % (we check if the current seg is intresting to us)
-% 3. prevSd - previous data segment for x,y,z
-% (the previous segments are the system's memory)
-% 4. factor - err factor above which we suspect movement occurence
-% 5. op - optionof xcorr matlab func
+% 3. op - optionof xcorr matlab func
 % 'normalized' / 'none'
 % OUTPUT:
 % Return the cross correllation at lag 0 - Rxy(0) for each segment
@@ -24,47 +22,16 @@ function [xcorr_swl,xcorr_swr,xcorr_tap,xcorr_anc] = xcorr_to_intresting_data(te
 % xcorr_tap - normlized cross corr result with tap template
 % xcorr_anc - normlized cross corr result with side anckle template
 
-len = length(currentSeg);
 num_of_params = 3;
-flag = do_correlation(currentSeg,prevSeg,factor);
-xcorr_swl =zeros(1,3);
-xcorr_swr = zeros(1,3);
-xcorr_tap = zeros(1,3);
-xcorr_anc =zeros(1,3);
-     if (flag)
+
       [swl, swr, tap, anc] = ...
                       gyro_cross_corr_normlized(template_mat,currentSeg,num_of_params,op);
-      [ind_swl,~] = find(swl(:,:,2) == 0);
-      [ind_swr,~] = find(swr(:,:,2) == 0);
-      [ind_tap,~] = find(tap(:,:,2) == 0); 
-      [ind_anc,~] = find(anc(:,:,2) == 0); 
-      xcorr_swl = swl(ind_swl(1),:,1);
-      xcorr_swr = swr(ind_swr(1),:,1);
-      xcorr_tap = tap(ind_tap(1),:,1);
-      xcorr_anc = anc(ind_anc(1),:,1);            
-     end
+[ind_swl,~] = find(swl(:,:,2) == 0);
+[ind_swr,~] = find(swr(:,:,2) == 0);
+[ind_tap,~] = find(tap(:,:,2) == 0); 
+[ind_anc,~] = find(anc(:,:,2) == 0); 
+xcorr_swl = swl(ind_swl(1),:,1);
+xcorr_swr = swr(ind_swr(1),:,1);
+xcorr_tap = tap(ind_tap(1),:,1);
+xcorr_anc = anc(ind_anc(1),:,1);            
 end
-%% helper func
-function flag = do_correlation(currentSeg,prevSeg,factor)
-% boolian function
-% the idea:
-% err = (abs(prev_avg - curr_avg)/prev_avg);
-% if err<factor return 1
-% INPUT:
-% currentSeg - data in selected seg
-% prevSeg  - memory of old data
-% factor - when the error is above the factor return 1
-% OUTPUT:
-% flag - eq 1 if we sespect the is a movemwnt in curr window
-
-new_avg = mean (currentSeg); 
-prev_avg = mean (prevSeg);
-
-err = (abs(prev_avg - new_avg)/abs(prev_avg));
-    if  err< factor
-        flag = 0;
-    else
-        flag = 1;
-    end
-end
-
