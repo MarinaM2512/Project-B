@@ -1,3 +1,5 @@
+clc;close all;clear all;
+%%
 % calculate real_labels,xcorr_data,times,n1 for grid_search function
 % xcorr calculation takes takes long time so we save the data to file 
 % "to grid search"
@@ -18,7 +20,7 @@ for i=1:length(move_name)
         times{i} = data_mat(:,20);                               %save time sampels of meas i
         n1=n1+length(times{i});                                    %update length of total time vec
         % cal xcorr and insert to corr fild
-        [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,-1000,'normalized',"start");
+        [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,'normalized',"start");
         %[xcorr_data_intresting{i}.corr,~] = xcorr_all_intresting_data(gyro,factor,'normalized',"start");
         % create and update type fild in data_xcorr
         % swipe L - 1, swipe R - 2, tap - 3, ankle - 4, else - 1
