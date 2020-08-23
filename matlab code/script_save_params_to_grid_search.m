@@ -19,7 +19,7 @@ for i=1:length(move_name)
         n1=n1+length(times{i});                                    %update length of total time vec
         % cal xcorr and insert to corr fild
         [xcorr_data{i}.corr,~] = xcorr_all_intresting_data(gyro,-1000,'normalized',"start");
-        [xcorr_data_intresting{i}.corr,~] = xcorr_all_intresting_data(gyro,factor,'normalized',"start");
+        %[xcorr_data_intresting{i}.corr,~] = xcorr_all_intresting_data(gyro,factor,'normalized',"start");
         % create and update type fild in data_xcorr
         % swipe L - 1, swipe R - 2, tap - 3, ankle - 4, else - 1
         if(contains(move_name{i},"swipe_L"))
