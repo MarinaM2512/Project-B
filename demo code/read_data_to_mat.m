@@ -1,4 +1,3 @@
-
 function address = read_data_to_mat(date)
 %open all measurments files from a certain date and save them as matrices
 %Measurments arangement in the mat: 

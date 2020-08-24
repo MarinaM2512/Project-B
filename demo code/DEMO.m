@@ -1,16 +1,14 @@
 %% 
 clear all; close all; clc; 
 %% Convert from text to mat & save
-src_path = read_data_to_mat("24_08");
+read_data_to_mat("24_08");
 %% DEFINE 
 date = "24_08"; 
 path = "..\measurements\resample"; 
-dst_path = strcat(path,"\",date);
 endOrStart = "start";
 template_len = 63; %[samples] 
 hold_time = 1500; %[mili-sec] 
 %% Filter &  Resample 
-copyfile src_path dst_path
 resample_and_filter_raw_data(path, date,5,"MEDIAN");
 init_qaut_resampled_data(date);
 %% LOAD thresholds 
