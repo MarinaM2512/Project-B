@@ -12,8 +12,9 @@ hold_time = 1500; %[mili-sec]
 %% Filter &  Resample 
 copyfile src_path dst_path
 resample_and_filter_raw_data(path, date,5,"MEDIAN");
-init_qaut_resampled_data(date)
+init_qaut_resampled_data(date);
 %% LOAD thresholds 
+% th found from runing grid_search on training set
 th1_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th1; 
 th2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th2; 
 th3_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th3; 
