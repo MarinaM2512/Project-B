@@ -1,8 +1,13 @@
-function real_labels = get_all_real_labels(endOrStart,date)
+function real_labels = get_all_real_labels(endOrStart,date,order)
 % Function returns a cell array containing lables for each measurment,
 % indicationg the - real start or end time of the movements inside the
 % mesurment vector.
 %%% Input: endOrStart -specifies which times to return - 'start' \ 'end'
+%%%        date - the date folder of the wanted measurments
+%%%        order - cell array that for each measurment is eather empty or 
+%%%        if the measurment contains more than one kind of
+%%%        movement specify the order of movements. oreder will contain:
+%%%        1 - swipe left, 2 - swipe right, 3- tap, 4- side ankle
 %%% Output: movement_labels - a cell array in whice each cell corresponds
 %%% to a measurment vector and contains a matrix of shape - Nx4 , where N
 %%% is the length of the mesurment and 4 dimention correspond to the type
@@ -25,6 +30,11 @@ for i = 1:length(list_moves)
         curr_labels(:,3) = orig_times;
     elseif(contains(list_moves{i},"ancle"))
         curr_labels(:,4) = orig_times;
+    elseif(contains(list_moves{i},"all") && ~isempty(order))
+        ind_moves = find(orig_times);
+        for j=1:length(ind_moves)
+            curr_labels(ind_moves(j),order(j))= 1;
+        end          
     end
     real_labels{i} = curr_labels; 
 end

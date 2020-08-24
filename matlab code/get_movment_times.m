@@ -3,8 +3,9 @@ function move_times = get_movment_times(endOrStart,moves_names,date)
 % endOrStart - specifies which time to return - 'start' \ 'end'
 % moves_names - a cell array containing the names of the moves to get 
 % times
-thresholds = zeros(3,length(moves_names)-1);
-move_times = cell(length(moves_names)-1,1);
+thresholds = zeros(3,length(moves_names));
+move_times = cell(length(moves_names),1);
+delay = 10000;
 for i=1:length(moves_names)
     if(contains(moves_names{i},"tap"))
         thresholds(1:3,i) = [500,12,10];
@@ -16,12 +17,15 @@ for i=1:length(moves_names)
         if(contains(moves_names{i},"side"))
             thresholds(1:3,i) = [500,10,7]; 
         end
+    elseif(contains(moves_names{i},"all"))
+        thresholds(1:3,i) = [300,7,12];
+        delay = 5000;
     elseif(contains(moves_names{i},"walking"))
-        thresholds(1:3,i) = [1000,30,30];
+        thresholds(1:3,i) = [10000,50,50];
     else
-        thresholds(1:3,i) = [500,10,7];
+        thresholds(1:3,i) = [350,10,8];
     end
-    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moves_names{i},10000,thresholds(1,i),thresholds(2,i),thresholds(3,i));
+    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moves_names{i},delay,thresholds(1,i),thresholds(2,i),thresholds(3,i));
     sizes = [size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)];
     [num_moves,~] = max(sizes);
     ind_max = find(sizes == num_moves);

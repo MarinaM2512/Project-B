@@ -1,1 +1,3 @@
+Order of measurments:
+
 accel x, accel y, accel z, gyro x, gyro y, gyro z, quat w, quat x, quat y, quat z, cal sys, cal accel, cal gyro, cal mag, FSR0, FSR1, FSR2, FSR3, FSR4, time stemps

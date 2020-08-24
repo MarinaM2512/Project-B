@@ -2,10 +2,10 @@ clear all; close all; clc;
 %% PARAMS
 date = "24_08";
 % get data to insert grid_serch
-xcorr_data = load(strcat(".\to grid search\",date,"\xcorr_data.mat")).val;
-times = load(strcat(".\to grid search\",date,"\times.mat")).val;
-real_labels = load(strcat(".\to grid search\",date,"\real_labels.mat")).val;
-n = load(strcat(".\to grid search\",date,"\n.mat")).val;
+xcorr_data = load(strcat(".\variables for labeling\",date,"\xcorr_data.mat")).val;
+times = load(strcat(".\variables for labeling\",date,"\times.mat")).val;
+real_labels = load(strcat(".\variables for labeling\",date,"\real_labels.mat")).val;
+n = load(strcat(".\variables for labeling\",date,"\n.mat")).val;
 template_len = 63;
  %% demands params to all moves
 th1_range = 0.5:0.05:0.9; 
@@ -25,7 +25,8 @@ th3_out = load("./results after grid search/14-Aug-2020/thresholds.mat").th3;
 t2_out = load("./results after grid search/14-Aug-2020/thresholds.mat").t2;
 %% plot optimal results
 hold_time = 1500; %[mili-sec]
-[algo_labels,algo_vals] = get_algo_labels(th1_out, th2_out, t2_out,th3_out,hold_time,date);
+[algo_labels,algo_vals] = get_algo_labels_new(...
+    xcorr_data,times,th1_out, th2_out, t2_out,th3_out,hold_time);
 plot_results_stem(algo_vals,date);
 %% Confusion matrix 
 [united_times,united_algo_labels,united_real_labels] =...

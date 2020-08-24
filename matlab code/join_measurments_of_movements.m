@@ -13,17 +13,24 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
 % 5.sum_window: window length that we sum all element in it
-    textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","INIT.mat");
-    DirList = dir(fullfile(textFileName));
-    listOfFiles = {DirList.name};
-    Cx_tot = {};
-    Cy_tot = {};
-    Cz_tot = {};
-    CxT_tot = {};
-    CyT_tot = {};
-    CzT_tot = {};
+matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
+curr_dir = pwd;
+if(~strcmp(matlab_code_path,curr_dir))
+    DirPath = "..\..\measurements\resample";
+else
+    DirPath = "..\measurements\resample";
+end
+textFileName= strcat(DirPath,"\",date,"\","*",movement_name,"*","INIT.mat");
+DirList = dir(fullfile(textFileName));
+listOfFiles = {DirList.name};
+Cx_tot = {};
+Cy_tot = {};
+Cz_tot = {};
+CxT_tot = {};
+CyT_tot = {};
+CzT_tot = {};
     for i= 1:length(listOfFiles)
-        mat_name=strcat("..\measurements\resample\",date,"\",listOfFiles{i});
+        mat_name=strcat(DirPath,"\",date,"\",listOfFiles{i});
         M=load(mat_name);
         mat=M.initialised;
         [Sx , Tx] = data2timeSegments(mat(:,4),mat(:,20),delay);

@@ -24,14 +24,23 @@ labels = zeros(length(xcorr_thresholded{1}),4);
 label_values =  zeros(length(xcorr_thresholded{1}),4);
 
 %Load weights
-tmp = load("./templates/tap_principle_vec");
-vec_tap = tmp.tap;
-tmp = load("./templates/ank_principle_vec");
-vec_ank = tmp.ank;
-tmp = load("./templates/swl_principle_vec");
-vec_swl = tmp.swl;
-tmp = load("./templates/swr_principle_vec");
-vec_swr = tmp.swr; 
+matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
+curr_dir = pwd;
+if(~strcmp(matlab_code_path,curr_dir))
+    tmp1 = load("../templates/tap_principle_vec");
+    tmp2 = load("../templates/ank_principle_vec");
+    tmp3 = load("../templates/swl_principle_vec");
+    tmp4 = load("../templates/swr_principle_vec");
+else
+    tmp1 = load("./templates/tap_principle_vec");
+    tmp2 = load("./templates/ank_principle_vec");
+    tmp3 = load("./templates/swl_principle_vec");
+    tmp4 = load("./templates/swr_principle_vec");
+end
+vec_tap = tmp1.tap;
+vec_ank = tmp2.ank;
+vec_swl = tmp3.swl;
+vec_swr = tmp4.swr; 
 wight_vec = [vec_swl vec_swr vec_tap vec_ank];
 %Take absolute value of weights (because otherwise detection is not good).
 wight_vec = abs(wight_vec);

@@ -14,7 +14,7 @@
 %   num sum window - number of cosecutive elements to sum over for
 %   thresholding
 
-function [t,extraction] = plot_raw_data_with_move_extraction(movement_name,date,param,thresholds)
+function [t,extraction] = plot_raw_data_with_move_extraction(movement_name,date,param,thresholds,delay)
 title_3=["x" "y" "z"];
 title_q=["qW" "qX" "qY" "qZ"];
 title_fsr=["FSR0" "FSR1" "FSR2" "FSR3" "FSR4"];
@@ -22,11 +22,11 @@ newStr = strrep(movement_name,'_',' ');
 data_mat = loadMeasurmentMat(date,movement_name,1,"INIT");
 t = data_mat(:,20);
 extraction = zeros(size(data_mat(:,1:end-1)));
-[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,10000,...
+[to_avgX, ~, ~] = join_measurments_of_movements(date,movement_name,delay,...
     thresholds(1),thresholds(2),thresholds(3));
-[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,10000,...
+[~, to_avgY, ~] = join_measurments_of_movements(date,movement_name,delay,...
         thresholds(1),thresholds(2),thresholds(3));
-[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,10000,...
+[~, ~, to_avgZ] = join_measurments_of_movements(date,movement_name,delay,...
     thresholds(1),thresholds(2),thresholds(3));
 move_cell = [{to_avgX} {to_avgY} {to_avgZ}] ; 
 [~,time,~] = detect_movement(move_cell);

@@ -1,10 +1,10 @@
-function init_qaut_resampled_data(date)
+function init_qaut_resampled_data(dirPath,date)
 % find q_init and normlize all quates
-    textFileName= strcat("..\measurements\resample\",date,"\","*","FILTERED.mat");
+    textFileName= strcat(dirPath,"\",date,"\","*","FILTERED.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};
     for i= 1:length(listOfFiles)
-        mat_name=strcat("..\measurements\resample\",date,"\",listOfFiles{i});
+        mat_name=strcat(dirPath,"\",date,"\",listOfFiles{i});
         M=load(mat_name);
         mat=M.filtered_mat;
         delay=200;
