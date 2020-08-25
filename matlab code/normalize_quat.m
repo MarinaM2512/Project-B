@@ -1,6 +1,9 @@
-%FUNCTION normlize quats in each segment
-%Sw,Sx,Sy,Sz quats data segments in each axis
 function q_norm=normalize_quat(Sw,Sx,Sy,Sz)
+% function normlize quats in each segment
+% INPUT: Sw,Sx,Sy,Sz quats data segments in each axis
+% OUTPUT: q_norm - cell array same length as num of segments.
+%                   in each cell 4D vector that contains normlized quat
+%                   data fromthe input segs.
 qw_init_vec = find_quat_init(Sw);
 qx_init_vec = find_quat_init(Sx);
 qy_init_vec = find_quat_init(Sy);
