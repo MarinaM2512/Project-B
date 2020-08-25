@@ -7,7 +7,6 @@ function resample_and_filter_raw_data(DirPath, date,n,type)
 % 3. n - order of the one-dimensional median filter. The center of the med
 %        filt is in floor(0.5n)+1 ( see n in help for Matlab func medfilt1)
 %        this param is used only when type is "MEDIAN"
-% filter is 
 % 4. type - type of filter used on data
 %           can be one of the following:
 %           a. "LPF" - uses function "LPF_filter_raw_data_from_dir"
