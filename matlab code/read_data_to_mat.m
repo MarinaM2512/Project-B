@@ -32,11 +32,15 @@ function read_data_to_mat(scrPath,destPath,date)
         splitStr={original_string};
         writecell(splitStr,'tmp.txt');
         final=readmatrix('tmp.txt');
+        delete tmp.txt
         final=final(1:end-1,:);
         name=split(listOfFiles{i},".");
         %save to sample folder
+        destdirectory = strcat(destPath,"\",date);
+        if ~exist(destdirectory, 'dir')
+            mkdir(destdirectory);
+        end
         mat_name=strcat(destPath,"\",date,"\","Data_extraction_",name{1},".mat");
         save(mat_name,'final'); 
-        address = mat_name;
     end
 end
