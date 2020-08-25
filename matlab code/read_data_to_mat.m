@@ -1,6 +1,7 @@
 function read_data_to_mat(scrPath,destPath,date)
-%open all measurments files from a certain date and save them as matrices
-%Measurments arangement in the mat: 
+% open all measurments files from a certain date and save them as 
+% matrices
+% Measurments arangement in the mat: 
 % accel_x accel_y accel_z gyro_x gyro_y gyro_z qW qX qY qZ 
 % Cal_sys Cal_gyro Cal_accel Cal_mag FSR0 FSR1 FSR2 FSR3 FSR4
     textFileName= strcat(scrPath,date,"\","*",".txt");

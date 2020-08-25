@@ -1,5 +1,7 @@
 function init_qaut_resampled_data(dirPath,date)
-% find q_init and normlize all quates
+% 1. get data from "dirPath\date" directory (inputs)
+% 2. find q_init and normlize all quates.
+% 3. save with "INIT" suffics in the same directory
     textFileName= strcat(dirPath,"\",date,"\","*","FILTERED.mat");
     DirList = dir(fullfile(textFileName));
     listOfFiles = {DirList.name};

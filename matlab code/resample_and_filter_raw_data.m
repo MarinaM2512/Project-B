@@ -11,8 +11,9 @@ function resample_and_filter_raw_data(DirPath, date,n,type)
 % 4. type - type of filter used on data
 %           can be one of the following:
 %           a. "LPF" - uses function "LPF_filter_raw_data_from_dir"
-%                      this func uses lowpass filter of matlab.
-%           b. "MEDIAN" - 
+%                      this func uses lowpass function of matlab.
+%           b. "MEDIAN" - uses function "median_data_filt"
+%                      this func uses midfilt1 function of matlab.
     listOfFiles = get_meas_names_from_dir(DirPath,date,"");
     mat_full_names = get_list_of_files_from_dir (DirPath,date,"");
     all_data_filetered = LPF_filter_raw_data_from_dir(DirPath,date , n);

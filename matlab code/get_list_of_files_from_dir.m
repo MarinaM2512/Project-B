@@ -1,5 +1,5 @@
 function listOfFiles = get_list_of_files_from_dir (DirPath ,date, measType)
-% function get name list of all diffrenet measurments in th directory
+% function get name list of all diffrenet files in th directory
 % "DirPath/date" 
 % INPUT: 
 % 1. DirPath - path directory all measurments are saved
@@ -11,7 +11,7 @@ function listOfFiles = get_list_of_files_from_dir (DirPath ,date, measType)
 %            measurments
 % OUTPUT:
 % listOfFiles - cell of srings 
-%               contains all names of diffrenet measurments collected on date
+%               contains all names of all files in the directory
 
     if(~strcmp(measType,""))
         textFileName= strcat(DirPath,"\",date,"\","*",measType,"*.mat");
