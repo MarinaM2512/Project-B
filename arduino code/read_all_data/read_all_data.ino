@@ -91,31 +91,7 @@ void setup(void)
   }
   //Calibrate before beginningof measurments
   calibrate();
- /* uint8_t system, gyro, accel, mag = 0;
-  while( system<3 || gyro<3 || accel<3 || mag<3 ){
-    bno.getCalibration(&system, &gyro, &accel, &mag);
-    Serial.print("CALIBRATION: Sys: ");
-    Serial.print(system, DEC);
-    Serial.print(" Gyro: ");
-    Serial.print(gyro, DEC);
-    Serial.print(" Accel: ");
-    Serial.print(accel, DEC);
-    Serial.print(" Mag: ");
-    Serial.println(mag, DEC);
-    delay(500);
-  }
-  Serial.println("BNO fully Calibrated");*/
  press_s_to_start();
-  /*while(start_measurments!='s'){
-    Serial.println("press s key to start");
-    if(Serial.available()>0)
-      start_measurments=Serial.read();
-    delay(300);
-  }
-    Serial.println("Starting measurments");
-    BNO_time=0;
-    FSR_time=0;
-    FSR_done_time =0;*/
 }
 
 void loop(void)
@@ -145,7 +121,7 @@ void loop(void)
     double z = (linearAccelData.acceleration).z;
     Serial.printf("%.4lf %.4lf %.4lf",x,y,z);
 
-    //Angular acceleration
+    //Angular Velocity
 
     x = angVelocityData.gyro.x;
     y = angVelocityData.gyro.y;
