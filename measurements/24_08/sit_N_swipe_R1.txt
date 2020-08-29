@@ -1,4 +1,3 @@
-
 [2020-08-24 13:13:50.722] press s key to start
 [2020-08-24 13:13:50.737] press s key to start
 [2020-08-24 13:13:50.737] press s key to start

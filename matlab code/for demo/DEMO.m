@@ -48,7 +48,10 @@ clear n
 n.val=n1;
 xcorrData.val = xcorr_data;
 Times.val = times;
-
+destdirectory = strcat("..\variables for labeling\",date);
+if ~exist(destdirectory, 'dir')
+    mkdir(destdirectory);
+end
 xcorr_data_name=strcat("..\variables for labeling\",date,"\xcorr_data.mat");
 save(xcorr_data_name,'-struct','xcorrData');
 

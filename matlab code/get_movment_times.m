@@ -30,41 +30,43 @@ for i=1:length(moves_names)
     [num_moves,~] = max(sizes);
     ind_max = find(sizes == num_moves);
     gyros = {to_avgX,to_avgY,to_avgZ};
-    for j=1:num_moves
-        if (j> min([size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)]) || ...
-              ((size(gyros{1},2)==size(gyros{2},2)) && (size(gyros{3},2) ==size(gyros{2},2))))
-            break;
-        end
-        tx = to_avgX(:,j,2);
-        ty = to_avgY(:,j,2);
-        tz = to_avgZ(:,j,2);
-        xy = intersect(tx,ty);
-        xz = intersect(tx,tz);
-        yz = intersect(ty,tz);
-        if (isempty(xy) || isempty(xz) || isempty(yz))
-            if (size(ind_max,2)>1)
-                [mat_del1,mat_del2]=gyros{ind_max};
-                mat_del1(:,j,:) = [];
-                mat_del2(:,j,:) = [];
-                gyros{ind_max(1)} = mat_del1;
-                gyros{ind_max(2)} = mat_del2;
-            else
-                mat_del = gyros{ind_max};
-                mat_del(:,j,:) = [];
-                gyros{ind_max} = mat_del;
+    if(num_moves>0)
+        for j=1:num_moves
+            if (j> min([size(to_avgX,2),size(to_avgY,2),size(to_avgZ,2)]) || ...
+                  ((size(gyros{1},2)==size(gyros{2},2)) && (size(gyros{3},2) ==size(gyros{2},2))))
+                break;
             end
-            sizes = [size(gyros{1},2),size(gyros{2},2),size(gyros{3},2)];
-            [num_moves,~] = max(sizes);
-            ind_max = find(sizes == num_moves);
+            tx = to_avgX(:,j,2);
+            ty = to_avgY(:,j,2);
+            tz = to_avgZ(:,j,2);
+            xy = intersect(tx,ty);
+            xz = intersect(tx,tz);
+            yz = intersect(ty,tz);
+            if (isempty(xy) || isempty(xz) || isempty(yz))
+                if (size(ind_max,2)>1)
+                    [mat_del1,mat_del2]=gyros{ind_max};
+                    mat_del1(:,j,:) = [];
+                    mat_del2(:,j,:) = [];
+                    gyros{ind_max(1)} = mat_del1;
+                    gyros{ind_max(2)} = mat_del2;
+                else
+                    mat_del = gyros{ind_max};
+                    mat_del(:,j,:) = [];
+                    gyros{ind_max} = mat_del;
+                end
+                sizes = [size(gyros{1},2),size(gyros{2},2),size(gyros{3},2)];
+                [num_moves,~] = max(sizes);
+                ind_max = find(sizes == num_moves);
+            end
         end
-    end
-    [to_avgX,to_avgY,to_avgZ] = gyros{1:3};
-    end_times = cat(1,to_avgX(end,:,2),to_avgY(end,:,2),to_avgZ(end,:,2));
-    start_times = cat(1,to_avgX(1,:,2),to_avgY(1,:,2),to_avgZ(1,:,2));
-    if(endOrStart == "start")
-        move_times{i} = min(start_times);
-    else
-        move_times{i} = median(end_times);
+        [to_avgX,to_avgY,to_avgZ] = gyros{1:3};
+        end_times = cat(1,to_avgX(end,:,2),to_avgY(end,:,2),to_avgZ(end,:,2));
+        start_times = cat(1,to_avgX(1,:,2),to_avgY(1,:,2),to_avgZ(1,:,2));
+        if(endOrStart == "start")
+            move_times{i} = min(start_times);
+        else
+            move_times{i} = median(end_times);
+        end        
     end
 end
 end
