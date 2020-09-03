@@ -2,7 +2,7 @@
 close all; clear all; clc;
 % parameters to change:
 WIN_WID = 100; %window width of samples analysis
-COM_NAME = "COM6"; % check the COM number and update accoringly
+COM_NAME = "COM8"; % check the COM number and update accoringly
 BLE_NAME_ADDR = "Haifa3D"; %"240AC460A01E" or "A4CF129A672A"
 oldpath = path;
 path(oldpath,"C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code");
@@ -23,6 +23,20 @@ movements{2}.torque = uint8(bin2dec('11111000'));%movement length byte, torque,t
 movements{2}.time = uint8(10);%movement length byte, torque,time,active motor, motor direction
 movements{2}.active = uint8(bin2dec('01111000'));%movement length byte, torque,time,active motor, motor direction
 movements{2}.dir = uint8(bin2dec('00000000'));%movement length byte, torque,time,active motor, motor direction
+
+movements{3}.name = 'point';
+movements{3}.len = uint8(5);%movement length byte, torque,time,active motor, motor direction
+movements{3}.torque = uint8(bin2dec('11111000'));%movement length byte, torque,time,active motor, motor direction
+movements{3}.time = uint8(10);%movement length byte, torque,time,active motor, motor direction
+movements{3}.active = uint8(bin2dec('01111000'));%movement length byte, torque,time,active motor, motor direction
+movements{3}.dir = uint8(bin2dec('01000000'));%movement length byte, torque,time,active motor, motor direction
+
+movements{4}.name = 'three';
+movements{4}.len = uint8(5);%movement length byte, torque,time,active motor, motor direction
+movements{4}.torque = uint8(bin2dec('11111000'));%movement length byte, torque,time,active motor, motor direction
+movements{4}.time = uint8(10);%movement length byte, torque,time,active motor, motor direction
+movements{4}.active = uint8(bin2dec('01111000'));%movement length byte, torque,time,active motor, motor direction
+movements{4}.dir = uint8(bin2dec('01110000'));%movement length byte, torque,time,active motor, motor direction
 %% ble_communication
 HAND_DIRECT_EXECUTE_SERVICE_UUID =     "e0198000-7544-42c1-0000-b24344b6aa70";
 EXECUTE_ON_WRITE_CHARACTERISTIC_UUID = "e0198000-7544-42c1-0001-b24344b6aa70";
@@ -43,6 +57,7 @@ arduinoObj.UserData.isBufferFull = 0;
 %% read sensor data parameters:
 arduinoObj.UserData.win_wid = WIN_WID;
 arduinoObj.UserData.statrt_time = now;
+arduinoObj.UserData.Ble = b;
 %% start sensor reading:
 configureCallback(arduinoObj,"terminator",@readSensorData);
 %% define the event variables:
@@ -58,15 +73,13 @@ rte = RespondToEvent(arduinoObj.UserData.Event.Msg);
 function readSensorData(src, ~)
 win_wid = src.UserData.win_wid;
 % Read the ASCII data from the serialport object.
-data = readline(src);
-d = datestr(now,'[yyyy-mm-dd HH:MM:SS.FFF]');
-line = strcat(d," ", data);
-fprintf(strcat(line,"\n"));
+line = readline(src);
+%fprintf(strcat(line,"\n"));
 % save the data as a string in the UserData property of the serialport
 % object.
-if(~(contains(data,"CALIBRATION") || contains(data,"BNO") || ...
-        contains(data,"start") || contains(data,"measurments") ...
-        || contains(data,"Orientation Sensor Test\n")))
+if(~(contains(line,"CALIBRATION") || contains(line,"BNO") || ...
+        contains(line,"start") || contains(line,"measurments") ...
+        || contains(line,"Orientation Sensor Test\n") || strcmp(line,"")))
 src.UserData.Data{end+1} =line;
 
 %
@@ -74,7 +87,7 @@ src.UserData.Data{end+1} =line;
 src.UserData.Count = src.UserData.Count + 1;
 else
     fprintf(strcat(line,"\n"));
-    if(contains(data,"press s"))
+    if(contains(line,"press s"))
         writeline(src,'s') 
     end
 end
@@ -92,7 +105,7 @@ if src.UserData.isBufferFull
     end
 end
 t = now;
-if((t-src.UserData.statrt_time)>=0.0008)
+if((t-src.UserData.statrt_time)>=0.0015)
     str = input("would you like to stop?\n",'s');
     if(strcmp(str,"stop"))
         configureCallback(src, "off");
@@ -101,5 +114,12 @@ if((t-src.UserData.statrt_time)>=0.0008)
     else
         src.UserData.statrt_time = now;
     end
+end
+if(~src.UserData.Ble.Connected)
+    Addr = src.UserData.Ble.Address;
+    clear b
+    src.UserData.Ble = [];
+    b = ble(Addr);
+    src.UserData.Ble = b;
 end
 end      

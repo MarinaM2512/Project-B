@@ -22,28 +22,27 @@ function is_mov_detect = main_analysis(src)
 hold_samp = load("..\results after grid search\14-Aug-2020\hold_samp.mat").hold_samp;
 if (src.analyzedData == hold_samp || src.analyzedData == 0 )
     line=src.currentData{1};
-    line = convertStringsToChars(line);
-    first_time=seperate_timeString(line);
-    split_line= strsplit(line,{'[',']'});
-    original_string=[split_line{end} ' ' num2str(0)];
+%     line = convertStringsToChars(line);
+    newStr = split(line);
+    data = cellfun(@(x) str2double(x),newStr,'UniformOutput',false);
+    data = cell2mat(data);
+    first_time = data(end);
+    final = zeros(length(src.currentData),length(data));
+    data(end) = 0;
+    final(1,:) = data;
     for i=2:length(src.currentData)
-           line=src.currentData{i};
-           line = convertStringsToChars(line);
-           time=seperate_timeString(line);
-           num_ms=dt_func(first_time,time);
-           split_line= strsplit(line,{'[',']'});
-           original_string=[original_string newline split_line{end} ' ' num2str(num_ms)];
+        line=src.currentData{i};
+        newStr = split(line);
+        data = cellfun(@(x) str2double(x),newStr,'UniformOutput',false);
+        data = cell2mat(data);
+        time = data(end);
+        data(end) = time - first_time;
+        final(i,:) = data;
     end
-    splitStr={original_string};
-    writecell(splitStr,'tmp.txt');
-    final=readmatrix('tmp.txt');
-    delete tmp.txt
-    final=final(1:end,:);
     % Filter then Resample current data mat
     all_data_medfilt=median_data_filt(final,5);
     resampled_data = resample_all_data(all_data_medfilt);
     Ts = resampled_data(3,end) - resampled_data(2,end);
-    disp(strcat("Ts: ", num2str(Ts)));
     % Preform cross correlation 
     gyro_data = resampled_data(:,4:6);
     gyro_data(:,end+1) = resampled_data(:,end);
