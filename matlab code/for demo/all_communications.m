@@ -57,7 +57,8 @@ arduinoObj.UserData.isBufferFull = 0;
 %% read sensor data parameters:
 arduinoObj.UserData.win_wid = WIN_WID;
 arduinoObj.UserData.statrt_time = now;
-arduinoObj.UserData.Ble = b;
+arduinoObj.UserData.Ble = b; % add ble as attribute to arduinoObj so that 
+%during callback execution connection can be monitored
 %% start sensor reading:
 configureCallback(arduinoObj,"terminator",@readSensorData);
 %% define the event variables:
@@ -115,7 +116,8 @@ if((t-src.UserData.statrt_time)>=0.0015)
         src.UserData.statrt_time = now;
     end
 end
-if(~src.UserData.Ble.Connected)
+% Attempt to reconnect to ble when it disconnects
+if(~src.UserData.Ble.Connected) 
     Addr = src.UserData.Ble.Address;
     clear b
     src.UserData.Ble = [];
