@@ -19,10 +19,10 @@ function is_mov_detect = main_analysis(src)
 
 
 % Text data to mat
-hold_samp = load("..\results after grid search\14-Aug-2020\hold_samp.mat").hold_samp;
+% hold_samp = load("..\results after grid search\14-Aug-2020\hold_samp.mat").hold_samp;
+hold_samp = 40;
 if (src.analyzedData == hold_samp || src.analyzedData == 0 )
     line=src.currentData{1};
-%     line = convertStringsToChars(line);
     newStr = split(line);
     data = cellfun(@(x) str2double(x),newStr,'UniformOutput',false);
     data = cell2mat(data);
@@ -76,7 +76,6 @@ else
    src.analyzedData = src.analyzedData+1;
 end
    src.isAnaliseDone = 1;
-  % disp(strcat("time of analysis: ",datestr(now,'yyyy-mm-dd HH:MM:SS.FFF'))); %% just for test!
 end
 
 

@@ -1,8 +1,8 @@
 %
 close all; clear all; clc;
 % parameters to change:
-WIN_WID = 100; %window width of samples analysis
-COM_NAME = "COM8"; % check the COM number and update accoringly
+WIN_WID = 70; %window width of samples analysis
+COM_NAME = "COM6"; % check the COM number and update accoringly
 BLE_NAME_ADDR = "Haifa3D"; %"240AC460A01E" or "A4CF129A672A"
 oldpath = path;
 path(oldpath,"C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code");
@@ -40,7 +40,7 @@ movements{4}.dir = uint8(bin2dec('01110000'));%movement length byte, torque,time
 %% ble_communication
 HAND_DIRECT_EXECUTE_SERVICE_UUID =     "e0198000-7544-42c1-0000-b24344b6aa70";
 EXECUTE_ON_WRITE_CHARACTERISTIC_UUID = "e0198000-7544-42c1-0001-b24344b6aa70";
-BLE_NAME_ADDR = "2462ABF9729E";
+BLE_NAME_ADDR = "A4CF129A672A";
 b = ble(BLE_NAME_ADDR); % if bad connection run: blelist("Name","Haifa3D") and copy the address into BLE_NAME_ADDR
 global ble_char
 ble_char = characteristic(b,HAND_DIRECT_EXECUTE_SERVICE_UUID,...
@@ -103,6 +103,16 @@ if src.UserData.isBufferFull
         src.UserData.Event.isAnaliseDone = 0;
         src.UserData.Event.currentData = src.UserData.Data;
         src.UserData.Event.OnEventChange(true);
+    else
+        str = input("would you like to stop?\n",'s');
+        if(strcmp(str,"stop"))
+            configureCallback(src, "off");
+            src.UserData.Event.OnEventChange(false);
+            fprintf("all done :)");
+        else
+            src.UserData.statrt_time = now;
+            src.UserData.Event.isAnaliseDone = 1;
+        end
     end
 end
 t = now;
@@ -114,14 +124,15 @@ if((t-src.UserData.statrt_time)>=0.0015)
         fprintf("all done :)");
     else
         src.UserData.statrt_time = now;
+        src.UserData.Event.isAnaliseDone = 1;
     end
 end
 % Attempt to reconnect to ble when it disconnects
-if(~src.UserData.Ble.Connected) 
-    Addr = src.UserData.Ble.Address;
-    clear b
-    src.UserData.Ble = [];
-    b = ble(Addr);
-    src.UserData.Ble = b;
-end
+% if(~src.UserData.Ble.Connected) 
+%     Addr = src.UserData.Ble.Address;
+%     clear b
+%     src.UserData.Ble = [];
+%     b = ble(Addr);
+%     src.UserData.Ble = b;
+% end
 end      

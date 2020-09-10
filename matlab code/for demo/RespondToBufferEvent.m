@@ -6,7 +6,7 @@ classdef RespondToBufferEvent < handle
    end
    methods (Static)
       function handleEvnt(src,~)
-         disp('buffer is full or new data-point arrived - do analysis')
+         %disp('buffer is full or new data-point arrived - do analysis')
          
          %%%%%%%%%%%% do analysis: %%%%%%%%%%%%%%%%
          is_mov_detect = main_analysis(src);

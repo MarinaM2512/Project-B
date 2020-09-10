@@ -2,7 +2,7 @@
 clear all; close all; clc; 
 % add matlab code to search path
 oldpath = path;
-path(oldpath,"C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code");
+path(oldpath,"..\..\matlab code");
 %% DEFINE 
 % Replace Date with the date of the measurments
 date = "24_08"; 

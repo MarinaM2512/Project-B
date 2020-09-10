@@ -13,9 +13,9 @@ function [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,moveme
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
 % 5.sum_window: window length that we sum all element in it
-matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
 curr_dir = pwd;
-if(~strcmp(matlab_code_path,curr_dir))
+split_path = split(curr_dir,'\');
+if(~strcmp("matlab code",split_path{end}))
     DirPath = "..\..\measurements\resample";
 else
     DirPath = "..\measurements\resample";

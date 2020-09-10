@@ -24,9 +24,9 @@ labels = zeros(length(xcorr_thresholded{1}),4);
 label_values =  zeros(length(xcorr_thresholded{1}),4);
 
 %Load weights
-matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
 curr_dir = pwd;
-if(~strcmp(matlab_code_path,curr_dir))
+split_path = split(curr_dir,'\');
+if(~strcmp("matlab code",split_path{end}))
     tmp1 = load("../templates/tap_principle_vec");
     tmp2 = load("../templates/ank_principle_vec");
     tmp3 = load("../templates/swl_principle_vec");

@@ -8,6 +8,7 @@ function [move_vals , move_times] = extract_movement(segD,segT ,thresh_val,thres
 % points - 3 from each side) 
 % 4.thresh_time: a period of time that will filter out short noises that 
 % are not long enough to be a movement 
+% 5. sum_window - the length of the window to sum over
 
 %%Return:
 % 1. move_vals: vector that represents the movement values detected in 

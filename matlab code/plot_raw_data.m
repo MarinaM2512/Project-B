@@ -7,7 +7,7 @@ function plot_raw_data(movement_name,date)
 title_3=["x" "y" "z"];
 title_q=["qW" "qX" "qY" "qZ"];
 title_fsr=["FSR0" "FSR1" "FSR2" "FSR3" "FSR4"];
-textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","FILTERED_INIT.mat");
+textFileName= strcat("..\measurements\resample\",date,"\","*",movement_name,"*","FILTERED_INIT.mat");
 DirList = dir(fullfile(textFileName)); % all files with the name texeFileName
 listOfFiles = {DirList.name};
 num_meas=length(listOfFiles);

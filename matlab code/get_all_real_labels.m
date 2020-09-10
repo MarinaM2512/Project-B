@@ -15,9 +15,9 @@ function real_labels = get_all_real_labels(endOrStart,date,order)
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
 move_times = get_movment_times(endOrStart,list_moves,date);
 real_labels = cell(length(list_moves),1);
-matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
 curr_dir = pwd;
-if(~strcmp(matlab_code_path,curr_dir))
+split_path = split(curr_dir,'\');
+if(~strcmp("matlab code",split_path{end}))
     DirPath = "..\..\measurements\resample";
 else
     DirPath = "..\measurements\resample";
