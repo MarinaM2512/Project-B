@@ -4,9 +4,9 @@ function plot_results_stem(algo_labels,date,order)
 % INPUT: the optimal results we got from grid_search
 
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
-matlab_code_path = "C:\Users\Marina\Documents\Technion\Winter semester 2020\Project B\Project-B\matlab code";
 curr_dir = pwd;
-if(~strcmp(matlab_code_path,curr_dir))
+split_path = split(curr_dir,'\');
+if(~strcmp("matlab code",split_path{end}))
     DirPath = "..\..\measurements\resample";
 else
     DirPath = "..\measurements\resample";
