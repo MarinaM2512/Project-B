@@ -353,6 +353,8 @@ ylabel("normlized amp");
 i=1;
 data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
 %curr_meas = corr{i};
+% gyro_cross_corr in next line is in "unused" file- use
+% gyro_cross_corr_normlized insted
 [dtcorrSL,dtcorrSR,dtcorrTap,dtcorrAnc] = gyro_cross_corr(template_mat,data_mat(:,4:6),3);
 corrSL = dtcorrSL(:,3,1);  %z
 corrSR = dtcorrSR(:,3,1);  %z
