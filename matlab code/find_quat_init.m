@@ -1,6 +1,6 @@
 % FUNCTION finds component q_init for single axis
 % S cell of segmented data
-% T cell of segmented times - הורדתי
+% T cell of segmented times 
 % q_init   matrix of quats to normlize by,len as num of segments
 % t_init   times where we get q_init or approximation
 function q_init=find_quat_init(S) % optional- T
