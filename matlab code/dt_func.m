@@ -1,6 +1,7 @@
 function [dt] = dt_func(X,Y)
-
-%
+% find diffrence between two time samples in milisec
+% X,Y- time stamps
+% dt - time diffrence in milisec
 s2ms = 1000;
 m2s = 60;
 h2m = 60;

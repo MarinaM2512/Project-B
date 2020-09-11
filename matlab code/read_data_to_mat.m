@@ -1,6 +1,6 @@
 function read_data_to_mat(scrPath,destPath,date)
 % open all measurments files from a certain date and save them as 
-% matrices
+% matrixes
 % Measurments arangement in the mat: 
 % accel_x accel_y accel_z gyro_x gyro_y gyro_z qW qX qY qZ 
 % Cal_sys Cal_gyro Cal_accel Cal_mag FSR0 FSR1 FSR2 FSR3 FSR4
@@ -13,7 +13,7 @@ function read_data_to_mat(scrPath,destPath,date)
         begining_idx=regexp(s,'measurments')+length('measurments')+1;%use for measurments after 30_03 
         %begining_idx=regexp(s,'Test')+length('Test')+1;
         s=s(begining_idx(end):end);
-        newStr = splitlines(s);
+        newStr = splitlines(s); %split s at new line
         idx=find(~cellfun(@isempty,newStr));
         line=newStr{idx(1)};
         first_time=seperate_timeString(line);
