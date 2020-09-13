@@ -8,7 +8,7 @@ Gyro_SL =zeros(1,3);
 Gyro_SR =zeros(1,3);
 Gyro_tap = zeros(1,3);
 Gyro_other = zeros(1,3);
-% for all meas
+% for all measurments join all the movemnts of the same type together 
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
    [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7);  
@@ -55,6 +55,8 @@ ank =  vecsAnc(:,1);
 swl =  vecsSL(:,1);
 swr =  vecsSR(:,1);
 tap =  vecsTap(:,1);
+%save first principal vector (with the largest data variance) for each
+%movemnt type a weights
 name = ["swl" "swr" "tap" "ank"];
 for i = 1:4
     mat_name=strcat(".\templates\",name(i),"_principle_vec",".mat");
