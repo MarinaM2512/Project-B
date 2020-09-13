@@ -3,10 +3,11 @@ classdef BufferEvent < handle
       State = false
       Msg = MsgEvent
       currentData ={}
-      analyzedData = 0
-      isAnaliseDone = 1 % value 0 means analisys not done, value 1
-      % means anlisys done and new measuremens can be passed to the
-      % function
+      analyzedData = 0 % counter to ensure that movements will not be 
+      % recognised in the few next samples after movement recognition
+      isAnaliseDone = 1 % value 0 means analisys not finished, value 1
+      % means anlisys finished and new measuremens can be passed to the
+      %analisys function
    end
    events
       BufferEventTrue
