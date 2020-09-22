@@ -1,7 +1,7 @@
 clc;clear all; close all;
-B=load("..\measurements\04_04\Data_extraction_sit_swipe_L1_FILTERED");
+B=load("..\measurements\17_04\resample\Data_extraction_sit_swipe_L1_INIT_FILTERED");
 A=B.filtered_mat;
-B1=load("..\measurements\04_04\Data_extraction_sit_swipe_L1");
+B1=load("..\measurements\17_04\resample\Data_extraction_sit_swipe_L1");
 A1=B1.final;
 A(:,20)=A1(:,20);
 %% testing segments

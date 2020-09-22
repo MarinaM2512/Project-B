@@ -1,4 +1,4 @@
-%% fit a 3D curve for each movement  without diff
+%% fit a 3D curve for each movement 
 date = "17_04";
 list_moves = get_all_meas_names(date,"FILTERED_INIT" ,1);
 %init
@@ -8,18 +8,10 @@ Gyro_SL =zeros(1,3);
 Gyro_SR =zeros(1,3);
 Gyro_tap = zeros(1,3);
 Gyro_other = zeros(1,3);
-% for all meas
+% for all measurments join all the movemnts of the same type together 
 for i = 1:length(list_moves)
    data_mat = loadMeasurmentMat(date,list_moves{i},1,"INIT");
-    %% NOTE TO MARINA : whay if? it is the same thresholds. we can write
-    % that it is generic in case we want diffrent thresholds- if that so
-    % need to make 4 cases in total
-   if(contains(list_moves{i},"tap") || contains(list_moves{i},"ancle") )
-      [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7);
-   else
-      [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7); 
-   end
-    
+   [to_avgX, to_avgY, to_avgZ] = join_measurments_of_movements(date,list_moves{i},10000,500,7,7);  
    move_gyro(i,1:3) = [{to_avgX} {to_avgY} {to_avgZ}] ;
    [move,~,time] = detect_movement(move_gyro(i,1:3));
    times(i,1) = {time};
@@ -63,6 +55,8 @@ ank =  vecsAnc(:,1);
 swl =  vecsSL(:,1);
 swr =  vecsSR(:,1);
 tap =  vecsTap(:,1);
+%save first principal vector (with the largest data variance) for each
+%movemnt type a weights
 name = ["swl" "swr" "tap" "ank"];
 for i = 1:4
     mat_name=strcat(".\templates\",name(i),"_principle_vec",".mat");

@@ -1,10 +1,12 @@
-% data  - all data collected
-% times - time stemps [ms]
-% delay - of system   [ms]
-% S     - cell of data segmented by time
-% T     - cell of timestemp with corelation to S
 function [S,T]=data2timeSegments(data,times,delay)
-% dim1=floor(times(end)/delay);
+%%Goal: devide a measurments vector to segments with duration stated by delay 
+%%Inputs:
+% 1. data  - a vector of measurments 
+% 2. times - the times corresponding to the measurments in ms.
+% 3. delay - the duration of each segment in ms.
+%%Outputs:
+% 1. S - cell of data segmented by time
+% 2. T - cell of times corresponding to cells in S
 dim1=ceil(times(end)/delay); %num of seg
 S=cell(dim1,1);
 T=cell(dim1,1);

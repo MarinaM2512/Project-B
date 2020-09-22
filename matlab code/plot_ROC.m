@@ -1,4 +1,14 @@
 function plot_ROC (TPR_vec, FPR_vec, TNR_vec, PPV_vec, t2_vec,th1_vec,th2_vec,th3_vec)
+%%Goal: plot roc scatter of TPR vs FPR at all grid search iterations with 
+%the threshold values used at each point.
+%%Inputs:
+% all the inputs are a vector with length accordin to the number of iterations in
+% the grid search loop.
+% TPR, FPR, TNR and PPV are preformance evaluation rates as described in 
+% preformance_evaluation function
+% The other values are the threshold values being scanned through the grid
+% search loop.
+
 figure;
 s = scatter(FPR_vec,TPR_vec);
 s.DataTipTemplate.DataTipRows(1).Label = 'FPR';
