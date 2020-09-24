@@ -1,21 +1,29 @@
 %% list of names for all movments
 date = "17_04";
+% make list of all mesurments names in date directory.
 list_moves  = get_all_meas_names(date, "FILTERED_INIT", 1);
+    % seperate meas name according to movements
     swl_names = names_of_move( list_moves, "swipe_L");
     swr_names = names_of_move(list_moves, "swipe_R");
     tap_names = names_of_move( list_moves, "tap");
     anc_names =names_of_move(list_moves, "side_ancle");
 
-%% templates for all moveents:
+%% MAKE TEMPLATES
+% make templates for all movements based on the meas in date directory.
+% threshold values choosed based on trial and error-NOT IDIEL, can be
+% improved
 
 % swipe L templates
+    % make template for each axie
 [tmplt_swl_gyrox, tmplt_swl_tx] = make_tamplate_all_movments_x(date,swl_names,10000,500,10,7,0.1);
 [tmplt_swl_gyroy, tmplt_swl_ty] = make_tamplate_all_movments_y(date,swl_names,10000,500,10,6,0.1);
 [tmplt_swl_gyroz, tmplt_swl_tz] = make_tamplate_all_movments_z(date,swl_names,10000,500,10,9,0.1);
+    % pad all templates to same size based on the longest template
+    % for future calculations of xcorr
 [tmplt_swl_gyro,tmplt_swl_t] = pad_data_to_same_size(...
                    tmplt_swl_gyrox, tmplt_swl_gyroy, tmplt_swl_gyroz,...
                    tmplt_swl_tx,tmplt_swl_ty,tmplt_swl_tz,0.6,2/3);
-
+    % repeat this process for the rest of the movements...
 
 % swipe R templates
 [tmplt_swr_gyrox, tmplt_swr_tx] = make_tamplate_all_movments_x(date,swr_names,10000,500,10,7,0.1);
@@ -53,11 +61,13 @@ t_tap = [{tmplt_tap_t(:,1)} {tmplt_tap_t(:,2)} {tmplt_tap_t(:,3)}];
 t_anc = [{tmplt_anc_t(:,1)} {tmplt_anc_t(:,2)} {tmplt_anc_t(:,3)}];
 t_sl = [{tmplt_swl_t(:,1)} {tmplt_swl_t(:,2)} {tmplt_swl_t(:,3)}];
 t_sr = [{tmplt_swr_t(:,1)} {tmplt_swr_t(:,2)} {tmplt_swr_t(:,3)}];
+% printing templates
 figure();
 print_templates(tmplt_anc_gyro(:,1),tmplt_anc_gyro(:,2),tmplt_anc_gyro(:,3),t_anc,"ancle");
 print_templates(tmplt_tap_gyro(:,1),tmplt_tap_gyro(:,2),tmplt_tap_gyro(:,3),t_tap,"tap");
 print_templates(tmplt_swl_gyro(:,1),tmplt_swl_gyro(:,2),tmplt_swl_gyro(:,3),t_sl,"swipe left");
 print_templates(tmplt_swr_gyro(:,1),tmplt_swr_gyro(:,2),tmplt_swr_gyro(:,3),t_sr,"swipe right");
+% save
 swl = cat(3,tmplt_swl_gyro,tmplt_swl_t);
 swr = cat(3,tmplt_swr_gyro,tmplt_swr_t);
 tap = cat(3,tmplt_tap_gyro,tmplt_tap_t);
