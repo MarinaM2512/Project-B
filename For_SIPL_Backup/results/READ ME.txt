@@ -1,0 +1,4 @@
+"templates"-in that directory appear principal vectors and templates. we used only the principal vectors from this directory.
+"same length templates"- the final templates saved there.
+"results after grid search":
+-"t
