@@ -5,3 +5,4 @@
 2. "states"- optimal evaluation rates found by grid_search: fpr,tpr,tnr,ppv
 3."states_vec"- evaluation rate for all combinations of treshold values.
 "for demo"- demo code to run with moeasurments as explaind in that directory in "README file.
+"variables for labeling"- contains real labels and cross-corr results
