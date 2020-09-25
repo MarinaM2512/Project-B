@@ -1,0 +1,35 @@
+[to_avgX_tap, to_avgY_tap,to_avgZ_tap] = join_measurments_of_movements("17_04","sit_N_tap1",10000,500,10,7);
+[to_avgX_ank, to_avgY_ank,to_avgZ_ank] = join_measurments_of_movements("17_04","sit_N_side_ancle1",10000,500,10,7);
+[to_avgX_sl, to_avgY_sl,to_avgZ_sl] = join_measurments_of_movements("17_04","sit_N_swipe_L1",10000,500,10,7);
+[to_avgX_sr, to_avgY_sr,to_avgZ_sr] = join_measurments_of_movements("17_04","sit_N_swipe_R1",10000,500,10,7);
+tmp = load("./templates/tap_principle_vec");
+vec_tap = tmp.tap;
+% vec_tap = vec_tap.*(vec_tap>0);
+% vec_tap = vec_tap / sqrt(vec_tap' * vec_tap);  
+tmp = load("./templates/ank_principle_vec");
+vec_ank = tmp.ank;
+% vec_ank = vec_ank.*(vec_ank>0);
+% vec_ank = vec_ank / sqrt(vec_ank' * vec_ank);  
+tmp = load("./templates/swl_principle_vec");
+vec_swl = tmp.swl;
+% vec_swl = vec_swl.*(vec_swl>0);
+% vec_swl = vec_swl / sqrt(vec_swl' * vec_swl);  
+tmp = load("./templates/swr_principle_vec");
+vec_swr = tmp.swr;
+% vec_swr = vec_swr.*(vec_swr>0);
+% vec_swr = vec_swr / sqrt(vec_swr' * vec_swr); 
+moveName = ["sit_N_tap1","sit_N_side_ancle1" , "sit_N_swipe_L1","sit_N_swipe_R1"];
+for i = 1:4
+    [to_avgX, to_avgY,to_avgZ] = join_measurments_of_movements("17_04",moveName(i),10000,500,10,7);
+    move_gyro(i,1:3) = [{to_avgX(:,5,:)} {to_avgY(:,5,:)} {to_avgZ(:,5,:)}] ; 
+end
+ [tap,~,~] = detect_movement(move_gyro(1,1:3));
+ [ank,~,~] = detect_movement(move_gyro(2,1:3));
+ [sl,~,~] = detect_movement(move_gyro(3,1:3));
+ [sr,~,~] = detect_movement(move_gyro(4,1:3));
+moves = [{tap} {ank} {sl} {sr}];
+moves_weights = cell(4,1);
+for i =1:4
+    move = moves{i};
+    moves_weights{i} =cat(2,move*vec_tap,move*vec_ank,move*vec_swl,move*vec_swl);
+end

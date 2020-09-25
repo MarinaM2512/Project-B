@@ -1,0 +1,25 @@
+%test quaternion derivative assuming data cose resampled
+clear all;
+close all;
+clc;
+date = "17_04";
+movement_name = "sit_N_sit_tap1";
+textFileName= strcat("..\measurements\",date,"\","*",movement_name,"*","_INIT.mat");
+DirList = dir(fullfile(textFileName));
+listOfFiles = {DirList.name};
+mat_name=strcat("..\measurements\",date,"\",listOfFiles{1});
+M=load(mat_name);
+mat=M.initialised;
+t = mat(:,20);
+Fs =1/(t(2)-t(1));
+[GyroX ,GyroY, GyroZ] = getGyroFromQuat(mat(:,7:10),Fs,30,"5points");
+figure;
+subplot(3,1,1);
+plot(t(1:length(GyroX)),GyroX);
+title("W_x");
+subplot(3,1,2);
+plot(t(1:length(GyroY)),GyroY);
+title("W_y");
+subplot(3,1,3);
+plot(t(1:length(GyroZ)),GyroZ);
+title("W_z");

@@ -1,0 +1,11 @@
+The folders with dates contain the raw text files of the measurments.
+
+The folder resample contains the raw measurements matrices and the filtered and resampled versions.
+
+Measurements taken from Marinas right foot:
+Measurements from 17_04 were used as train set for template creation and grid search
+Measurements from 24_08 were used as test set
+
+Measurements taken from Yahels right foot:
+Measurements from 27_08 were taken from yahels right foot and classification algorithm was not susscefull for these measurements.
+
