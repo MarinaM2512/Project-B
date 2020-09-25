@@ -1,4 +1,7 @@
 "templates"-in that directory appear principal vectors and templates. we used only the principal vectors from this directory.
 "same length templates"- the final templates saved there.
 "results after grid search":
--"t
+1."tresholds"- optimal treshold values found by grid_search
+2. "states"- optimal evaluation rates found by grid_search: fpr,tpr,tnr,ppv
+3."states_vec"- evaluation rate for all combinations of treshold values.
+"for demo"- demo code to run with moeasurments as explaind in that directory in "README file.
